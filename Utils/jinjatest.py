@@ -116,7 +116,7 @@ def main():
         "title": "Branches list",
         "description": "Questa pagina contiene tutte le revisioni. Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely."
     }
-    template = buildTemplate('branchesList.j2',
+    template = buildTemplate('template.j2',
                             {
                                 "basename": repoName,
                                 "page": page,
@@ -132,7 +132,7 @@ def main():
         "title": args.currentBranch + " - Revisions list",
         "description": "Questa pagina contiene tutte le revisioni di " + args.currentBranch + ". Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely."
     }
-    template = buildTemplate('branchesList.j2', 
+    template = buildTemplate('template.j2', 
                             {
                                 "basename": repoName,
                                 "page": page,
@@ -154,7 +154,7 @@ def main():
             "title": revision['name'] + " - Documents list",
             "description": "Questa pagina contiene tutti i documenti della revisione " + revision['name'] + ". Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely."
         }
-        template = buildTemplate('branchesList.j2', 
+        template = buildTemplate('template.j2', 
                                 {
                                     "basename": repoName,
                                     "page": page,
