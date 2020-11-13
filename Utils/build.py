@@ -13,7 +13,8 @@ _excluded_dirs = [
     "Utils",
     "venv",
     ".git",
-    ".github"
+    ".github",
+    "output"
     ]
 
 def getDirs(path='.', excluded_dirs=_excluded_dirs):

@@ -18,7 +18,7 @@ _excluded_dirs = []
 outFolder = './output'
 file_loader = FileSystemLoader(templatesDir)
 env = Environment(loader=file_loader)
-repoName = 'testAtions'
+repoName = 'Documents'
 
 
 def getDirs(path='.', excluded_dirs=_excluded_dirs, recursive=False):
