@@ -1,0 +1,43 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{../../Shared/Sweleven}
+\usepackage{grffile}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\input{src/Comandi.tex}
+
+\begin{document}
+    \copertina{}
+    \input{src/RegistroModifiche.tex}
+    \newpage
+    \tableofcontents
+    \newpage
+    \listoftables
+    \newpage
+    \listoffigures
+    
+    \newpage
+    \section{Introduzione}\label{sec:Introduzione}
+    \input{src/Introduzione/main.tex}
+    
+    \newpage
+    \section{Qualita di processo}\label{sec:Qualita-di-processo}
+    \input{src/QualitaDiProcesso/main.tex}
+    
+    \newpage
+    \section{Qualita di prodotto}\label{sec:Qualita-di-prodotto}
+    \input{src/QualitaDiProdotto/main.tex}
+    
+    \newpage
+    \section{Specifica dei test}\label{sec:Specifica-dei-test}
+    \input{src/SpecificaDeiTest/main.tex}
+    
+    \newpage
+    \section{Resoconto verifica}\label{sec:Resoconto-verifica}
+    \input{src/ResocontoVerifica/main.tex}
+    
+    \newpage
+    \section{Autovalutazione}\label{sec:Autovalutazione}
+    \input{src/Autovalutazione/main.tex}
+
+\end{document}
