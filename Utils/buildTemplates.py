@@ -17,7 +17,12 @@ def loadFilesList():
     with open('./Utils/filesList.json') as file:
         filesList = file.read()
 
-    return json.loads(filesList) 
+    filesList = json.loads(filesList) 
+
+    for file in filesList:
+        file['path'] = file['name']
+    
+    return filesList
 
 
 def getBranchesList():

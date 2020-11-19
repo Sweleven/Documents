@@ -18,14 +18,14 @@ def buildFiles(prefix, files, outDir):
 
 
 def buildFile(prefix, file, outDir):
-    jobname = "-jobname=" + file['name']
+    jobname = "-jobname=" + file['name'][:-4]
     sourceFile = "main.tex"
 
     buildCmd = ["docker", "run", "-i", "-v", getcwd() + ":/data", "-w", join('/data', prefix, file['path']), 
                 "blang/latex", "latexmk", "-pdf", jobname, sourceFile]
     
-    moveCmd = ["mv", join(getcwd(), prefix, file['path'], file['name'] + ".pdf"),
-                join(getcwd(), outDir, file['name'] + ".pdf")]
+    moveCmd = ["mv", join(getcwd(), prefix, file['path'], file['name']),
+                join(getcwd(), outDir, file['name'])]
 
     subprocess.run(buildCmd)
     subprocess.run(moveCmd)
