@@ -2,47 +2,14 @@ import argparse
 from os import getcwd, mkdir
 from os.path import join
 import subprocess
+import json
 
 
-files = {
-    "DocumentiEsterni": [
-        {
-            "name": "Analisi dei requisiti",
-            "path": "AnalisiDeiRequisiti"
-        },
-        {
-            "name": "Glossario",
-            "path": "Glossario",
-        },
-        {
-            "name": "Piano di Progetto",
-            "path": "PianoDiProgetto"
-        },
-        {
-            "name": "Piano di qualifica",
-            "path": "PianoDiQualifica"
-        }
-    ],
-    "DocumentiInterni": [
-        {
-            "name": "Norme di Progetto",
-            "path": "NormeDiProgetto"
-        },
-        {
-            "name": "Studio di Fattibilita",
-            "path": "StudioDiFattibilita"
-        }
-    ],
-    "VerbaliInterni": [
-        {
-            "name": "Verbale 1",
-            "path": "Verbale1"
-        }
-    ],
-    "VerbaliEsterni": [
+def loadFilesList():
+    with open('./Utils/filesList.json') as file:
+        filesList = file.read()
 
-    ]
-}
+    return json.loads(filesList) 
 
 
 def buildFiles(prefix, files, outDir):
@@ -74,6 +41,7 @@ def getArgs():
 
 def main():
     args = getArgs()
+    files = loadFilesList()
 
     # Create output dir
     mkdir(args.outDir)
