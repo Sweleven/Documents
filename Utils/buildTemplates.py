@@ -26,8 +26,18 @@ def loadFilesList():
     return filesList
 
 
+def loadBranchesList():
+    with open('./Utils/branchesList.json') as file:
+        branchesList = file.read()
+
+    branchesList = json.loads(branchesList)
+
+    return branchesList['branches']
+
+
 def getBranchesList():
-    return [{"name": dir, "path": join('/', repoName, dir)} for dir in listdir(outFolder) if isdir(join(getcwd(), outFolder, dir))]
+    branchesList = loadBranchesList()
+    return [{"name": dir, "path": join('/', repoName, branch)} for branch in branchesList]
 
 
 def buildTemplate(template, _options):
