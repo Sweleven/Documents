@@ -37,7 +37,7 @@ def loadBranchesList():
 
 def getBranchesList():
     branchesList = loadBranchesList()
-    return [{"name": dir, "path": join('/', repoName, branch)} for branch in branchesList]
+    return [{"name": branch, "path": join('/', repoName, branch)} for branch in branchesList]
 
 
 def buildTemplate(template, _options):
