@@ -20,7 +20,7 @@ def loadFilesList():
     filesList = json.loads(filesList) 
 
     for category in filesList.keys():
-        for file in category:
+        for file in filesList[category]:
             file['path'] = file['name']
     
     return filesList
