@@ -1,0 +1,44 @@
+{
+    "DocumentiEsterni": [
+        {
+            "name": "Analisi dei requisiti.pdf",
+            "path": "AnalisiDeiRequisiti"
+        },
+        {
+            "name": "Glossario.pdf",
+            "path": "Glossario"
+        },
+        {
+            "name": "Piano di Progetto.pdf",
+            "path": "PianoDiProgetto"
+        },
+        {
+            "name": "Piano di qualifica.pdf",
+            "path": "PianoDiQualifica"
+        },
+        {
+            "name": "Verbali",
+            "path": "Verbali"
+        }
+    ],
+    "DocumentiInterni": [
+        {
+            "name": "Norme di Progetto.pdf",
+            "path": "NormeDiProgetto"
+        },
+        {
+            "name": "Studio di Fattibilita.pdf",
+            "path": "StudioDiFattibilita"
+        },
+        {
+            "name": "Verbali",
+            "path": "Verbali"
+        }
+    ],
+    "VerbaliInterni": [
+        
+    ],
+    "VerbaliEsterni": [
+
+    ]
+}

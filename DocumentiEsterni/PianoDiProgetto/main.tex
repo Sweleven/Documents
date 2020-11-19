@@ -1,0 +1,56 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{makecell}
+\usepackage{float}
+\usepackage{../../Shared/Sweleven}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage[official]{eurosym}
+\usepackage{hyperref}
+\input{src/Comandi.tex}
+
+\begin{document}
+    \copertina{}
+    
+    \section*{Registro delle modifiche}\label{sec:Registro-modifiche}
+    \input{src/RegistroModifiche.tex}
+    
+    \newpage
+    \tableofcontents
+    
+    \newpage
+    \listoftables
+    
+    \newpage
+    \listoffigures
+    
+    \newpage
+    \section{Introduzione}\label{sec:Introduzione}
+    \input{src/Introduzione/main.tex}
+
+    \newpage
+    \section{Analisi dei rischi}\label{sec:Analisi-rischi}
+    \input{src/AnalisiRischi/main.tex}
+
+    \newpage
+    \section{Modello sviluppo}\label{sec:Modello-sviluppo}
+    \input{src/ModelloSviluppo/main.tex}
+
+    \newpage
+    \section{Pianificazione}\label{sec:Pianificazione}
+    \input{src/Pianificazione/main.tex}
+
+    \newpage
+    \section{Preventivo}\label{sec:Preventivo}
+    \input{src/Preventivo/main.tex}
+
+    \newpage
+    \section{Consuntivo Periodo}\label{sec:Consuntivo-periodo}
+    \input{src/ConsuntivoPeriodo/main.tex}
+
+    \newpage
+    \section{Organigramma}\label{sec:Organigramma}
+    \input{src/Organigramma/main.tex}
+\end{document}

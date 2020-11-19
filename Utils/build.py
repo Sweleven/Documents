@@ -1,106 +1,84 @@
-#!/usr/bin/env python3
-
-from os import listdir, getcwd, mkdir, remove
-from os.path import isdir, isfile, join, splitext
-import subprocess
-from subprocess import check_output
-from shutil import move
-from PyPDF2 import PdfFileMerger
-import re
 import argparse
-
-_excluded_dirs = [
-    "Utils",
-    "venv",
-    ".git",
-    ".github",
-    "output"
-    ]
-
-def getDirs(path='.', excluded_dirs=_excluded_dirs):
-    '''
-        Returns all directories (even nested ones) existing in `path` excluding `excluded_dirs`
-    '''
-    
-    dirs = []
-    for dir in listdir(path):
-        if dir in excluded_dirs:
-            continue
-
-        dir = join(path, dir)
-        if isdir(dir):
-            dirs.append(dir)
-            # Recursive call for nested folders
-            dirs = dirs + getDirs(dir, excluded_dirs)
-
-    return dirs
+from os import getcwd, mkdir
+from os.path import join
+import subprocess
+import json
 
 
-def buildDirs(dirs):
-    '''
-        Builds all dirs from `dirs`
-    '''
+def loadFilesList():
+    with open('./Utils/filesList.json') as file:
+        filesList = file.read()
 
-    for dir in dirs:
-        buildDir(dir)
+    return json.loads(filesList) 
 
 
-def buildDir(dir):
-    '''
-        Builds `*.tex` files in `dir` which are not recognized by the regex `/\.\w+/gm`
-    '''
-
-    files = [f for f in listdir(dir) if isfile(join(dir, f))]
+def buildFiles(prefix, files, outDir):
     for file in files:
-        filename, file_extension = splitext(file)
-        
-        if file_extension == '.tex' and not re.search("\.\w+", filename):
-            buildFile(filename, dir)
+        buildFile(prefix, file, outDir)
 
 
-def buildFile(file, dir):
-    '''
-        Builds `file`.tex file generating `file`.pdf output
-    '''
+def buildFile(prefix, file, outDir):
+    jobname = "-jobname=" + file['name'][:-4]
+    sourceFile = "main.tex"
 
-    jobname = "-jobname=" + file
-    file = file + '.tex'
-    buildCmd = ["docker", "run", "-i", "-v", getcwd() + dir[1:] + ":/data", "blang/latex", "latexmk", "-pdf", jobname, file]
-    subprocess.run(buildCmd)
-
-
-def groupPdfs(dirs, outputDir):
-    '''
-        Groups all `.pdf` files found in all `dirs` elements into `outputDir`
-    '''
-
-    mkdir(outputDir)
-
-    for dir in dirs:
-        _outputDir = join(outputDir, dir)
-        mkdir(_outputDir)
-        files = [f for f in listdir(dir) if isfile(join(dir, f))]
-        for file in files:
-            filename, file_extension = splitext(file)
-            if file_extension == '.pdf':
-                move(join(dir, file), join(_outputDir, file))
+    buildCmd = ["docker", "run", "-i", "-v", getcwd() + ":/data", "-w", join('/data', prefix, file['path']), 
+                "blang/latex", "latexmk", "-pdf", jobname, sourceFile]
     
+    moveCmd = ["mv", join(getcwd(), prefix, file['path'], file['name']),
+                join(getcwd(), outDir, file['name'])]
+
+    subprocess.run(buildCmd)
+    subprocess.run(moveCmd)
+
 
 def getArgs():
     # Parsing arguments (i.e. output folder)
     parser = argparse.ArgumentParser()
-    parser.add_argument("outDir", help="directory where the output will be stored")
+    parser.add_argument(
+        "outDir", help="directory where the output will be stored")
     return parser.parse_args()
 
 
 def main():
     args = getArgs()
-    dirs = getDirs()
+    files = loadFilesList()
 
-    buildDirs(dirs)
-    
-    groupPdfs(dirs, join('.', args.outDir))
+    # Create output dir
+    mkdir(args.outDir)
 
+    # Create output dir for internal documents
+    prefix = "DocumentiInterni"
+    internalOutDir = join(args.outDir, prefix)
+    mkdir(internalOutDir)
+
+    # Build internal documents
+    buildFiles(prefix, files[prefix], internalOutDir)
+
+
+    # Create output dir for external documents
+    prefix = "DocumentiEsterni"
+    externalOutDir = join(args.outDir, prefix)
+    mkdir(externalOutDir)
+
+    # Build external documents
+    buildFiles(prefix, files[prefix], externalOutDir)
+
+
+    # Create output dir for internal minutes
+    prefix = "DocumentiInterni/Verbali"
+    internalMinutesOutDir = join(args.outDir, prefix)
+    mkdir(internalMinutesOutDir)
+
+    # Build internal minutes
+    buildFiles(prefix, files["VerbaliInterni"], internalMinutesOutDir)
+
+    # Create output dir for external minutes
+    prefix = "DocumentiEsterni/Verbali"
+    externalMinutesOutDir = join(args.outDir, prefix)
+    mkdir(externalMinutesOutDir)
+
+    # Build internal minutes
+    buildFiles(prefix, files["VerbaliEsterni"], externalMinutesOutDir)
 
 if __name__ == '__main__':
     main()
