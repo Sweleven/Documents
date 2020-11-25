@@ -4,7 +4,7 @@ Il capitolato in questione si chiama "Progettazione e sviluppo di una \glo{Real-
 
 \subsection{Descrizione del capitolo}
 L’azienda Zero12 propone la creazione di una RGP basata su un gioco a scorrimento multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} della RGP creata.
-La finalità da parte del azienda è vedere alcune tecnologie di AWS in azione nell' ambito real-time ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito" e l'analisi in particolare di alcune tecnologie utilizzzate per la realizzazione della RGP.
+La finalità da parte del azienda è vedere alcune tecnologie di AWS in azione nell' ambito real-time ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito".
 \subsection{Prerequisiti e tecnologie coinvolte}
 Prerequisiti:
 \begin{itemize}
@@ -25,11 +25,11 @@ Tecnologie coinvolte:
 
 \subsection{Vincoli}
 \begin{itemize}
-\item Creazione di un'applicazione Android o iOS di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment", con relativa interfaccia grafica.
+\item Creazione di un'applicazione Android o iOS di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment" infinito, con relativa interfaccia grafica.
 \item Node.Js per le API (Typescript o Javascript) con cui comunicano i vari microservizi dell'applicazione
 \item tecnologia AWS per la componente server: AppSync o Gamelift per la RGP e DynamoDB per la base di dati    
 \item sincronizzazione \glo{UI} tra i giocatori (i giocatori vedono e giocano la stessa partita) ma vedono una sorta di fantasma del \glo{player-character} controllato dagli altri avversari.
-\item consegna materiale pre Progettazione(design):analisi AppSync/Gamelift, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati,documentazione API(dettagliata),piano di \glo{unit-test}
+\item consegna materiale pre Progettazione(design):documentazione analisi AppSync/Gamelift, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati,documentazione API(dettagliata),piano di \glo{unit-test}
 \item accesso al repository del codice sorgente dell'applicativo post produzione e \glo{Bug} \glo{Reporting}
 \end{itemize}
 
@@ -39,11 +39,16 @@ Tecnologie coinvolte:
 \item Essendo Android molto diffuso la documentazione necessaria per realizzare l'applicazione è molto ricca e chiara;
 \item L'azienda ha esposto in modo chiaro i vari vincoli ed i casi d'uso presenti nel capitolato.
 \item L'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo.
+\item Dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare parecchio lo sviluppo della RGP limitando il numero di microservizzi da sviluppare, partendo dal
+presupposto che amazon essendo una azienda leader nel settore dei servizi cloud abbia creato questo servizio un motivo c'è e a nostro avviso è proprio 
+ridurre la gestione lato server al minimo oltre alla crescente domanda in questo settore.(come si può notare diverse aziende leader e startup del settore hanno già inizaito ad utilizzarlo).
+Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche neccessarie, ma nello sviluppo del gioco multiplayer 
+in questione, permettendo di ridurre costi e spostare le risorse intellettuali di un azienda verso il gioco.
 \end{itemize}
 \subsection{Aspetti critici}
 \begin{itemize}
-\item Essendo cruciale la sincronizzazione tra giocatori, la RGP deve essere efficiente e la complessità che ne potrebbe derivare da questa potrebbe essere non banale.
-\item ore di training nelle tecnologie non facilmente prevedibili
+\item Le ore di training del team nelle tecnologie richieste dal capitolato non sono facilmente prevedibili visto che alcuni di questi servizi sono abbastanza "nuovi" (come Gamelift 2016).
+\item Lo sviluppo di un videogioco generalmente non è banale nel suo complesso.
 \end{itemize}
 \subsection{Conclusioni}
 La proposta del capitolato offerto dall'azienda Zero12 è stata accolta con grande interesse. Il gruppo è rimasto colpito e stimolato dalla possibilità 
