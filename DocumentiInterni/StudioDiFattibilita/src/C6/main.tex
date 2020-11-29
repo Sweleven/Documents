@@ -1,10 +1,10 @@
 \section{Capitolato C2}
-\subsection{Progettazione e sviluppo di una Real-time Gaming Platform(RGP)}
+\subsection{Progettazione e sviluppo di una Realtime Gaming Platform(RGP)}
 Il capitolato in questione si chiama "Progettazione e sviluppo di una \glo{Real-time Gaming Platform(RGP)}", il proponente è l'azienda Zero12 e i committenti sono \VT{} e \CR{}.
 
 \subsection{Descrizione del capitolo}
-L’azienda Zero12 propone la creazione di una RGP basata su un gioco a scorrimento multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} della RGP creata.
-La finalità da parte del azienda è vedere alcune tecnologie di AWS in azione nell' ambito real-time ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito".
+L’azienda Zero12 propone la creazione di un \glo{Realtime system} per la \glo{sincronizzazione} di un gioco a scorrimento verticale,multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} del sistema software creato che gestisce le varie compnenti(RGP).
+La finalità da parte dell’azienda è vedere alcune tecnologie di AWS in azione nell' ambito real-time ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito".
 \subsection{Prerequisiti e tecnologie coinvolte}
 Prerequisiti:
 \begin{itemize}
@@ -15,11 +15,11 @@ Tecnologie coinvolte:
 \begin{itemize}
 \item Utilizzo di \glo{Kotlin}/\glo{Swift} per lo sviluppo del applicativo mobile.
 \item Utilizzo di un \glo{IDE} per la creazione di applicazioni mobile (Android o iOS);
-\item \glo{Node.js} per lo sviluppo del server \glo{back-end};
+\item \glo{Node.js} per lo sviluppo del server \glo{backend};
 \item \glo{Typescript}/\glo{Javascript} linguaggi di programmazione per il framework backend richiesto.
 \item \glo{API} \glo{REST} attraverso le quali sia possibile interagire con l'applicativo;
 \item AWS cloud services: 
-\glo{AppSync}(è un servizio gestito che facilita lo sviluppo di API GraphQL) o \glo{Gamelift}(è un servizio gestito per server di gioco multiplayer basato su sessioni) 
+\glo{AppSync}(è un servizio gestito che facilita lo sviluppo di API GraphQL) o \glo{Gamelift}(servizio gestito per server di gioco multiplayer basato su sessioni) 
 \glo{DynamoDB}: database non relazionale, orientato a dati valore-chiave e documenti
 \end{itemize}
 
@@ -29,7 +29,7 @@ Tecnologie coinvolte:
 \item Node.Js per le API (Typescript o Javascript) con cui comunicano i vari microservizi dell'applicazione
 \item tecnologia AWS per la componente server: AppSync o Gamelift per la RGP e DynamoDB per la base di dati    
 \item sincronizzazione \glo{UI} tra i giocatori (i giocatori vedono e giocano la stessa partita) ma vedono una sorta di fantasma del \glo{player-character} controllato dagli altri avversari.
-\item consegna materiale pre Progettazione(design):documentazione analisi AppSync/Gamelift, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati,documentazione API(dettagliata),piano di \glo{unit-test}
+\item consegna materiale: documentazione analisi AppSync/Gamelift pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati,documentazione API(dettagliata),piano di \glo{unit-test}
 \item accesso al repository del codice sorgente dell'applicativo post produzione e \glo{Bug} \glo{Reporting}
 \end{itemize}
 
@@ -41,9 +41,9 @@ Tecnologie coinvolte:
 \item L'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo.
 \item Dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare parecchio lo sviluppo della RGP limitando il numero di microservizzi da sviluppare, partendo dal
 presupposto che amazon essendo una azienda leader nel settore dei servizi cloud abbia creato questo servizio un motivo c'è e a nostro avviso è proprio 
-ridurre la gestione lato server al minimo oltre alla crescente domanda in questo settore.(come si può notare diverse aziende leader e startup del settore hanno già inizaito ad utilizzarlo).
+ridurre la gestione lato server al minimo oltre alla crescente domanda in questo settore (come si può notare diverse aziende leader e startup del settore hanno già inizaito ad utilizzarlo).
 Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche neccessarie, ma nello sviluppo del gioco multiplayer 
-in questione, permettendo di ridurre costi e spostare le risorse intellettuali di un azienda verso il gioco.
+in questione, permettendo di ridurre costi e spostare le risorse intellettuali di un’azienda verso il gioco.
 \end{itemize}
 \subsection{Aspetti critici}
 \begin{itemize}
@@ -52,6 +52,8 @@ in questione, permettendo di ridurre costi e spostare le risorse intellettuali d
 \end{itemize}
 \subsection{Conclusioni}
 La proposta del capitolato offerto dall'azienda Zero12 è stata accolta con grande interesse. Il gruppo è rimasto colpito e stimolato dalla possibilità 
-di poter creare una RGP visto anche il crescente interesse nel settore a livello mondiale.Nonostante la tecnologia Android esista da molti anni è risultata particolarmente 
+di poter creare una RGP visto anche il crescente interesse nel settore a livello mondiale. Nonostante la tecnologia Android esista da molti anni è risultata particolarmente 
 interessante da parte del gruppo, sia perché è supportata da un'ampia community di sviluppatori, sia perché per il gruppo è una tecnologia nuova che non viene 
 trattata da nessun corso della laurea triennale. Dopo una prima analisi è stato in balottaggio per la scelta finale da parte del gruppo.
+
+
