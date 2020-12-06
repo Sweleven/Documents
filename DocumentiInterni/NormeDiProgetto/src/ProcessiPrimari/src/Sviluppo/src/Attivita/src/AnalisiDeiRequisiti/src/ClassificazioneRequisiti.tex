@@ -1,0 +1,27 @@
+Tutti i requisiti individuati dagli analisti devono essere univocamente identificati sendondo il seguente schema identificativo:
+
+\begin{center}
+    \textbf{R[Priorit\'{a}]-[Tipologia]-[Identificativo]}
+\end{center}
+
+Dove:
+
+\begin{itemize}
+    \item \textbf{R}: indica che si tratta di un requisito;
+    \item \textbf{Priorit\'{a}}: assume, a seconda del grado di priorit\'{a} i valori:
+    \begin{itemize}
+        \item \textbf{O}: obbligatorio, cio\'{e} strettamente necessario;
+        \item \textbf{D}: desiderabile, cio\'{e} non strettamente necessario;
+        \item \textbf{F}: facoltativo, cio\'{e} contrattabile in corso d'opera;
+    \end{itemize}
+    \item \textbf{Tipologia}: assume, a seconda del tipo di requisito, i valori:
+    \begin{itemize}
+        \item \textbf{F}: funzionale;
+        \item \textbf{P}: prestazionale;
+        \item \textbf{Q}: qualitativo;
+    \end{itemize}
+    \item \textbf{Identificativo}: numero progressivo per contraddistinguere il requisito, in forma gerarchica padre-figlio secondo la seguente struttura:
+    \begin{center}
+        \textbf{[CodicePadre].[CodiceFiglio]}
+    \end{center}
+\end{itemize}
