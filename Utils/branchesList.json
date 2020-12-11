@@ -1,8 +1,7 @@
 {
     "branches": [
         "main",
-        "template",
-        "studioFattibilita-C3"
+        "template"
     ]
 
 }
