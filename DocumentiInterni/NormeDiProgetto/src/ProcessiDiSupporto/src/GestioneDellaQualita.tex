@@ -1,0 +1,80 @@
+\subsection{Gestione della qualità}
+Per la trattazione approfondita della gestione della qualità del software o documentazione prodotta, si farà riferimento all’apposita documentazione PdQ, dove verranno descritte le metodologie atte al raggiungimento di una qualità generale il più possibilmente eccellente. Nello specifico, vengono trattate le seguenti tematiche:
+\begin{itemize}
+	\item gli standard utilizzati;{\Gruppo}
+	\item le funzionalità del software più significative per il progetto. 
+In aggiunta, per ogni processo verranno descritti dettagliatamente:
+	\item gli obiettivi;
+	\item la strategia di perseguimento;
+	\item le metriche.
+\end{itemize}
+Gli strumenti con cui si cercherà di perseguire la qualità sopra citata sono:
+\begin{itemize}
+	\item lo standard ISO/IEC/IEEE-12207:1995 per i processi;
+	\item lo standard ISO/IEC 9126 per i prodotti;
+	\item le metriche descritte nel PdQ.
+\end{itemize}
+
+\subsection{Verifica}
+Con questo processo, il gruppo {\Gruppo} si pone come obiettivo primario lo sviluppo di software e prodotti di qualità, sia a livello di documentazione sia a livello di codice prodotto. Tramite una serie di analisi e test, si assicura che il prodotto finito sarà conforme ad un livello di qualità del tutto accettabile per il soddisfacimento di tutti gli obiettivi prefissati dal committente. 
+\subsection{Aspettative della verifica}
+Il processo di verifica viene eseguito secondo i seguenti criteri:
+\begin{itemize}
+	\item si seguono delle procedure prefissate e precedentemente definite;
+	\item ogni prodotto (documentazione e software) passa attraverso delle fasi definite, ed ognuna propedeutica a quella precedente.
+	\end{itemize}
+Al termine della verifica, si avrà un prodotto stabile e pronto per la fase di validazione successiva.
+
+\subsection{Analisi}
+\subsubsection{Analisi statica}
+L’analisi statica studia la documentazione o il codice dell’applicazione senza l’esecuzione della stessa, cercando la presenza di difetti di programmazione e testando la correttezza (intesa come assenza di errori logici) delle funzioni o procedure scritte.
+Le due metodologie per effettuare l’analisi statica sono le seguenti:
+\begin{itemize}
+	\item Walkthrough: il verificatore effettuerà una lettura e studio completo dell’intero documento/porzione di codice alla ricerca di eventuali errori. Questa tecnica verrà utilizzata maggiormente nella parte iniziale del progetto;
+	\item Inspection: il verificatore effettuerà una lettura mirata e specifica in alcuni punti specifici dove c’è più probabilità di riscontrare un errore logico.
+\end{itemize}
+
+\subsubsection{Analisi dinamica}
+Questa analisi, contrariamente a quella statica, prevede una esecuzione del prodotto ed una serie di test, anche automatizzati, per verificare la correttezza generale del codice. Siccome richiede l’esecuzione del software scritto, verrà fatta solamente dopo l’attività di scrittura del codice del progetto.
+
+\subsection{Test}
+Come già lievemente accennato nel capitolo precedente, durante la fase di analisi dinamica, il gruppo {\Gruppo} potrà ricorrere all’uso di test automatizzati per un riscontro qualitativo del software scritto. Questi test hanno il compito di dimostrare che il programma scritto produce un output conforme a quanto richiesto dal committente, oltre a rilevare eventuali errori prima che il prodotto software venga immesso nel mercato. I test che saranno messi in atto dal gruppo {\Gruppo}, saranno descritti nel corso di questo capitolo.
+
+\subsubsection{Test di unità}
+Scopo di questo test è la verifica degli algoritmi scritti su appunto una unità di codice precedentemente scelta. Questa fase di test si avvale di driver, ovvero simulatori di chiamate o azioni di un utente, e stub, che simula a sua volta una unità chiamata.
+
+\subsubsection{Test di integrazione}
+Il loro scopo è quello di ampliare man mano l’unità di codice testata, tramite integrazione di più unità già precedentemente testate, in modo da combinare e testare sempre più parti del codice. Procedendo con questi test, si formeranno agglomerati di codice testato progressivamente più grandi, fino ad arrivare all’inclusione totale del codice prodotto.
+
+\subsubsection{Test di sistema}
+I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua interezza, portando alla luce eventuali problematiche sulle parti del codice sviluppate da altri sviluppatori. Tramite sempre questi test, si verifica che il prodotto soddisfi completamente tutti i requisiti richiesti.
+
+\subsubsection{Test di regressione}
+Questi test si effettuano a seguito di una aggiunta o modifica al sistema, verificando la qualità di nuove versione di software scritte. Lo scopo primario è il test di tutte le nuove funzionalità implementate nel prodotto, verificando, inoltre, che le precedenti funzionalità già implementate abbiano mantenuto la loro logica e funzione.
+
+\subsubsection{Test di accetazione}
+Questi test vengono effettuati con la partecipazione del committente, cui compito è quello di verificare il prodotto per garantire il soddisfacimento del cliente. Il superamento di questo test, garantisce che il software sia completamente collaudato e pronto per il rilascio.
+
+\subsection{Codice identificativo dei test}
+Ogni test prodotto dal gruppo {\Gruppo}, adotterà la seguente nomenclatura:
+\begin{center} \textbf{T[t]} \end{center}
+Dove:
+\begin{itemize}
+	\item T è una keyword statica per identificare appunto un “Test”
+	\item t identifica il tipo di test, che può essere:
+		\begin{itemize}
+			\item U: test di unità;
+			\item  I: test di integrazione;
+			\item S: test di sistema;
+			\item R: test di regressione;
+			\item A: test di accettazione.
+		\end{itemize}
+\end{itemize}
+
+\subsection{Strumenti}
+\subsubsection{Verifica ortografica}
+La verifica ortografico-sintattica viene svolta dall’editor utilizzato dal gruppo, ovvero Overleaf, TexEdit o TexStudio. 
+
+
+
+

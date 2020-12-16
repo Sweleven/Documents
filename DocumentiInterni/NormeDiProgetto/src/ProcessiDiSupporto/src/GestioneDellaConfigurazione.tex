@@ -1,0 +1,45 @@
+\subsection{Gestione della configurazione}
+
+\subsubsection{Versionamento}
+Codifica della versione di un documento:{\Gruppo}
+ogni documento scritto, prima del suo effettivo completamento e validazione, viene incrementalmente steso in versioni. Ogni versione di un documento è contrassegnata con una nomenclatura prettamente numerica crescente, con tre cifre intere separate da un punto. Un esempio di codifica è la seguente: \textbf{x.y.z}, dove le lettere \textbf{x.y e z} indicano quanto segue:
+\begin{itemize}
+	\item x indica una versione completa del documento, verificata e approvata dal responsabile. La prima versione del documento è contrassegnata con il numero “0” e va man mano incrementato durante le fasi di lavoro;
+	\item y indica una versione cui stesura è terminata ma è in attesa di verifica. Questo contatore parte sempre dal numero “0” e viene man mano incrementato dal verificatore al termine della verifica. Ogni volta che X viene incrementato, Y dovrà necessariamente ripartire da 0;
+	\item z indica una versione del documento ancora in fase di stesura. Anche questo indica parte da 0 e viene man mano incrementato dal redattore dello stesso ad ogni modifica. All’incremento di Y, il contatore Z ripartirà obbligatoriamente da 0.
+	\end{itemize}
+
+\subsubsection{Repository e strumenti}
+Per la realizzazione del progetto, è stato deciso all’unanimità dal gruppo di utilizzare il sistema di versioning distribuito GitHub. Ogni componente del gruppo, inoltre, potrà utilizzare il software GitKraken in alternativa alla CLI di Git. Lo strumento di issue-tracking scelto dal gruppo è invece Jira.
+
+\subsubsection{Struttura del repository}
+Ogni membro del gruppo {\Gruppo} ha in locale una copia completa del progetto, clonata direttamente dal repository presente su GitHub. La notazione del nome delle cartelle, fa riferimento a quanto dichiarato nella sezione x.y.z. L’organizzazione gerarchica delle cartelle è la seguente:
+\begin{itemize}
+	\item DocumentiEsterni: cartella principale che, al suo interno, organizzato in sottocartelle, contiene tutti i documenti ad uso esterno, come dichiarato nella sezione x.y.z di questo documento;
+	\item DocumentiInterni: cartella principale che al suo interno, organizzato in sottocartelle, contiene tutti i documenti ad uso interno al gruppo, come dichiarato nella sezione x.y.z di questo documento;
+	\item Shared: cartella che identifica le risorse condivise internamente al gruppo;
+	\item Utils: cartella che contiene tutte le risorse utili ad uso esclusivamente interno al gruppo.
+\end{itemize}
+
+\subsubsection{Utilizzo del software GitKraken}
+Come già precedentemente scritto, il gruppo {\Gruppo} ha deciso di utilizzare il software per versioning GitKraken nella versione gratuita, configurandolo tramite repository pubblico presente su GitLab. Quando un membro del gruppo deve effettuare il push di una modifica dovrà eseguire, in ordine, le seguenti azioni:
+\begin{itemize}
+	\item eseguire il comando di push per aggiornare la copia in locale con le ultime modifiche presenti nel repository su GitLab, eventualmente scegliendo l’apposito branch a seconda del documento da elaborare;
+	\item una volta effettuate tutte le opportune modifiche, si confermano le stesse, premendo l’apposito pulsante, nell’ area di staging;
+	\item scrivere, nell’apposito campo del nuovo commit, una breve descrizione delle modifiche effettuate, ed eseguire il comando di commit;
+	\item eseguire il comando di push, per aggiornare il repository remoto con le nuove modifiche effettuate.
+\end{itemize}
+Il gruppo {\Gruppo}, ha deciso di adottare la stessa nomenclaura per i nomi dei branch, standardizzati in NomeDocumento/Modifica, aggiornando successivamente anche il file Utils/brancheslist con il nome del branch appena creato.
+
+\subsubsection{Utilizzo di Git da CLI}
+In casi eccezionali può succedere che si necessiti la modifica di un file nel repository, ma che un membro del gruppo {\Gruppo} non abbia accesso al programma GitKraken. I comandi e i passi qui sottoelencati sono complementari a quanto elencato sopra, usando, al posto di GitKraken, la command line interface (CLI) di Git. I passi e le istruzioni da impartire a terminale sono le seguenti:
+\begin{itemize}
+	\item spostarsi sul ramo dove si intende fare una modifica, mediante comando git checkout seguito dal nome del branch desiderato;
+	\item eseguire il comando git pull per sincronizzare il proprio repository locale con quello remoto, scaricando quindi tutte le modifiche effetuate anche da altri collaboratori;
+	\item svolgere la propria attività di modifica al file desiderato;
+	\item impartire il comando git add seguito dai nomi dei file modificati nel punto precedente;
+	\item eseguire il comando git commit -m seguito da una descrizione sommaria ma sufficientemente esplicativa del compito svolto, inserita tra i caratteri “”;
+	\item eseguire il comando git push per sincronizzare il proprio lavoro in locale nel repository remoto, rendendolo quindi visibile a tutti i membri del gruppo.
+\end{itemize}
+
+

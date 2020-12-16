@@ -1,0 +1,84 @@
+\subsection{Norme tipografiche}
+Il gruppo ha scelto di utilizzare la convenzione CamelCase con, in aggiunta, le seguenti regole:
+\begin{itemize}
+	\item nomi di file o cartelle dovranno necessariamente avere la prima lettera maiuscola;
+	\item i nomi composti di file o cartelle verranno scritti uniti, lasciando le iniziali delle relative parole maiuscole;
+	\item i nomi dei documenti utilizzeranno la seguente nomenclatura:
+	\begin{center}
+	\textbf{NomeDelFile\_v.X.Y.Z}
+	\end{center}
+	dove X,Y e Z indicano la versione del documento;
+\end{itemize}
+
+\subsubsection{Elenchi puntati}
+Tutti gli elenchi puntati nelle documentazioni prodotte dal gruppo {\Gruppo} rispetteranno le seguenti norme sintattiche:
+\begin{itemize}
+	\item la frase che precede il primo elemento dell’elenco puntato, o se l’elemento precede a sua volta un sottoelenco, dovrà terminare con il carattere “:”;
+	\item ogni elemento dell’elenco deve cominciare con la lettera minuscola, ad eccezione dei nomi propri;
+	\item ogni elemento dell’elenco deve terminare con il carattere “;”;
+	\item l’ultimo elemento dell’elenco terminerà con il carattere “.”.
+\end{itemize}
+
+\subsubsection{Glossario}
+Per eliminare ambiguità linguistiche e formattare automaticamente le parole chiavi più importanti, è stato creato un glossario in \LaTeX{} con nomenclatura nomegruppo.sty.
+
+\subsubsection{Sigle}
+In tutti i documenti prodotti dal gruppo {\Gruppo}, si adotteranno le seguenti sigle per abbreviazione dei nomi più ricorrenti, quali:
+\begin{itemize}
+	\item AdR: indica l’analisi dei requisiti;
+	\item NdP: indica le norme di progetto;
+	\item PdP: indica il piano di progetto;
+	\item PdQ: indica il piano di qualifica;
+	\item SdF: indica lo studio di fattibilità;
+	\item RR: indica la Revisione dei Requisiti;
+	\item RP: indica la Revisione di Progettazione;
+	\item RQ: indica la Revisione di Qualifica;
+	\item RA: indica la Revisione di Accettazione.
+\end{itemize}
+
+\subsubsection{Tabelle}{\Gruppo}
+Il gruppo {\Gruppo}, durante la stesura della documentazione necessaria al progetto, potrebbe far ampio uso di tabelle riassuntive, per dare un carattere meno prolisso alla documentazione e facilitare la lettura della stessa.
+Tutte le tabelle saranno costruite secondo i seguenti standard:
+\begin{itemize}
+	\item l’header della tabella, avrà sfondo blu e colore di background bianco;
+	\item la prima parola di ogni cella avrà la lettera maiuscola;
+	\item per facilitare la lettura tra più righe, si differenzieranno le righe con indice pari da quelle dispari, alternando ciclicamente il colore bianco e grigio;
+	\item la tabella sarà in posizione centrale rispetto al documento.
+\end{itemize}
+
+L’esempio sotto riportato riporta una tabella costruita secondo le disposizioni sopra-descritte:
+
+    \rowcolors{2}{\evenRowColor}{\oddRowColor}
+    \renewcommand{\arraystretch}{1.5}
+    \centering
+    \begin{longtable}{ c c  C{4cm}  c  c }
+        \rowcolor{\primaryColor}
+        \textcolor{\secondaryColor}{
+        \textbf{Header 1}}     & \textcolor{\secondaryColor}{\textbf{Header 2}}       & \textcolor{\secondaryColor}
+        {\textbf{Header 3}} & \textcolor{\secondaryColor}{\textbf{Header 4}} & \textcolor{\secondaryColor}{\textbf{Header 5}}                          \\
+        Testo esempio                 & Testo esempio                                    & Testo esempio                                & Testo esempio & Testo esempio{} \\
+        Testo esempio                & Testo esempio                                    & Testo esempio                                   & Testo esempio & Testo esempio{} \\
+        Testo esempio                & Testo esempio                                    & Testo esempio                          & Testo esempio & Testo esempio{}    \\
+    \end{longtable}
+
+
+\subsubsection{Immagini}
+Tutte le immagini utilizzate durante la stesura della documentazione, dovranno essere collocate in una organizzazione gerarchica all’interno delle cartelle e sottocartelle della documentazione. In particolare, ogni immagine sarà salvata dentro la specifica cartella del documento a cui appartiene. Un esempio di nomenclatura utilizzata per le immagini sarà la seguente:
+\textbf{N\_nn\_\#\_nomeimg.estensione}\\
+dove:
+\begin{itemize}
+	\item N indicherà la sezione dove verrà inserita l’immagine;
+	\item n indicherà la sottosezione dove verrà inserita l’immagine;
+	\item # indicherà un numero intero naturale progressivo, che sarà l’indice dell’immagine;
+	\item nomeimmagine indicherà il nome proprio dell’immagine;
+	\item estensione indicherà il formato dell’immagine (ex: jpg, png…).
+\end{itemize}
+Ogni immagine, in aggiunta, sarà correlata da una breve descrizione della stessa, posizionata in centro pagina.
+
+\subsubsection{Diagrammi UML}
+Ogni diagramma uml inserito all’interno della documentazione avrà estensione png. Il programma atto alla creazione dei diagrammi uml sarà starUML
+
+
+
+
+
