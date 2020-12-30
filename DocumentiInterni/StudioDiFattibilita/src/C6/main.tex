@@ -1,9 +1,9 @@
-\subsection{Informazini generali}
-Il capitolato in questione si chiama "Progettazione e sviluppo di una {Real-time Gaming Platform(RGP)}", il proponente è l'azienda Zero12 e i committenti sono Tullio Vardanega e Cardin Riccardo.
+\subsection{Informazioni generali}
+Il capitolato in questione si chiama "Progettazione e sviluppo di una {Real-time Gaming Platform (RGP)}", il proponente è l'azienda Zero12 e i committenti sono Tullio Vardanega e Cardin Riccardo.
 
 \subsection{Descrizione del capitolato}
-L’azienda Zero12 propone la creazione di un \glo{Realtime system} per la \glo{sincronizzazione} di un gioco a scorrimento verticale,multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} del sistema software creato che gestisce le varie compnenti(RGP).
-La finalità da parte dell’azienda è vedere alcune tecnologie di AWS in azione nell' ambito real-time ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito".
+L’azienda Zero12 propone la creazione di un \glo{Realtime system} per la \glo{sincronizzazione} di un gioco a scorrimento verticale, multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} del software sviluppato che gestisce le varie componenti(RGP).
+La finalità da parte dell’azienda è vedere alcuni servizi che propone il pacchetto di AWS in azione nell’ambito real-time, ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito".
 \subsection{Prerequisiti e tecnologie coinvolte}
 Prerequisiti:
 \begin{itemize}
@@ -27,22 +27,18 @@ Tecnologie coinvolte:
 \item Creazione di un'applicazione Android o iOS di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment" infinito, con relativa interfaccia grafica.
 \item Node.Js per le API (Typescript o Javascript) con cui comunicano i vari microservizi dell'applicazione
 \item tecnologia AWS per la componente server: AppSync o Gamelift per la RGP e DynamoDB per la base di dati    
-\item sincronizzazione \glo{UI} tra i giocatori (i giocatori vedono e giocano la stessa partita) ma vedono una sorta di fantasma del \glo{player-character} controllato dagli altri avversari.
-\item consegna materiale: documentazione analisi AppSync/Gamelift pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati,documentazione API(dettagliata),piano di \glo{unit-test}
+\item sincronizzazione della\glo{UI} e dei dati tra i giocatori (i giocatori vedono e giocano la stessa partita), ma oltre alla partita normale visualizzano il \glo{player-character}( in modo trasparente)controllato dagli altri avversari, fino al termine della partita da parte di tutti i giocatori.
+\item consegna materiale: documentazione analisi AppSync/Gamelift pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati, documentazione API(dettagliata),piano di \glo{unit-test}
 \item accesso al repository del codice sorgente dell'applicativo post produzione e \glo{Bug} \glo{Reporting}
 \end{itemize}
 
 \subsection{Aspetti positivi}
 \begin{itemize}
 \item Il prodotto richiesto risulta essere accattivante dal punto di vista didattico per la tematica e le tecnologie proposte.
-\item Essendo Android molto diffuso la documentazione necessaria per realizzare l'applicazione è molto ricca e chiara;
+\item Essendo Android molto diffuso, la documentazione necessaria per realizzare l'applicazione è molto ricca e chiara;
 \item L'azienda ha esposto in modo chiaro i vari vincoli ed i casi d'uso presenti nel capitolato.
 \item L'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo.
-\item Dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare parecchio lo sviluppo della RGP limitando il numero di microservizzi da sviluppare, partendo dal
-presupposto che amazon essendo una azienda leader nel settore dei servizi cloud abbia creato questo servizio un motivo c'è e a nostro avviso è proprio 
-ridurre la gestione lato server al minimo oltre alla crescente domanda in questo settore (come si può notare diverse aziende leader e startup del settore hanno già inizaito ad utilizzarlo).
-Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche neccessarie, ma nello sviluppo del gioco multiplayer 
-in questione, permettendo di ridurre costi e spostare le risorse intellettuali di un’azienda verso il gioco.
+\item Dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare lo sviluppo della RGP limitando il numero di microservizi da sviluppare, Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche necessarie lato server, ma di spostare il focus principale nello sviluppo del gioco stesso,permettendo di ridurre le risorse  di un’azienda verso il gioco.
 \end{itemize}
 \subsection{Aspetti critici}
 \begin{itemize}
@@ -53,6 +49,4 @@ in questione, permettendo di ridurre costi e spostare le risorse intellettuali d
 La proposta del capitolato offerto dall'azienda Zero12 è stata accolta con grande interesse. Il gruppo è rimasto colpito e stimolato dalla possibilità 
 di poter creare una RGP visto anche il crescente interesse nel settore a livello mondiale. Nonostante la tecnologia Android esista da molti anni è risultata particolarmente 
 interessante da parte del gruppo, sia perché è supportata da un'ampia community di sviluppatori, sia perché per il gruppo è una tecnologia nuova che non viene 
-trattata da nessun corso della laurea triennale. Dopo una prima analisi è stato in balottaggio per la scelta finale da parte del gruppo.
-
-
+trattata da nessun corso della laurea triennale. Dopo una prima analisi è stato in ballottaggio per la scelta finale da parte del gruppo.
