@@ -6,47 +6,48 @@ Questi dati potranno essere acquisiti da telecamere, contapersone, servizi Googl
 Grazie a questi dati si può riuscire a "mappare" le aree con più affluenza, e cercare di prevenire gli ingorghi.
 \subsection{Tecnologie coinvolte}
 \begin{itemize}
-    \item \glo{Java} e \glo{Angular}: usati per lo sviluppo di back-end e front-end della Web Application
-    \item \glo{Leaflet}: usato per la gestione delle mappe
-    \item \glo{MQTT}: protocollo usato per lo scambio di messaggi
+    \item \glo{Java} e \glo{TypeScript}: usati per lo sviluppo di back-end e front-end della Web Application;
+    \item \glo{Javascript}: usato per la gestione delle mappe;
+    \item \glo{MQTT}: protocollo usato per lo scambio di messaggi.
 
 \end{itemize}
 \subsection{Vincoli}
 \begin{itemize}
     \item Le tecnologie di cui sopra
-    \item Il servizio deve:
+    \item Il servizio deve essere:
     \begin{itemize}
-        \item Essere disponibile anche se si verifica un guasto e ripristinabile velocemente
-        \item Essere scalabile
+        \item disponibile in caso di un guasto;
+        \item ripristinabile velocemente;
+        \item scalabile.
     \end{itemize}
     \item Il server, completo di UI, deve rappresentare i flussi:
     \begin{itemize}
-        \item In tempo reale con bassa latenza
-        \item Previsti per un intervallo di tempo futuro
-        \item Raccolti e storicizzati
+        \item in tempo reale con bassa latenza;
+        \item previsti per un intervallo di tempo futuro;
+        \item raccolti e storicizzati.
     \end{itemize}
     \item Test:
     \begin{itemize}
-        \item Devono essere presenti test unitari ed d'integrazione
-        \item Devono coprire almeno l'80\% del codice
-        \item Il sistema deve essere testato tramite test end-to-end
-        \item Devono essere correlati di report
+        \item devono essere presenti test unitari ed d'integrazione;
+        \item devono coprire almeno l'80\% del codice;
+        \item il sistema deve essere testato tramite test end-to-end;
+        \item devono essere correlati di report.
     \end{itemize}
     \item Documentazione su problemi aperti con eventuali soluzioni proposte, scelte implementative e progettuali
 \end{itemize}
 \subsection{Aspetti positivi}
 \begin{itemize}
-    \item Formazione di competenze in ambito di big data e analisi predittiva, oggi ormai richieste da molte aziende importanti
-    \item Competenze in collezionamento di stream di dati provenienti da più fonti
-    \item Grande libertà di implementazione del servizio richiesto, con possibilità di discussione col proponente delle tecnologie utilizzate
+    \item formazione di competenze in ambito di big data e analisi predittiva, oggi ormai richieste da molte aziende importanti
+    \item competenze in collezionamento di stream di dati provenienti da più fonti
+    \item grande libertà di implementazione del servizio richiesto, con possibilità di discussione col proponente delle tecnologie utilizzate
 \end{itemize}
 \subsection{Aspetti critici}
 \begin{itemize}
-    \item L'intero sistema di rilevazione dei dati dovrà essere emulato, in quanto non ci saranno dati veri su cui fare elaborazione. Ciò potrebbe richiedere tempo aggiuntivo oltre allo sviluppo del servizio stesso
-    \item I dati saranno di forme diverse in base alla fonte, pertanto dovranno essere messi in relazione tipi di dati diversi, portano probabilmente a problematiche da risolvere
+    \item l'intero sistema di rilevazione dei dati dovrà essere emulato, in quanto non ci saranno dati veri su cui fare elaborazione. Ciò potrebbe richiedere tempo aggiuntivo oltre allo sviluppo del servizio stesso
+    \item i dati saranno di forme diverse in base alla fonte, pertanto dovranno essere messi in relazione tipi di dati diversi, portano probabilmente a problematiche da risolvere
 \end{itemize}
 \subsection{Conclusioni}
-Il capitolato lascia molta libertà di implementazione, ma giudando gli studenti con suggetimenti sulle tecnologie da utilizzare.
+Il capitolato lascia molta libertà di implementazione, ma guidando gli studenti con suggetimenti sulle tecnologie da utilizzare.
 Non presenta vincoli stringenti, gli unici richiesti sono "di base" per fornire un software usabile.
 Sebbene inizialmente non avesse suscitato molto interesse, è stato scelto come terza preferenza per la possibilità di arricchimento delle competenze personali
 riguardanti l'analisi di dati e sviluppo di interfaccie web sia front che back end.
