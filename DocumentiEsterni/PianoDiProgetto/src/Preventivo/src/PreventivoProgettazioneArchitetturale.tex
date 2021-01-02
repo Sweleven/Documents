@@ -1,0 +1,107 @@
+\subsection{Progettazione Architetturale}
+
+\subsubsection{Divisione oraria}
+La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni componente del gruppo:
+{
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h!] { C{4cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{3cm}}
+\caption{Tabella della divisione oraria della Progettazione Architetturale}\\
+\rowcolor{\primaryColor}
+
+\textcolor{\secondaryColor}{\textbf{Membro del gruppo}} & 
+\textcolor{\secondaryColor}{\textbf{RE}} & 
+\textcolor{\secondaryColor}{\textbf{AM}} & 
+\textcolor{\secondaryColor}{\textbf{AN}} & 
+\textcolor{\secondaryColor}{\textbf{PT}} & 
+\textcolor{\secondaryColor}{\textbf{PR}} & 
+\textcolor{\secondaryColor}{\textbf{VE}} & 
+\textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
+\endhead
+        
+\AD{}                     &  - &  - &  - & - & - & - & - \\
+\AT{}                     &  - &  - &  - & - & - & - & - \\
+\AW{}                     &  - &  - &  - & - & - & - & - \\
+\EC{}                     &  - &  - &  - & - & - & - & - \\
+\EM{}                     &  - &  - &  - & - & - & - & - \\
+\FP{}                     &  - &  - &  - & - & - & - & - \\
+\GG{}                     &  - &  - &  - & - & - & - & - \\
+\textbf{Ore totali ruolo} & X & X & X & - & - & X & X \\
+
+		
+\end{longtable}
+}
+
+La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
+\begin{center}
+	\pgfplotsset{width=17cm, height=8.5cm}
+	\begin{tikzpicture}
+		\begin{axis}[
+			ybar stacked,
+			bar width=20pt,
+			legend style={
+				at={(0.5,-0.15)},
+				anchor=north,
+				legend columns=-1
+			},
+			symbolic x coords={Christian, Davide, Emanuele, Enrico, Federico, Francesco, Riccardo, Tommaso},
+			xtick=data
+		]
+			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
+			% Responsabile
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{5}{8}{0}{0}{0}{0}{6}{0}};
+			% Amministratore
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{0}{8}{10}{6}{0}{0}{0}};
+			% Analista
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{0}{0}{6}{0}{13}{0}{8}};
+			% Progettista
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{14}{18}{10}{10}{5}{5}{0}{7}};
+			% Programmatore
+			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{10}{0}{5}{0}{7}{7}{17}{0}};
+			% Verificatore
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{4}{7}{6}{6}{13}{6}{8}{16}};
+		\end{axis}
+	\end{tikzpicture}
+\end{center}
+
+\clearpage
+
+\subsubsection{Costo risultante}
+La seguente tabella rappresenta per ogni ruolo le ore totali investite e il corrispondente costo in euro:
+{
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{2}
+\begin{longtable}{ C{3cm} C{2cm} C{4cm}}
+\caption{Tabella del costo risultante della Progettazione Architetturale}\\
+\rowcolor{\primaryColor}
+
+\textcolor{\secondaryColor}{\textbf{Ruolo}} & 
+\textcolor{\secondaryColor}{\textbf{Totale ore}} & 
+\textcolor{\secondaryColor}{\textbf{Costo ruolo (in \euro{})}}\\	
+\endhead
+        
+Responsabile    &  0 &  x \\
+Amministratore  &  0 &  x \\
+Analista        &  0 &  x \\
+Progettista     &  0 &  x \\
+Programmatore   &  0 &  x \\
+Verificatore    &  0 &  x \\
+\textbf{Totale} &  0 &  x \\	
+        	
+\end{longtable}
+}
+
+\vskip 30pt %spazio verticale
+La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:
+\begin{center}
+	\begin{tikzpicture}
+		\pie[rotate = 180, color={blue, yellow, red, green, grigetto, orange}] {
+			8/Responsabile,
+			10/Amministratore,
+			11/Analista,
+			27/Progettista,
+			18/Programmatore,
+			26/Verificatore
+		}
+	\end{tikzpicture}
+\end{center}

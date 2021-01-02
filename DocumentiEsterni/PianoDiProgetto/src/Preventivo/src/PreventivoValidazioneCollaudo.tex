@@ -1,0 +1,136 @@
+\subsection{Validazione e Collaudo}
+
+\subsubsection{Divisione oraria}
+La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni componente del gruppo:
+{
+
+	\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{2}
+\begin{longtable}[h!] { C{4cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{1cm} C{3cm}}
+\caption{Tabella della divisione oraria di Validazione e Collaudo}	\\
+\rowcolor{\primaryColor}
+
+\textcolor{\secondaryColor}{\textbf{Membro del gruppo}} & 
+\textcolor{\secondaryColor}{\textbf{RE}} & 
+\textcolor{\secondaryColor}{\textbf{AM}} & 
+\textcolor{\secondaryColor}{\textbf{AN}} & 
+\textcolor{\secondaryColor}{\textbf{PT}} & 
+\textcolor{\secondaryColor}{\textbf{PR}} & 
+\textcolor{\secondaryColor}{\textbf{VE}} & 
+\textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
+\endhead
+
+\AD{}                     &  - &  - &  - & - & - & - & - \\
+\AT{}                     &  - &  - &  - & - & - & - & - \\
+\AW{}                     &  - &  - &  - & - & - & - & - \\
+\EC{}                     &  - &  - &  - & - & - & - & - \\
+\EM{}                     &  - &  - &  - & - & - & - & - \\
+\FP{}                     &  - &  - &  - & - & - & - & - \\
+\GG{}                     &  - &  - &  - & - & - & - & - \\
+\textbf{Ore totali ruolo} & X & X & X & - & - & X & X \\
+
+\end{longtable}
+}
+
+
+La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
+\begin{center}
+	\pgfplotsset{width=17cm, height=8.5cm}
+	\begin{tikzpicture}
+		\begin{axis}[
+			ybar stacked,
+			bar width=20pt,
+			legend style={
+				at={(0.5,-0.15)},
+				anchor=north,
+				legend columns=-1
+			},
+			symbolic x coords={Christian, Davide, Emanuele, Enrico, Federico, Francesco, Riccardo, Tommaso},
+			xtick=data
+		]
+			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
+			% Responsabile
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{5}{0}{6}{0}{0}{0}};
+			% Amministratore
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{4}{0}{0}{0}{6}{5}{0}};
+			% Analista
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{7}{0}{0}{0}{0}{0}{0}{4}};
+			% Progettista
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{5}{0}{6}{0}{0}{0}{10}};
+			% Programmatore
+			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{4}{0}{6}{5}{7}{9}{6}{0}};
+			% Verificatore
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{8}{10}{12}{9}{8}{6}{10}{7}};
+		\end{axis}
+	\end{tikzpicture}
+\end{center}
+\clearpage
+
+\subsubsection{Ore e costi degli incrementi}
+La seguente tabella rappresenta la distribuzione delle ore investite durante il periodo in cui vengono svolti gli incrementi e il corrispondente costo in euro.
+
+
+{
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{1.65}
+\centering
+\begin{longtable}{ C{2.1cm} C{2.7cm} C{3cm} C{3cm} C{3.3cm} }
+\caption{Tabella del costo risultante di ogni incremento}\\
+\rowcolor{\primaryColor}
+\textcolor{\secondaryColor}{\textbf{Incremento}} & 
+\textcolor{\secondaryColor}{\textbf{Ore progettista}} &
+\textcolor{\secondaryColor}{\textbf{Ore programmatore}}&
+\textcolor{\secondaryColor}{\textbf{Ore verificatore}}&
+\textcolor{\secondaryColor}{\textbf{Costo totale incremento (in \euro{})}}\\
+\endhead
+
+
+
+x & x & x & x & x \\
+x & x & x & x & x \\
+x & x & x & x & x \\
+x & x & x & x & x \\
+
+
+\end{longtable}
+}
+
+\subsubsection{Costo risultante}
+La seguente tabella rappresenta rappresenta per ogni ruolo le ore totali investite e il corrispondente costo in euro:
+{
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{2}
+\begin{longtable}{ C{3cm} C{2cm} C{4cm}}
+\caption{Tabella del costo risultante di Validazione e Collaudo}\\
+\rowcolor{\primaryColor}
+
+\textcolor{\secondaryColor}{\textbf{Ruolo}} & 
+\textcolor{\secondaryColor}{\textbf{Totale ore}} & 
+\textcolor{\secondaryColor}{\textbf{Costo ruolo (in \euro{})}}\\	
+\endhead
+        
+Responsabile    &  x & x \\
+Amministratore  &  x & x \\
+Analista        &  x & x \\
+Progettista     &  x & x \\
+Programmatore   &  x & x \\
+Verificatore    &  x & x \\
+\textbf{Totale} & x & x \\
+	
+\end{longtable}
+}
+
+\vskip 30pt %spazio verticale
+La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:
+\begin{center}
+	\begin{tikzpicture}
+		\pie[rotate = 180, color={blue, yellow, red, green, grigetto, orange}] {
+			0/Responsabile,
+			0/Amministratore,
+			0/Analista,
+			0/Progettista,
+			0/Programmatore,
+			0/Verificatore
+		}
+	\end{tikzpicture}
+\end{center}
