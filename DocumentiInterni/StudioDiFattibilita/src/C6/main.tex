@@ -12,37 +12,37 @@ Prerequisiti:
 \end{itemize}
 Tecnologie coinvolte:
 \begin{itemize}
-\item Utilizzo di \glo{Kotlin}/\glo{Swift} per lo sviluppo del applicativo mobile.
+\item Utilizzo di \glo{Kotlin}/\glo{Swift} per lo sviluppo del applicativo mobile;
 \item Utilizzo di un \glo{IDE} per la creazione di applicazioni mobile (Android o iOS);
 \item \glo{Node.js} per lo sviluppo del server \glo{backend};
-\item \glo{Typescript}/\glo{Javascript} linguaggi di programmazione per il framework backend richiesto.
+\item \glo{Typescript}/\glo{Javascript} linguaggi di programmazione per il framework backend richiesto;
 \item \glo{API} \glo{REST} attraverso le quali sia possibile interagire con l'applicativo;
 \item AWS cloud services: 
-\glo{AppSync}(è un servizio gestito che facilita lo sviluppo di API GraphQL) o \glo{Gamelift}(servizio gestito per server di gioco multiplayer basato su sessioni) 
-\glo{DynamoDB}: database non relazionale, orientato a dati valore-chiave e documenti
+\glo{AppSync}(è un servizio gestito che facilita lo sviluppo di API GraphQL) o \glo{Gamelift}(servizio gestito per server di gioco multiplayer basato su sessioni);
+\glo{DynamoDB}: database non relazionale, orientato a dati valore-chiave e documenti.
 \end{itemize}
 
 \subsection{Vincoli}
 \begin{itemize}
-\item Creazione di un'applicazione Android o iOS di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment" infinito, con relativa interfaccia grafica.
-\item Node.Js per le API (Typescript o Javascript) con cui comunicano i vari microservizi dell'applicazione
-\item tecnologia AWS per la componente server: AppSync o Gamelift per la RGP e DynamoDB per la base di dati    
-\item sincronizzazione della\glo{UI} e dei dati tra i giocatori (i giocatori vedono e giocano la stessa partita), ma oltre alla partita normale visualizzano il \glo{player-character}( in modo trasparente)controllato dagli altri avversari, fino al termine della partita da parte di tutti i giocatori.
-\item consegna materiale: documentazione analisi AppSync/Gamelift pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati, documentazione API(dettagliata),piano di \glo{unit-test}
-\item accesso al repository del codice sorgente dell'applicativo post produzione e \glo{Bug} \glo{Reporting}
+\item Creazione di un'applicazione Android o iOS di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment" infinito, con relativa interfaccia grafica;
+\item Node.Js per le API (Typescript o Javascript) con cui comunicano i vari microservizi dell'applicazione;
+\item tecnologia AWS per la componente server: AppSync o Gamelift per la RGP e DynamoDB per la base di dati;    
+\item sincronizzazione della\glo{UI} e dei dati tra i giocatori (i giocatori vedono e giocano la stessa partita), ma oltre alla partita normale visualizzano il \glo{player-character}( in modo trasparente)controllato dagli altri avversari, fino al termine della partita da parte di tutti i giocatori;
+\item consegna materiale: documentazione analisi AppSync/Gamelift pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati, documentazione API(dettagliata),piano di \glo{unit-test};
+\item accesso al repository del codice sorgente dell'applicativo post produzione e \glo{Bug} \glo{Reporting}.
 \end{itemize}
 
 \subsection{Aspetti positivi}
 \begin{itemize}
-\item Il prodotto richiesto risulta essere accattivante dal punto di vista didattico per la tematica e le tecnologie proposte.
+\item Il prodotto richiesto risulta essere accattivante dal punto di vista didattico per la tematica e le tecnologie proposte;
 \item Essendo Android molto diffuso, la documentazione necessaria per realizzare l'applicazione è molto ricca e chiara;
-\item L'azienda ha esposto in modo chiaro i vari vincoli ed i casi d'uso presenti nel capitolato.
-\item L'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo.
+\item L'azienda ha esposto in modo chiaro i vari vincoli ed i casi d'uso presenti nel capitolato;
+\item L'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo;
 \item Dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare lo sviluppo della RGP limitando il numero di microservizi da sviluppare, Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche necessarie lato server, ma di spostare il focus principale nello sviluppo del gioco stesso,permettendo di ridurre le risorse  di un’azienda verso il gioco.
 \end{itemize}
 \subsection{Aspetti critici}
 \begin{itemize}
-\item Le ore di training del team nelle tecnologie richieste dal capitolato non sono facilmente prevedibili visto che alcuni di questi servizi sono abbastanza "nuovi" (come Gamelift 2016).
+\item Le ore di training del team nelle tecnologie richieste dal capitolato non sono facilmente prevedibili visto che alcuni di questi servizi sono abbastanza "nuovi" (come Gamelift 2016);
 \item Lo sviluppo di un videogioco generalmente non è banale nel suo complesso.
 \end{itemize}
 \subsection{Conclusioni}
