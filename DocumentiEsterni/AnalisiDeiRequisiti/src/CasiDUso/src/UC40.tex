@@ -11,7 +11,7 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 \begin{itemize}
 \item \textbf{Attori primari:} igienizzatore;
 \item \textbf{Descrizione:} l’utente può gestire le stanze e postazioni registrate nell’applicazione a cui ha accesso a livello di permessi, marcando come igienizzate o disabilitando le relative postazioni o intere stanze;
-\item \textbf{Precondizione:} ogni utente è autenticato, e naviga nell’apposita sezione di gestione delle postazioni o stanze;
+\item \textbf{Precondizione:} l'utente è autenticato, e naviga nell’apposita sezione di gestione delle postazioni o stanze;
 \item \textbf{Postcondizione:} l’utente ha gestito le proprie postazioni o stanze;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
@@ -24,7 +24,7 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 
 \begin{itemize}
 \item \textbf{Attori primari:} igienizzatore;
-\item \textbf{Descrizione:} l'utente può marcare la postazione come igienizzata, servibile quindi dagli utenti;
+\item \textbf{Descrizione:} l'utente può marcare la postazione come igienizzata, quindi servibile e prenotabile dagli utenti;
 \item \textbf{Precondizione:} l'utente naviga nell’apposita sezione di gestione della postazione; 
 \item \textbf{Postcondizione:} l’utente ha marcato con successo una postazione come igienizzata;
 \item \textbf{Scenario principale:} 
@@ -61,7 +61,7 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 	\begin{itemize}
 		\item l’utente naviga nell’apposita sezione di gestione della stanza;	
 		\item l'utente contrassegna la stanza come igienizzata;
-		\item il sistema elabora correttamente la richiesta o restituisce un errore, che può essere dovuto ai seguenti fattori:
+		\item il sistema elabora correttamente la richiesta o restituisce un errore, che può essere dovuto al seguente fattore:
 			\begin {itemize}
 				\item una postazione all’interno della stanza non è marcata come igienizzata.
 			\end{itemize}
