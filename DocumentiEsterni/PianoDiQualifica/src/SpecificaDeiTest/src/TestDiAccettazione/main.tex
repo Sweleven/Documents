@@ -2,7 +2,7 @@
     \rowcolors{2}{\evenRowColor}{\oddRowColor}
     \renewcommand{\arraystretch}{1.5}
     \centering
-    \begin{longtable}{ c C{10cm} c }
+    \begin{longtable}{ c C{11cm} c }
         \caption{Elenco dei test di accettazione}\\
         \rowcolor{\primaryColor}
         \textcolor{\secondaryColor}{
@@ -10,72 +10,146 @@
         {\textbf{Descrizione}} & \textcolor{\secondaryColor}{\textbf{Esito}} \\
 
 
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA1&
+        L'utente autenticato deve poter essere in grado di creare una prenotazione.\newline
+        All'utente autenticato viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di creazione di una prenotazione;
+            \item verificare che sia possibile creare una prenotazione specificando data e ora;
+            \item verificare che la prenotazione passi ad uno stato di "pending";
+            \item verificare che la prenotazione venga conferamta.
+            \item [] OPPURE
+            \item verificare che la prenotazione venga eliminata per un motivo specificato.
         \end{itemize}&
         NI\\
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA2&
+        L'utente autenticato deve poter essere in grado di modificare una prenotazione.\newline
+        All'utente autenticato viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di modifica di una prenotazione;
+            \item verificare che sia possibile modificare una prenotazione specificando una nuova data e ora;
+            \item verificare che la prenotazione passi ad uno stato di "pending";
+            \item verificare che la prenotazione venga conferamta.
+            \item [] OPPURE
+            \item verificare che la prenotazione venga rifiutata per un errore specificato.
         \end{itemize}&
         NI\\
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA3&
+        L'utente autenticato deve poter essere in grado di eliminare una prenotazione.\newline
+        All'utente autenticato viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di cancellazione di una prenotazione;
+            \item verificare che sia possibile eliminaree una prenotazione effettuata in precedenza per una specifica data e ora;
+            \item verificare che la prenotazione venga eliminata.
         \end{itemize}&
         NI\\
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA4&
+        L'utente autenticato deve poter essere in grado di visualizzare le prenotazioni attive nel sistema.\newline
+        All'utente autenticato viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di visualizzazione delle prenotazioni;
+            \item verificare che siano elencate correttamente tutte le sue prenotazioni attive.
+            \item [] OPPURE
+            \item verificare che sia visualizzato un messaggio di errore indicando che non esistono prenotazioni attive.
         \end{itemize}&
         NI\\
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA5&
+        L'amministratore deve poter essere in grado di impedire prenotazioni su una postazione.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di blocco delle prenotazioni per una postazione;
+            \item bloccare la possibilità di prenotare una postazione;
+            \item verificare che la postazione non permetta la prenotazione.
         \end{itemize}&
         NI\\
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA6&
+        L'amministratore, l'utente autenticato e l'igienizzatore devono poter essere in grado di vedere e gestire lo stato di tutte le postazioni a cui ha accesso.\newline
+        All'amministratore, all'utente autenticato e all'igienizzatore viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di gestione delle postazioni;
+            \item verificare che possa gestire le postazioni a cui ha accesso.
         \end{itemize}&
         NI\\
-        X.X.X&
-        L'utente deve poter accedere alla guida dell'applicazione.\newline
-        All'utente viene chiesto di:
+        TA7&
+        L'amministratore, l'utente autenticato e l'igienizzatore devono poter essere in grado di marcare come igienizzata una postazione.\newline
+        All'amministratore, all'utente autenticato e all'igienizzatore viene chiesto di:
         \begin{itemize}
-            \item Verificare che sia possibile accedere alla guida;
-            \item Verificare che la guida riposti le informazioni sullo scansionamento del tag NFC;
-            \item Verificare che la guida riposti le informazioni sulla pulizia della postazione.
+            \item navigare all'apposita sezione di gestione della postazione;
+            \item verificare che possa marcare come igienizzata la postazione;
+            \item verificare il corretto esito della marcatura.
+            \item [] OPPURE
+            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+        \end{itemize}&
+        NI\\
+        TA8&
+        L'amministratore e l'utente autenticato devono poter essere in grado di marcare come sporca una postazione.\newline
+        All'amministratore e all'utente autenticato viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione della postazione;
+            \item verificare che possa marcare come sporca la postazione utilizzata;
+            \item verificare il corretto esito della marcatura.
+            \item [] OPPURE
+            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+        \end{itemize}&
+        NI\\
+        TA9&
+        L'amministratore e l'utente autenticato devono poter essere in grado di marcare come libera una postazione.\newline
+        All'amministratore e all'utente autenticato viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione della postazione;
+            \item verificare che possa marcare come libera la postazione utilizzata;
+            \item verificare il corretto esito della marcatura.
+            \item [] OPPURE
+            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+        \end{itemize}&
+        NI\\
+        TA10&
+        L'amministratore e l'utente autenticato devono poter essere in grado di marcare come occupata una postazione.\newline
+        All'amministratore e all'utente autenticato viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione della postazione;
+            \item verificare che possa marcare come occupata la postazione utilizzata;
+            \item verificare il corretto esito della marcatura.
+            \item [] OPPURE
+            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+        \end{itemize}&
+        NI\\
+        TA11&
+        L'amministratore e l'utente autenticato devono poter essere in grado di confermare l'occupazione di una postazione prenotata.\newline
+        All'amministratore e all'utente autenticato viene chiesto di:
+        \begin{itemize}
+            \item aprire la schermata pop-up di conferma della prenotazione;
+            \item verificare l'esito della conferma della prenotazione.
+        \end{itemize}&
+        NI\\
+        TA12&
+        L'amministratore e l'igienizzatore devono poter essere in grado di disabilitare una postazione.\newline
+        All'amministratore e all'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione delle postazioni;
+            \item marcare la postazione desiderata come disabilitata;
+            \item verificare che la postazione non sia né prenotabile né servibile.
+        \end{itemize}&
+        NI\\
+        TA13&
+        L'amministratore e l'igienizzatore devono poter essere in grado di riabilitare una postazione precedentemente disabilitata.\newline
+        All'amministratore e all'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione delle postazioni;
+            \item marcare la postazione disabilitata desiderata come abilitata;
+            \item verificare che la postazione sia ora prenotabile e servibile.
+        \end{itemize}&
+        NI\\
+        TA14&
+        L'igienizzatore deve poter essere in grado di gestire le stanze o postazioni a cui ha accesso.\newline
+        All'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione delle postazioni e delle stanze;
+            \item marcare la postazione o la stanza desiderata come igienizzata o come sporca;
+            \item verificare che la postazione o la stanza sia ora nello stato precedentemente selezionato.
         \end{itemize}&
         NI\\
         
         
-        X.X.X                  & XXXX-XX-XX                                       & NI\\
-        X.X.X                  & XXXX-XX-XX                                       & NI\\
     \end{longtable}
 }
