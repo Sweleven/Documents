@@ -45,22 +45,22 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 				anchor=north,
 				legend columns=-1
 			},
-			symbolic x coords={Christian, Davide, Emanuele, Enrico, Federico, Francesco, Riccardo, Tommaso},
+			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
 			xtick=data
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{5}{0}{6}{0}{0}{0}};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{5}{0}{6}{0}{0}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{4}{0}{0}{0}{6}{5}{0}};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{4}{0}{0}{0}{6}{5}};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{7}{0}{0}{0}{0}{0}{0}{4}};
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{7}{0}{0}{0}{0}{0}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{5}{0}{6}{0}{0}{0}{10}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{5}{0}{6}{0}{0}{0}};
 			% Programmatore
-			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{4}{0}{6}{5}{7}{9}{6}{0}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{4}{0}{6}{5}{7}{9}{6}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{8}{10}{12}{9}{8}{6}{10}{7}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{8}{10}{12}{9}{8}{6}{10}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
@@ -124,13 +124,13 @@ Verificatore    &  x & x \\
 La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:
 \begin{center}
 	\begin{tikzpicture}
-		\pie[rotate = 180, color={blue, yellow, red, green, grigetto, orange}] {
-			0/Responsabile,
-			0/Amministratore,
-			0/Analista,
-			0/Progettista,
-			0/Programmatore,
-			0/Verificatore
+		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
+			4/Responsabile,
+			6/Amministratore,
+			3/Analista,
+			2/Progettista,
+			6/Programmatore,
+			20/Verificatore
 		}
 	\end{tikzpicture}
 \end{center}

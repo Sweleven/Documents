@@ -20,18 +20,17 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
 
-\AD{}                     &  - &  - &  - & - & - & - & - \\
-\AT{}                     &  - &  - &  - & - & - & - & - \\
-\AW{}                     &  - &  - &  - & - & - & - & - \\
-\EC{}                     &  - &  - &  - & - & - & - & - \\
-\EM{}                     &  - &  - &  - & - & - & - & - \\
-\FP{}                     &  - &  - &  - & - & - & - & - \\
-\GG{}                     &  - &  - &  - & - & - & - & - \\
+\AD{}                     &  - &  1 &  1 & - & - & 1 & 1 \\
+\AT{}                     &  - &  - &  1 & - & - & 1 & 1 \\
+\AW{}                     &  - &  - &  1 & - & - & 1 & 1 \\
+\EC{}                     &  - &  1 &  1 & - & - & 1 & 1 \\
+\EM{}                     &  4 &  - &  4 & - & - & 4 & 12 \\
+\FP{}                     &  - &  1 &  1 & - & - & 1 & 1 \\
+\GG{}                     &  4 &  - &  4 & - & - & 4 & 12 \\
 \textbf{Ore totali ruolo} & X & X & X & - & - & X & X \\
 
 \end{longtable}
 }
-\clearpage
 % Responsabile color=blue, Amministratore color=yellow, Analista color=red, Progettista color=green, Programmatore color=grigetto, Verificatore color=orange  [ybar, fill=] blue, yellow, red, green, grigetto, orange
 La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
 \begin{center}
@@ -45,22 +44,22 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 				anchor=north,
 				legend columns=-1
 			},
-			symbolic x coords={Abdel,Alessio,Andrea,Edoardo,Elvis,Filippo,Giovanni},
+			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
 			xtick=data
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{15}{0}{0}{0};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{4}{0}{4}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{7}{5}{0}{2}{0}{7}{5};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{1}{0}{0}{1}{0}{1}{0}};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{12}{16}{21}{8}{21}{16}{11};
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{1}{1}{1}{1}{4}{1}{1}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
 			% Programmatore
-			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{11}{9}{9}{5}{9}{7}{14};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{1}{1}{1}{1}{12}{1}{12}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
@@ -70,6 +69,7 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 La seguente tabella rappresenta per ogni ruolo le ore totali investite e il corrispondente costo in euro:
 {
 \rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{2}
 \begin{longtable}{ C{3cm} C{2cm} C{4cm}}
 \caption{Tabella del costo risultante di Analisi}\\
 \rowcolor{\primaryColor}
@@ -79,13 +79,13 @@ La seguente tabella rappresenta per ogni ruolo le ore totali investite e il corr
 \textcolor{\secondaryColor}{\textbf{Costo ruolo (in \euro{})}}\\	
 \endhead
 
-Responsabile    &  x &  x \\
-Amministratore  &  x &  x \\
-Analista        & x & x \\
+Responsabile    &  1 &  1 \\
+Amministratore  &  1 &  1 \\
+Analista        & 1 & 1 \\
 Progettista     &   - &    - \\
 Programmatore   &   - &    - \\
-Verificatore    &  x & x \\
-\textbf{Totale} & x & x \\
+Verificatore    &  1 & 1 \\
+\textbf{Totale} & 1 & 1 \\
 		
 \end{longtable}
 }
