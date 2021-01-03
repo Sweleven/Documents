@@ -31,7 +31,7 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 
 \end{longtable}
 }
-
+\clearpage
 % Responsabile color=blue, Amministratore color=yellow, Analista color=red, Progettista color=green, Programmatore color=grigetto, Verificatore color=orange  [ybar, fill=] blue, yellow, red, green, grigetto, orange
 La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
 \begin{center}
@@ -50,17 +50,17 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{15}{0}{0}{0}{4}};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{15}{0}{0}{0};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{7}{5}{0}{2}{0}{7}{5}{12}};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{7}{5}{0}{2}{0}{7}{5};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{12}{16}{21}{8}{21}{16}{11}{9}};
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{12}{16}{21}{8}{21}{16}{11};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}{0}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0};
 			% Programmatore
-			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}{0}};
+			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{11}{9}{9}{5}{9}{7}{14}{5}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{11}{9}{9}{5}{9}{7}{14};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
