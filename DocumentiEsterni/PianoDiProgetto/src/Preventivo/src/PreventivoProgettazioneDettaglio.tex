@@ -44,7 +44,7 @@ La suddivisione di quante ore, ciascun componente del gruppo, ha svolto per ogni
 				anchor=north,
 				legend columns=-1
 			},
-			symbolic x coords={Christian, Davide, Emanuele, Enrico, Federico, Francesco, Riccardo, Tommaso},
+			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
 			xtick=data
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
@@ -57,7 +57,7 @@ La suddivisione di quante ore, ciascun componente del gruppo, ha svolto per ogni
 			% Progettista
 			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{13}{11}{14}{12}{9}{8}{13}};
 			% Programmatore
-			\addplot [ybar, fill=grigetto] coordinates {\ColonnaIstogramma{16}{16}{17}{19}{20}{18}{20}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{16}{16}{17}{19}{20}{18}{20}};
 			% Verificatore
 			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{11}{17}{14}{15}{13}{14}{14}};
 		\end{axis}
@@ -127,7 +127,7 @@ Verificatore    & x & x \\
 La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:
 \begin{center}
 	\begin{tikzpicture}
-		\pie[rotate = 180, color={blue, yellow, green, grigetto, orange}] {
+		\pie[rotate = 180, color={blue, yellow, green, pink, orange}] {
 			6/Responsabile,
 			8/Amministratore,
 			23/Progettista,

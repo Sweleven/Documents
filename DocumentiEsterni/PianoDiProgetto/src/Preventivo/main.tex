@@ -8,7 +8,7 @@ Sigle identificative per i ruoli indicati nelle tabelle e nei grafici:
     \item \textbf{VE}: Verificatore.
 \end{itemize}
 
-{\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
 	\renewcommand{\arraystretch}{2}
 	\begin{longtable}{ C{5cm} C{4cm} C{5cm} }
 		\caption{Tabella di redazione}\\
@@ -19,11 +19,9 @@ Sigle identificative per i ruoli indicati nelle tabelle e nei grafici:
         {\analista} & {25} \\
         {\progettista} & {22} \\
         {\programmatore} & {15} \\
-        {\verificatore} & {15} \\
+        {\verificatore} & {15} 
     \end{longtable}
-}
-\input{./src/Preventivo/src/PreventivoAnalisi.tex}
-
+\include{./src/Preventivo/src/PreventivoAnalisi.tex}
 \input{./src/Preventivo/src/PreventivoProgettazioneArchitetturale.tex}
 
 \input{./src/Preventivo/src/PreventivoProgettazioneDettaglio.tex}
