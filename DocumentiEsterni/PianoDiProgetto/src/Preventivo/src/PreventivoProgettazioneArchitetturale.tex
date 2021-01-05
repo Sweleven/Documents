@@ -18,18 +18,18 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
         
-\AW{}                     &  - &  - &  14 & - & - & 9 & 23 \\
-\AT{}                     &  - &  10 & 10 & - & - & 8 & 28 \\
-\AD{}                     &  - &  - &  14 & - & - & 10 & 24 \\
-\EC{}                     &  - &  - &  - & - & - & - & - \\
-\EM{}                     &  - &  - &  - & - & - & - & - \\
-\FP{}                     &  4 &  - &  - & 4 & - & - & - \\
-\GG{}                     &  - &  - &  - & - & - & - & - \\
-\textbf{Ore totali ruolo} & X & X & X & - & - & X & X 
+\AW{}                     & 7 & - & - & 12 & - & 17 & 36 \\
+\AT{}                     & - & 9 & 7 & - & - & 18 & 34 \\
+\AD{}                     & 7 & - & - & 13 & - & 15 & 37 \\
+\EC{}                     & 7 & - & 7 & 12 & - & 10 & 36 \\
+\EM{}                     & - & 6 & - & 11 & 13 & 5 & 34 \\
+\FP{}                     & - & - & 6 & 12 & 15 & - & 34 \\
+\GG{}                     & - & 9 & - & 11 & 15 & - & 34 \\
+\textbf{Ore totali ruolo} & 21 & 24 & 20 & 71 & 46 & 65 & 247
 
 		
 \end{longtable}
-La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
+La suddivisione delle ore preventivate viene rapresentato anche sottoforma del seguente istogramma:
 \begin{center}
 	\pgfplotsset{width=17cm, height=8.5cm}
 	\begin{tikzpicture}
@@ -46,25 +46,24 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{5}{8}{0}{0}{0}{0}{6}};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{7}{0}{7}{7}{0}{0}{0}};
 			% Amministratore
 			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{0}{8}{10}{6}{0}{0}};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{0}{0}{6}{0}{13}{0}};
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{7}{0}{7}{0}{6}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{14}{18}{10}{10}{5}{5}{0}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{12}{0}{15}{12}{10}{12}{10}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{10}{0}{5}{0}{7}{7}{17}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{13}{15}{15}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{4}{7}{6}{6}{13}{6}{8}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{17}{18}{15}{10}{5}{0}{0}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
 
 \clearpage
-\begin{comment}
 \subsubsection{Costo risultante}
-La seguente tabella rappresenta per ogni ruolo le ore totali investite e il corrispondente costo in euro:
+La seguente tabella rappresenta per ogni ruolo le ore totali preventivate ed il corrispondente costo in euro:
 {
 \rowcolors{2}{\evenRowColor}{\oddRowColor}
 \renewcommand{\arraystretch}{2}
@@ -77,29 +76,28 @@ La seguente tabella rappresenta per ogni ruolo le ore totali investite e il corr
 \textcolor{\secondaryColor}{\textbf{Costo ruolo (in \euro{})}}\\	
 \endhead
         
-Responsabile    &  0 &  x \\
-Amministratore  &  0 &  x \\
-Analista        &  0 &  x \\
-Progettista     &  0 &  x \\
-Programmatore   &  0 &  x \\
-Verificatore    &  0 &  x \\
-\textbf{Totale} &  0 &  x \\	
+Responsabile    &  21 &  630 \\
+Amministratore  &  24 &  480 \\
+Analista        &  20 &  500 \\
+Progettista     &  71 &  1562 \\
+Programmatore   &  46 &  690 \\
+Verificatore    &  65 &  1035 \\
+\textbf{Totale} &  247 & 4897  \\	
         	
 \end{longtable}
 }
 
 \vskip 30pt %spazio verticale
-La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:
+La quantità di ore totali preventivate per ciascun ruolo viene rappresentata nel seguente areogramma:
 \begin{center}
 	\begin{tikzpicture}
 		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
 			8/Responsabile,
 			10/Amministratore,
-			11/Analista,
-			27/Progettista,
-			18/Programmatore,
+			8/Analista,
+			29/Progettista,
+			19/Programmatore,
 			26/Verificatore
 		}
 	\end{tikzpicture}
 \end{center}
-\end{comment}
