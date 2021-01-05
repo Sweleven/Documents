@@ -20,7 +20,7 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{UC .1 - Marca postazione igienizzata}
+\subsubsection{UC 41 - Marca postazione igienizzata}
 
 \begin{itemize}
 \item \textbf{Attori primari:} igienizzatore;
@@ -35,7 +35,7 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{UC .2 - Annulla postazione igienizzata}
+\subsubsection{UC 42 - Annulla postazione igienizzata}
 
 \begin{itemize}
 \item \textbf{Attori primari:} igienizzatore;
@@ -50,7 +50,7 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 		\end{itemize}
 \end{itemize}
 
-\subsubsection{UC .3 - Marca stanza igienizzata}
+\subsubsection{UC 43 - Marca stanza igienizzata}
 
 \begin{itemize}
 \item \textbf{Attori primari:} igienizzatore;
@@ -63,9 +63,17 @@ Il presente diagramma vuole riassumere la possibilità di igienizzazione delle p
 		\item l'utente contrassegna la stanza come igienizzata;
 		\item il sistema elabora correttamente la richiesta o restituisce un errore, che può essere dovuto al seguente fattore:
 			\begin {itemize}
-				\item una postazione all’interno della stanza non è marcata come igienizzata.
+				\item una postazione all’interno della stanza non è marcata come igienizzata[UC43.1].
 			\end{itemize}
 		\end{itemize}
+\end{itemize}
+
+\subsubsection{UC 43.1 - Errore marcatura stanza: una postazione all'interno della stanza selezionata non è igienizzata}
+\begin{itemize}
+\item \textbf{Attori primari:} igienizzatore;
+\item \textbf{Precondizione:} l'utente sta cercando di marcare una stanza come completamente igienizata, ma una postazione nella stanza selezionata risulta essere non igienizzata;
+\item \textbf{Postcondizione:} la marcatura della stanza come igienizzata non viene approvata e l'utente riceve un messaggio di errore auto-esplicativo;
+\item \textbf{Scenario principale:} l'utente visualizza un messaggio di errore in cui viene informato che la stanza non può essere marcata come igienizzata in quanto al suo interno è presente almeno una postazione non igienizzata.
 \end{itemize}
 
 \subsubsection{UC .4 - Marca stanza non igienizzata}
