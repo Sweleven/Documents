@@ -20,20 +20,20 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
 
-\AW{}                     &  - &  - &  - & - & - & - & - \\
-\AT{}                     &  - &  - &  - & - & - & - & - \\
-\AD{}                     &  - &  - &  - & - & - & - & - \\
-\EC{}                     &  - &  - &  - & - & - & - & - \\
-\EM{}                     &  - &  - &  - & - & - & - & - \\
-\FP{}                     &  - &  - &  - & - & - & - & - \\
-\GG{}                     &  - &  - &  - & - & - & - & - \\
-\textbf{Ore totali ruolo} & X & X & X & - & - & X & X \\
+\AW{}                     &  5 &  5 &  - & 5 & - & 8 & 23 \\
+\AT{}                     &  5 &  - &  5 & 5 & - & 7 & 22 \\
+\AD{}                     &  - &  5 &  - & - & 8 & 9 & 22 \\
+\EC{}                     &  - &  5 &  - & - & 8 & 9 & 22 \\
+\EM{}                     &  - &  - &  - & - & 10 & 12 & 22 \\
+\FP{}                     &  - &  - &  - & 5 & 10 & 8 & 22 \\
+\GG{}                     &  - &  - &  - & 5 & 7 & 10 & 22 \\
+\textbf{Ore totali ruolo} & 10 & 15 & 5 & 20 & 43 & 63 & 156 \\
 
 \end{longtable}
 }
 
 
-La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
+La suddivisione delle preventivate per ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
 \begin{center}
 	\pgfplotsset{width=17cm, height=8.5cm}
 	\begin{tikzpicture}
@@ -50,22 +50,22 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{5}{0}{6}{0}{0}};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{5}{5}{0}{0}{0}{0}{0}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{4}{0}{0}{0}{6}{5}};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{5}{0}{5}{5}{0}{0}{0}};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{7}{0}{0}{0}{0}{0}{0}};
+			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{5}{0}{0}{0}{0}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{5}{0}{6}{0}{0}{0}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{5}{5}{0}{0}{0}{5}{5}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{4}{0}{6}{5}{7}{9}{6}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{10}{10}{13}{10}{7}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{8}{10}{12}{9}{8}{6}{10}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{11}{10}{10}{10}{13}{11}{13}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
 \clearpage
-
+\begin{comment}
 \subsubsection{Ore e costi degli incrementi}
 La seguente tabella rappresenta la distribuzione delle ore investite durante il periodo in cui vengono svolti gli incrementi e il corrispondente costo in euro.
 
@@ -94,9 +94,9 @@ x & x & x & x & x \\
 
 \end{longtable}
 }
-
+\end{comment}
 \subsubsection{Costo risultante}
-La seguente tabella rappresenta rappresenta per ogni ruolo le ore totali investite e il corrispondente costo in euro:
+La seguente tabella rappresenta le ore totali investite e il corrispondente costo in euro per ogni ruolo:
 {
 \rowcolors{2}{\evenRowColor}{\oddRowColor}
 \renewcommand{\arraystretch}{2}
@@ -109,13 +109,13 @@ La seguente tabella rappresenta rappresenta per ogni ruolo le ore totali investi
 \textcolor{\secondaryColor}{\textbf{Costo ruolo (in \euro{})}}\\	
 \endhead
         
-Responsabile    &  x & x \\
-Amministratore  &  x & x \\
-Analista        &  x & x \\
-Progettista     &  x & x \\
-Programmatore   &  x & x \\
-Verificatore    &  x & x \\
-\textbf{Totale} & x & x \\
+Responsabile    &  10 & 300 \\
+Amministratore  &  15 & 300 \\
+Analista        &  5 & 125 \\
+Progettista     &  20 & 440 \\
+Programmatore   &  42 & 630 \\
+Verificatore    &  65 & 975 \\
+\textbf{Totale} & 155 & 2770 \\
 	
 \end{longtable}
 }
@@ -125,12 +125,12 @@ La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente ar
 \begin{center}
 	\begin{tikzpicture}
 		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
-			4/Responsabile,
-			6/Amministratore,
+			6/Responsabile,
+			10/Amministratore,
 			3/Analista,
-			2/Progettista,
-			6/Programmatore,
-			20/Verificatore
+			13/Progettista,
+			27/Programmatore,
+			41/Verificatore
 		}
 	\end{tikzpicture}
 \end{center}

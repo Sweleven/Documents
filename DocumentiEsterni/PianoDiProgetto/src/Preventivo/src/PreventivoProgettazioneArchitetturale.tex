@@ -18,14 +18,14 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
         
-\AW{}                     & 7 & - & - & 12 & - & 17 & 36 \\
-\AT{}                     & - & 9 & 7 & - & - & 18 & 34 \\
-\AD{}                     & 7 & - & - & 13 & - & 15 & 37 \\
-\EC{}                     & 7 & - & 7 & 12 & - & 10 & 36 \\
-\EM{}                     & - & 6 & - & 11 & 13 & 5 & 34 \\
-\FP{}                     & - & - & 6 & 12 & 15 & - & 34 \\
-\GG{}                     & - & 9 & - & 11 & 15 & - & 34 \\
-\textbf{Ore totali ruolo} & 21 & 24 & 20 & 71 & 46 & 65 & 247
+\AW{}                     & 7  & - & -  & 8 & 9 & 8 & 32 \\
+\AT{}                     & -  & 7 & 7  & 7 & - & 11 & 32 \\
+\AD{}                     & 7  & - & -  & 7 & 10 & 9 & 33 \\
+\EC{}                     & 7  & - & 7  & - & 10 & 8 & 32 \\
+\EM{}                     & -  & 6 & -  & 7 & 10 & 9 & 32 \\
+\FP{}                     & -  & - & 6  & 10 & 10 & 7 & 33 \\
+\GG{}                     & -  & 7 & -  & 10 & 9 & 7 & 33 \\
+\textbf{Ore totali ruolo} & 21 & 20 & 20 & 49 & 58 & 59 & 227
 
 		
 \end{longtable}
@@ -48,15 +48,15 @@ La suddivisione delle ore preventivate viene rapresentato anche sottoforma del s
 			% Responsabile
 			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{7}{0}{7}{7}{0}{0}{0}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{0}{8}{10}{6}{0}{0}};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{7}{0}{0}{6}{0}{7}};
 			% Analista
 			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{7}{0}{7}{0}{6}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{12}{0}{15}{12}{10}{12}{10}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{8}{7}{7}{0}{7}{10}{10}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{13}{15}{15}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{9}{0}{10}{10}{10}{10}{9}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{17}{18}{15}{10}{5}{0}{0}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{8}{11}{9}{8}{9}{7}{7}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
@@ -77,12 +77,12 @@ La seguente tabella rappresenta per ogni ruolo le ore totali preventivate ed il 
 \endhead
         
 Responsabile    &  21 &  630 \\
-Amministratore  &  24 &  480 \\
+Amministratore  &  20 &  400 \\
 Analista        &  20 &  500 \\
-Progettista     &  71 &  1562 \\
-Programmatore   &  46 &  690 \\
-Verificatore    &  65 &  1035 \\
-\textbf{Totale} &  247 & 4897  \\	
+Progettista     &  49 &  1078 \\
+Programmatore   &  58 &  870 \\
+Verificatore    &  58 &  870 \\
+\textbf{Totale} &  226 & 4348 \\	
         	
 \end{longtable}
 }
@@ -92,11 +92,11 @@ La quantità di ore totali preventivate per ciascun ruolo viene rappresentata ne
 \begin{center}
 	\begin{tikzpicture}
 		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
-			8/Responsabile,
-			10/Amministratore,
-			8/Analista,
-			29/Progettista,
-			19/Programmatore,
+			7/Responsabile,
+			9/Amministratore,
+			9/Analista,
+			22/Progettista,
+			27/Programmatore,
 			26/Verificatore
 		}
 	\end{tikzpicture}

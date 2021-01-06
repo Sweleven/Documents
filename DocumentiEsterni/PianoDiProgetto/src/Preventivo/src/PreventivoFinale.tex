@@ -20,14 +20,14 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
 
-\AW{}                     &  - &  - &  - & - & - & - & 100 \\
-\AT{}                     &  - &  - & - & - & - & - & 100 \\
-\AD{}                     &  - &  - &  - & - & - & - & 100 \\
-\EC{}                     &  - &  - &  - & - & - & - & 100 \\
-\EM{}                     &  14 & - &  - & - & - & - & 100 \\
-\FP{}                     &  - &  - &  - & - & - & - & 100 \\
-\GG{}                     &  14 &  - &  - & - & - & - & 100 \\
-\textbf{Ore totali ruolo} & X & X & X & - & - & X & X \\
+\AW{}                     &  12 & 5 & - & 25 & 28 & 33 & 103 \\
+\AT{}                     &  12 &  7 & 12 & 22 & 18 & 31 & 102 \\
+\AD{}                     &  7 &  13 & - & 17 & 35 & 32 & 104 \\
+\EC{}                     &  14 &  5 &  7 & 10 & 36 & 31 & 103 \\
+\EM{}                     &  - & 14 &  - & 18 & 38 & 33 & 103 \\
+\FP{}                     &  7 &  - &  6 & 25 & 38 & 29 & 105 \\
+\GG{}                     &  - &  15& - & 25 & 34 & 29 & 103 \\
+\textbf{Ore totali ruolo} & 52 & 59 & 25 & 142 & 227 & 218 & 723 \\
 \end{longtable}
 }
 
@@ -45,12 +45,12 @@ Nella seguente tabella viene illustrato il monte ore risultante per ogni ruolo c
 \textcolor{\secondaryColor}{\textbf{Costo ruolo (in \euro{})}}\\	
 \endhead
         
-Responsabile   &  x & x \\
-Amministratore &  x & x \\
-Analista       &  x & x \\
-Progettista    &  x & x \\
-Programmatore  &  x & x \\
-Verificatore   &  x & x \\
+Responsabile   &  52 & 1560 \\
+Amministratore &  59 & 1180 \\
+Analista       &  25 & 625 \\
+Progettista    &  142 & 3124 \\
+Programmatore  &  227 & 3405 \\
+Verificatore   &  218 & 3270 \\
         	
 \end{longtable}
 }
@@ -73,12 +73,12 @@ Nel seguente areogramma viene rappresentata la distribuzione dei costi in percen
 \begin{center}
 	\begin{tikzpicture}
 		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
-			7/Responsabile, % 56/816 circa 7%
-			8/Amministratore, % 69/816 circa 8%
-			5/Analista, % 38/816 circa 5%
-			22/Progettista, % 181/816 circa 22%
-			28/Programmatore, % 227/816 circa 28%
-			30/Verificatore % 245/816 circa 30%
+			7/Responsabile, % 52/723 %
+			8/Amministratore, % 59/723 %
+			4/Analista, % 25/723 %
+			20/Progettista, % 142/723 %
+			31/Programmatore, % 227/723 %
+			30/Verificatore % 218/723 %
 		}
 	\end{tikzpicture}
 \end{center}
@@ -96,10 +96,10 @@ Nella seguente tabella vengono riportati i costi complessivi delle varie fasi e 
 \textcolor{\secondaryColor}{\textbf{Costo \glo{fase} (in \euro{})}}\\	
 \endhead
 		
-Progettazione Architetturale          &  x \\
-Progettazione di Dettaglio e Codifica &  x \\
-Validazione e Collaudo                &  x \\
-\textbf{Totale}                       &  x \\
+Progettazione Architetturale          &  4348 \\
+Progettazione di Dettaglio e Codifica & 6046  \\
+Validazione e Collaudo                &  2770 \\
+\textbf{Totale}                       &  13164 \\
 
 \end{longtable}
 }
