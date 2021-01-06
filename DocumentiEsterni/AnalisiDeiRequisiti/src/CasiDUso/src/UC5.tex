@@ -41,7 +41,7 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 
 \subsubsection{UC 1.1 - Visualizzazione errore di prenotazione: prenotazione per determinata fascia oraria già esistente}
 \begin{itemize}
-\item \textbf{Attori primari:} utente autenticato, amministratore;
+\item \textbf{Attori primari:} personale interno autenticato;
 \item \textbf{Precondizione:} l'utente sta cercando di prenotare una postazione in una data ed orario in cui la postazione risulta già prenotata da un altro utente;
 \item \textbf{Postcondizione:} la prenotazione non viene approvata e l'utente riceve un messaggio di errore auto-esplicativo;
 \item \textbf{Scenario principale:} l'utente visualizza un messaggio di errore in cui viene informato che la postazione risulta già occupata per la data e ora da lui scelti.
@@ -49,7 +49,7 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 
 \subsubsection{UC 1.2 - Visualizzazione errore di prenotazione: postazione disabilitata da un amministratore}
 \begin{itemize}
-\item \textbf{Attori primari:} utente autenticato, amministratore;
+\item \textbf{Attori primari:} personale interno autenticato;
 \item \textbf{Precondizione:} l'utente sta cercando di prenotare una postazione che risulta essere stata disabilitata da un amministratore;
 \item \textbf{Postcondizione:} la prenotazione non viene approvata e l'utente riceve un messaggio di errore auto-esplicativo;
 \item \textbf{Scenario principale:} l'utente visualizza un messaggio di errore in cui viene informato che la postazione risulta disabilitata e quindi non prenotabile.
@@ -59,10 +59,10 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 \subsubsection{UC 2 - Modifica di una prenotazione}
 
 \begin{itemize}
-\item \textbf{Attori primari:} utente autenticato, amministratore;
-\item \textbf{Descrizione:} l’utente vuole modificare una postazione per una certa data od orario;
-\item \textbf{Precondizione:} l’utente è autenticato e naviga nell’apposita sezione di modifica di una prenotazione;
-\item \textbf{Postcondizione:} l’utente modifica correttamente una prenotazione per la nuova data/ora scelta;
+\item \textbf{Attori primari:} personale interno autenticato;
+\item \textbf{Descrizione:} il personale interno autenticato vuole modificare una postazione per una certa data od orario;
+\item \textbf{Precondizione:} il personale interno autenticato è autenticato e naviga nell’apposita sezione di modifica di una prenotazione;
+\item \textbf{Postcondizione:} il personale interno autenticato modifica correttamente una prenotazione per la nuova data/ora scelta;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
 		\item il sistema elabora correttamente la richiesta, mandando in stato di “pending” la prenotazione;
@@ -124,15 +124,3 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 \item \textbf{Scenario principale:} l'utente visualizza un messaggio di errore in cui viene informato che non ha alcuna prenotazione attiva.
 \end{itemize}
 
-\subsubsection{UC 5 - Cancellazione di una prenotazione}
-
-\begin{itemize}
-\item \textbf{Attori primari:} amministratore;
-\item \textbf{Descrizione:} l’amministratore vuole impedire la prenotazione di una specifica postazione da parte di utenti autenticati;
-\item \textbf{Precondizione:} l’amministratore è autenticato e naviga nell’apposita sezione di blocco prenotazione di una postazione;
-\item \textbf{Postcondizione:} l’amministratore blocca correttamente la possibilità di prenotare una postazione per qualsiasi utente autenticato;
-\item \textbf{Scenario principale:} 
-	\begin{itemize}
-		\item il sistema elabora correttamente la richiesta;
-		\end{itemize}
-\end{itemize}
