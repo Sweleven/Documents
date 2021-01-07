@@ -25,52 +25,52 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 
 \begin{itemize}
 \item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Descrizione:} il personale interno autenticato vuole prenotare una postazione per una certa data od orario;
-\item \textbf{Precondizione:} il personale interno è autenticato e naviga nell’apposita sezione di creazione di una prenotazione;
-\item \textbf{Postcondizione:} il personale interno autenticato crea correttamente una prenotazione per la data ed ora scelta;
+\item \textbf{Descrizione:} l'attore vuole prenotare una postazione per una certa data od orario scelti;
+\item \textbf{Precondizione:} l'attore naviga nell’apposita sezione di creazione di una prenotazione, visualizzando a video la lista delle postazioni con relativi orari prenotabili;
+\item \textbf{Postcondizione:} l'attore crea correttamente una prenotazione per la data ed ora scelta;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
+		\item l'attore seleziona la data in cui desidera prenotare una postazione[UC1.1];
+		\item l'attore seleziona la stanza in cui vuole prenotare una postazione dalla lista delle stanze abilitate[UC1.2];
+		\item l'attore visualizza la lista di postazioni prenotabili nella stanza selezionata per la data precedentemente selezionata;
+		\item l'attore seleziona la postazione che desidera prenotare[UC1.3];
+		\item l'attore seleziona l'orario della prenotazione tra la lista degli orari in cui la prenotazione è libera ed igienizzata[UC1.4];
 		\item il sistema elabora correttamente la richiesta, mandando in stato di “pending” la prenotazione;
-		\item il sistema restituisce un errore per i seguenti motivi:
-		\begin{itemize}
-			\item la postazione è già stata prenotata per quella determinata fascia oraria [UC1.1];
-			\item la postazione è stata disabilitata da un amministratore di sistema [UC1.2].	
-		\end{itemize}
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{UC 1.1 - Visualizzazione errore di prenotazione: prenotazione per determinata fascia oraria già esistente}
-\begin{itemize}
-\item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Precondizione:} il personale interno sta cercando di prenotare una postazione in una data ed orario in cui la postazione risulta già prenotata da un altro utente;
-\item \textbf{Postcondizione:} la prenotazione non viene approvata ed il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
-\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che la postazione risulta già occupata per la data e ora da lui scelti.
-\end{itemize}
+%\subsubsection{UC 1.1 - Visualizzazione errore di prenotazione: prenotazione per determinata fascia oraria già esistente}
+%\begin{itemize}
+%\item \textbf{Attori primari:} personale interno autenticato;
+%\item \textbf{Precondizione:} il personale interno sta cercando di prenotare una postazione in una data ed orario in cui la postazione risulta già prenotata da un altro utente;
+%\item \textbf{Postcondizione:} la prenotazione non viene approvata ed il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
+%\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che la postazione risulta già occupata per la data e ora da lui scelti.
+%\end{itemize}
 
-\subsubsection{UC 1.2 - Visualizzazione errore di prenotazione: postazione disabilitata da un amministratore}
-\begin{itemize}
-\item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Precondizione:} il personale interno autenticato sta cercando di prenotare una postazione che risulta essere stata disabilitata da un amministratore;
-\item \textbf{Postcondizione:} la prenotazione non viene approvata e il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
-\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che la postazione risulta disabilitata e quindi non prenotabile.
-\end{itemize}
+%\subsubsection{UC 1.2 - Visualizzazione errore di prenotazione: postazione disabilitata da un amministratore}
+%\begin{itemize}
+%\item \textbf{Attori primari:} personale interno autenticato;
+%\item \textbf{Precondizione:} il personale interno autenticato sta cercando di prenotare una postazione che risulta essere stata disabilitata da un amministratore;
+%\item \textbf{Postcondizione:} la prenotazione non viene approvata e il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
+%\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che la postazione risulta disabilitata e quindi non prenotabile.
+%\end{itemize}
 
 
 \subsubsection{UC 2 - Modifica di una prenotazione}
 
 \begin{itemize}
 \item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Descrizione:} il personale interno autenticato vuole modificare una postazione per una certa data od orario;
-\item \textbf{Precondizione:} il personale interno autenticato è autenticato e naviga nell’apposita sezione di modifica di una prenotazione;
-\item \textbf{Postcondizione:} il personale interno autenticato modifica correttamente una prenotazione per la nuova data/ora scelta;
+\item \textbf{Descrizione:} l'attore vuole modificare una postazione per una certa data ed orario;
+\item \textbf{Precondizione:} l'attore naviga nell’apposita sezione di modifica di una prenotazione;
+\item \textbf{Postcondizione:} l'attore modifica correttamente una prenotazione per la nuova data/ora scelta;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
+		\item l'attore seleziona la nuova data in cui desidera prenotare una postazione[UC1.1];
+		\item l'attore seleziona la nuova stanza in cui vuole prenotare una postazione dalla lista delle stanze abilitate[UC1.2];
+		\item l'attore visualizza la lista di postazioni prenotabili nella stanza selezionata per la nuova data precedentemente selezionata;
+		\item l'attore seleziona la nuova postazione che desidera prenotare[UC1.3];
+		\item l'attore seleziona il nuovo orario della prenotazione tra la lista degli orari in cui la prenotazione è libera ed igienizzata[UC1.4];
 		\item il sistema elabora correttamente la richiesta, mandando in stato di “pending” la prenotazione;
-		\item il sistema restituisce un errore per i seguenti motivi:
-		\begin{itemize}
-			\item la postazione è già stata prenotata per quella determinata fascia oraria[UC 1.1];
-			\item la postazione è stata disabilitata da un amministratore di sistema[UC 1.2].	
-		\end{itemize}
 	\end{itemize}
 \end{itemize}
 
@@ -78,9 +78,9 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 
 \begin{itemize}
 \item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Descrizione:} il personale interno autenticato vuole cancellare una prenotazione per una certa data od orario effettuata in precedenza;
-\item \textbf{Precondizione:} il personale interno è autenticato e naviga nell’apposita sezione di cancellazione di una prenotazione;
-\item \textbf{Postcondizione:} il personale interno autenticato cancella correttamente la prenotazione per la data/ora scelta;
+\item \textbf{Descrizione:} l'attore vuole cancellare una prenotazione per una certa data ed orario effettuata in precedenza;
+\item \textbf{Precondizione:} l'attore naviga nell’apposita sezione di cancellazione di una prenotazione;
+\item \textbf{Postcondizione:} l'attore cancella correttamente la prenotazione per la data/ora scelta;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
 		\item il sistema elabora correttamente la richiesta;
@@ -103,23 +103,60 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 
 \begin{itemize}
 \item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Descrizione:} il personale interno autenticato vuole visualizzare le sue prenotazioni attive nel sistema;
-\item \textbf{Precondizione:} il personale interno è autenticato e naviga nell’apposita sezione di visualizzazione delle sue prenotazioni;
-\item \textbf{Postcondizione:} il personale interno autenticato visualizza correttamente le sue prenotazioni attive;
+\item \textbf{Descrizione:} l'attore vuole visualizzare le sue prenotazioni attive nel sistema;
+\item \textbf{Precondizione:} l'attore naviga nell’apposita sezione di visualizzazione delle sue prenotazioni;
+\item \textbf{Postcondizione:} l'attore visualizza correttamente le sue prenotazioni attive;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
-		\item il sistema elabora correttamente la richiesta;
-		\item il sistema restituisce un errore per i seguenti motivi:
-		\begin{itemize}
-			\item non si ha alcuna prenotazione attiva.
-		\end{itemize}
+		\item il sistema elabora correttamente la richiesta e, nel caso in cui non ci sia una prenotazione attiva, visualizzerà un form vuoto in cui si informerò l'utente che non si ha alcuna prenotazione attiva.
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{UC 4.1 - Visualizzazione errore di prenotazione attiva: l'utente non ha alcuna prenotazione attiva}
+\subsubsection{UC 1.1 - Inserimento data}
+
 \begin{itemize}
 \item \textbf{Attori primari:} personale interno autenticato;
-\item \textbf{Precondizione:} il personale interno auteneticato sta cercando di visualizzare la lista delle sue prenotazioni, non avendone però alcuna attiva;
-\item \textbf{Postcondizione:} la visualizzazione non viene eseguita e il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
-\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che non ha alcuna prenotazione attiva.
+\item \textbf{Descrizione:} l'attore vuole inserire la data in cui prenotare una postazione;
+\item \textbf{Precondizione:} l'attore seleziona una data valida dal calendario;
+\item \textbf{Postcondizione:} l'attore seleziona correttamente una data dal calendario;
+\item \textbf{Scenario principale:} il sistema elabora correttamente la richiesta;
 \end{itemize}
+
+\subsubsection{UC 1.1 - Scelta della stanza da prenotare}
+
+\begin{itemize}
+\item \textbf{Attori primari:} personale interno autenticato;
+\item \textbf{Descrizione:} l'attore vuole selezionare la stanza in cui prenotare una postazione;
+\item \textbf{Precondizione:} l'attore seleziona una stanza valida dalla lista delle stanze disponibili ed attive;
+\item \textbf{Postcondizione:} l'attore seleziona correttamente una stanza;
+\item \textbf{Scenario principale:} il sistema elabora correttamente la richiesta;
+\end{itemize}
+
+\subsubsection{UC 1.1 - Scelta della postazione da prenotare}
+
+\begin{itemize}
+\item \textbf{Attori primari:} personale interno autenticato;
+\item \textbf{Descrizione:} l'attore vuole selezionare una postazione valida dalla lista delle postazioni disponibili, attive ed igienizzate;
+\item \textbf{Precondizione:} l'attore seleziona una postazione valida dalla lista;
+\item \textbf{Postcondizione:} l'attore seleziona correttamente una postazione valida;
+\item \textbf{Scenario principale:} il sistema elabora correttamente la richiesta;
+\end{itemize}
+
+\subsubsection{UC 1.1 - Inserimento ora}
+
+\begin{itemize}
+\item \textbf{Attori primari:} personale interno autenticato;
+\item \textbf{Descrizione:} l'attore vuole inserire l'orario in cui prenotare una postazione;
+\item \textbf{Precondizione:} l'attore seleziona un orario valido dalla lista degli orari disponibili per la postazione precedentemente selezionata;
+\item \textbf{Postcondizione:} l'attore seleziona correttamente un orario disponibile;
+\item \textbf{Scenario principale:} il sistema elabora correttamente la richiesta.
+\end{itemize}
+
+
+%\subsubsection{UC 4.1 - Visualizzazione errore di prenotazione attiva: l'utente non ha alcuna prenotazione attiva}
+%\begin{itemize}
+%\item \textbf{Attori primari:} personale interno autenticato;
+%\item \textbf{Precondizione:} il personale interno auteneticato sta cercando di visualizzare la lista delle sue prenotazioni, non avendone però alcuna attiva;
+%\item \textbf{Postcondizione:} la visualizzazione non viene eseguita e il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
+%\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che non ha alcuna prenotazione attiva.
+%\end{itemize}
