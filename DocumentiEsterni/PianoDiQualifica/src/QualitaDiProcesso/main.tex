@@ -30,35 +30,6 @@ Il risultato sono i processi esposti a seguito.
                     \item valore accettabile: $100\%$.
                 \end{itemize}
             \end{enumerate}
-    \subsubsection{Progettazione dell'architettura}
-        Progettare l'architettura significa tradurre i requisiti in un modello architetturale del sistema.
-        Il modello così ottenuto è ad alto livello di dettaglio: esso dà una visione del sistema come composizione di parti, utili a capire il funzionamento del sistema, ma a grossa granularità quindi non ancora realizzabili nella pratica.\newline
-        Nell'attività vanno considerati in particolare il tipo di software da produrre, le caratteristiche desiderate e i suoi requisiti non funzionali per scegliere l'architettura più adatta.
-        \paragraph{Obiettivi}
-            \begin{itemize}
-                \item agevolare la realizzazione fornendo un'architettura adeguata;
-                \item comprendere meglio il sistema scomponendolo in parti;
-                \item progettare adoperando stili architetturali e design pattern.
-            \end{itemize}
-        \paragraph{Strategia}
-            \begin{itemize}
-                \item valutare il tipo di software da produrre, le caratteristiche desiderate, i casi d'uso e i requisiti da soddisfare;
-                \item valutare i modelli architetturali secondo il punto precedente e scegliere il più adeguato;
-                \item individuare nel modello i macro-componenti del sistema e le loro relazioni.
-            \end{itemize}
-        \paragraph{Metriche}
-            \begin{enumerate}
-                \item \textbf{SFIN} (Structural Fan-In):
-                \begin{itemize}
-                    \item valore preferibile: $\geq 1$;
-                    \item valore accettabile: $\geq 0$.
-                \end{itemize}
-                \item \textbf{SFOUT} (Structural Fan-Out):
-                \begin{itemize}
-                    \item valore preferibile: $=0$;
-                    \item valore accettabile: $\leq 6$.
-                \end{itemize}
-            \end{enumerate}
     \subsubsection{Progettazione di dettaglio}
         La progettazione di dettaglio prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che siano:
         \begin{itemize}

@@ -23,3 +23,19 @@ La facilità di una classe può essere rappresentata dal numero di metodi per cl
 		\item valore preferibile $\leq$ 8;
 		\item valore accettabile $\leq$ 15.
 	\end{itemize}
+
+\paragraph{Structural Fan-In}
+Numero di componenti che utilizzano un dato modulo. Un alto valore indica un alto riuso della
+componente.
+    \begin{itemize}
+         \item valore preferibile: $\geq 1$;
+        \item valore accettabile: $\geq 0$.
+     \end{itemize}
+\paragraph{Structural Fan-Out}
+Numero di componenti che vengono utilizzate dalla componente in esame. Un alto valore indica
+un alto accoppiamento della componente.
+    \begin{itemize}
+        \item valore preferibile: $=0$;
+        \item valore accettabile: $\leq 6$.
+	\end{itemize}
+    
