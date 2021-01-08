@@ -1,6 +1,5 @@
-\section{Casi d'uso}
 
-\subsection{UC1-Registrazione}
+\subsection{UC-1 Registrazione}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -15,14 +14,14 @@
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
    		 \item l'amministratore seleziona la funzionalità di inserimento di un nuovo utente;
-    	 \item l'amministratore inserisce il nome dell'utente da registrare (UC1.1-inserimento del nome di un nuovo utente non registrato); 
-    	 \item l'amministratore inserisce il cognome dell'utente da registrare(UC1.2-inserimento del cognome di un nuovo utente non registrato); 
-   	 	 \item l'amministratore inserisce l'indirizzo e-mail con il quale il nuovo utente si autenticherà presso il sistema(UC1.3-inserimento dell'indirizzo e-mail di un nuovo utente non registrato);
-    	 \item l'amministratore invia i dati inseriti al sistema il quale invia, all'indirizzo e-mail precedentemente inserito, un link attraverso terminare la registrazione(UC4-Creazione di una nuova password personale).
+    	 \item l'amministratore inserisce il nome dell'utente da registrare (UC-1.1 inserimento del nome di un nuovo utente non registrato); 
+    	 \item l'amministratore inserisce il cognome dell'utente da registrare(UC-1.2 inserimento del cognome di un nuovo utente non registrato); 
+   	 	 \item l'amministratore inserisce l'indirizzo e-mail con il quale il nuovo utente si autenticherà presso il sistema(UC-1.3 inserimento dell'indirizzo e-mail di un nuovo utente non registrato);
+    	 \item l'amministratore invia i dati inseriti al sistema il quale invia, all'indirizzo e-mail precedentemente inserito, un link attraverso terminare la registrazione(UC-4 Creazione di una nuova password personale).
 	\end{enumerate}
 \end{itemize}
 
-\subsection{UC1.1-Inserimento del nome di un nuovo utente}
+\subsection{UC-1.1 Inserimento del nome di un nuovo utente}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -39,10 +38,10 @@
 		\end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-   			 \item UC2-Visualizzazione dell'errore causato dall'inserimento di una stringa non valida per campi dati contenenti informazioni anagrafiche.
+   			 \item UC-2 Visualizzazione dell'errore causato dall'inserimento di una stringa non valida per campi dati contenenti informazioni anagrafiche.
 		\end{enumerate}
 \end{itemize}
-\subsection{UC1.2-Inserimento del cognome di un nuovo utente}
+\subsection{UC-1.2 Inserimento del cognome di un nuovo utente}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -59,10 +58,10 @@
 		\end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-    		\item UC2-Visualizzazione dell'errore causato dall'inserimento di una stringa non valida per campi dati contenenti informazioni anagrafiche.
+    		\item UC-2 Visualizzazione dell'errore causato dall'inserimento di una stringa non valida per campi dati contenenti informazioni anagrafiche.
 		\end{enumerate}
 \end{itemize}
-\subsection{UC1.3-Inserimento dell'indirizzo e-mail di un nuovo utente}
+\subsection{UC-1.3 Inserimento dell'indirizzo e-mail di un nuovo utente}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -80,10 +79,10 @@
 	
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-    		\item UC3-Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail non valido durante la fase di registrazione.
+    		\item UC-3Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail non valido durante la fase di registrazione.
 		\end{enumerate}
 \end{itemize}
-\subsubsection{UC2-Visualizzazione dell'errore causato dall'inserimento di una stringa non valida per campi dati contenenti informazioni anagrafiche.}
+\subsection{UC-2 Visualizzazione dell'errore causato dall'inserimento di una stringa non valida per campi dati contenenti informazioni anagrafiche.}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -100,11 +99,11 @@
 		\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC3-Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail non valido durante la fase di registrazione}
+\subsection{UC-3 Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail non valido durante la fase di registrazione}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
-	\item \textbf{Descrizione:} l'amministratore ha provato a registrare un nuovo utente ma la registrazione non è andata a buon fine poiché l'indirizzo e-mail risultava già censito(UC3.1) o inadeguato ai criteri stabiliti per la creazione di un indirizzo e-mail(UC3.2);
+	\item \textbf{Descrizione:} l'amministratore ha provato a registrare un nuovo utente ma la registrazione non è andata a buon fine poiché l'indirizzo e-mail risultava già censito(UC-3.1) o inadeguato ai criteri stabiliti per la creazione di un indirizzo e-mail(UC-3.2);
 
 	\item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo e-mail non valido durante la registrazione e ha inviato i dati al sistema;
 
@@ -117,7 +116,7 @@
 	\end{enumerate}
 \end{itemize}
 
-\subsubsection{UC3.1-Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail già censito}
+\subsubsection{UC-3.1 Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail già censito}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -133,7 +132,7 @@
     	\item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa la registrazione del nuovo utente.
 	\end{enumerate}
 \end{itemize}
-\subsubsection{UC3.2-Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail che contiene caratteri non validi}
+\subsubsection{UC-3.2 Visualizzazione dell'errore causato dall'inserimento di un indirizzo e-mail che contiene caratteri non validi}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore autenticato;
 
@@ -150,7 +149,7 @@
 	\end{enumerate}
 \end{itemize}
 
-\subsection{UC4-Creazione di una nuova password personale}
+\subsection{UC-4 Creazione di una nuova password personale}
 \begin{itemize}
 	\item \textbf{Attore primario:} utente (non registrato/registrato/autenticato/non autenticato);
 
@@ -163,17 +162,17 @@
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
     	\item l'utente inserisce la nuova password all'interno del campo dati della pagina aperta tramite link;
-   		\item l'utente conferma con successo la password inserita (UC4.1-Conferma della password inserita);
+   		\item l'utente conferma con successo la password inserita (UC-4.1 Conferma della password inserita);
     	\item il sistema restituisce un messaggio comunicante l'avvenuto cambiamento della password.
 	\end{enumerate}
 
 	\textbf{Estensioni:}
 	\begin{enumerate}
-   		\item UC5-Visualizzazione di un errore in seguito all'inserimento di una password non valida;
+   		\item UC-5Visualizzazione di un errore in seguito all'inserimento di una password non valida;
 	\end{enumerate}
 \end{itemize}
 
-\subsection{UC4.1-Conferma della password inserita}
+\subsubsection{UC-4.1 Conferma della password inserita}
 \begin{itemize}
 	\item \textbf{Attore primario:} utente;
 
@@ -190,10 +189,10 @@
 \end{enumerate}
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-    	\item UC6-Visualizzazione di un messaggio d'errore causato dall'inserimento di una password non corrispondente a quella inserita precedentemente. 
+    	\item UC-6Visualizzazione di un messaggio d'errore causato dall'inserimento di una password non corrispondente a quella inserita precedentemente. 
 	\end{enumerate}
 \end{itemize}
-\subsubsection{UC5-Visualizzazione di un errore in seguito all'inserimento di una password non valida}
+\subsection{UC-5 Visualizzazione di un errore in seguito all'inserimento di una password non valida}
 \begin{itemize}
 	\item \textbf{Attore primario:} utente;
 
@@ -209,7 +208,7 @@
     	 \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'utente e non completa la registrazione del nuovo dipendente fino a quando non viene inserita una password corretta.
 	\end{enumerate}
 \end{itemize}
-\subsection{UC6-Visualizzazione di un messaggio d'errore causato dall'inserimento di una password non corrispondente a quella inserita precedentemente}
+\subsection{UC-6 Visualizzazione di un messaggio d'errore causato dall'inserimento di una password non corrispondente a quella inserita precedentemente}
 \begin{itemize}
     \item \textbf{Attore primario:} utente;
 
@@ -225,7 +224,7 @@
           \item il sistema analizza il matching tra le due password e in caso di errore restituisce un messaggio d'errore esplicativo e richiede nuovamente l'inserimento di una nuova password senza precedentemente completare la modifica della password.
     \end{enumerate}
 \end{itemize}
-\subsection{UC7-Login tramite applicazione mobile}
+\subsection{UC-7 Login tramite applicazione mobile}
 \begin{itemize}
 	\item \textbf{Attore primario:} utente registrato;
 
@@ -250,7 +249,7 @@
     	\item UC-Visualizzazione di un messaggio d'errore a causa di un login errato.
 	\end{enumerate}
 \end{itemize}
-\subsection{UC8-Login tramite applicazione web}
+\subsection{UC-8 Login tramite applicazione web}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore non autenticato;
 
@@ -272,10 +271,10 @@
 	\end{enumerate}
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-    	\item UC8-Visualizzazione di un messaggio d'errore a causa di un login errato.
+    	\item UC-8Visualizzazione di un messaggio d'errore a causa di un login errato.
 	\end{enumerate}
 \end{itemize}
-\subsubsection{UC9-Visualizzazione di un messaggio d'errore a causa di un login errato}
+\subsection{UC-9 Visualizzazione di un messaggio d'errore a causa di un login errato}
 \begin{itemize}
 	\item \textbf{Attore primario:} utente non autenticato;
 
@@ -292,7 +291,7 @@
     	 \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'utente e non completa la richiesta di autenticazione.
 	\end{enumerate}
 \end{itemize}
-\subsection{UC10-Logout}
+\subsection{UC-10 Logout}
 \begin{itemize}
 	\item \textbf{Attore primario:} utente autenticato;
 
