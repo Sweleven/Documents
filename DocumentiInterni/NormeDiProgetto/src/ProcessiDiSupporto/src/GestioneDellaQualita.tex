@@ -14,10 +14,42 @@ Gli strumenti con cui si cercherà di perseguire la qualità sopra citata sono:
 \begin{itemize}
 	\item lo standard ISO/IEC/IEEE-12207:1995 per i processi;
 	\item lo standard ISO/IEC 9126 per i prodotti;
-	\item le metriche descritte nel PdQ.
+	\item le metriche di seguito descritte.
 \end{itemize}
 
-\subsection*{**********AGGIUNGERE METRICHE***********}
+\subsubsection{Metriche}
+\myparagraph{Analisi dei requisiti}
+\begin{itemize}
+	\item \textbf{PROS} (Percentuale di requisiti obbligatori soddisfatti): si calcola mediante la formula \newline $PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$ .
+\end{itemize}
+\myparagraph{Progettazione di dettaglio}
+\begin{itemize}
+	\item \textbf{CBO} (Coupling between objects): numero di classi richieste da una determinata classe in esame.
+\end{itemize}
+\myparagraph{Pianificazione}
+\begin{itemize}
+	\item \textbf{BAC} (Budget at completion): valore previsto per la realizzazione del progetto;
+	\item \textbf{AC} (Actual cost): costo effettivamente sostenuto alla data corrente;
+	\item \textbf{EV} (Earned value): valore delle attività realizzate alla data corrente;
+	\item \textbf{PV} (Planned value): costo pianificato per realizzare le attività di progetto alla data corrente;
+	\item \textbf{SV} (Schedule variance): indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline. Si calcola mediante la formula $SV = EV - PV$ ;
+	\item \textbf{CV} (Cost variance): indica se il valore del costo realmente maturato è maggiore, uguale o minore rispetto al costo effettivo. Si calcola mediante la formula $CV = EV - AC$.
+\end{itemize}
+\myparagraph{Verifica}
+\begin{itemize}
+	\item \textbf{SC} (Statement Coverage): si calcola mediante la formula $SC = \frac{numero\ di\ righe\ eseguite}{numero\ di\ righe\ totali}$ e indica la \% di codice coperto dai test;
+	\item \textbf{BC} (Branch Coverage): si calcola mediante la formula $BC = \frac{numero\ di\ rami\ percorsi}{numero\ di\ rami\ totali}$ e indica la \% di rami raggiunti dai test;
+	\item \textbf{MCDC} (Modified Condition/Decision Coverage): si calcola mediante la formula \newline $MCDC = \frac{numero\ di\ decisioni\ percorse}{numero\ di\ decisioni\ totali}$ e indica la \% di decisioni booleane coperte dai test. 
+\end{itemize}
+\myparagraph{Documentazione}
+\begin{itemize}
+	\item \textbf{IG} (Indice di Gulpease): si calcola mediante la formula \newline $IG = 89+\frac{300*numero\ di\ frasi-10*numero\ di\ lettere}{numero\ di\ parole}$ e indica il livello di leggibilità di un testo.
+\end{itemize}
+\myparagraph{Gestione della qualità}
+\begin{itemize}
+	\item \textbf{PMS} (Percentuale di metriche soddisfatte): si calcola mediante la formula \newline $PMS = \frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali}$.
+\end{itemize}
+
 
 \subsection{Verifica}
 Con questo processo, il gruppo {\Gruppo} si pone come obiettivo primario lo sviluppo di software e prodotti di qualità, sia a livello di documentazione sia a livello di codice prodotto. Tramite una serie di analisi e test, si assicura che il prodotto finito sarà conforme ad un livello di qualità del tutto accettabile per il soddisfacimento di tutti gli obiettivi prefissati con il committente ed il proponente.
