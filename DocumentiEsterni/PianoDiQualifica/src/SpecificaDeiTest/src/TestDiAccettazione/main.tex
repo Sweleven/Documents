@@ -38,7 +38,7 @@
         Al dipendente registrato e all'amministratore viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di cancellazione di una prenotazione;
-            \item verificare che sia possibile eliminaree una prenotazione effettuata in precedenza per una specifica data e ora;
+            \item verificare che sia possibile eliminare una prenotazione effettuata in precedenza per una specifica data e ora;
             \item verificare che la prenotazione venga eliminata.
         \end{itemize}&
         NI\\
@@ -91,25 +91,17 @@
         \end{itemize}&
         NI\\
         TA2.2&
-        L'amministratore e il dipendente registrato devono poter essere in grado di marcare come sporca una postazione.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+        Il sistema deve marcare come sporca una postazione che e\`{e} stata occupata.\newline
+        Quando viene occupata una postazione il sistema deve:
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione della postazione;
-            \item verificare che possa marcare come sporca la postazione utilizzata;
-            \item verificare il corretto esito della marcatura.
-            \item [] OPPURE
-            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+            \item marcare la postazione come "sporca"
+            \item rendere la postazione non prenotabile fin quando non risulter\`{a} "pulita".
         \end{itemize}&
         NI\\
         TA3.1&
-        L'amministratore e il dipendente registrato devono poter essere in grado di marcare come libera una postazione.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+        Il sistema deve essere in grado di marcare come "libera" una postazione igienizzata.\newline
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione della postazione;
-            \item verificare che possa marcare come libera la postazione utilizzata;
-            \item verificare il corretto esito della marcatura.
-            \item [] OPPURE
-            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+            \item La postazione \`{e} prenotabile.
         \end{itemize}&
         NI\\
         TA3.2&
@@ -132,8 +124,8 @@
         \end{itemize}&
         NI\\
         TA4.1&
-        L'amministratore e l'igienizzatore devono poter essere in grado di disabilitare una postazione.\newline
-        All'amministratore e all'igienizzatore viene chiesto di:
+        L'amministratore deve poter essere in grado di disabilitare una postazione.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di gestione delle postazioni;
             \item marcare la postazione desiderata come disabilitata;
@@ -141,24 +133,15 @@
         \end{itemize}&
         NI\\
         TA4.2&
-        L'amministratore e l'igienizzatore devono poter essere in grado di riabilitare una postazione precedentemente disabilitata.\newline
-        All'amministratore e all'igienizzatore viene chiesto di:
+        L'amministratore deve poter essere in grado di riabilitare una postazione precedentemente disabilitata.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di gestione delle postazioni;
             \item marcare la postazione disabilitata desiderata come abilitata;
             \item verificare che la postazione sia ora prenotabile e servibile.
         \end{itemize}&
         NI\\
-        TA5&
-        L'igienizzatore deve poter essere in grado di gestire le stanze o postazioni a cui ha accesso.\newline
-        All'igienizzatore viene chiesto di:
-        \begin{itemize}
-            \item navigare all'apposita sezione di gestione delle postazioni e delle stanze;
-            \item marcare la postazione o la stanza desiderata come igienizzata o come sporca;
-            \item verificare che la postazione o la stanza sia ora nello stato precedentemente selezionato.
-        \end{itemize}&
-        NI\\
-        
+       
         
     \end{longtable}
 }
