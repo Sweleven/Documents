@@ -50,12 +50,11 @@ L’esempio sotto riportato riporta una tabella costruita secondo le disposizion
 
     \rowcolors{2}{\evenRowColor}{\oddRowColor}
     \renewcommand{\arraystretch}{1.5}
-    \centering
     \begin{longtable}{ c c  C{4cm}  c  c }
         \rowcolor{\primaryColor}
         \textcolor{\secondaryColor}{
-        \textbf{Header 1}}     & \textcolor{\secondaryColor}{\textbf{Header 2}}       & \textcolor{\secondaryColor}
-        {\textbf{Header 3}} & \textcolor{\secondaryColor}{\textbf{Header 4}} & \textcolor{\secondaryColor}{\textbf{Header 5}}                          \\
+		\centering\textbf{Header 1}}     & \textcolor{\secondaryColor}{\centering\textbf{Header 2}}       & \centering\textcolor{\secondaryColor}
+        {\centering\textbf{Header 3}} & \textcolor{\secondaryColor}{\centering\textbf{Header 4}} & \textcolor{\secondaryColor}{\centering\textbf{Header 5}}                          \\
         Testo esempio                 & Testo esempio                                    & Testo esempio                                & Testo esempio & Testo esempio{} \\
         Testo esempio                & Testo esempio                                    & Testo esempio                                   & Testo esempio & Testo esempio{} \\
         Testo esempio                & Testo esempio                                    & Testo esempio                          & Testo esempio & Testo esempio{}    \\
