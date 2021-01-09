@@ -19,14 +19,14 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{VE}} & 
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
-\AW{}                     &  - &  - &  14 & - & - & 9 & 23 \\
+\AW{}                     &  - &  - &  14 & - & - & 14 & 28 \\
 \AT{}                     &  - &  10 & 10 & - & - & 8 & 28 \\
-\AD{}                     &  - &  - &  14 & - & - & 10 & 24 \\
+\AD{}                     &  - &  - &  14 & - & - & 15 & 29 \\
 \EC{}                     &  - &  10 & 10 & - & - & 8 & 27 \\
 \EM{}                     &  17 &  - & 7 & - & - & 8 & 32 \\
 \FP{}                     &  - &  15 & 10 & - & - & 9 & 34 \\
 \GG{}                     & 18 &  - &  7 & - & - & 8 & 33 \\
-\textbf{Ore totali ruolo} & 35 & 35 & 71 & - & - & 60 & 201 \\
+\textbf{Ore totali ruolo} & 35 & 35 & 71 & - & - & 70 & 211 \\
 
 \end{longtable}
 }
@@ -58,7 +58,7 @@ La suddivisione delle ore svolte da ciascun componente del gruppo per ogni ruolo
 			% Programmatore
 			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{9}{8}{10}{8}{8}{9}{8}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{14}{8}{15}{8}{8}{9}{8}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
@@ -83,8 +83,8 @@ Amministratore  &  35 &  700 \\
 Analista        &  71 & 1775 \\
 Progettista     &   - &  - \\
 Programmatore   &   - &  - \\
-Verificatore    &  60 & 900 \\
-\textbf{Totale} & 201 & 4425 \\
+Verificatore    &  70 & 1050 \\
+\textbf{Totale} & 211 & 4575 \\
 		
 \end{longtable}
 }
@@ -97,8 +97,8 @@ La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente ar
 		\pie[rotate = 180, color={blue, yellow, red, orange}] {
 			17/Responsabile,
 			17/Amministratore,
-			35/Analista,
-			31/Verificatore
+			33/Analista,
+			33/Verificatore
 		}
 	\end{tikzpicture}
 \end{center}
