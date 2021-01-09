@@ -2,7 +2,7 @@
 In seguito all'individuazione dei casi d'uso, all'analisi dei documenti di presentazione del capitolato e agli incontri svolti con il proponente, gli analisti del gruppo \Gruppo{} hanno individuato i requisiti del prodotto che sar\`{a} sviluppato. Tali requisiti sono stati raggruppati in:
 
 \begin{itemize}
-    \item \textbf{Requisiti funzionali:} insieme di requisiti che definiscono le azioni fondamentali che devono avvenire in grado di processare uin input e di generare un output;
+    \item \textbf{Requisiti funzionali:} insieme di requisiti che definiscono le azioni fondamentali che devono avvenire in grado di processare un input e di generare un output;
     \item  \textbf{Requisiti dichiarativi:} insieme di requisiti che rappresentano un vincolo di natura realizzativa, normativa o contrattuale;
     \item \textbf{Requisiti qualitativi:} insieme di requisiti che garantiscono una certa qualit\`{a} al prodotto e che indicano le best practice usate per la realizzazione.
 \end{itemize}
@@ -21,6 +21,7 @@ Inoltre, ad ogni requisito \`{e} stata assegnata un'importanza:
 \rowcolors{2}{\evenRowColor}{\oddRowColor}
 \renewcommand{\arraystretch}{1.5}
 \begin{longtable}{ c C{9cm} c }
+    \caption{Tabella classificazione requisiti}\\
     \rowcolor{\primaryColor}
     \textcolor{\secondaryColor}{
     \textbf{Identificativo}} & \textcolor{\secondaryColor}{\textbf{Descrizione}}                                                            & \textcolor{\secondaryColor}
@@ -31,9 +32,9 @@ Inoltre, ad ogni requisito \`{e} stata assegnata un'importanza:
     % X.X.X                    & XXXX-XX-XX                                                                                                   & ...                         \\
 
     R-1-F-O & Il sistema deve permettere l'inserimento di un nuovo utente & UC-1 \\
-    R-1.1-F-0 & Il sistema deve permettere l'inserimento del nome del nuovo utente & UC-1.1 \\
-    R-1.2-F-0 & Il sistema deve permettere l'inserimento del cognome del nuovo utente & UC-1.2 \\
-    R-1.3-F-0 & Il sistema deve permettere l'inserimento dell'email del nuovo utente & UC-1.3 \\
+    R-1.1-F-O & Il sistema deve permettere l'inserimento del nome del nuovo utente & UC-1.1 \\
+    R-1.2-F-O & Il sistema deve permettere l'inserimento del cognome del nuovo utente & UC-1.2 \\
+    R-1.3-F-O & Il sistema deve permettere l'inserimento dell'email del nuovo utente & UC-1.3 \\
     R-2-F-O & Il sistema deve permettere la creazione di una password personale & UC-4 \\
     R-3-F-O & Il sistema deve permettere ad un utente registrato il login tramite applicazione mobile & UC-7 \\
     R-4-F-O & Il sistema deve permettere ad un amministratore non autenticato il login tramite applicazione web & UC-8 \\
@@ -45,9 +46,9 @@ Inoltre, ad ogni requisito \`{e} stata assegnata un'importanza:
     R-7.1-F-D & Il sistema deve permettere ad un amministratore autenticato di visualizzare il nome degli utenti registrati attraverso applicazione web & UC-12.1 \\
     R-7.2-F-D & Il sistema deve permettere ad un amministratore autenticato di visualizzare il cognome degli utenti registrati attraverso applicazione web & UC-12.2 \\
     R-7.3-F-D & Il sistema deve permettere ad un amministratore autenticato di visualizzare l'email degli utenti registrati attraverso applicazione web & UC-12.3 \\
-    R-8-F-D & Il sistema deve permettere la modifica del profilo personale dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-13 \\
-    R-8.1-F-D & Il sistema deve permettere la modifica del nome dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-13.1 \\
-    R-8.2-F-D & Il sistema deve permettere la modifica del cognome dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-13.2 \\
+    R-8-F-F & Il sistema deve permettere la modifica del profilo personale dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-13 \\
+    R-8.1-F-F & Il sistema deve permettere la modifica del nome dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-13.1 \\
+    R-8.2-F-F & Il sistema deve permettere la modifica del cognome dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-13.2 \\
     R-9-F-O & Il sistema deve permettere la cancellazione del profilo dell'utente attualmente autenticato attraverso l'applicazione mobile & UC-15 \\
     R-10-F-O & Il sistema deve permettere la creazione di una prenotazione da parte del personale interno autenticato attraverso l'applicazione mobile & UC-16 \\
     R-10.1-F-O & Il sistema deve permettere la selezione della data per cui effettuare la prenotazione & UC-16.1 \\

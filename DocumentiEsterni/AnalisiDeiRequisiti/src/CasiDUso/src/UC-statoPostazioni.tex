@@ -2,7 +2,7 @@
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=\textwidth]{src/CasiDUso/immagini/UC-statoPostazioni.png}
+    \includegraphics[scale=0.65]{src/CasiDUso/immagini/UC-statoPostazioni.png}
   \caption{Stato prenotazioni}
 \end{figure}
 
@@ -43,8 +43,10 @@ Il presente diagramma vuole riassumere la possibilità di prenotazione delle pre
 \item \textbf{Descrizione:} al momento della scansione del tag RFID da parte del dispositivo dell'attore, la postazione viene automaticamente marcata come sporca;
 \item \textbf{Precondizione:} l'attore ha scansionato il tag RFID; 
 \item \textbf{Postcondizione:} il sistema marca la postazione come sporca;
-\item \textbf{Scenario principale:} 
+\item \textbf{Scenario principale:}
+		\begin{itemize}
 		\item il sistema elabora correttamente la richiesta impedendo la prenotazione della postazione da un utente successivo finché non verrà nuovamente igienizzata.
+		\end{itemize}
 \end{itemize}
 
 

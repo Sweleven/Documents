@@ -1,10 +1,10 @@
 \subsection{UC-29 Aggiunta stanza}
 \begin{itemize}
-    \item \textbf{attori:} amministratore autenticato;
-    \item \textbf{descrizione:} un amministratore pu\`{o} aggiungere una stanza alla lista di stanze censite.
-    \item \textbf{pre-condizioni:} l'amministratore autenticato si trova nella pagina di gestione delle stanze nell'applicazione web;
-    \item \textbf{post-condizioni:} una nuova stanza \`{e} stata aggiunta alla lista di stanze disponibili;
-    \item \textbf{flusso degli eventi principali:}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una stanza alla lista di stanze censite;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di gestione delle stanze nell'applicazione web;
+    \item \textbf{Postcondizione:} una nuova stanza \`{e} stata aggiunta alla lista di stanze disponibili;
+    \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore inserisce le informazioni riguardanti la stanza da aggiungere;
         \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
@@ -14,14 +14,14 @@
 
 \subsection{UC-30 Disabilitazione stanza}
 \begin{itemize}
-    \item \textbf{attori:} amministratore autenticato;
-    \item \textbf{descrizione:} un amministratore pu\`{o} disabilitare una stanza, impedendo la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni per tutte le postazioni di quella stanza vengono cancellate.
-    \item \textbf{pre-condizioni:} l'amministratore autenticato si trova nella pagina di dettaglio della stanza nell'applicazione web;
-    \item \textbf{post-condizioni:} la stanza \`{e} disabilitata e tutte le postazioni presenti all'interno della stanza non sono pi\`{u} prenotabili e tutte le prenotazioni future per tutte le postazioni nella stanza sono annullate;
-    \item \textbf{flusso degli eventi principali:}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una stanza, impedendo la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni per tutte le postazioni di quella stanza vengono cancellate;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio della stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} la stanza \`{e} disabilitata, tutte le postazioni presenti all'interno della stessa non sono pi\`{u} prenotabili e tutte le relative prenotazioni future sono annullate;
+    \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore disabilita la stanza;
-        \item le postazioni della stanza non sono pi`{u} prenotabili;
+        \item le postazioni della stanza non sono pi\`{u} prenotabili;
         \item le prenotazioni delle postazioni della stanza sono annullate.
     \end{itemize}
 \end{itemize}
@@ -29,11 +29,11 @@
 
 \subsection{UC-31 Rimozione stanza}
 \begin{itemize}
-    \item \textbf{attori:} amministratore autenticato;
-    \item \textbf{descrizione:} un amministratore pu\`{o} rimuovere una stanza, rimuovendo cos\`{i} la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni per quella stanza vengono cancellate.
-    \item \textbf{pre-condizioni:} l'amministratore autenticato si trova nella pagina di dettaglio della stanza nell'applicazione web;
-    \item \textbf{post-condizioni:} la stanza \`{e} eliminata e tutte le postazioni presenti all'interno della stanza vengono eliminate e tutte le prenotazioni future per tutte le postazioni nella stanza sono annullate;
-    \item \textbf{flusso degli eventi principali:}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una stanza, rimuovendo cos\`{i} la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni per quella stanza vengono cancellate;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio della stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} la stanza \`{e} eliminata e tutte le postazioni presenti all'interno della stanza vengono eliminate e tutte le prenotazioni future per tutte le postazioni nella stanza sono annullate;
+    \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore rimuove la stanza;
         \item le postazioni della stanza non sono pi`{u} prenotabili;
@@ -45,11 +45,11 @@
 
 \subsection{UC-32 Visualizzazione storico stanza}
 \begin{itemize}
-    \item \textbf{attori:} amministratore autenticato;
-    \item \textbf{descrizione:} un amministratore pu\`{o} visualizzare lo storico degli utilizzi e delle pulizie di tutte le postazioni di una stanza, con specificazione dell'utente che ha compiuto ogni azione.
-    \item \textbf{pre-condizioni:} l'amministratore autenticato si trova nella pagina di dettaglio di una stanza nell'applicazione web;
-    \item \textbf{post-condizioni:} l'amministratore visualizza lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni della stanza;
-    \item \textbf{flusso degli eventi principali:}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare lo storico degli utilizzi e delle pulizie di tutte le postazioni di una stanza, con specificazione dell'utente che ha compiuto ogni azione;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio di una stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni della stanza;
+    \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore visualizza le informazioni delle postazioni della stanza.
     \end{itemize}
@@ -59,11 +59,11 @@
 
 \subsection{UC-33 Scarica report stanza}
 \begin{itemize}
-    \item \textbf{attori:} amministratore autenticato;
-    \item \textbf{descrizione:} un amministratore pu\`{o} scaricare un report che sommarizza l'utilizzo delle stanze e delle postazioni.
-    \item \textbf{pre-condizioni:} l'amministratore autenticato si trova nella pagina di dettaglio di una stanza nell'applicazione web;
-    \item \textbf{post-condizioni:} l'amministratore scarica un report in cui \`{e} possibile consultare lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni nella stanza;
-    \item \textbf{flusso degli eventi principali:}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} scaricare un report che sommarizza l'utilizzo delle stanze e delle postazioni.
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio di una stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore scarica un report in cui \`{e} possibile consultare lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni nella stanza;
+    \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore visualizza il report contenente le informazioni della stanza.
     \end{itemize}
