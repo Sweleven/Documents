@@ -1,0 +1,104 @@
+\subsection{Processo di amministrazione}
+Il processo di amministrazione è organizzato secondo la seguente successione ordinata di fasi:
+
+\begin{enumerate}
+    \item Definizione degli obiettivi e setup iniziale
+    \item Pianificazione
+    \item Esecuzione e controllo
+    \item Revisione e valutazione
+    \item Approvazione,controllo delle versioni e archiviazione
+\end{enumerate}
+
+\subsubsection{Definizione degli obiettivi e setup iniziale}
+Tale fase è regolata dalle seguenti normative: 
+
+\myparagraph{}Il processo di amministrazione deve necessariamente essere preceduto dall'istituzione dei requisiti del processo che deve essere avviato.
+
+\myparagraph{} Una volta stabiliti tali requisiti, il responsabile di progetto deve stabilire la fattibilità del progetto, basandosi sulla documentazione relativa alla disponibilità delle risorse presentata nell'Offerta. In particolare egli stabilisce la fattibilità del processo in questione in base ai seguenti criteri: disponibilità di risorse(personale,materiale,ambiente e strumenti), adeguatezza del carico di lavoro e conformità con le tempistiche di consegna del prodotto finale.
+
+\myparagraph{} Se necessario, in accordo con tutte le parti coinvolte, i requisiti del processo possono essere modificati al fine di adempiere alla consegna di un prodotto finito nel tempo stabilito. 
+
+\subsubsection{Pianificazione}
+
+\myparagraph{}
+La fase di pianificazione deve essere accompagnata dalla fornitura di piani per l'esecuzione dei processi. In particolare è richiesta l'identificazione dei prodotti software utilizzati per le attività correlate al progetto. 
+
+Riportiamo in seguito le attività che il progetto richiede e i corrispondenti strumenti software da noi scelti per il loro svolgimento:
+
+\textbf{Assegnazione delle mansioni, pianificazione delle scadenze e stima dei costi}
+
+Per l'assegnazione dei task (con annessa data di scadenza) e per la stima dei costi verrà utilizzato  Atlassian Jira,un software per il monitoraggio di ticket e progetti, il quale permette di assegnare specifici task con la relativa scadenza e preventivo orario a ciascun membro del gruppo tramite l'utilizzo di epic. Inoltre è possibile commentare le varie epic e visualizzare le scadenze e lo stato di avanzamento del task sulla project board. Jira inoltre consente l'integrazione con GitHub.
+
+\textbf{Testing e controllo della qualità}
+
+Per la fase di testing, continuous integration e per il controllo della qualità del codice prodotto verranno utilizzati SonarQube (tramite sonarcloud https://sonarcloud.io/explore/projects), coveralls (https://coveralls.io/) e GitHub Actions . Tali strumenti consentono di lavorare seguendo la pratica di CI, associando al codice prodotto la copertura effettiva dei test associati e altre  statistiche utili per lo sviluppo del codice.
+
+
+
+\subsubsection{Esecuzione e controllo}
+Tale fase è regolata dalle seguenti attività:
+
+\myparagraph{}
+Il responsabile di progetto deve dare inizio alla fase di implementazione al fine di soddisfare i criteri stabiliti in precedenza e deve supervisionare il lavoro svolto.
+
+\myparagraph{}
+Il responsabile di progetto deve monitorare l'esecuzione del processo fornendo resoconti sia interni che esterni al gruppo in merito allo sviluppo del prodotto come stipulato da contratto.
+
+\myparagraph{}
+Il responsabile di progetto deve investigare, analizzare e risolvere eventuali problemi scoperti durante l'esecuzione del processo. La risoluzione dei problemi può prevedere anche eventuali modifiche in corso d'opera.\`E compito del responsabile di progetto assicurarsi che l'impatto che ciascuna modifica effettuata sia determinato, monitorabile e controllato. Eventuali problematiche e le relative soluzioni devono essere documentate.
+
+\myparagraph{}
+Il responsabile di progetto deve segnalare a tutte le parti coinvolte l'andamento del processo, aderendo ai piani e risolvendo le situazioni di stallo o regressione. Ciò include la redazione di verbali interni ed esterni come richiesto dalle procedure organizzative e dal contratto stipulato.
+
+In particolare, per il monitoraggio dell'andamento del processo appena concluso si farà riferimento agli indici di guadagno(G) ed efficienza(E) riportati in seguito, il cui calcolo è basato sulle seguenti variabili (espresse in €):
+\begin{itemize}
+    \item costo previsto per lo svolgimento dell'attività (CP): indica il costo previsto associato allo svolgimento del processo.
+    \item costo effettivo finale associato al completamento del processo (CEF): indica il costo finale effettivamente calcolato al termine delle attività di processo.
+\end{itemize}
+Il guadagno è calcolato come differenza tra il costo previsto per lo svolgimento dell'attività e il costo effettivo finale associato al completamento dell'attività. Un guadagno positivo indica una spesa minore rispetto a quella pianificata. Un guadagno negativo è invece indice di una spesa maggiore rispetto a quella pianificata, pertanto indica un maggior consumo di risorse rispetto a quelle assegnate al completamento del processo in questione. Un guadagno nullo invece è indice di un andamento in linea con la stima presentata. Il rapporto tra il guadagno e il costo previsto(CP) è definito come efficienza(E) del gruppo di lavoro. \`E buona norma assicurarsi che l'efficienza del gruppo di lavoro non sia mai negativa.
+
+G = CP-CEF
+
+E=$\frac{G*100}{CP}$
+
+Per il monitoraggio dell'andamento del processo in corso si farà riferimento alla percentuale di completamento delle  milestones collegate alla repository di GitHub.
+
+\subsubsection{Revisione e valutazione}
+Tale fase è organizzata come segue:
+
+\myparagraph{}
+Il responsabile di progetto deve assicurarsi che il prodotto software e i piani(con le relative previsioni correlate) soddisfino i requisiti richiesti.
+
+\myparagraph{}
+Il responsabile di progetto deve fornire una valutazione dei risultati del prodotto sviluppato, delle attività e delle mansioni completate durante l'esecuzione del processo al fine del raggiungimento degli obiettivi preposti e del completamento dei piani.
+
+\subsubsection{Approvazione,controllo delle versioni e archiviazione}
+Tale fase è organizzata secondo i seguenti step:
+
+\myparagraph{}
+Al termine dello sviluppo e del completamento di ciascuna mansione, il responsabile di progetto deve stabilire se il processo è stato portato correttamente a termine utilizzando i relativi criteri specificati nel contratto o nelle procedure organizzative.
+
+\myparagraph{}
+Il responsabile di progetto deve controllare i risultati ottenuti e la documentazione relativa al prodotto software, alle attività e agli incarichi associati alla completezza del progetto. Tali risultati e documentazioni vanno archiviate in un ambiente consono specificato nel contratto.
+
+Riportiamo in seguito le mansioni indicate per lo sviluppo del progetto con i rispettivi incarichi e ambiti di competenza:
+
+\textbf{Responsabile di progetto}
+
+Il responsabile di progetto è la figura professionale a cui viene affidata l'approvazione dei documenti redatti e verificati dagli altri membri del gruppo, l'elaborazione e decretazione delle scadenze di progetto, la coordinazione delle attività di gruppo, la redazione dell'organigramma e del piano di progetto, la comunicazione con gli enti esterni al gruppo di lavoro e con il controllo  qualità del progetto. Inoltre egli è il responsabile per conto ultimo dei risultati del progetto.
+
+\textbf{Amministratore}
+
+L'amministratore gestisce le versioni e le configurazioni del prodotto e l'archivio della documentazione prodotta. Inoltre tale figura professionale è responsabile del controllo dell'efficienza  dell'ambiente di sviluppo e della gestione della qualità. L'amministratore è dunque addetto alla redazione e all'attuazione delle norme di progetto e del piano di progetto in collaborazione con il responsabile di  progetto.
+
+\textbf{Analista}
+L'analista è la figura professionale preposta alle attività di analisi delle risorse disponibili. \`E pertanto addetto alla realizzazione dello studio di fattibilità e alla redazione dell'analisi dei requisiti.
+
+\textbf{Progettista}
+Il progettista ha il compito di supervisionare e gestire le attività di progettazione. A tale figura pertanto vengono associati i documenti di specifica tecnica, definizione di prodotto e piano di qualifica. Per quest'ultimo, in particolare, si richiede al progettista di redigere la parte programmatica del documento. Il progettista è dunque coinvolto in attività riguardanti l'efficienza, efficacia e manutenibilità del prodotto. 
+
+\textbf{Programmatore}
+Il programmatore è responsabile delle attività di codifica correlate allo sviluppo del progetto. In particolare al programmatore è richiesto di implementare le specifiche tecniche illustrate dal progettista e il codice ausiliario riguardante la fase di testing.
+
+\textbf{Verificatore}
+Il verificatore ha il compito di verificare ogni documento (codice compreso) che viene prodotto dagli altri membri del team di sviluppo ed è tenuto a segnalare eventuali errori al personale correlato alla stesura di tale documentazione, il quale dovrà apportare le eventuali correzioni. Il verificatore dovrà inoltre redigere la parte retrospettiva del piano di qualifica, contenente l'esito e la verifica dei test effettuati secondo il piano. 

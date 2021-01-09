@@ -11,13 +11,14 @@ jobs:
 
       - name: Install and Build 🔧 
         run: |
-          mkdir -p output/${GITHUB_REF##*/}
+          TMP=${GITHUB_REF/refs\/heads\/}
+          mkdir -p output/${TMP/\//-}
           pip3 install wheel
           pip3 install setuptools
           pip3 install -r Utils/requirements.txt
           python3 Utils/build.py build-output
-          cp -r build-output/* output/${GITHUB_REF##*/}/
-          python3 Utils/buildTemplates.py ${GITHUB_REF##*/}
+          cp -r build-output/* output/${TMP/\//-}/
+          python3 Utils/buildTemplates.py ${TMP/\//-}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
