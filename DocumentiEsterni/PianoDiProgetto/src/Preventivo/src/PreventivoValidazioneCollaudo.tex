@@ -20,12 +20,12 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 \endhead
 
-\AW{}                     &  5 &  5 &  - & 5 & - & 8 & 23 \\
-\AT{}                     &  5 &  - &  5 & 5 & - & 7 & 22 \\
-\AD{}                     &  - &  5 &  - & - & 8 & 9 & 22 \\
-\EC{}                     &  - &  5 &  - & - & 8 & 9 & 22 \\
+\AW{}                     &  - &  5 &  - & 10 & - & 8 & 23 \\
+\AT{}                     &  - &  - &  5 & 5 & 5 & 8 & 23 \\
+\AD{}                     &  - &  - &  - & - & 9 & 13 & 22 \\
+\EC{}                     &  - &  10 &  - & - & 5 & 7 & 22 \\
 \EM{}                     &  - &  - &  - & - & 10 & 12 & 22 \\
-\FP{}                     &  - &  - &  - & 5 & 10 & 8 & 22 \\
+\FP{}                     & 10 & - &  - & - & 7 & 5 & 22 \\
 \GG{}                     &  - &  - &  - & 5 & 7 & 10 & 22 \\
 \textbf{Ore totali ruolo} & 10 & 15 & 5 & 20 & 43 & 63 & 156 \\
 
@@ -50,17 +50,17 @@ La suddivisione delle preventivate per ciascun componente del gruppo per ogni ru
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{5}{5}{0}{0}{0}{0}{0}};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{10}{0}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{5}{0}{5}{5}{0}{0}{0}};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{5}{0}{0}{10}{0}{0}{0}};
 			% Analista
 			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{5}{0}{0}{0}{0}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{5}{5}{0}{0}{0}{5}{5}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{10}{5}{0}{0}{0}{0}{5}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{10}{10}{13}{10}{7}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{5}{9}{5}{10}{7}{7}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{11}{10}{10}{10}{13}{11}{13}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{8}{8}{13}{7}{12}{5}{10}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}

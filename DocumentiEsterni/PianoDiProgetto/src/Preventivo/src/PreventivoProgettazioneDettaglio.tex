@@ -19,13 +19,13 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 	\textcolor{\secondaryColor}{\textbf{Ore complessive}}\\	
 	\endhead
 	
-	\AW{}                     &  - & - & - & 12 & 19 & 17 & 48 \\
-	\AT{}                     & 7 & - & - & 10 & 18 & 13 & 47 \\
-	\AD{}                     & - & 8 & - & 10 & 17 & 14 & 48 \\
-	\EC{}                     & 7 & - & - & 10 & 18 & 14 & 47 \\
-	\EM{}                     & - & 8 & - & 11 & 18 & 12 & 48 \\
-	\FP{}                     & 7 & - & - & 10 & 18 & 14 & 48 \\
-	\GG{}                     & - & 8 & - & 10 & 18 & 12 & 48 \\
+	\AW{}                     & - & - & - & 12 & 19 & 17 & 48 \\
+	\AT{}                     & 11 & - & - & 10 & 15 & 13 & 49 \\
+	\AD{}                     & 10 & - & - & 7 & 18 & 14 & 49 \\
+	\EC{}                     & - & - & - & 13 & 18 & 17 & 48 \\
+	\EM{}                     & - & 8 & - & 10 & 19 & 11 & 48 \\
+	\FP{}                     & - & 8 & - & 11 & 18 & 12 & 49 \\
+	\GG{}                     & - & 8 & - & 10 & 19 & 12 & 49 \\
 	\textbf{Ore totali ruolo} & 21 & 24 & - & 73 & 126 & 96 & 340\\
 	
 	\end{longtable}
@@ -49,17 +49,17 @@ La suddivisione delle ore preventivate per ciascun componente del gruppo e per o
 		]
 			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{7}{0}{7}{0}{7}{0}};
+			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{11}{10}{0}{0}{0}{0}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{0}{8}{0}{8}{0}{8}};
+			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{8}{8}{8}};
 			% Analista
 			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{12}{10}{10}{10}{11}{10}{10}};
+			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{12}{10}{7}{13}{10}{11}{10}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{19}{18}{17}{18}{18}{18}{18}};
+			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{19}{15}{18}{18}{19}{18}{19}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{17}{13}{14}{14}{12}{14}{12}};
+			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{17}{13}{14}{17}{11}{12}{12}};
 		\end{axis}
 	\end{tikzpicture}
 \end{center}
