@@ -1,16 +1,14 @@
-Per ricercare qualità nello svolgimento del progetto si adoperano dei processi. Inizialmente tali processi sono stati scelti tra quelli proposti nello standard ISO/IEC/IEEE 12207:1995,
+AL fine di garantire uno standard qualitativo adeguato, sono stati scelti alcuni processi tra quelli proposti nello standard ISO/IEC/IEEE 12207:1995,
 successivamente sono stati semplificati o adattati secondo le esigenze.
-Il risultato sono i processi esposti a seguito.
+
 \subsection{Processi di Sviluppo}
-    Questo processo contiene tutte le attività tipiche dello sviluppo software, alcune di esse sono molto importanti per cui vengono approfondite: si tratta dell'analisi dei requisiti,
-    la progettazione dell'architettura, la progettazione di dettaglio e la codifica.
+    Questo processo contiene tutte le attività tipiche dello sviluppo software.
     \subsubsection{Analisi dei requisiti}
-        Durante l'analisi le informazioni ottenute dalle varie fonti sono trasformate in forma di casi d'uso e requisiti.
-        Questa forma fornisce una descrizione dettagliata del sistema e definisce il funzionamento e le caratteristiche di ogni sua parte.
+        Attraverso le attivit\`{a} di analisi, le quali comprendono lo studio del documento di presentazione del capitolato, gli incontri svolti con il proponente e gli incontri interni, vengono individuati i requisiti e, quindi, i casi d'uso.   
+
         \paragraph{Obiettivi}
             \begin{itemize}
-                \item formulare la definizione di casi d'uso e requisiti;
-                \item ottenere la loro approvazione;
+                \item individuare i casi d'uso e i requisiti;
                 \item tracciare il loro cambiamento nel tempo.
             \end{itemize}
         \paragraph{Strategia}
@@ -18,8 +16,7 @@ Il risultato sono i processi esposti a seguito.
                 \item considerare lo scopo del progetto e le richieste degli stakeholder;
                 \item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
                 \item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
-                \item ottenere la loro approvazione da parte del proponente;
-                \item disporre del tracciamento dei requisiti del sistema.
+                \item disporre il tracciamento dei requisiti del sistema.
             \end{itemize}
         \paragraph{Metriche}
             \begin{enumerate}
@@ -31,16 +28,16 @@ Il risultato sono i processi esposti a seguito.
                 \end{itemize}
             \end{enumerate}
     \subsubsection{Progettazione di dettaglio}
-        La progettazione di dettaglio prevede la scomposizione delle macro-componenti di cui il modello architetturale è fatto in componenti più piccole, che siano:
+        La progettazione di dettaglio prevede la scomposizione in componenti pi\`{u} piccole delle macro-componenti di cui il modello architetturale è composto, le quali devono essere:
         \begin{itemize}
             \item facilmente comprensibili;
-            \item strettamente collegate ai requisiti funzionali;
+            \item strettamente correlate ai requisiti funzionali;
             \item implementabili da un singolo programmatore.
         \end{itemize}
         \paragraph{Obiettivi}
             \begin{itemize}
                 \item tradurre i requisiti in moduli;
-                \item favorire il lavoro dei programmatori assegnando compiti individuali, e relativi a singoli moduli;
+                \item favorire il lavoro dei programmatori assegnando compiti individuali associati a singoli moduli;
                 \item mantenere il tracciamento tra requisiti e componenti.
             \end{itemize}
         \paragraph{Strategia}
@@ -58,7 +55,7 @@ Il risultato sono i processi esposti a seguito.
                 \end{itemize}
             \end{enumerate}
     \subsubsection{Codifica}
-        La codifica prevede la scrittura del codice sorgente basandosi sull'output della progettazione di dettaglio
+        La codifica prevede la scrittura del codice sorgente basandosi sull'output della progettazione di dettaglio.
         \paragraph{Obiettivi}
             \begin{itemize}
                 \item assicurare la qualità del codice sorgente.
@@ -141,8 +138,8 @@ Il risultato sono i processi esposti a seguito.
                 \end{itemize}
                 \item \textbf{CV} (Cost Variance):
                 \begin{itemize}
-                    \item valore preferibile: $< 0$;
-                    \item valore accettabile: $\geq 0$.
+                    \item valore preferibile: $0\%$;
+                    \item valore accettabile: $0\% \leq CV \leq 5\%$.
                 \end{itemize}
             \end{enumerate}
     \subsubsection{Verifica}
@@ -155,7 +152,7 @@ Il risultato sono i processi esposti a seguito.
         \paragraph{Strategia}
             \begin{itemize}
                 \item stabilire le tecniche e gli strumenti di verifica;
-                \item utilizzare questi strumenti e tecniche per cercare gli errori.
+                \item utilizzare questi strumenti e tecniche per individuare gli errori.
             \end{itemize}
         \paragraph{Metriche}
             \begin{enumerate}
@@ -165,7 +162,7 @@ Il risultato sono i processi esposti a seguito.
                     \item valore preferibile: $100\%$;
                     \item valore accettabile: $\geq 80\%$.
                 \end{itemize}
-                \item \textbf{BC} (Branche Coverage):
+                \item \textbf{BC} (Branch Coverage):
                 \begin{itemize}
                     \item $SC = \frac{numero\ di\ rami\ percorsi}{numero\ di\ rami\ totali}$;
                     \item valore preferibile: $100\%$;
@@ -192,10 +189,9 @@ Il risultato sono i processi esposti a seguito.
         \paragraph{Strategia} i documenti devono essere:
             \begin{itemize}
                 \item scritti in un linguaggio modulare, come \LaTeX;
-                \item prododotti in modo collaborativo;
-                \item ospitati in una repository pubblica, anche per favorire il punto precedente;
-                \item sostenuti da un glossario;
-                \item sostenuti dalle Norme di Progetto.
+                \item prodotti in modo collaborativo;
+                \item ospitati in una repository pubblica;
+                \item corredati di un glossario;
             \end{itemize}
         \paragraph{Metriche}
         \begin{enumerate}
@@ -207,8 +203,8 @@ Il risultato sono i processi esposti a seguito.
             \end{itemize}
             \item \textbf{Correttezza ortografica}
             \begin{itemize}
-                \item valore preferibile: $0$;
-                \item valore accettabile: $0$.
+                \item valore preferibile: $100\%$;
+                \item valore accettabile: $100\%$.
             \end{itemize}
         \end{enumerate}
 \subsection{Processi Organizzativi}
@@ -218,7 +214,7 @@ Il risultato sono i processi esposti a seguito.
         \paragraph{Strategia}
             \begin{itemize}
                 \item pianificare le attività di gestione del sistema qualità;
-                \item stabilire un sistema di indicatori per la valutazione dei processi e prododotti;
+                \item stabilire un sistema di indicatori per la valutazione dei processi e prodotti;
                 \item monitorare costantemente i risultati prodotti dal punto sopra, eventualmente ripianificando il primo punto.
             \end{itemize}
         \paragraph{Metriche}
