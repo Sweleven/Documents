@@ -18,65 +18,65 @@ Nel contesto della continua diffusione della pandemia di COVID-19, l'obiettivo d
 \begin{itemize}
 \item \glo{RFID}: tecnologia a radiofrequenza per l'identificazione o trasmissione di informazioni;
 \item \glo{Java}, \glo{Python} o \glo{Node.js} per lo sviluppo del server back-end;
-\item Protocolli asincroni per le comunicazioni app mobile-server;
-\item Sistema \glo{Blockchain} per salvare con opponibilità a terzi i dati di sanificazione;
-\item Piattaforme \glo{IAAS} o \glo{PAAS}, come \glo{Kubernetes}, \glo{Openshift} o \glo{Rancher}, per il rilascio delle componenti del server e la gestione della scalabilità orizzontale;
+\item protocolli asincroni per le comunicazioni app mobile-server;
+\item sistema \glo{Blockchain} per salvare con opponibilità a terzi i dati di sanificazione;
+\item piattaforme \glo{IAAS} o \glo{PAAS}, come \glo{Kubernetes}, \glo{Openshift} o \glo{Rancher}, per il rilascio delle componenti del server e la gestione della scalabilità orizzontale;
 \item \glo{Docker} per la \glo{containerization};
 \item \glo{API Rest} oppure \glo{gRPC} attraverso le quali è possibile utilizzare l'applicativo.
 \end{itemize}
 
 \subsection{Vincoli}
 \begin{itemize}
-\item Identificazione del soggetto e dello spazio fisico di lavoro tramite tag \glo{RFID};
-\item La tracciatura deve avvenire in tempo reale ed essere memorizzata, immutabile e certificata;
-\item Realizzazione di un server centralizzato, corredato di una \glo{UI} con una procedura di autenticazione ed attraverso il quale deve essere possibile:
+\item identificazione del soggetto e dello spazio fisico di lavoro tramite tag \glo{RFID};
+\item la tracciatura deve avvenire in tempo reale ed essere memorizzata, immutabile e certificata;
+\item realizzazione di un server centralizzato, corredato di una \glo{UI} con una procedura di autenticazione ed attraverso il quale deve essere possibile:
 \begin{itemize}
-\item Gestire più stanze, postazioni, personale ed utenti, con possibilità di creare, modificare ed eliminare gli stessi;
-\item Sapere in ogni momento se la stanza o postazione è occupata, prenotata, da pulire o pulita (la visualizzazione deve seguire uno schema che mostri la stanza con le postazioni di diverso colore a seconda del relativo stato);
-\item Monitorare il numero di dipendenti presenti in tutte le postazioni e nella stanza nel suo complesso;
-\item Bloccare le prenotazioni per una determinata stanza;
-\item Prenotare una postazione con granularità di 1 ora;
-\item Effettuare ricerche sugli accessi e sulle postazioni occupate da uno specifico dipendente.
+\item gestire più stanze, postazioni, personale ed utenti, con possibilità di creare, modificare ed eliminare gli stessi;
+\item sapere in ogni momento se la stanza o postazione è occupata, prenotata, da pulire o pulita (la visualizzazione deve seguire uno schema che mostri la stanza con le postazioni di diverso colore a seconda del relativo stato);
+\item monitorare il numero di dipendenti presenti in tutte le postazioni e nella stanza nel suo complesso;
+\item bloccare le prenotazioni per una determinata stanza;
+\item prenotare una postazione con granularità di 1 ora;
+\item effettuare ricerche sugli accessi e sulle postazioni occupate da uno specifico dipendente.
 \end{itemize}
-\item Sviluppare un'applicazione mobile per dispositivi con sistema \glo{Android} oppure \glo{iOS} che deve permettere di:
+\item sviluppare un'applicazione mobile per dispositivi con sistema \glo{Android} oppure \glo{iOS} che deve permettere di:
 \begin{itemize}
-\item Recuperare una lista delle postazioni libere e acceso alle informazioni delle stesse;
-\item Prenotare una postazione;
-\item Segnalare la propria presenza in tempo reale (nella postazione, appoggiando il telefono sul tag \glo{RFID}), così come la pulizia di una postazione o dell'intera stanza;
-\item Ricevere  un  elenco  delle  stanze  che  necessitano l’igienizzazione;
-\item Recuperare uno storico delle postazioni occupate e igienizzate;
+\item recuperare una lista delle postazioni libere e acceso alle informazioni delle stesse;
+\item prenotare una postazione;
+\item segnalare la propria presenza in tempo reale (nella postazione, appoggiando il telefono sul tag \glo{RFID}), così come la pulizia di una postazione o dell'intera stanza;
+\item ricevere  un  elenco  delle  stanze  che  necessitano l’igienizzazione;
+\item recuperare uno storico delle postazioni occupate e igienizzate;
 \end{itemize}
-\item Le autorizzazioni di accesso si devono distinguere in due macro-tipologie di soggetti: Amministratore di sistema e Utente;
-\item Poichè il lettore \glo{RFID} consuma molta batteria al dispositivo è richiesto di trovare il tempo sufficiente a garantire il giusto bilanciamento tra consumo batteria e scansioni, il tutto con test e report delle scelte fatte;
-\item Avere le componenti applicative corredate da test unitari e d’integrazione. Inoltre, è richiesto che il sistema venga testato nella sua interezza tramite test \glo{end-to-end}, con copertura all'80 percento, correlati da report;
-\item Realizzazione di un'adeguata documentazione.
+\item le autorizzazioni di accesso si devono distinguere in due macro-tipologie di soggetti: Amministratore di sistema e Utente;
+\item poichè il lettore \glo{RFID} consuma molta batteria al dispositivo è richiesto di trovare il tempo sufficiente a garantire il giusto bilanciamento tra consumo batteria e scansioni, il tutto con test e report delle scelte fatte;
+\item avere le componenti applicative corredate da test unitari e d’integrazione. Inoltre, è richiesto che il sistema venga testato nella sua interezza tramite test \glo{end-to-end}, con copertura all'80 percento, correlati da report;
+\item realizzazione di un'adeguata documentazione.
 \end{itemize}
 
 L’azienda proponente valuta inoltre positivamente i seguenti requisiti opzionali:
 \begin{itemize}    
-\item Possibilità per il server di esportare un rapporto tabellare delle ore trascorse da un utente e/o delle pulizie, per ogni postazione o stanza;
-\item Possibilità per il server di mostrare le prenotazioni in una vista a calendario;
-\item Possibilità per l'applicazione di ricevere il nome di una postazione igienizzata e libera in una determinata stanza; 
-\item Cifrare tutte le comunicazioni fra applicazione e server in modo tale da garantire la validità delle informazioni;
-\item Fornire un’analisi rispetto al carico massimo supportato in numero di utenti e di quale sarebbe il servizio cloud più adatto per supportarlo analizzando prezzo, stabilità  del servizio ed assistenza.
+\item possibilità per il server di esportare un rapporto tabellare delle ore trascorse da un utente e/o delle pulizie, per ogni postazione o stanza;
+\item possibilità per il server di mostrare le prenotazioni in una vista a calendario;
+\item possibilità per l'applicazione di ricevere il nome di una postazione igienizzata e libera in una determinata stanza; 
+\item cifrare tutte le comunicazioni fra applicazione e server in modo tale da garantire la validità delle informazioni;
+\item fornire un’analisi rispetto al carico massimo supportato in numero di utenti e di quale sarebbe il servizio cloud più adatto per supportarlo analizzando prezzo, stabilità  del servizio ed assistenza.
 \end{itemize}
 
 \subsection{Aspetti positivi}
 \begin{itemize}
-\item Le tecnologie coinvolte sono nuove e stimolanti ed inoltre la loro conoscenza offre diverse opportunità in ambito professionale;
-\item Alcune soluzioni suggerite offrono un interessante grado di sfida;
-\item L'azienda è stata piuttosto chiara e precisa sugli obiettivi ed i vincoli del progetto;
-\item Il proponente offre consulenza e supporto tecnico per la realizzazione;
-\item Il contrasto della diffusione della pandemia è un tema d'importanza rilevante in questo periodo;
-\item Molti membri del gruppo si sono dimostrati incuriositi da questo capitolato;
+\item le tecnologie coinvolte sono nuove e stimolanti ed inoltre la loro conoscenza offre diverse opportunità in ambito professionale;
+\item alcune soluzioni suggerite offrono un interessante grado di sfida;
+\item l'azienda è stata piuttosto chiara e precisa sugli obiettivi ed i vincoli del progetto;
+\item il proponente offre consulenza e supporto tecnico per la realizzazione;
+\item il contrasto della diffusione della pandemia è un tema d'importanza rilevante in questo periodo;
+\item molti membri del gruppo si sono dimostrati incuriositi da questo capitolato;
 
 \end{itemize}
 
 \subsection{Aspetti critici}
 \begin{itemize}
-\item Seppur accattivanti le tecnologie coinvolte sono molte ed anche relativamente recenti e complesse: richiedono tempo per lo studio ed apprendimento;
-\item Il grado di sfida proposto è discretamente alto;
-\item Il capitolato ha suscitato l'interesse di molti gruppi partecipanti, potrebbe quindi essere difficile aggiudicarsi l'appalto;
+\item seppur accattivanti le tecnologie coinvolte sono molte ed anche relativamente recenti e complesse: richiedono tempo per lo studio ed apprendimento;
+\item il grado di sfida proposto è discretamente alto;
+\item il capitolato ha suscitato l'interesse di molti gruppi partecipanti, potrebbe quindi essere difficile aggiudicarsi l'appalto;
 \end{itemize}
 
 \subsection{Conclusioni}
