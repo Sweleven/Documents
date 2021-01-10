@@ -1,0 +1,20 @@
+{
+    \rowcolors{2}{\evenRowColor}{\oddRowColor}
+    \renewcommand{\arraystretch}{1.5}
+    \centering
+    \begin{longtable}{ c c  C{4cm}  c  c }
+        \rowcolor{\primaryColor}
+        \textcolor{\secondaryColor}{
+        \textbf{Versione}}     & \textcolor{\secondaryColor}{\textbf{Data}}       & \textcolor{\secondaryColor}
+        {\textbf{Descrizione}} & \textcolor{\secondaryColor}{\textbf{Nominativo}} & \textcolor{\secondaryColor}{\textbf{Ruolo}}                          \\
+
+        % usare \verificatore per indicare verificatore
+        % usare \redattore per indicare redattore
+        % usare \responsabile per indicare responsabile
+
+        %		L'ultimo evento deve essere sempre all'inizio della tabella
+        1.0.0                  & 2021-01-08                                       & Responsabile                                & Elvis Murtezan & \responsabile{} \\
+        0.1.0                  & 2021-01-08                                      & Verifica                                    & Filippo Pinton & \verificatore{} \\
+        0.0.1                  & 2020-12-19                                       & Descrizione edit                            & Caregnato Edoardo & \redattore{}    \\
+    \end{longtable}
+}
