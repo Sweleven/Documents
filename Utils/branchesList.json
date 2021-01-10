@@ -1,9 +1,9 @@
 {
     "branches": [
         "main",
-        "template",
         "abdel",
-		"studioFattibilitàMain"
+        "template",
+        "normeProgetto-main"
     ]
 
 }

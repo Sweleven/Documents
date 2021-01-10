@@ -6,6 +6,7 @@
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{charter}
 
 \usepackage{tabularx} 
 \usepackage{booktabs} % permette di poter usare delle liste nelle tabelle
@@ -72,8 +73,8 @@
 
 % variabili - ruoli
 
-\newcommand{\admin}{\emph{Amministratore}}
-\newcommand{\admins}{\emph{Amministratori}}
+\newcommand{\amministratore}{\emph{Amministratore}}
+\newcommand{\amministratori}{\emph{Amministratori}}
 \newcommand{\analista}{\emph{Analista}}
 \newcommand{\analisti}{\emph{Analisti}}
 \newcommand{\progettista}{\emph{Progettista}}
@@ -89,32 +90,32 @@
 \newcommand{\Gruppo}{Sweleven}
 
 % variabili - documenti
-% \newcommand{\VersioneDiConsegna}{4.0.0-R1}
-% \newcommand{\AdRv}{\emph{Analisi dei requisiti\_v.4.0.0-R1}}
-% \newcommand{\SdFv}{\emph{Studio di fattibilità\_v.1.0.0-0}}
-% \newcommand{\VIv}{\emph{Verbale interno\_v.4.0.0-R1}}
-% \newcommand{\NdPv}{\emph{Norme di progetto\_v.4.0.0-R1}}
-% \newcommand{\PdPv}{\emph{Piano di progetto\_v.3.0.0-INC-11}}
-% \newcommand{\PdQv}{\emph{Piano di qualifica\_v.4.0.0-R1}}
-% \newcommand{\SPv}{\emph{Specifica tecnica\_v.4.0.0-R1}}
-% \newcommand{\DdPv}{\emph{Definizione di prodotto\_v.4.0.0-R1}}
-% \newcommand{\Gv}{\emph{Glossario\_v.4.0.0-R1}}
-% \newcommand{\MUv}{\emph{Manuale utente\_v.2.0.0-R1}}
-% \newcommand{\MSv}{\emph{Manuale sviluppatore\_v.2.0.0-R1}}
-% \newcommand{\VEv}{\emph{Verbale esterno\_v.2.0.0-R1}}
+\newcommand{\VersioneDiConsegna}{4.0.0-R1}
+\newcommand{\AdRv}{\emph{Analisi dei requisiti\_v.4.0.0-R1}}
+\newcommand{\SdFv}{\emph{Studio di fattibilità\_v.1.0.0-0}}
+\newcommand{\VIv}{\emph{Verbale interno\_v.4.0.0-R1}}
+\newcommand{\NdPv}{\emph{Norme di progetto\_v.4.0.0-R1}}
+\newcommand{\PdPv}{\emph{Piano di progetto\_v.3.0.0-INC-11}}
+\newcommand{\PdQv}{\emph{Piano di qualifica\_v.4.0.0-R1}}
+\newcommand{\SPv}{\emph{Specifica tecnica\_v.4.0.0-R1}}
+\newcommand{\DdPv}{\emph{Definizione di prodotto\_v.4.0.0-R1}}
+\newcommand{\Gv}{\emph{Glossario\_v.4.0.0-R1}}
+\newcommand{\MUv}{\emph{Manuale utente\_v.2.0.0-R1}}
+\newcommand{\MSv}{\emph{Manuale sviluppatore\_v.2.0.0-R1}}
+\newcommand{\VEv}{\emph{Verbale esterno\_v.2.0.0-R1}}
 
-\newcommand{\AdR}{\emph{Analisi dei requisiti}}
-\newcommand{\SdF}{\emph{Studio di fattibilit\`{a}}}
-\newcommand{\VI}{\emph{Verbale interno}}
-\newcommand{\NdP}{\emph{Norme di progetto}}
-\newcommand{\PdP}{\emph{Piano di progetto}}
-\newcommand{\PdQ}{\emph{Piano di qualifica}}
-\newcommand{\SP}{\emph{Specifica tecnica}}
-\newcommand{\DdP}{\emph{Definizion di prodotto}}
-\newcommand{\G}{\emph{Glossario}}
-\newcommand{\MU}{\emph{Manuale utente}}
-\newcommand{\MS}{\emph{Manuale sviluppatore}}
-\newcommand{\VE}{\emph{Verbale esterno}}
+% \newcommand{\AdR}{\emph{Analisi dei requisiti}}
+% \newcommand{\SdF}{\emph{Studio di fattibilit\`{a}}}
+% \newcommand{\VI}{\emph{Verbale interno}}
+% \newcommand{\NdP}{\emph{Norme di progetto}}
+% \newcommand{\PdP}{\emph{Piano di progetto}}
+% \newcommand{\PdQ}{\emph{Piano di qualifica}}
+% \newcommand{\SP}{\emph{Specifica tecnica}}
+% \newcommand{\DdP}{\emph{Definizion di prodotto}}
+% \newcommand{\G}{\emph{Glossario}}
+% \newcommand{\MU}{\emph{Manuale utente}}
+% \newcommand{\MS}{\emph{Manuale sviluppatore}}
+% \newcommand{\VE}{\emph{Verbale esterno}}
 
 
 %\newcommand{\PdPv}{\emph{PianoDiProgetto\_v1.0.0}}
@@ -124,8 +125,8 @@
 
 % variabili - altro
 
-\newcommand{\Mail}{TODO}
-\newcommand{\proponente}{TODO}
+\newcommand{\Mail}{swegroup11@gmail.com}
+\newcommand{\proponente}{Imola Informatica}
 \newcommand{\committenti}{Tullio Vardanega e Riccardo Cardin}
 
 \newcommand{\RR}{Revisione dei Requisiti}
@@ -133,7 +134,7 @@
 \newcommand{\RQ}{Revisione di Qualifica}
 \newcommand{\RA}{Revisione di Accettazione}
 
-\newcommand{\NomeProgetto}{BlockCOVID}
+\newcommand{\NomeProgetto}{BlockCovid}
 
 \newcommand{\glo}[1]{\textit{#1}\ped{G}}
 
@@ -186,7 +187,7 @@
 			\vspace{9pt}  
 			
 			\begin{large}
-				\textbf{Gruppo \Gruppo{}\ - Progetto \NomeProgetto{}}
+				\textbf{Gruppo \Gruppo{}\ - Progetto \NomeProgetto{} \\}
 				\vspace{6pt}
 				\Mail{}
 			\end{large}	  

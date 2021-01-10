@@ -1,0 +1,110 @@
+\subsection{Gestione della qualità}
+Per la trattazione approfondita della gestione della qualità del software o documentazione prodotta, si farà riferimento all’apposita documentazione PdQ, dove verranno descritte le metodologie atte al raggiungimento di una qualità generale il più possibilmente eccellente. Nello specifico, vengono trattate le seguenti tematiche:
+\begin{itemize}
+	\item gli standard utilizzati;
+	\item le funzionalità del software più significative per il progetto. 
+\end{itemize}
+In aggiunta, per ogni processo verranno descritti dettagliatamente:
+\begin{itemize}
+	\item gli obiettivi;
+	\item la strategia di perseguimento;
+	\item le metriche.
+\end{itemize}
+Gli strumenti con cui si cercherà di perseguire la qualità sopra citata sono:
+\begin{itemize}
+	\item lo standard ISO/IEC/IEEE-12207:1995 per i processi;
+	\item lo standard ISO/IEC 9126 per i prodotti;
+	\item le metriche di seguito descritte.
+\end{itemize}
+
+\subsubsection{Metriche}
+\myparagraph{Analisi dei requisiti}
+\begin{itemize}
+	\item \textbf{PROS} (Percentuale di requisiti obbligatori soddisfatti): si calcola mediante la formula \newline $PROS = \frac{requisiti\ obbligatori\ soddisfatti}{requisiti\ obbligatori\ totali}$ .
+\end{itemize}
+\myparagraph{Progettazione di dettaglio}
+\begin{itemize}
+	\item \textbf{CBO} (Coupling between objects): numero di classi richieste da una determinata classe in esame.
+\end{itemize}
+\myparagraph{Pianificazione}
+\begin{itemize}
+	\item \textbf{BAC} (Budget at completion): valore previsto per la realizzazione del progetto;
+	\item \textbf{AC} (Actual cost): costo effettivamente sostenuto alla data corrente;
+	\item \textbf{EV} (Earned value): valore delle attività realizzate alla data corrente;
+	\item \textbf{PV} (Planned value): costo pianificato per realizzare le attività di progetto alla data corrente;
+	\item \textbf{SV} (Schedule variance): indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline. Si calcola mediante la formula $SV = EV - PV$ ;
+	\item \textbf{CV} (Cost variance): indica se il valore del costo realmente maturato è maggiore, uguale o minore rispetto al costo effettivo. Si calcola mediante la formula $CV = EV - AC$.
+\end{itemize}
+\myparagraph{Verifica}
+\begin{itemize}
+	\item \textbf{SC} (Statement Coverage): si calcola mediante la formula $SC = \frac{numero\ di\ righe\ eseguite}{numero\ di\ righe\ totali}$ e indica la \% di codice coperto dai test;
+	\item \textbf{BC} (Branch Coverage): si calcola mediante la formula $BC = \frac{numero\ di\ rami\ percorsi}{numero\ di\ rami\ totali}$ e indica la \% di rami raggiunti dai test;
+	\item \textbf{MCDC} (Modified Condition/Decision Coverage): si calcola mediante la formula \newline $MCDC = \frac{numero\ di\ decisioni\ percorse}{numero\ di\ decisioni\ totali}$ e indica la \% di decisioni booleane coperte dai test. 
+\end{itemize}
+\myparagraph{Documentazione}
+\begin{itemize}
+	\item \textbf{IG} (Indice di Gulpease): si calcola mediante la formula \newline $IG = 89+\frac{300*numero\ di\ frasi-10*numero\ di\ lettere}{numero\ di\ parole}$ e indica il livello di leggibilità di un testo.
+\end{itemize}
+\myparagraph{Gestione della qualità}
+\begin{itemize}
+	\item \textbf{PMS} (Percentuale di metriche soddisfatte): si calcola mediante la formula \newline $PMS = \frac{numero\ di\ metriche\ soddisfatte}{numero\ di\ metriche\ totali}$.
+\end{itemize}
+
+
+\subsection{Verifica}
+Con questo processo, il gruppo {\Gruppo} si pone come obiettivo primario lo sviluppo di software e prodotti di qualità, sia a livello di documentazione sia a livello di codice prodotto. Tramite una serie di analisi e test, si assicura che il prodotto finito sarà conforme ad un livello di qualità del tutto accettabile per il soddisfacimento di tutti gli obiettivi prefissati con il committente ed il proponente.
+\subsection{Aspettative della verifica}
+Il processo di verifica viene eseguito secondo i seguenti criteri:
+\begin{itemize}
+	\item si seguono delle procedure prefissate e precedentemente definite;
+	\item ogni prodotto (documentazione e software) passa attraverso delle fasi definite, ognuna propedeutica a quella precedente.
+	\end{itemize}
+Al termine della verifica, si avrà un prodotto stabile e pronto per la fase di validazione successiva.
+
+\subsection{Analisi}
+\subsubsection{Analisi statica}
+L’analisi statica studia la documentazione o il codice dell’applicazione senza l’esecuzione della stessa, cercando la presenza di difetti di programmazione e testando la correttezza (intesa come assenza di errori logici) delle funzioni o procedure scritte.
+Le due metodologie per effettuare l’analisi statica sono le seguenti:
+\begin{itemize}
+	\item Walkthrough: il verificatore effettuerà una lettura e studio completo dell’intero documento/porzione di codice alla ricerca di eventuali errori. Questa tecnica verrà utilizzata maggiormente nella parte iniziale del progetto;
+	\item Inspection: il verificatore effettuerà una lettura mirata in alcuni punti specifici dove c’è più probabilità di riscontrare un errore logico.
+\end{itemize}
+
+\subsubsection{Analisi dinamica}
+Questa analisi, contrariamente a quella statica, prevede una esecuzione del prodotto ed una serie di test, anche automatizzati, per verificare la correttezza generale del codice. Siccome richiede l’esecuzione del software scritto, verrà fatta solamente dopo l’attività di scrittura del codice del progetto.
+
+\subsection{Test}
+Come già lievemente accennato nel capitolo precedente, durante la fase di analisi dinamica, il gruppo {\Gruppo} potrà ricorrere all’uso di test automatizzati per un riscontro qualitativo del software scritto. Questi test hanno il compito di dimostrare che il programma scritto produce un output conforme a quanto richiesto dal committente, oltre a rilevare eventuali errori prima che il prodotto software venga immesso nel mercato. I test che saranno messi in atto dal gruppo {\Gruppo}, saranno descritti nel corso di questo capitolo.
+
+\subsubsection{Test di unità}
+Lo scopo di questi test è la verifica degli algoritmi scritti su appunto una unità di codice precedentemente scelta. Questa fase di test si avvale di driver, ovvero simulatori di chiamate o azioni di un utente, e stub, che simula a sua volta una unità chiamata.
+
+\subsubsection{Test di integrazione}
+Il loro scopo è quello di ampliare man mano l’unità di codice testata, tramite integrazione di più unità già precedentemente verificate, in modo da combinare e testare sempre più parti del codice. Procedendo con questi test, si formeranno agglomerati di codice verificato progressivamente più grandi, fino ad arrivare all’inclusione della quasi totalità del codice prodotto.
+
+\subsubsection{Test di sistema}
+I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua interezza, portando alla luce eventuali problematiche sulle parti del codice sviluppate da altri sviluppatori. Tramite sempre questi test, si verifica che il prodotto soddisfi completamente tutti i requisiti richiesti.
+
+\subsubsection{Test di regressione}
+Questi test si effettuano a seguito di una aggiunta o modifica al sistema, verificando la qualità di nuove versioni software scritte. Lo scopo primario è il test di tutte le nuove funzionalità implementate nel prodotto, verificando, inoltre, che le precedenti funzionalità già implementate abbiano mantenuto la loro logica e funzione.
+
+\subsubsection{Test di accettazione}
+Questi test vengono effettuati con la partecipazione del committente, cui compito è quello di verificare il prodotto per garantire il soddisfacimento del cliente. Il superamento di questi, garantisce che il software sia completamente collaudato e pronto per il rilascio.
+
+\subsection{Codice identificativo dei test}
+Ogni test prodotto dal gruppo {\Gruppo}, adotterà la seguente nomenclatura:
+\begin{center} \textbf{T[Y][X][E]} \end{center}
+Dove:
+\begin{itemize}
+	\item T è una keyword statica per identificare appunto un “Test”
+	\item Y identifica il tipo di test, che può essere:
+		\begin{itemize}
+			\item U: test di unità;
+			\item I: test di integrazione;
+			\item S: test di sistema;
+			\item R: test di regressione;
+			\item A: test di accettazione.
+		\end{itemize}
+		\item X è l'ID univoco e progressivo utile per identificare il test;
+		\item E identifica l'esito di un test, che può essere positivo o negativo.
+\end{itemize}
