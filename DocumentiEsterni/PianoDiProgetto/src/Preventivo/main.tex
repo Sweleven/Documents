@@ -1,0 +1,31 @@
+Sigle identificative per i ruoli indicati nelle tabelle e nei grafici:
+\begin{itemize}
+    \item \textbf{RE}: Responsabile;
+    \item \textbf{AM}: Amministratore;
+    \item \textbf{AN}: Analista;
+    \item \textbf{PT}: Progettista;
+    \item \textbf{PR}: Programmatore;
+    \item \textbf{VE}: Verificatore.
+\end{itemize}
+
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+	\renewcommand{\arraystretch}{2}
+	\begin{longtable}{ C{5cm} C{4cm} C{5cm} }
+		\caption{Tabella di redazione}\\
+		\rowcolor{\primaryColor}
+        \textcolor{\secondaryColor}{\textbf{Ruolo}} & \textcolor{\secondaryColor}{\textbf{Costo per ora (in \euro{})}} \\ \endhead        		
+        {\responsabile} & {30} \\
+        {\admin} & {20} \\
+        {\analista} & {25} \\
+        {\progettista} & {22} \\
+        {\programmatore} & {15} \\
+        {\verificatore} & {15} 
+    \end{longtable}
+\input{./src/Preventivo/src/PreventivoAnalisi.tex}
+\input{./src/Preventivo/src/PreventivoProgettazione.tex}
+
+\input{./src/Preventivo/src/PreventivoCodifica.tex}
+
+\input{./src/Preventivo/src/PreventivoCollaudo.tex}
+
+\input{./src/Preventivo/src/PreventivoFinale.tex}

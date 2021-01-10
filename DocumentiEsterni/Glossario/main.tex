@@ -1,95 +1,27 @@
 \documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{../../Shared/Sweleven}
-\usepackage[toc]{multitoc}
-
-\input{src/Comandi.tex}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\input{./src/Comandi.tex}
+\DeclareUnicodeCharacter{2212}{-}
 
 \begin{document}
 
 \copertina{}
 
 \section*{Registro delle modifiche}\label{sec:Registro-modifiche}
-\input{src/RegistroModifiche.tex}
+\input{./src/RegistroModifiche.tex}
 
 \newpage
 \tableofcontents
 
 \newpage
-\section*{A}
-\input{src/A/main.tex}
 
-\newpage
-\section*{B}
-\input{src/B/main.tex}
 
-\newpage
-\section*{C}
-\input{src/C/main.tex}
 
-\newpage
-\section*{D}
-\input{src/D/main.tex}
+\input{./src/OrdineAlfabetico.tex}
 
-\newpage
-\section*{E}
-\input{src/E/main.tex}
-
-\newpage
-\section*{F}
-\input{src/F/main.tex}
-
-\newpage
-\section*{G}
-\input{src/G/main.tex}
-
-\newpage
-\section*{I}
-\input{src/I/main.tex}
-
-\newpage
-\section*{L}
-\input{src/L/main.tex}
-
-\newpage
-\section*{M}
-\input{src/M/main.tex}
-
-\newpage
-\section*{O}
-\input{src/O/main.tex}
-
-\newpage
-\section*{P}
-\input{src/P/main.tex}
-
-\newpage
-\section*{Q}
-\input{src/Q/main.tex}
-
-\newpage
-\section*{R}
-\input{src/R/main.tex}
-
-\newpage
-\section*{S}
-\input{src/S/main.tex}
-
-\newpage
-\section*{T}
-\input{src/T/main.tex}
-
-\newpage
-\section*{U}
-\input{src/U/main.tex}
-
-\newpage
-\section*{V}
-\input{src/V/main.tex}
-
-\newpage
-\section*{W}
-\input{src/W/main.tex}
-
+\input{./src/Riferimenti.tex}
 
 \end{document}
