@@ -1,24 +1,31 @@
 {
-    \rowcolors{2}{\evenRowColor}{\oddRowColor}
-    \renewcommand{\arraystretch}{1.5}
-    \centering
-    \begin{longtable}{ c c  C{4cm}  c  c }
-        \rowcolor{\primaryColor}
-        \textcolor{\secondaryColor}{
-        \textbf{Versione}}     & \textcolor{\secondaryColor}{\textbf{Data}}       & \textcolor{\secondaryColor}
-        {\textbf{Descrizione}} & \textcolor{\secondaryColor}{\textbf{Nominativo}} & \textcolor{\secondaryColor}{\textbf{Ruolo}}                          \\
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\renewcommand{\arraystretch}{1.5}
+\centering
+\begin{longtable}{ c c  C{3.5cm}  C{4cm}  c }
+    \rowcolor{\primaryColor}
+    \textcolor{\secondaryColor}{
+    \textbf{Versione}}     & \textcolor{\secondaryColor}{\textbf{Data}}       & \textcolor{\secondaryColor}
+    {\textbf{Descrizione}} & \textcolor{\secondaryColor}{\textbf{Nominativo}} & \textcolor{\secondaryColor}{\textbf{Ruolo}}                                         \\
 
-        % usare \verificatore per indicare verificatore
-        % usare \redattore per indicare redatore
-        % usare \responsabile per indicare responsabile
+    % usare \verificatore per indicare verificatore
+    % usare \redattore per indicare redatore
+    % usare \responsabile per indicare responsabile
 
-        %		L'ultimo evento deve essere sempre all'inizio della tabella
-        1.0.0                  & 2021-01-5                                      & Approvazione documento         & Elvis Murtezan & \responsabile{} \\
-        
-        0.3.0                  & 2021-01-4                                       & Verifica completa documento    & AbdelWahad Kandoul & \verificatore{} \\
-        
-        0.2.0                  & 2020-12-24                                       & Verifica completa documento   & Andrea De Tomasi & \verificatore{}    \\
-        
-        0.1.0                  & 2020-12-22                                       & Verifica completa documento        & Giovanni Grigoretto & \verificatore{}    \\
-    \end{longtable}
+    %		L'ultimo evento deve essere sempre all'inizio della tabella
+    1.0.0                  & 2021-01-5                                        & Approvazione documento                      & Elvis Murtezan      & \responsabile{} \\
+
+    0.1.0                  & 2020-12-22                                       & Verifica completa documento                 & Giovanni Grigoletto, Andrea De Tomasi, Abdelwahad Kandoul  & \verificatore{} \\
+
+    0.0.4               & 2020-12-14    & stesura §4 & Alessio Trevisan & \redattore{} \\
+
+    0.0.3               & 2020-12-10    & stesura §3 & Edoardo Caregnato & \redattore{} \\
+
+    0.0.2               & 2020-12-9    & stesura §2 & Filippo Pinton & \redattore{} \\
+
+    0.0.1               & 2020-12-7    & stesura §1 & Filippo Pinton & \redattore{} \\
+
+
+
+\end{longtable}
 }
