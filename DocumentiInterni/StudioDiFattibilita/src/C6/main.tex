@@ -2,7 +2,7 @@
 Il capitolato in questione si chiama "Progettazione e sviluppo di una {Real-time Gaming Platform (RGP)}", il proponente è l'azienda Zero12 e i committenti sono i professori Tullio Vardanega e Riccardo Cardin.
 
 \subsection{Descrizione del capitolato}
-L’azienda Zero12 propone la creazione di un \glo{Realtime system} per la \glo{sincronizzazione} di un gioco a scorrimento verticale, multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} del software sviluppato che gestisce le varie componenti(RGP).
+L’azienda Zero12 propone la creazione di un \glo{Realtime system} per la \glo{sincronizzazione} di un gioco a scorrimento verticale, multiplayer ed un'applicazione \glo{Android} o \glo{iOS} con finalità di \glo{testing} del software sviluppato che gestisce le varie componenti (RGP).
 La finalità da parte dell’azienda è vedere alcuni servizi che propone il pacchetto di AWS in azione nell’ambito real-time, ovvero la sincronizzazione dei giocatori in un gioco multiplayer a scorrimento verticale "infinito".
 \subsection{Prerequisiti}
 \begin{itemize}
@@ -11,9 +11,9 @@ La finalità da parte dell’azienda è vedere alcuni servizi che propone il pac
 \end{itemize}
 \subsection{Tecnologie coinvolte}
 \begin{itemize}
-\item Utilizzo di \glo{Kotlin}/\glo{Swift} per lo sviluppo del applicativo mobile;
+\item utilizzo di \glo{Kotlin}/\glo{Swift} per lo sviluppo del applicativo mobile;
 \item \glo{Node.js} per lo sviluppo del server \glo{backend};
-\item \glo{Typescript}/\glo{Javascript} linguaggi di programmazione per il framework backend richiesto;
+\item \glo{Typescript}/\glo{Javascript} linguaggi di programmazione per il framework \glo{backend} richiesto;
 \item \glo{API} \glo{REST} attraverso le quali sia possibile interagire con l'applicativo;
 \item AWS cloud services: 
 \glo{AppSync}(è un servizio gestito che facilita lo sviluppo di API GraphQL) o \glo{Gamelift}(servizio gestito per server di gioco multiplayer basato su sessioni);
@@ -22,29 +22,29 @@ La finalità da parte dell’azienda è vedere alcuni servizi che propone il pac
 
 \subsection{Vincoli}
 \begin{itemize}
-\item Creazione di un'applicazione Android o iOS di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment" infinito, con relativa interfaccia grafica;
-\item Node.Js per le API (Typescript o Javascript) con cui comunicano i vari microservizi dell'applicazione;
-\item tecnologia AWS per la componente server: AppSync o Gamelift per la RGP e DynamoDB per la base di dati;    
-\item sincronizzazione della\glo{UI} e dei dati tra i giocatori (i giocatori vedono e giocano la stessa partita), ma oltre alla partita normale visualizzano il \glo{player-character} (in modo trasparente) controllato dagli altri avversari, fino al termine della partita da parte di tutti i giocatori;
-\item consegna materiale: documentazione analisi AppSync/Gamelift pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases},\glo{Schema Design} Basi di dati, documentazione API(dettagliata),piano di \glo{unit-test};
+\item creazione di un'applicazione \glo{Android} o \glo{iOS} di un gioco \glo{multiplayer}(da 2 a 6 giocatori) a scrolling verticale a piacere della tipologia \glo{PvE}"Player versus environment" infinito, con relativa interfaccia grafica;
+\item \glo{Node.Js} per le API con cui comunicano i vari microservizi dell'applicazione;
+\item tecnologia AWS per la componente server: \glo{AppSync} o Gamelift per la RGP e \glo{DynamoDB} per la base di dati;    
+\item sincronizzazione della \glo{UI} e dei dati tra i giocatori (i giocatori vedono e giocano la stessa partita), ma oltre alla partita normale visualizzano il \glo{player-character} (in modo trasparente) controllato dagli altri avversari, fino al termine della partita da parte di tutti i giocatori;
+\item consegna materiale: documentazione analisi \glo{AppSync}/\glo{Gamelift} pre \glo{Design}, Diagramma \glo{UML} \glo{use-cases}, \glo{Schema Design} Basi di dati, documentazione API (dettagliata),piano di \glo{unit-test};
 \item accesso al repository del codice sorgente dell'applicativo post produzione e \glo{Bug} \glo{Reporting}.
 \end{itemize}
 
 \subsection{Aspetti positivi}
 \begin{itemize}
-\item Il prodotto richiesto risulta essere accattivante dal punto di vista didattico per la tematica e le tecnologie proposte;
-\item Essendo Android molto diffuso, la documentazione necessaria per realizzare l'applicazione è molto ricca e chiara;
-\item L'azienda ha esposto in modo chiaro i vari vincoli ed i casi d'uso presenti nel capitolato;
-\item L'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo;
-\item Dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare lo sviluppo della RGP limitando il numero di microservizi da sviluppare. Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche necessarie lato server, ma di spostare il focus principale nello sviluppo del gioco stesso, permettendo di ridurre le risorse  di un’azienda verso il gioco.
+\item il prodotto richiesto risulta essere accattivante dal punto di vista didattico per la tematica e le tecnologie proposte;
+\item essendo \glo{Android} molto diffuso, la documentazione necessaria per realizzare l'applicazione è molto ricca e chiara;
+\item l'azienda ha esposto in modo chiaro i vari vincoli ed i casi d'uso presenti nel capitolato;
+\item l'azienda \`e disponibile a tenere delle sessioni di training sulle tecnologie AWS per spiegarne il funzionamento e l'utilizzo;
+\item dopo una prima analisi il servizio Gamelift dei vari servizi offerti da Amazon sembra facilitare lo sviluppo della RGP limitando il numero di microservizi da sviluppare. Il vantaggio maggiore è che sposta il focus principale non nella RGP quasi completamente gestita da Gamelift che offre comunque le modifiche necessarie lato server, ma di spostare il focus principale nello sviluppo del gioco stesso, permettendo di ridurre le risorse  di un’azienda verso il gioco.
 \end{itemize}
 \subsection{Aspetti critici}
 \begin{itemize}
-\item Le ore di training del team nelle tecnologie richieste dal capitolato non sono facilmente prevedibili visto che alcuni di questi servizi sono abbastanza "nuovi" (come Gamelift 2016);
-\item Lo sviluppo di un videogioco generalmente non è banale nel suo complesso.
+\item le ore di training del team nelle tecnologie richieste dal capitolato non sono facilmente prevedibili visto che alcuni di questi servizi sono abbastanza "nuovi" (come Gamelift 2016);
+\item lo sviluppo di un videogioco generalmente non è banale nel suo complesso.
 \end{itemize}
 \subsection{Conclusioni}
 La proposta del capitolato offerto dall'azienda Zero12 è stata accolta con grande interesse. Il gruppo è rimasto colpito e stimolato dalla possibilità 
-di poter creare una RGP visto anche il crescente interesse nel settore a livello mondiale. Nonostante la tecnologia Android esista da molti anni è risultata molto
+di poter creare una RGP visto anche il crescente interesse nel settore a livello mondiale. Nonostante la tecnologia \glo{Android} esista da molti anni è risultata molto
 interessante al gruppo, sia perché è supportata da un'ampia community di sviluppatori ed è una tecnologia nuova che non viene trattata da nessun corso della laurea triennale. Dopo una prima analisi è stato in ballottaggio per la scelta finale da parte del gruppo.
 
