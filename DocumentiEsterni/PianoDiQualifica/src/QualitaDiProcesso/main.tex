@@ -1,0 +1,218 @@
+AL fine di garantire uno standard qualitativo adeguato, sono stati scelti alcuni processi tra quelli proposti nello standard ISO/IEC/IEEE 12207:1995,
+successivamente sono stati semplificati o adattati secondo le esigenze.
+
+\subsection{Processi di Sviluppo}
+    Questo processo contiene tutte le attività tipiche dello sviluppo software.
+    \subsubsection{Analisi dei requisiti}
+        Attraverso le attivit\`{a} di analisi, le quali comprendono lo studio del documento di presentazione del capitolato, gli incontri svolti con il proponente e gli incontri interni, vengono individuati i requisiti e, quindi, i casi d'uso.   
+
+        \paragraph{Obiettivi}
+            \begin{itemize}
+                \item individuare i casi d'uso e i requisiti;
+                \item tracciare il loro cambiamento nel tempo.
+            \end{itemize}
+        \paragraph{Strategia}
+            \begin{itemize}
+                \item considerare lo scopo del progetto e le richieste degli stakeholder;
+                \item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
+                \item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
+                \item disporre il tracciamento dei requisiti del sistema.
+            \end{itemize}
+        \paragraph{Metriche}
+            \begin{enumerate}
+                \item \textbf{PROS} (Percentuale di requisiti obbligatori soddisfatti):
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $100\%$.
+                \end{itemize}
+            \end{enumerate}
+    \subsubsection{Progettazione di dettaglio}
+        La progettazione di dettaglio prevede la scomposizione in componenti pi\`{u} piccole delle macro-componenti di cui il modello architetturale è composto, le quali devono essere:
+        \begin{itemize}
+            \item facilmente comprensibili;
+            \item strettamente correlate ai requisiti funzionali;
+            \item implementabili da un singolo programmatore.
+        \end{itemize}
+        \paragraph{Obiettivi}
+            \begin{itemize}
+                \item tradurre i requisiti in moduli;
+                \item favorire il lavoro dei programmatori assegnando compiti individuali associati a singoli moduli;
+                \item mantenere il tracciamento tra requisiti e componenti.
+            \end{itemize}
+        \paragraph{Strategia}
+            \begin{itemize}
+                \item scomporre le componenti architetturali in componenti piccole;
+                \item rispettare le best practices durante la codifica;
+                \item tenere sotto controllo i valori delle metriche e nel caso effettuare le correzioni necessarie.
+            \end{itemize}
+        \paragraph{Metriche}
+            \begin{enumerate}
+                \item \textbf{CBO} (Accoppiamento tra le classi di oggetti):
+                \begin{itemize}
+                    \item valore preferibile: $0 \leq CBO\leq 1$;
+                    \item valore accettabile: $0 \leq CBO\leq 6$.
+                \end{itemize}
+            \end{enumerate}
+    \subsubsection{Codifica}
+        La codifica prevede la scrittura del codice sorgente basandosi sull'output della progettazione di dettaglio.
+        \paragraph{Obiettivi}
+            \begin{itemize}
+                \item assicurare la qualità del codice sorgente.
+            \end{itemize}
+        \paragraph{Strategia}
+            \begin{itemize}
+                \item eseguire l'analisi statica del codice per monitorare le metriche;
+                \item rispettare le norme di codifica.
+            \end{itemize}
+        \paragraph{Metriche}
+            \begin{enumerate}
+                \item numero di bug:
+                \begin{itemize}
+                    \item valore preferibile: $0$;
+                    \item valore accettabile: $0$.
+                \end{itemize}
+                \item numero di vulnerabilità:
+                \begin{itemize}
+                    \item valore preferibile: $0$;
+                    \item valore accettabile: $0$.
+                \end{itemize}
+                \item percentuale di copertura del codice dai test:
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $\geq 80\%$.
+                \end{itemize}
+                \item percentuale di copertura dei rami dai test:
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $\geq 80\%$.
+                \end{itemize}
+                \item percentuale di codice ripetuto:
+                \begin{itemize}
+                    \item valore preferibile: $0\%$;
+                    \item valore accettabile: $\leq 1\%$.
+                \end{itemize}
+            \end{enumerate}
+\subsection{Processi di Supporto}
+    \subsubsection{Pianificazione}
+        La pianificazione è un attività rilevante della gestione del progetto. Essa permette di gestire le risorse (tempo, costo, ruoli) monitorandole e ripartendole in base all'andamento del progetto.
+        Questa attività è descritta nel Piano di Progetto.
+        \paragraph{Obiettivi}
+            \begin{itemize}
+                \item stabilire i piani e gli obiettivi del progetto;
+                \item stabilire i ruoli all'interno del progetto;
+                \item stabilire l'allocazione del tempo e dei costi.
+            \end{itemize}
+        \paragraph{Strategia}
+            \begin{itemize}
+                \item pianificare le attività;
+                \item mantenere aggiornata la pianificazione;
+                \item utilizzare la pianificazione prodotta come riferimento per l'andamento del progetto.
+            \end{itemize}
+        \paragraph{Metriche}
+            \begin{enumerate}
+                \item \textbf{BAC} (Budget at Completion)
+                \item \textbf{AC} (Actual Cost):
+                \begin{itemize}
+                    \item valore preferibile: $0 \leq AC < PV$;
+                    \item valore accettabile: $0 \leq AC \leq budget\ totale$.
+                \end{itemize}
+                \item \textbf{EV} (Earned Value):
+                \begin{itemize}
+                    \item valore preferibile: $\geq 0$;
+                    \item valore accettabile: $\geq 0$.
+                \end{itemize}
+                \item \textbf{PV} (Planned Value):
+                \begin{itemize}
+                    \item valore preferibile: $\geq 0$;
+                    \item valore accettabile: $\geq 0$.
+                \end{itemize}
+                \item \textbf{SV} (Schedule Variance):
+                \begin{itemize}
+                    \item valore preferibile: $\geq 0$;
+                    \item valore accettabile: $0$.
+                \end{itemize}
+                \item \textbf{CV} (Cost Variance):
+                \begin{itemize}
+                    \item valore preferibile: $0\%$;
+                    \item valore accettabile: $0\% \leq CV \leq 5\%$.
+                \end{itemize}
+            \end{enumerate}
+    \subsubsection{Verifica}
+        Questo processo consiste nella ricerca e correzione di errori nei processi e prodotti del progetto.
+        \paragraph{Obiettivi}
+            \begin{itemize}
+                \item individiare e correggere gli errori;
+                \item assicurarsi che il prodotto soddisfi i requisiti.
+            \end{itemize}
+        \paragraph{Strategia}
+            \begin{itemize}
+                \item stabilire le tecniche e gli strumenti di verifica;
+                \item utilizzare questi strumenti e tecniche per individuare gli errori.
+            \end{itemize}
+        \paragraph{Metriche}
+            \begin{enumerate}
+                \item \textbf{SC} (Statement Coverage):
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $\geq 80\%$.
+                \end{itemize}
+                \item \textbf{BC} (Branch Coverage):
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $\geq 80\%$.
+                \end{itemize}
+                \item \textbf{MCDC} (Modified Condition/Decision Coverage):
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $\geq 80\%$.
+                \end{itemize}
+            \end{enumerate}
+    \subsubsection{Documentazione}
+        Questo processo consiste nella stesura e rilascio di documenti a supporto di tutte le attività di progetto.
+        \paragraph{Obiettivi}
+            I documenti prodotti devono essere:
+            \begin{itemize}
+                \item specifici;
+                \item completi;
+                \item non ambigui;
+                \item modulari;
+                \item disponibili esternamente.
+            \end{itemize}
+        \paragraph{Strategia} i documenti devono essere:
+            \begin{itemize}
+                \item scritti in un linguaggio modulare, come \LaTeX;
+                \item prodotti in modo collaborativo;
+                \item ospitati in una repository pubblica;
+                \item corredati di un glossario;
+            \end{itemize}
+        \paragraph{Metriche}
+        \begin{enumerate}
+            \item \textbf{IG} (Indice di Gulpease):
+            \begin{itemize}
+                \item valore preferibile: $80< IG < 100$;
+                \item valore accettabile: $60< IG < 100$.
+            \end{itemize}
+            \item \textbf{Correttezza ortografica}
+            \begin{itemize}
+                \item valore preferibile: $100\%$;
+                \item valore accettabile: $100\%$.
+            \end{itemize}
+        \end{enumerate}
+\subsection{Processi Organizzativi}
+    \subsubsection{Gestione della Qualità}
+        \paragraph{Obiettivi}
+            Garantire il raggiungimento da parte dei processi e dei prodotti degli standard di qualità richiesti.
+        \paragraph{Strategia}
+            \begin{itemize}
+                \item pianificare le attività di gestione del sistema qualità;
+                \item stabilire un sistema di indicatori per la valutazione dei processi e prodotti;
+                \item monitorare costantemente i risultati prodotti dal punto sopra, eventualmente ripianificando il primo punto.
+            \end{itemize}
+        \paragraph{Metriche}
+        \begin{enumerate}
+        \item \textbf{PMS} (Percentuale di metriche soddisfatte):
+        \begin{itemize}
+            \item valore preferibile: $\geq 80\%$;
+            \item valore accettabile: $\geq 60\%$.
+        \end{itemize}
+    \end{enumerate}
