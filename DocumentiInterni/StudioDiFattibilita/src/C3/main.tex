@@ -1,0 +1,59 @@
+\subsection{Informazioni generali}
+Il capitolato in esame è intitolato "GDP Gathering Detection Platform", proposto dall'azienda Sync Lab mentre i committenti sono il Prof. Tullio Vardanega ed il Prof. Riccardo Cardin.
+\subsection{Descrizione del capitolato}
+L'azienda propone la creazione di un prototipo software in grado di acquisire ed elaborare dei dati per fornire una panoramica sulle possibili zone di assembramento di persone.
+Questi dati potranno essere acquisiti da telecamere, contapersone, servizi Google, orari dei mezzi di trasporto pubblici e flussi di prenotazione Uber.
+Grazie a questi dati si può riuscire a "mappare" le aree con più affluenza, e cercare di prevenire affollamenti.
+\subsection{Prerequisiti}
+\begin{itemize}
+    \item competenze nell'elaborazione di big data;
+    \item competenze nello sviluppo di \glo{backend} e front-end di applicativi web;
+    \item conoscenze sul funzionamenteo dei protocolli asincroni.
+\end{itemize}
+\subsection{Tecnologie coinvolte}
+\begin{itemize}
+    \item \glo{Java} e \glo{TypeScript}: usati per lo sviluppo di \glo{backend} e front-end della Web Application;
+    \item \glo{Javascript}: usato per la gestione delle mappe;
+    \item \glo{MQTT}: protocollo usato per lo scambio di messaggi.
+
+\end{itemize}
+\subsection{Vincoli}
+\begin{itemize}
+    \item le tecnologie di cui sopra;
+    \item il servizio deve essere:
+    \begin{itemize}
+        \item disponibile in caso di un guasto;
+        \item ripristinabile velocemente;
+        \item scalabile;
+    \end{itemize}
+    \item il server, completo di UI, deve rappresentare i flussi:
+    \begin{itemize}
+        \item in tempo reale con bassa latenza;
+        \item previsti per un intervallo di tempo futuro;
+        \item raccolti e storicizzati;
+    \end{itemize}
+    \item test:
+    \begin{itemize}
+        \item devono essere presenti test unitari ed d'integrazione;
+        \item devono coprire almeno l'80\% del codice;
+        \item il sistema deve essere testato tramite test end-to-end;
+        \item devono essere correlati di report;
+    \end{itemize}
+    \item documentazione su problemi aperti con eventuali soluzioni proposte, scelte implementative e progettuali.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+    \item formazione di competenze in ambito di big data e analisi predittiva, oggi ormai richieste da molte aziende importanti;
+    \item competenze in collezionamento di stream di dati provenienti da più fonti;
+    \item grande libertà di implementazione del servizio richiesto, con possibilità di discussione col proponente delle tecnologie utilizzate.
+\end{itemize}
+\subsection{Aspetti critici}
+\begin{itemize}
+    \item l'intero sistema di rilevazione dei dati dovrà essere emulato, in quanto non ci saranno dati veri su cui fare elaborazione. Ciò potrebbe richiedere tempo aggiuntivo oltre allo sviluppo del servizio stesso;
+    \item i dati saranno di forme diverse in base alla fonte, pertanto dovranno essere messi in relazione tipi di dati diversi, portano probabilmente a problematiche da risolvere.
+\end{itemize}
+\subsection{Conclusioni}
+Il capitolato lascia molta libertà di implementazione, guidando per\`{o} gli studenti con suggerimenti sulle tecnologie da utilizzare.
+Non presenta vincoli stringenti, gli unici richiesti sono "di base" per fornire un software usabile.
+Sebbene inizialmente non avesse suscitato molto interesse, è stato scelto come terza preferenza per la possibilità di arricchimento delle competenze personali
+riguardanti l'analisi di dati e sviluppo di interfacce web sia front che \glo{backend}.

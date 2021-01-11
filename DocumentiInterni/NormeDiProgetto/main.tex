@@ -2,13 +2,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{../../Shared/Sweleven}
 \usepackage{csquotes}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \input{./src/Comandi.tex}
 \DeclareUnicodeCharacter{2212}{-}
 
 \begin{document}
 
-\copertina{}
+\copertina{} 
 
 \section*{Registro delle modifiche}\label{sec:Registro-modifiche}
 \input{./src/RegistroModifiche.tex}
@@ -17,25 +18,28 @@
 \tableofcontents
 
 \newpage
-\listoftables
-
-\newpage
 \listoffigures
 
 \newpage
 \section{Introduzione}\label{sec:introduzione}
-\input{src/Introduzione/main.tex}
+\input{./src/Introduzione/main.tex}
 
-\newpage
 \section{Processi primari}\label{sec:processi-primari}
-\input{src/ProcessiPrimari/main.tex}
+\input{./src/ProcessiPrimari/main.tex}
 
-\newpage
 \section{Processi di supporto}\label{sec:processi-di-supporto}
 \input{src/ProcessiDiSupporto/main.tex}
 
-\newpage
 \section{Processi organizzativi}\label{sec:processi-organizzativi}
 \input{src/ProcessiOrganizzativi/main.tex}
+
+\appendix
+\newpage
+\section{Standard di qualità}\label{sec:Standard-di-qualita}
+\input{src/StandardQualita/main.tex}
+
+\newpage
+\section{Ciclo di Deming o PDCA}\label{sec:Ciclo-di-Deming}
+\input{src/CicloDeming/main.tex}
 
 \end{document}

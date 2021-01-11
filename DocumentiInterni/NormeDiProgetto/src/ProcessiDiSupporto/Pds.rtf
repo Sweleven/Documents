@@ -1,0 +1,647 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+\f3\fswiss\fcharset0 Arial-ItalicMT;\f4\ftech\fcharset0 Wingdings-Regular;\f5\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\deftab708
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+
+\f0\fs36 \cf0 PROCESSI DI SUPPORTO
+\f1\fs24 \
+
+\f0\fs36 \
+::Introduzione e norme di realizzazione del documento
+\f1\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+
+\f0 \cf0 Lo scopo di questa documentazione \'e8 quello di definire standard e nomenclatura dei documenti prodotti dal gruppo \'93SWEleven\'94 volti alla realizzazione del progetto didattico di Ingegneria del Software.
+\f1 \
+
+\f0 Il seguente documento, in maniera del tutto similare a tutti gli altri documenti prodotti, segue il seguente ciclo di vita:
+\f1 \
+
+\f0 \
+1) CREAZIONE: il documento viene inizialmente creato, usando un template unico per tutta la documentazione reperibile nei repository del progetto. Successivamente, durante la prima stesura, il creatore redige il documento in maniera incrementale, aggiungendo e, eventualmente, specificando tutte le funzionalit\'e0 che si andranno ad implementare nel progetto.
+\f1 \
+
+\f0 \
+2) REVISIONE: il documento \'e8 stato interamente prodotto, e rimane in attesa di un verificatore, cui compito sar\'e0 quello di verificare le informazioni al suo interno ed, eventualmente, di apportare le opportune modifiche.
+\f1 \
+
+\f0 \
+3) APPROVAZIONE: il documento ha superato con successo la fase di revisione, ed \'e8 pronto per essere caricato nell\'92apposita sezione nel repository o rilasciato per la consultazione.
+\f1 \
+
+\f0 \
+::TEMPLATE DOCUMENTAZIONE SWELEVEN:
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+
+\f2 \cf0 \uc0\u8232 
+\f0 Per uniformare i documenti che verranno prodotti durante lo sviluppo del software, il gruppo ha scelto di adottare un template Latex, per velocizzare la stesura degli stessi riducendo il notevole spreco di concentrazione dedicato alla costruzione iniziale di un documento.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+
+\f0 \cf0 \
+::STRUTTURA DELLA DOCUMENTAZIONE:
+\f1 \
+
+\f0 \
+Ogni documento prodotto che verr\'e0 consegnato assieme al software $nomesoftware verr\'e0 realizzato secondo la seguente struttura:
+\f1 \
+
+\f0 	
+\f1 \
+
+\f0 ::::STRUTTURA PRIMA PAGINA: 
+\f1 \
+
+\f0 La prima pagina del documento \'e8 cos\'ec formata:
+\f1 \
+
+\f0 	LOGO DEL GRUPPO: g
+\f1 \
+
+\f0 	GRUPPO E PROGETTO: Il nome del gruppo \'e8 visibile immediatamente sotto il logo. In aggiunta, \'e8 presente anche la lista dei nomi dei contributori dello specifico documento (?)
+\f1 \
+
+\f0 	TABELLA: presente sotto il titolo del documento, racchiude le seguenti informazioni:			VERSIONE: indica la versione corrente del documento.
+\f1 \
+
+\f0 			REDATTORI: nome, cognome e matricola degli studenti incaricati della scrittura del documento in oggetto.
+\f1 \
+
+\f0 			APPROVATORI: nome, cognome e matricola degli studenti incaricati all\'92approvazione del documento in oggetto.
+\f1 \
+
+\f0 			VERIFICATORI: nome, cognome e matricola degli studenti incaricati della verifica del documento in oggetto.
+\f1 \
+
+\f0 			USO: marcatore d\'92 uso del documento, che pu\'f2 essere interno o esterno.
+\f1 \
+
+\f0 			DESTINAZIONE: indica i destinatari del documento in oggetto.
+\f1 \
+
+\f0 \
+:::REGISTRO DELLE MODIFICHE:
+\f1 \
+
+\f0 Ogni documento riporta una sezione denominata con il nome sopracitato, recante una descrizione sommaria sulle modifiche effettuate al documento. Il presente registro \'e8 formattato in modalit\'e0 tabellare, dove sono riportate le seguenti voci:			
+\f1 \
+
+\f0 	versione: identifica la versione del documento dopo la modifica;
+\f1 \
+
+\f0 	data di modifica: identifica la data di ultima modifica del documento;
+\f1 \
+
+\f0 	descrizione: sintetizza una descrizione della modifica apportata al documento;
+\f1 \
+
+\f0 	nominativo: identifica lo studente, tramite nome e cognome, che ha apportato la modifica;
+\f1 \
+
+\f0 	ruolo: identifica il ruolo dello studente che ha apportato la modifica;
+\f1 \
+
+\f0 \
+:::INDICE:
+\f1 \
+
+\f0 Ogni documento prodotto dal gruppo SWEleven contiene, all\'92inizio dello stesso, un indice, cui scopo \'e8 quello di esplicitare le parti gerarchiche che compongono il documento in oggetto. [POSIZIONATO PRIMA O DOPO IL REGISTRO MODIFICHE???]
+\f1 \
+
+\f0 \
+:::ELENCO IMMAGINI:
+\f1 \
+
+\f0 I documenti muniti di figure saranno provvisti di un indice delle figure contenute, con una breve descrizione della stessa ed il numero della pagina dove \'e8 collocata.
+\f1 \
+
+\f0 \
+:::ELENCO TABELLE:
+\f1 \
+
+\f0 I documenti muniti di tabelle, saranno provvisti di un indice delle tabelle contenente, per
+\f1 \
+
+\f0 ciascuna, una breve descrizione ed il numero della pagina dove \'e8 collocata.
+\f1 \
+
+\f0 \
+:::STRUTTURA PAGINE DI CONTENUTO:
+\f1 \
+
+\f0 La struttura delle pagine di contenuto \'e8 la seguente:
+\f1 \
+
+\f0 	logo: il logo del gruppo \'e8 posizionato in alto a sinistra;
+\f1 \
+
+\f0 	sezione: il nome e numero della sezione sono posizionati in centro alla pagina;
+\f1 \
+
+\f0 	intestazione: \'e8 l\'92intestazione del documento;
+\f1 \
+
+\f0 	contenuto: il contenuto principale del documento \'e8 posizionato dopo l\'92intestazione dello stesso;
+\f1 \
+
+\f0 	numero pagina: presente in basso a destra, su ogni pagina ad esclusione della prima pagina;
+\f1 \
+
+\f0  
+\f1 \
+
+\f0 :::CLASSIFICAZIONE DEI DOCUMENTI:
+\f1 \
+
+\f0 Tutti i documenti prodotti dal gruppo SWEleven necessitano dell\'92approvazione del Responsabile di progetto prima della loro divulgazione.
+\f1 \
+
+\f0 \
+:::DOCUMENTAZIONE INTERNA:
+\f1 \
+
+\f0 La documentazione interna \'e8 un particolare tipo di documentazione che verr\'e0 divulgata solamente internamente al gruppo SWEleven. Fanno parte della documentazione interna i seguenti tipi di documenti:
+\f1 \
+
+\f0 	\uc0\u8594  verbali Interni;
+\f1 \
+
+\f0 	\uc0\u8594  studio fattibilit\'e0???????;
+\f1 \
+
+\f0 	\uc0\u8594  norme di progetto?????;
+\f1 \
+
+\f0 \
+\
+\
+:::DOCUMENTAZIONE ESTERNA:
+\f1 \
+
+\f0 La documentazione esterna \'e8 un tipo di documentazione cui divulgazione sar\'e0 esterna al gruppo SWEleven. Fanno parte della documentazione esterna i seguenti tipi di documenti:
+\f1 \
+
+\f0 \
+	\uc0\u8594  analisi dei requisiti;
+\f1 \
+
+\f0 	\uc0\u8594  piano di qualifica;
+\f1 \
+
+\f0 	\uc0\u8594  piano di progetto;
+\f1 \
+
+\f0 	\uc0\u8594  lettera di presentazione;
+\f1 \
+
+\f0 	\uc0\u8594  glossario;
+\f1 \
+
+\f0 \
+::::STESURA DEI VERBALI:
+\f1 \
+
+\f0 Al momento della redazione del verbale, un membro del gruppo SWEleven sar\'e0 scelto, a rotazione, come Redattore dello stesso. Per ogni incontro del gruppo verr\'e0 prodotto un verbale ad uso, come specificato sopra, solamente interno. Una volta steso lo stesso ed approvato, non \'e8 prevista la possibilit\'e0 di modifica dello stesso, in quanto richiederebbe una modifica di azioni e/o tecnologie gi\'e0 discusse in sedute precedenti in modo retroattivo. La struttura del verbale \'e8 qui descritta:
+\f1 \
+
+\f0 	\uc0\u8594  luogo svolgimento riunione;
+\f1 \
+
+\f0 	\uc0\u8594  data svolgimento riunione;
+\f1 \
+
+\f0 	\uc0\u8594  ora di inizio;
+\f1 \
+
+\f0 	\uc0\u8594  ora di fine;
+\f1 \
+
+\f0 	\uc0\u8594  membri del gruppo presenti con eventuali esterni;
+\f1 \
+
+\f0 A questo, segue l\'92Ordine del giorno, ovvero una descrizione sommaria degli argomenti da discutere nel corso del meeting. Successivamente, \'e8 trascritto il verbale della riunione, ovvero una descrizione pi\'f9 dettagliata di tutti gli argomenti discussi e decisioni prese durante il corso del meeting. Ogni verbale ha la seguente nomenclatura:
+\f1 \
+
+\f0 \
+				
+\f3\i Verbale_I/E_YYYY-MM-DD
+\f1\i0 \
+
+\f0 dove I/E rappresenta il tipo del verbale secondo la seguente sintassi:
+\f1 \
+
+\f0 \
+	\uc0\u8594  I: se il verbale \'e8 ad uso interno al gruppo;
+\f1 \
+
+\f0 	\uc0\u8594  E: se il verbale \'e8 ad uso interno al gruppo, con la partecipazione di individui esterni allo stesso;
+\f1 \
+
+\f0 \
+La nomenclatura del verbale si attiene allo standard ISO 8601, con le date scritte nel seguente formato:
+\f1 \
+
+\f0 \
+	\uc0\u8594  YYYY: rappresenta l\'92anno con 4 cifre;
+\f1 \
+
+\f0 	\uc0\u8594  MM: rappresenta il mese con 2 cifre;
+\f1 \
+
+\f0 	\uc0\u8594  DD: rappresenta il giorno con 2 cifre.
+\f1 \
+
+\f0 \
+Eventuali orari presenti, verranno trascritti secondo la notazione ISO 8601, che prevede l\'92uso dei numeri in un intervallo da 0 a 24 per rappresentare l\'92ora, e da 0 a 59 per rappresentare i minuti e secondi.
+\f1 \
+
+\f0 \
+:::: NORME TIPOGRAFICHE:
+\f1 \
+
+\f0 \
+Il gruppo ha scelto di utilizzare la convenzione CamelCase con, in aggiunta, le seguenti regole:
+\f1 \
+
+\f0 	\uc0\u8594  nomi di file o cartelle dovranno necessariamente avere la prima lettera maiuscola;
+\f1 \
+
+\f0 	\uc0\u8594  i nomi composti di file o cartelle verranno scritti uniti, lasciando le iniziali delle relative parole maiuscole;
+\f1 \
+
+\f0 	\uc0\u8594  i nomi dei documenti utilizzeranno la seguente nomenclatura: NomeDelFile_v. X.Y.Z, dove X,Y e Z indicano la versione del documento;
+\f1 \
+
+\f0 \
+:::ELENCHI PUNTATI:
+\f1 \
+
+\f0 \
+Tutti gli elenchi puntati nelle documentazioni prodotte dal gruppo SWEleven rispetteranno le seguenti norme sintattiche:
+\f1 \
+
+\f0 	\uc0\u8594  la frase che precede il primo elemento dell\'92elenco puntato, o se l\'92elemento precede a sua volta un sottoelenco, dovr\'e0 terminare con il carattere \'93:\'94
+\f1 \
+
+\f0 	\uc0\u8594  ogni elemento dell\'92elenco deve cominciare con la lettera minuscola, ad eccezione dei nomi propri
+\f1 \
+
+\f0 	\uc0\u8594  ogni elemento dell\'92elenco deve terminare con il carattere \'93;\'94
+\f1 \
+
+\f0 	\uc0\u8594  l\'92ultimo elemento dell\'92elenco terminer\'e0 con il carattere \'93.\'94
+\f1 \
+
+\f0 \
+:::GLOSSARIO:
+\f1 \
+
+\f0 \
+Per eliminare ambiguit\'e0 linguistiche e formattare automaticamente le parole chiavi pi\'f9 importanti, \'e8 stato creato un glossario in Latex con nomenclatura nomegruppo.sty.\
+\
+:::SIGLE:
+\f1 \
+
+\f0 \
+In tutti i documenti prodotti dal gruppo SWEleven, si adotteranno le seguenti sigle per abbreviazione dei nomi pi\'f9 ricorrenti, quali:
+\f1 \
+
+\f0 	\uc0\u8594  AdR: indica l\'92analisi dei requisiti;
+\f1 \
+
+\f0 	\uc0\u8594  NdP: indica le norme di progetto;
+\f1 \
+
+\f0 	\uc0\u8594  PdP: indica il piano di progetto;
+\f1 \
+
+\f0 	\uc0\u8594  PdQ: indica il piano di qualifica;
+\f1 \
+
+\f0 	\uc0\u8594  SdF: indica lo studio di fattibilit\'e0;
+\f1 \
+
+\f0 	\uc0\u8594  RR: indica la Revisione dei Requisiti;
+\f1 \
+
+\f0 	\uc0\u8594  RP: indica la Revisione di Progettazione;
+\f1 \
+
+\f0 	\uc0\u8594  RQ: indica la Revisione di Qualifica;
+\f1 \
+
+\f0 	\uc0\u8594  RA: indica la Revisione di Accettazione;\
+\
+\
+::::TABELLE:
+\f1 \
+
+\f0 Il gruppo SwEleven, durante la stesura della documentazione necessaria al progetto, potrebbe far ampio uso di tabelle riassuntive, per dare un carattere meno \
+Prolisso alla documentazione e facilitare la lettura della stessa.\
+Tutte le tabelle saranno costruite secondo i seguenti standard:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 l\'92header della tabella, avr\'e0 sfondo blu e colore di background bianco;\
+
+\f4 \uc0\u61672 	
+\f0 la prima parola di ogni cella avr\'e0 la lettera maiuscola;\
+
+\f4 \uc0\u61672 	
+\f0 per facilitare la lettura tra pi\'f9 righe, si differenzieranno le righe con indice pari da quelle dispari, alternando ciclicamente il colore bianco e grigio;\
+
+\f4 \uc0\u61672 	
+\f0 la tabella sar\'e0 in posizione centrata rispetto al documento;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+\cf0 \
+L\'92esempio sotto riportato riporta una tabella costruita secondo le disposizioni sopra-descritte:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\qc\partightenfactor0
+\cf0 ///ESEMPIO DI TABELLA\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+\cf0 ::::IMMAGINI:\
+Tutte le immagini utilizzate durante la stesura della documentazione, dovranno essere collocate in una organizzazione gerarchica all\'92interno delle cartelle e sottocartelle della documentazione. In particolare, ogni immagine sar\'e0 salvata dentro la specifica cartella del documento a cui appartiene. Un esempio di nomenclatura utilizzata per le immagini sar\'e0 la seguente: 
+\f3\i N_nn_#_nomeimmagine.estensione
+\f0\i0 , dove:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 N indicher\'e0 la sezione dove verr\'e0 inserita l\'92immagine;\
+
+\f4 \uc0\u61672 	
+\f0 n indicher\'e0 la sottosezione dove verr\'e0 inserita l\'92immagine;\
+
+\f4 \uc0\u61672 	
+\f0 # indicher\'e0 un numero intero naturale progressivo, che sar\'e0 l\'92
+\f3\i indice
+\f0\i0  dell\'92immagine;\
+
+\f4 \uc0\u61672 	
+\f0 nomeimmagine indicher\'e0 il nome proprio dell\'92immagine;\
+
+\f4 \uc0\u61672 	
+\f0 estensione indicher\'e0 il formato dell\'92immagine (ex: jpg, png\'85).\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+\cf0 \
+Ogni immagine, in aggiunta, sar\'e0 correlata da una breve descrizione della stessa, e posizionata in centro pagina.\
+\
+::::DIAGRAMMI UML:\
+Ogni diagramma 
+\f3\i uml 
+\f0\i0 inserito all\'92interno della documentazione avr\'e0 estensione png. Il programma atto alla creazione dei diagrammi uml sar\'e0 starUML\
+\
+:::::STRUMENTI:\
+\
+::::LATEX:\
+Per la creazione della documentazione del progetto $nomeprogetto, il gruppo SwEleven ha concordato per l\'92utilizzo del linguaggio di markup LaTeX, con editor desktop TexMaker/TexShop e compilatore LatexMK aggiornato alla versione $versione.\
+\
+\
+::::::::GESTIONE DELLA CONFIGURAZIONE:\
+\
+:::Versionamento:\
+\
+::Codifica della versione di un documento:\
+Ogni documento scritto, prima del suo effettivo completamento e validazione, viene incrementalmente steso in versioni. Ogni versione di un documento \'e8 contrassegnata con una nomenclatura prettamente numerica crescente, con tre cifre intere separate da un punto. Un esempio di codifica \'e8 la seguente: x.y.z, dove le lettere x,y e z indicano quanto segue:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 x indica una versione completa del documento, verificata e approvata dal responsabile. La prima versione del documento \'e8 contrassegnata con il numero \'930\'94, e va man mano incrementato durante le fasi di lavoro;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\li920\ri-952\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 y indica una versione cui stesura \'e8 terminata ma \'e8 in attesa di verifica. Questo contatore parte sempre dal numero \'930\'94, e viene man mano incrementato dal verificatore al termine della verifica. Ogni volta che X viene incrementato, Y dovr\'e0 necessariamente ripartire da 0.\
+\pard\pardeftab708\li720\ri-952\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 z indica una versione del documento ancora in fase di stesura. Anche questo indica parte da 0, e viene man mano incrementato dal redattore dello stesso ad ogni modifica. All\'92incremento di Y, il contatore Z ripartir\'e0 obbligatoriamente da 0.\
+\pard\pardeftab708\li720\ri-952\partightenfactor0
+\cf0 \
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 :::: REPOSITORY e STRUMENTI:\
+\
+::Tecnologie e strumenti:\
+\
+S\
+\
+::STRUTTURA DEL REPOSITORY:\
+\
+Ogni membro del gruppo SwEleven, ha in locale una copia completa del progetto, clonata direttamente dal repository presente su GitHub. La notazione del nome delle cartelle, fa riferimento a quanto dichiarato nella sezione x.y.z. L\'92organizzazione gerarchica delle cartelle \'e8 la seguente:\
+\
+\pard\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 DocumentiEsterni: cartella principale che, al suo interno, organizzato in sottocartelle, contiene tutti i documenti ad uso esterno, come dichiarato nella sezione x.y.z di questo documento;\
+
+\f4 \uc0\u61672 	
+\f0 DocumentiInterni: cartella principale che, al suo interno, organizzato in sottocartelle, contiene tutti i documenti ad uso interno al gruppo, come dichiarato nella sezione x.y.z di questo documento;\
+
+\f4 \uc0\u61672 	
+\f0 Shared: cartella che identifica le risorse condivise internamente al gruppo;\
+
+\f4 \uc0\u61672 	
+\f0 Utils: cartella che contiene tutte le risorse utili ad uso esclusivamente interno al gruppo;\
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 \
+::UTILIZZO DEL SOFTWARE GITKRAKEN:\
+\
+Come gi\'e0 precedentemente scritto, il gruppo SwEleven ha deciso di utilizzare il software per versioning GitKraken nella versione gratuita, configurandolo tramite repository pubblico presente su GitLab. Quando un membro del gruppo deve effettuare il push di una modifica dovr\'e0 eseguire, in ordine, le seguenti azioni:\
+\
+\pard\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 eseguire il comando di push per aggiornare la copia in locale con le ultime modifiche presenti nel repository su GitLab, eventualmente scegliendo l\'92apposito branch a seconda del documento da elaborare;\
+
+\f4 \uc0\u61672 	
+\f0 una volta effettuate tutte le opportune modifiche, si confermano le stesse, premendo l\'92apposito pulsante, nell\'92 area di staging;\
+
+\f4 \uc0\u61672 	
+\f0 scrivere, nell\'92apposito campo del nuovo commit, una breve descrizione delle modifiche effettuate, ed eseguire il comando di commit;\
+
+\f4 \uc0\u61672 	
+\f0 eseguire il comando di push, per aggiornare il repository remoto con le nuove modifiche effettuate.\
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 \
+Il gruppo SwEleven, ha deciso di adottare la stessa nomenclaura per i nomi dei branch, standardizzati in 
+\f3\i NomeDocumento/Modifica
+\f0\i0 , aggiornando successivamente anche il file Utils/brancheslist con il nome del branch appena creato.\
+\
+::UTILIZZO DI GIT DA CLI:\
+\
+In casi eccezionali pu\'f2 succedere che si necessiti la modifica di un file nel repository, ma che un membro del gruppo SwEleven non abbia accesso al programma GitKraken. I comandi e i passi qui sottoelencati sono complementari a quanto elencato sopra, usando, al posto di GitKraken, la command line interface (CLI) di Git. I passi e le istruzioni da impartire a terminale sono le seguenti:\
+\pard\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 spostarsi sul ramo dove si intende fare una modifica, mediante comando git checkout seguito dal nome del branch desiderato;\
+
+\f4 \uc0\u61672 	
+\f0 eseguire il comando git pull per sincronizzare il proprio repository locale con quello remoto, scaricando quindi tutte le modifiche effetuate anche da altri collaboratori;\
+
+\f4 \uc0\u61672 	
+\f0 svolgere la propria attivit\'e0 di modifica al file desiderato;\
+
+\f4 \uc0\u61672 	
+\f0 impartire il comando git add seguito dai nomi dei file modificati nel punto precedente;\
+
+\f4 \uc0\u61672 	
+\f0 eseguire il comando git commit -m seguito da una descrizione sommaria ma sufficientemente esplicativa del compito svolto, inserita tra i caratteri \'93\'94;\
+
+\f4 \uc0\u61672 	
+\f0 infine, eseguire il comando git push per sincronizzare il proprio lavoro in locale nel repository remoto, rendendolo quindi visibile a tutti i membri del gruppo.\
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf2 \
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 \
+\
+:::GESTIONE DELLA QUALITA\'92:\
+\
+Per la trattazione approfondita della gestione della qualit\'e0 del software o documentazione prodotta, si far\'e0 riferimento all\'92apposita documentazione PdQ, dove verranno descritte le metodologie atte al raggiungimento di una qualit\'e0 generale il pi\'f9 possibilmente eccellente. Nello specifico, vengono trattate le seguenti tematiche:\
+\pard\pardeftab708\li920\fi-360\ri-952\sb280\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 gli standard utilizzati;\
+\pard\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f5 le funzionalit\'e0 del software pi\'f9 significative per il progetto. 
+\f0 \
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 In aggiunta, per ogni processo verranno descritti dettagliatamente:\
+\pard\pardeftab708\li920\fi-360\ri-952\sb280\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 gli obiettivi;\
+
+\f4 \uc0\u61672 	
+\f0 la strategia di perseguimento;\
+\pard\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 le metriche.\
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 Gli strumenti con cui si cercher\'e0 di perseguire la qualit\'e0 sopra citata sono:\
+\pard\pardeftab708\li920\fi-360\ri-952\sb280\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 lo standard ISO/IEC/IEEE-12207:1995 per i processi;\
+
+\f4 \uc0\u61672 	
+\f0 lo standard ISO/IEC 9126 per i prodotti;\
+\pard\pardeftab708\li920\fi-360\ri-952\partightenfactor0
+
+\f4 \cf0 \uc0\u61672 	
+\f0 le metriche descritte nel PdQ.\
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 ::::VERIFICA:\
+Con questo processo, il gruppo SwEleven si pone come obiettivo primario lo sviluppo di software e prodotti di qualit\'e0, sia a livello di documentazione che a livello di codice prodotto. Tramite una serie di analisi e test, si assicura che il prodotto finito sar\'e0 conforme ad un livello di qualit\'e0 del tutto accettabile per il soddisfacimento di tutti gli obiettivi prefissati dal committente. \
+::::ASPETTATIVE DELLA VERIFICA:\
+Il processo di verifica viene eseguito secondo i seguenti criteri:\
+	\uc0\u8594  si seguono delle procedure prefissate e precedentemente definite;\
+	\uc0\u8594  ogni prodotto (documentazione e software) passa attraverso delle fasi definite, ed ognuna propedeutica a quella precedente.\
+Al termine della verifica, si avr\'e0 un prodotto stabile e pronto per la fase di validazione successiva.\
+::::::ANALISI:\
+Questo processo implica l\'92uso di due tipi di analisi: statica e dinamica.\
+:::::ANALISI STATICA:\
+L\'92analisi statica studia la documentazione o il codice dell\'92applicazione senza l\'92esecuzione della stessa, cercando la presenza di difetti di programmazione e testando la correttezza (intesa come assenza di errori logici) delle funzioni o procedure scritte.\
+Le due metodologie per effettuare l\'92analisi statica sono le seguenti:\
+	\uc0\u8594  Walkthrough: il verificatore effettuer\'e0 una lettura e studio completo dell\'92intero documento/porzione di codice alla ricerca di eventuali errori. Questa tecnica verr\'e0 utilizzata maggiormente nella parte iniziale del progetto;\
+	\uc0\u8594  Inspection: il verificatore effettuer\'e0 una lettura mirata e specifica in alcuni punti specifici dove c\'92\'e8 pi\'f9 probabilit\'e0 di riscontrare un errore logico.\
+:::::ANALISI DINAMICA:\
+Questa analisi, contrariamente a quella statica, prevede una esecuzione del prodotto ed una serie di test, anche automatizzati, per verificare la correttezza generale del codice. Siccome richiede l\'92esecuzione del software scritto, verr\'e0 fatta solamente dopo l\'92attivit\'e0 di scrittura del codice del progetto.\
+\
+::::TEST:\
+Come gi\'e0 lievemente accennato nel capitolo precedente, durante la fase di analisi dinamica, il gruppo SwEleven potr\'e0 ricorrere all\'92uso di test automatizzati per un riscontro qualitativo del software scritto. Questi test hanno il compito di dimostrare che il programma scritto produce un output conforme a quanto richiesto dal committente, oltre a rilevare eventuali errori prima che il prodotto software venga immesso nel mercato. I test che saranno messi in atto dal gruppo SwEleven, saranno descritti nel corso di questo capitolo.\
+::::TEST DI UNITA\'92:\
+Scopo di questo test \'e8 la verifica degli algoritmi scritti su appunto una 
+\f3\i unit\'e0
+\f0\i0  di codice precedentemente scelta. Questa fase di test si avvale di driver, ovvero simulatori di chiamate o azioni di un utente, e stub, che simula a sua volta una unit\'e0 chiamata.\
+::::TEST DI INTEGRAZIONE:\
+Il loro scopo \'e8 quello di ampliare man mano l\'92unit\'e0 di codice testata, tramite integrazione di pi\'f9 unit\'e0 gi\'e0 precedentemente testate, in modo da combinare e testare sempre pi\'f9 parti del codice. Procedendo con questi test, si formeranno agglomerati di codice testato progressivamente pi\'f9 grandi, fino ad arrivare all\'92inclusione totale del codice prodotto.\
+::::TEST DI SISTEMA:\
+\
+I testi di sistema hanno lo scopo di testare l\'92applicativo prodotto nella sua interezza, portando alla luce eventuali problematiche sulle parti del codice sviluppate da altri sviluppatori. Tramite sempre questi test, si verifica che il prodotto soddisfi completamente tutti i requisiti richiesti.\
+\
+\
+::::TEST DI REGRESSIONE:\
+\
+Questi test si effettuano a seguito di una aggiunta o modifica al sistema, verificando la qualit\'e0 di nuove versione di software scritte. Lo scopo primario \'e8 il test di tutte le nuove funzionalit\'e0 implementate nel prodotto, verificando, inoltre, che le precedenti funzionalit\'e0 gi\'e0 implementate abbiano mantenuto la loro logica e funzione.\
+\
+::::TEST DI ACCETTAZIONE:\
+\
+Questi test vengono effettuati con la partecipazione del committente, cui compito \'e8 quello di verificare il prodotto per garantire il soddisfacimento del cliente. Il superamento di questo test, garantisce che il software \'e8 completamente collaudato e pronto per il rilascio.\
+\
+\
+::::CODICE IDENTIFICATIVO DEI TEST:\
+\
+Ogni test prodotto dal gruppo SwEleven, adotter\'e0 la seguente nomenclatura:\
+\pard\pardeftab708\ri-952\qc\partightenfactor0
+\cf0 T[t]\
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 Dove:\
+	\uc0\u8594  T \'e8 una keyword statica per identificare appunto un \'93Test\'94\
+	\uc0\u8594  t identifica il tipo di test, che pu\'f2 essere:\
+		\uc0\u8594  U: test di unit\'e0;\
+		\uc0\u8594  I: test di integrazione;\
+		\uc0\u8594  S: test di sistema;\
+		\uc0\u8594  R: test di regressione;\
+		\uc0\u8594  A: test di accettazione.\
+\
+\pard\pardeftab708\li720\ri-952\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab708\ri-952\partightenfactor0
+\cf0 :::::STRUMENTI:\
+\
+:::VERIFICA ORTOGRAFICA:\
+La verifica ortografico-sintattica viene svolta dall\'92editor utilizzato dal gruppo, ovvero Overleaf, TexEdit o TexStudio. (altri editor?)\
+\
+\
+\
+::::::VALIDAZIONE:\
+\
+Lo scopo della validazione \'e8 accertare se il prodotto finale soddisfa il compito per il quale \'e8 stato creato, ovvero che rispetti i vincoli obbligatori del committente. Questo processo quindi restituisce il prodotto interamente, accertando e garantendo che \'e8 conforme a tutti i requisiti del committente.
+\f5 \
+
+\f0 \
+:::ASPETTATIVE:
+\f5 \
+
+\f0 \
+il processo di validazione deve rispettare i seguenti punti:
+\f5 \
+
+\f0 	\uc0\u8594  identificazione degli obiettivi da validare;
+\f5 \
+
+\f0 	\uc0\u8594  identificare ed applicare una strategia di validazione condivisa dal gruppo;
+\f5 \
+
+\f0 	\uc0\u8594  valutare i risultati ottenuti dal processo di validazione.
+\f5 \
+
+\f0 \
+:::ATTIVITA\'92:
+\f5 \
+
+\f0 \
+Le attivit\'e0 da svolgere per validare il prodotto sono di esclusiva responsabilit\'e0 del Responsabile di Progetto, e sono le seguenti:
+\f5 \
+
+\f0 	\uc0\u8594  accettare ed approvare il documento;
+\f5 \
+
+\f0 	\uc0\u8594  rigettare il documento, fornendo indicazioni utili per la sua correzione.
+\f5 \
+\pard\pardeftab708\ri-952\partightenfactor0
+\cf0 \
+}

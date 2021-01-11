@@ -1,0 +1,69 @@
+\subsection{UC-25 Aggiunta postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una postazione alla lista di postazioni disponibili eventualmente aggiungendo la postazione ad una stanza;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} una nuova postazione \`{e} stata aggiunta alla lista di postazioni disponibili;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore inserisce le informazioni riguardanti la postazione da aggiungere;
+        \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{UC-26 Disabilitazione postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una postazione, rendendola non prenotabile. Tutte le prenotazioni per quella postazione vengono cancellate;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio della postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} la postazione \`{e} disabilitata e non pi\`{u} prenotabile, inoltre tutte le prenotazioni future per quella postazione sono annullate;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore disabilita la postazione;
+        \item la postazione non \`{e} più prenotabile;
+        \item le prenotazioni della postazione sono annullate.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{UC-27 Rimozione postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una postazione dalla lista di postazioni disponibili;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio della postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} la postazione \`{e} eliminata e non più prenotabile, inoltre vengono eliminate le relative prenotazioni;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore rimuove la stanza;
+        \item le postazioni della stanza non sono pi\`{u} prenotabili;
+        \item le prenotazioni delle postazioni della stanza sono annullate.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{UC-28 Visualizzazione storico postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare lo storico degli utilizzi e delle pulizie della postazione con specificazione dell'utente che ha compiuto ogni azione;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio di una postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti la postazione;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza le informazioni della postazione.
+    \end{itemize}
+\end{itemize}
+
+
+
+\subsection{UC-29 Scarica report postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore autenticato;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} scaricare un report che sommarizza l'utilizzo della postazione;
+    \item \textbf{Precondizione:} l'amministratore autenticato si trova nella pagina di dettaglio di una postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore scarica un report in cui \`{e} possibile consultare lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti la postazione;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza il report contenente le informazioni della postazione.
+    \end{itemize}
+\end{itemize}
