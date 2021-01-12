@@ -109,11 +109,11 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 \item \textbf{Postcondizione:} l'attore modifica correttamente una prenotazione per la nuova data/ora scelta;
 \item \textbf{Scenario principale:} 
 	\begin{itemize}
-		\item l'attore seleziona la nuova data in cui desidera prenotare una postazione[UC-1.1];
-		\item l'attore seleziona la nuova stanza in cui vuole prenotare una postazione dalla lista delle stanze abilitate[UC-1.2];
+		\item l'attore seleziona la nuova data in cui desidera prenotare una postazione[UC-16.1];
+		\item l'attore seleziona la nuova stanza in cui vuole prenotare una postazione dalla lista delle stanze abilitate[UC-16.2];
 		\item l'attore visualizza la lista di postazioni prenotabili nella stanza selezionata per la nuova data precedentemente selezionata;
-		\item l'attore seleziona la nuova postazione che desidera prenotare[UC-1.3];
-		\item l'attore seleziona il nuovo orario della prenotazione tra la lista degli orari in cui la prenotazione è libera ed igienizzata[UC-1.4];
+		\item l'attore seleziona la nuova postazione che desidera prenotare[UC-16.3];
+		\item l'attore seleziona il nuovo orario della prenotazione tra la lista degli orari in cui la prenotazione è libera ed igienizzata[UC-16.4];
 		\item il sistema elabora correttamente la richiesta, mandando in stato di “pending” la prenotazione;
 	\end{itemize}
 \end{itemize}
@@ -130,16 +130,16 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 		\item il sistema elabora correttamente la richiesta;
 		\item il sistema restituisce un errore per i seguenti motivi:
 		\begin{itemize}
-			\item non è possibile cancellare una prenotazione per un orario passato[UC-3.1].
+			\item non è possibile cancellare una prenotazione per un orario passato[UC-19.1].
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{UC-19 Visualizzazione errore di cancellazione: tentativo di cancellazione di una prenotazione per un orario passato}
+\subsection{UC-19 Visualizzazione errore di cancellazione: tentativo di cancellazione di una prenotazione per un orario passato}
 \begin{itemize}
 \item \textbf{Attori primari:} personale interno autenticato;
 \item \textbf{Precondizione:} il personale interno autenticato sta cercando di cancellare una prenotazione già usufruita in un orario passato;
-\item \textbf{Postcondizione:} la cancellazione non viene approvata e il personale interno auteneticato riceve un messaggio di errore auto-esplicativo;
+\item \textbf{Postcondizione:} la cancellazione non viene approvata e il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
 \item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che non è possibile cancellare una prenotazione per un orario passato.
 \end{itemize}
 
@@ -159,7 +159,7 @@ Il presente diagramma vuole riassumere la possibilità di gestione delle prenota
 %\subsubsection{UC-4.1 - Visualizzazione errore di prenotazione attiva: l'utente non ha alcuna prenotazione attiva}
 %\begin{itemize}
 %\item \textbf{Attori primari:} personale interno autenticato;
-%\item \textbf{Precondizione:} il personale interno auteneticato sta cercando di visualizzare la lista delle sue prenotazioni, non avendone però alcuna attiva;
+%\item \textbf{Precondizione:} il personale interno autenticato sta cercando di visualizzare la lista delle sue prenotazioni, non avendone però alcuna attiva;
 %\item \textbf{Postcondizione:} la visualizzazione non viene eseguita e il personale interno autenticato riceve un messaggio di errore auto-esplicativo;
 %\item \textbf{Scenario principale:} il personale interno autenticato visualizza un messaggio di errore in cui viene informato che non ha alcuna prenotazione attiva.
 %\end{itemize}
