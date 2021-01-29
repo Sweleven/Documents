@@ -1,0 +1,28 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{../../../Shared/Sweleven}
+\usepackage{lmodern}
+\input{src/Comandi.tex}
+
+\begin{document}
+    \copertina{}
+
+    \newpage
+    \tableofcontents
+    \renewcommand{\listtablename}{\empty}
+    \listoftables
+    \newpage
+    \section*{Registro delle modifiche}\label{sec:Registro-modifiche}
+    \input{src/RegistroModifiche.tex}
+    
+    \newpage
+    \tableofcontents
+    
+    \newpage
+    \section{Informazioni generali}\label{sec:informazioni-generali}
+    \input{src/Informazioni/main.tex}
+    
+    \newpage
+    \section{Verbale della riunione}\label{sec:verbale-della-riunione}
+    \input{src/TracciamentoDecisioni/main.tex}
+\end{document}
