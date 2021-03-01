@@ -1,0 +1,84 @@
+%TODO: conferma della volontà di eliminare stanze e postazioni
+
+\subsection{UC- Aggiunta postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una postazione alla lista di postazioni disponibili eventualmente aggiungendo la postazione ad una stanza;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} una nuova postazione \`{e} stata aggiunta alla lista di postazioni disponibili;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore inserisce le informazioni riguardanti la postazione da aggiungere;
+        \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{UC- Disabilitazione postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una postazione, rendendola non prenotabile. Tutte le prenotazioni per quella postazione vengono cancellate;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} la postazione \`{e} disabilitata e non pi\`{u} prenotabile, inoltre tutte le prenotazioni future per quella postazione sono annullate;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore disabilita la postazione tramite apposito tasto;
+        \item il sistema elabora la richiesta cancellando tutte le prenotazioni già effettuate relative alla specifica postazione. La postazione non è più fruibile da un utente fino a quando non verrà nuovamente abilitata;
+        \item lo stato della postazione viene marcato come disabilitato;
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{UC- Rimozione postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una postazione dalla lista di postazioni disponibili;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} la postazione \`{e} eliminata e non più prenotabile, inoltre vengono eliminate le relative prenotazioni;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore rimuove la postazione tramite apposito tasto;
+        \item la postazione viene rimossa dall'elenco delle postazioni per quella determinata stanza;
+        \item le prenotazioni relative alla postazione rimossa sono annullate.
+    \end{itemize}
+\end{itemize}
+
+% disabilitata, occupata, sporca (libera e non igienizzata), prenotabile al momento (libera ed igienizzata)
+
+\subsection{UC- Visualizzazione in dettaglio dello stato di una postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare in tempo reale lo stato in cui si trova ogni postazione, che può essere libera, sporca, occupata o disabilitata;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio di una postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo stato attuale della postazione selezionata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza le informazioni della postazione.
+    \end{itemize}
+\end{itemize}
+
+%TODO non richiesto?
+\subsection{UC- Visualizzazione storico postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare lo storico degli utilizzi e delle pulizie della postazione con specificazione dell'utente che ha compiuto ogni azione;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio di una postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti la postazione;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza le informazioni della postazione.
+    \end{itemize}
+\end{itemize}
+
+%TODO non richiesto?
+\subsection{UC- Scarica report postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} scaricare un report che sommarizza l'utilizzo della postazione;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio di una postazione nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore scarica un report in cui \`{e} possibile consultare lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti la postazione;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza il report contenente le informazioni della postazione.
+    \end{itemize}
+\end{itemize}

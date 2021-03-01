@@ -145,12 +145,25 @@
 \subsection{UC- Visualizzazione dati stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
-    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare i dati e lo stato (numero di postazioni occupate, libere, sporche o disabilitate e numero di dipendenti) della stanza selezionata;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare i dati e lo stato (numero di postazioni occupate, prenotabili al momento, sporche o disabilitate e numero di dipendenti) della stanza selezionata;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione dei dettagli della stanza nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutti i dettagli della stanza selezionata;
     \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore visualizza le informazioni delle postazioni della stanza.
+    \end{itemize}
+\end{itemize}
+
+%TODO guardare parte ricerca audio ricevimento Cardin
+\subsection{UC-.1 Ricerca per stato delle postazioni di una stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare le postazioni di una stanza filtrate per uno stato attuale, ovvero prenotabili al momento (UC-.1.1...), sporche (UC-.1.2...), disabilitate (UC-.1.3) o occupate (UC-.1.4);
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio di una stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore scarica un report in cui \`{e} possibile consultare lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni nella stanza;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza il report contenente le informazioni della stanza.
     \end{itemize}
 \end{itemize}
 
