@@ -1,0 +1,183 @@
+\subsection{UC- Aggiunta stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una stanza alla lista di stanze censite;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
+    \item \textbf{Postcondizione:} una nuova stanza \`{e} stata aggiunta alla lista di stanze disponibili;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore seleziona la funzionalità di aggiunta stanze;
+        \item l'amministratore inserisce il codice identificativo della stanza (UC-.1 Inserimento del codice di una nuova stanza);
+        \item l'amministratore inserisce il numero di postazioni in una nuova stanza (UC-.2 Inserimento del numero di postazioni in una nuova stanza);
+        \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
+    \end{itemize}
+\end{itemize}
+
+%TODO vedere se è possibile automatizzare l'inserimento del codice di una nuova stanza
+
+\subsubsection{UC-.1 Inserimento del codice di una nuova stanza}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore vuole inserire il codice di una nuova stanza;
+	\item \textbf{Precondizioni:} l'amministratore ha selezionato la funzionalità di inserimento di un codice per una nuova stanza;
+	\item \textbf{Postcondizioni:} l'amministratore ha inserito con successo il codice di una nuova stanza;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item l'amministratore seleziona l'apposito box per l'inserimento del codice della nuova stanza;
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC- Errore: inserimento di un codice stanza non valido).
+	      \end{enumerate}
+	\item \textbf{Estensioni:}
+		\begin{enumerate}
+		      \item UC- Errore: inserimento di un codice di una stanza non valido.
+	      \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC- Errore: inserimento di un codice di una stanza non valido}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo e-mail che contiene dei caratteri non validi durante la registrazione e ha inviato i dati al sistema;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la registrazione del nuovo utente;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item il sistema elabora la richiesta ricevuta;
+		      \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa la registrazione del nuovo utente.
+	      \end{enumerate}
+	 \item \textbf{Estensioni:}
+	 	\begin{enumerate}
+		       \item UC-.1 Errore: inserimento di un codice stanza non univoco;
+		       \item UC-.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
+	        \end{enumerate}
+\end{itemize}
+
+\subsection{UC-.1 Errore: inserimento di un codice stanza non univoco}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} il sistema non permette l'assegnazione di quel nome se il codice identificativo della nuova stanza è già stato utilizzato. In tal caso viene mostrato un errore a video auto esplicativo;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice stanza già censito nel sistema;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento della nuova stanza;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+	      	      \item l'amministratore invia i dati al sistema;
+		      \item il sistema rileva una stanza già memorizzata con lo stesso codice;
+		      \item il sistema restituisce un messaggio d'errore esplicativo e non permette di completare l'inserimento della nuova stanza.
+	      \end{enumerate}
+\end{itemize}
+
+
+
+\subsubsection{UC-.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice stanza che contiene dei caratteri non validi durante l'assegnazione del codice della stanza;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento della nuova stanza;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item il sistema rileva dei caratteri non validi all'interno del codice della stanza;
+		      \item il sistema restituisce un messaggio d'errore esplicativo e non permette di completare l'inserimento della nuova stanza.
+	      \end{enumerate}
+\end{itemize}
+
+
+%TODO in sospeso
+\subsection{UC- Modifica dati stanza}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item\textbf{Descrizione:} l'amministratore vuole modificare i dati di una stanza;
+	\item\textbf{Precondizioni:} l'amministratore accede all'apposita funzionalità di modifica dei dati di una stanza;
+	\item\textbf{Postcondizioni:} viene visualizzato un messaggio d'errore causato dall'inserimento di una password di conferma errata;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item l'utente inserisce la password precedentemente inserita;
+		      \item il sistema analizza il matching tra le due password, in caso negativo restituisce un messaggio d'errore esplicativo e richiede nuovamente l'inserimento di una nuova password senza precedentemente completare la modifica della password.
+	      \end{enumerate}
+\end{itemize}
+
+
+
+\subsection{UC- Abilitazione stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} abilitare una stanza precedentemente segnata come disabilitata;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} la stanza \`{e} stata abilitata e ritorna quindi fruibile agli utenti;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore abilita nuovamente la stanza e ritorna quindi fruibile agli utenti;
+        \item le postazioni della stanza sono nuovamente prenotabili;
+    \end{itemize}
+\end{itemize}
+
+
+
+\subsection{UC- Disabilitazione stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una stanza, impedendo la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni per tutte le postazioni di quella stanza vengono cancellate;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} la stanza \`{e} disabilitata, tutte le postazioni presenti all'interno della stessa non sono pi\`{u} prenotabili e tutte le relative prenotazioni future sono annullate;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore disabilita la stanza;
+        \item le postazioni della stanza non sono pi\`{u} prenotabili;
+        \item le prenotazioni delle postazioni della stanza sono annullate.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{UC- Rimozione stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una stanza, rimuovendo cos\`{i} la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni per quella stanza vengono cancellate;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} la stanza \`{e} eliminata e tutte le postazioni presenti all'interno della stanza vengono eliminate e tutte le prenotazioni future per tutte le postazioni nella stanza sono annullate;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore rimuove la stanza;
+        \item le postazioni della stanza non sono pi`{u} prenotabili;
+        \item le prenotazioni delle postazioni della stanza sono annullate.
+    \end{itemize}
+\end{itemize}
+
+
+%TODO visualizzazione dati stanza (numero di postazioni occupate, libere, sporche o disabilitate)
+\subsection{UC- Visualizzazione dati stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare i dati e lo stato (numero di postazioni occupate, libere, sporche o disabilitate e numero di dipendenti) della stanza selezionata;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione dei dettagli della stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza tutti i dettagli della stanza selezionata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza le informazioni delle postazioni della stanza.
+    \end{itemize}
+\end{itemize}
+
+
+%TODO desiderabile
+\subsection{UC- Visualizzazione storico stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare lo storico degli utilizzi e delle pulizie di tutte le postazioni di una stanza, con specificazione dell'utente che ha compiuto ogni azione;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio di una stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni della stanza;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza le informazioni delle postazioni della stanza.
+    \end{itemize}
+\end{itemize}
+
+
+%TODO desiderabile
+\subsection{UC- Scarica report stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} scaricare un report che sommarizza l'utilizzo delle stanze e delle postazioni.
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio di una stanza nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore scarica un report in cui \`{e} possibile consultare lo storico di tutte le modifiche/prenotazioni/cancellazioni riguardanti tutte le postazioni nella stanza;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza il report contenente le informazioni della stanza.
+    \end{itemize}
+\end{itemize}
