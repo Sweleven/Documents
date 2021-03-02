@@ -10,21 +10,110 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
         \textbf{Codice}}     & \textcolor{\secondaryColor}
         {\textbf{Descrizione}} & \textcolor{\secondaryColor}{\textbf{Esito}} \\
 
-        TS1.1&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di creare una prenotazione.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+        TS1&
+        L'amministratore deve poter essere in grado di registrare nuovi utenti.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item poter accedere alla pagina di registrazione;
+            \item selezionare il tipo di utente scelto;
+            \item inserire i dati rispetto al tipo di utente scelto.
+            
+        \end{itemize}&
+        NI\\
+
+      TS1.1&
+        L'amministratore deve poter essere in grado di registrare altri Amministratori.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina di registrazione e specificare il tipo di utente come Amministratore;
+            \item inserire il nome del nuovo utente;
+            \item inserire il cognome del nuovo utente;
+            \item inserire l'indirizzo e-mail del nuovo utente;
+            \item inserire una password temporanea.
+            
+        \end{itemize}&
+        NI\\
+
+        TS1.2&
+        L'amministratore deve poter essere in grado di registrare utenti come dipendenti.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina di registrazione e specificare il tipo di utente come Dipendente;
+            \item inserire il nome del nuovo utente;
+            \item inserire il cognome del nuovo utente;
+            \item inserire l'indirizzo e-mail del nuovo utente;
+            \item inserire una password temporanea.
+            
+        \end{itemize}&
+        NI\\
+
+        TS1.3&
+        L'amministratore deve poter essere in grado di registrare utenti come Igienizzatori.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina di registrazione e specificare il tipo di utente come Igienizzatore;
+            \item inserire il nome del nuovo utente;
+            \item inserire il cognome del nuovo utente;
+            \item inserire l'indirizzo e-mail del nuovo utente;
+            \item inserire una password temporanea.
+            
+        \end{itemize}&
+        NI\\
+
+        TS2.0&
+        Il dipendente deve essere in grado di accedere all'applicazione.\newline
+        Al dipendente viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina di Login;
+            \item inserire l'indirizzo e-mail;
+            \item inserire la password.
+        \end{itemize}&
+        NI\\
+
+        TS3.0&
+        Il dipendente deve essere in grado di scannarizzare il tag RFID.\newline
+        Al dipendente viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item [] oppure
+            \item visualizzazione dell'errore della scannerizzazione non avvenuta correttamente.
+        \end{itemize}&
+        NI\\
+
+        TS3.1&
+        Il dipendente deve essere verificare lo stato di una postazione tramite la scannarizzazione del tag RFID.\newline
+        Al dipendente viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item [] oppure
+            \item visualizzazione dell'errore della scannerizzazione non avvenuta correttamente.
+            \item verificare lob stato della postazione.
+        \end{itemize}&
+        NI\\
+
+
+        TS4.0&
+        Il dipendente deve poter essere in grado di creare una prenotazione.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di creazione di una prenotazione;
             \item verificare che sia possibile creare una prenotazione specificando data e ora;
             \item verificare che la prenotazione passi ad uno stato di "pending";
-            \item verificare che la prenotazione venga conferamta.
+            \item verificare che la prenotazione venga confermata.
             \item [] OPPURE
             \item verificare che la prenotazione venga eliminata per un motivo specificato.
         \end{itemize}&
         NI\\
-        TS1.2&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di modificare una prenotazione.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+
+        TS4.1&
+        Il dipendente deve essere in grado di modificare una prenotazione.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di modifica di una prenotazione;
             \item verificare che sia possibile modificare una prenotazione specificando una nuova data e ora;
@@ -34,18 +123,18 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
             \item verificare che la prenotazione venga rifiutata per un errore specificato.
         \end{itemize}&
         NI\\
-        TS1.3&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di eliminare una prenotazione.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+        TS4.2&
+        Il dipendente deve essere in grado di eliminare una prenotazione.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di cancellazione di una prenotazione;
             \item verificare che sia possibile eliminare una prenotazione effettuata in precedenza per una specifica data e ora;
             \item verificare che la prenotazione venga eliminata.
         \end{itemize}&
         NI\\
-        TS1.4&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di visualizzare le prenotazioni attive nel sistema.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+        TS4.3&
+        Il dipendente deve poter in grado di visualizzare le prenotazioni attive nel sistema.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di visualizzazione delle prenotazioni;
             \item verificare che siano elencate correttamente tutte le sue prenotazioni attive.
@@ -53,26 +142,21 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
             \item verificare che sia visualizzato un messaggio di errore indicando che non esistono prenotazioni attive.
         \end{itemize}&
         NI\\
-        TS1.5&
-        L'amministratore deve poter essere in grado di impedire prenotazioni su una postazione.\newline
-        All'amministratore viene chiesto di:
+
+        TS4.4&
+        Il dipendente deve poter in grado di visualizzare le prenotazioni attive nel sistema.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
-            \item navigare all'apposita sezione di blocco delle prenotazioni per una postazione;
-            \item bloccare la possibilità di prenotare una postazione;
-            \item verificare che la postazione non permetta la prenotazione.
+            \item navigare all'apposita sezione di visualizzazione delle prenotazioni;
+            \item verificare che siano elencate correttamente tutte le sue prenotazioni attive.
+            \item [] OPPURE
+            \item verificare che sia visualizzato un messaggio di errore indicando che non esistono prenotazioni attive.
         \end{itemize}&
         NI\\
-        TS1.6&
-        L'amministratore, il dipendente registrato e l'igienizzatore devono poter essere in grado di vedere e gestire lo stato di tutte le postazioni a cui ha accesso.\newline
-        All'amministratore, al dipendente registrato e all'igienizzatore viene chiesto di:
-        \begin{itemize}
-            \item navigare all'apposita sezione di gestione delle postazioni;
-            \item verificare che possa gestire le postazioni a cui ha accesso.
-        \end{itemize}&
-        NI\\
-        TS1.7&
-        L'amministratore e il dipendente registrato devono non essere in grado di prenotare una postazione già prenotata.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+
+        TS4.5&
+        Il dipendente deve non essere in grado di prenotare una postazione già prenotata.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di creazione di una prenotazione;
             \item verificare che sia possibile creare una prenotazione specificando data e ora;
@@ -80,60 +164,206 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
             \item verificare che la prenotazione non venga effettuata.
         \end{itemize}&
         NI\\
-        TS2.1&
-        L'amministratore, il dipendente registrato e l'igienizzatore devono poter essere in grado di marcare come igienizzata una postazione.\newline
-        All'amministratore, al dipendente registrato e all'igienizzatore viene chiesto di:
+
+        TS4.6&
+        Il dipendente deve poter essere in grado di vedere e gestire lo stato di tutte le postazioni a cui ha accesso.\newline
+        Al dipendente viene chiesto di:
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione della postazione;
-            \item verificare che possa marcare come igienizzata la postazione;
-            \item verificare il corretto esito della marcatura.
-            \item [] OPPURE
-            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+            \item navigare all'apposita sezione di gestione delle postazioni;
+            \item verificare che possa gestire le postazioni a cui ha accesso.
         \end{itemize}&
         NI\\
-        TS2.2&
-        Il sistema deve marcare come sporca una postazione che \`{e} stata occupata.\newline
-        Quando viene occupata una postazione il sistema deve:
+
+        TS5.0&
+        L'amministratore deve essere in grado di accedere all'applicazione web.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
-            \item marcare la postazione come "sporca";
-            \item rendere la postazione non prenotabile fin quando non risulter\`{a} "pulita".
+            \item accedere alla pagina di Login;
+            \item inserire l'indirizzo e-mail;
+            \item inserire la password.
         \end{itemize}&
         NI\\
-        TS3.1&
-        Il sistema deve essere in grado di marcare come "libera" una postazione igienizzata.\newline
+
+        TS6.0&
+        L'amministratore deve poter essere in grado di creare nuove postazioni.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
-            \item La postazione \`{e} prenotabile.
+            \item navigare all'apposita sezione e selezionare il tipo di postazione;
+            \item inserire i dati richiesti;
+            \item confermare l'avvenuta creazione della postazione.
         \end{itemize}&
         NI\\
-        TS3.2&
-        L'amministratore e il dipendente registrato devono poter essere in grado di marcare come occupata una postazione.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+
+        TS6.1&
+        L'amministratore deve poter essere in grado di creare nuove stanze.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione della postazione;
-            \item verificare che possa marcare come occupata la postazione utilizzata;
-            \item verificare il corretto esito della marcatura.
-            \item [] OPPURE
-            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+            \item navigare all'apposita sezione e selezionare il tipo di postazione come stanza;
+            \item inserire il codice della stanza;
+            \item verificare che non ci siano messaggi di errore;
+            \item confermare la creazione della stanza.
+            \item verificare l'avvenuta creazione della stanza.
         \end{itemize}&
         NI\\
-        TS3.3&
-        L'amministratore e il dipendente registrato devono poter essere in grado di confermare l'occupazione di una postazione prenotata.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+
+        TS6.2&
+        L'amministratore deve poter essere in grado di creare nuove postazioni all'interno delle stanze.\newline
+        All'amministratore viene chiesto di:
         \begin{itemize}
-            \item aprire la schermata pop-up di conferma della prenotazione;
-            \item verificare l'esito della conferma della prenotazione.
+            \item navigare all'apposita sezione e selezionare la stanza dove è rischiesta la creazione della postazione;
+            \item inserire il codice della postazione;
+            \item verificare che non ci siano messaggi di errore;
+            \item confermare la creazione della postazione;
+            \item verificare l'avvenuta creazione della postazione.
         \end{itemize}&
         NI\\
-        TS4.1&
-        L'amministratore deve poter essere in grado di disabilitare una postazione.\newline
+
+        TS7.0&
+        L'amministratore deve poter essere in grado di modificare le postazioni.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare il tipo di postazione;
+            \item inserire i dati richiesti;
+            \item confermare l'avvenuta modifica della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS7.1&
+        L'amministratore deve poter essere in grado di modificare le stanze.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare la stanza da modificare;
+            \item premere il pulsante modifica;
+            \item inserire i nuovi dati;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare la modifica della stanza;
+            \item verificare l'avvenuta modifica della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS7.2&
+        L'amministratore deve poter essere in grado di modificare le postazioni all'interno delle stanze.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare la stanza dove è presente la postazione da modificare;
+            \item premere il pulsante modifica;
+            \item inserire i nuovi dati;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare la modifica della postazione;
+            \item verificare l'avvenuta modifica della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS8.0&
+        L'amministratore deve poter essere in grado di eliminare le postazioni.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare il tipo di postazione;
+            \item eliminare la postazione;
+            \item confermare l'eliminazione della postazione;
+            \item verificare l'avvenuta eliminazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS8.1&
+        L'amministratore deve poter essere in grado di eliminare le stanze.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare la stanza da eliminare;
+            \item premere il pulsante elimina;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare l'eliminazione della stanza;
+            \item verificare l'avvenuta eliminazione della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS8.2&
+        L'amministratore deve poter essere in grado di eliminare le postazioni all'interno delle stanze.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare la stanza dove è presente la postazione da eliminare;
+            \item premere il pulsante elimina;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare l'eliminazione della postazione;
+            \item verificare l'avvenuta eliminazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS9.0&
+        L'amministratore deve poter essere in grado di disabilitare le postazioni.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare il tipo di postazione;
+            \item disabilitare la postazione;
+            \item confermare la disabilitazione della postazione;
+            \item verificare l'avvenuta disabilitazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS9.1&
+        L'amministratore deve poter essere in grado di disabilitare le stanze.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare la stanza da disabilitare;
+            \item premere il pulsante disabilitare;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare la disabilitazione della stanza;
+            \item verificare l'avvenuta disabilitazione della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS9.2&
+        L'amministratore deve poter essere in grado di disabilitare le postazioni all'interno delle stanze.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione e selezionare la stanza dove è presente la postazione da disabilitare;
+            \item premere il pulsante disabilitare;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare la disabilitazione della postazione;
+            \item verificare l'avvenuta disabilitazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS10.0&
+        L'amministratore deve poter essere in grado di impedire le prenotazioni.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di blocco delle prenotazioni;
+            \item bloccare la possibilità di prenotare;
+            \item verificare che la postazione non permetta la prenotazione.
+        \end{itemize}&
+        NI\\
+
+        TS10.1&
+        L'amministratore deve poter essere in grado di impedire prenotazioni di una stanza.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di blocco delle prenotazioni della stanza;
+            \item bloccare la possibilità di prenotare in quella determinata stanza;
+            \item verificare che la stanza non permetta le prenotazione.
+        \end{itemize}&
+        NI\\
+
+        TS11&
+        L'amministratore deve poter essere in grado di impedire prenotazioni di una singola postazione.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di blocco delle prenotazioni della postazione;
+            \item bloccare la possibilità di prenotare quella postazione;
+            \item verificare che la postazione non permetta le prenotazione.
+        \end{itemize}&
+        NI\\
+
+        TS12&
+        L'amministratore deve poter essere in grado di vedere e gestire lo stato di tutte le postazioni a cui ha accesso.\newline
         All'amministratore viene chiesto di:
         \begin{itemize}
             \item navigare all'apposita sezione di gestione delle postazioni;
-            \item marcare la postazione desiderata come disabilitata;
-            \item verificare che la postazione non sia né prenotabile né servibile.
+            \item verificare che possa gestire le postazioni a cui ha accesso.
         \end{itemize}&
         NI\\
-        TS4.2&
+
+        TS13&
         L'amministratore deve poter essere in grado di riabilitare una postazione precedentemente disabilitata.\newline
         All'amministratore viene chiesto di:
         \begin{itemize}
@@ -142,7 +372,115 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
             \item verificare che la postazione sia ora prenotabile e servibile.
         \end{itemize}&
         NI\\
-       
+
+        TS14&
+        L'amministratore deve poter essere in grado di monitorare in ogni momento il numero di dipendenti presenti in tutte le postazioni e nella
+        stanza nel suo complesso.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione delle postazioni;
+            \item selezionare il monitoraggio in tempo reale;
+            \item visualizzare la presenza delle persone all'interno della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS15&
+        L'amministratore deve poter essere in grado di effettuare ricerche sugli accessi e sulle postazioni occupate da uno specifico dipendente.\newline
+        All'amministratore viene chiesto di:
+        \begin{itemize}
+            \item navigare all'apposita sezione di gestione degli utenti;
+            \item aprire la barra di ricerca;
+            \item inserire i dati dell'utente;
+            \item visualizzare lon storico dell'utente.
+        \end{itemize}&
+        NI\\
+
+        TS16&
+        L'igienizzatore deve essere in grado di accedere all'applicazione mobile.\newline
+        All'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina di Login;
+            \item inserire l'indirizzo e-mail;
+            \item inserire la password.
+        \end{itemize}&
+        NI\\
+
+        TS17&
+        L'igienizzatore deve essere in grado di visualizzare le stanze dove c'è stato almeno un dipendente.\newline
+        All'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item navigare nell'apposita sezione;
+            \item visualizzare lo stato delle stanze;
+        \end{itemize}&
+        NI\\
+
+        TS18&
+        L'igienizzatore deve essere in grado di marcare le stanze dove ha effettuato l'igienizzazione.\newline
+        All'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item navigare nell'apposita sezione;
+            \item selezionare la stanza igienizzata;
+            \item confermare l'igienizzazione della stanza;
+            \item verificare l'avvenuta marcazione della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS18.1&
+        L'igienizzatore deve essere in grado marcare la stanza come igienizzata tramite la scannarizzare del tag RFID.\newline
+        All'igienizzatore viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item [] oppure
+            \item visualizzazione dell'errore della scannerizzazione non avvenuta correttamente;
+            \item confermare l'igienizzazione della stanza;
+            \item verificare l'avvenuta conferma dell'igienizzazione della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS19&
+        Il dipendente deve essere in grado di marcare la postazione dove ha utilizzato il kit pulizia come l'igienizzato.\newline
+        Al dipendente viene chiesto di:
+        \begin{itemize}
+            \item navigare nell'apposita sezione;
+            \item selezionare la stanza;
+            \item selezionare la postazione;
+            \item confermare l'igienizzazione della postazione;
+            \item verificare l'avvenuta marcazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS19.1&
+        Il dipendente deve essere in grado di marcare la postazione dove ha utilizzato il kit pulizia come l'igienizzato tramite tag RFID.\newline
+        Al dipendente viene chiesto di:
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item [] oppure
+            \item visualizzazione dell'errore della scannerizzazione non avvenuta correttamente;
+            \item confermare l'igienizzazione della postazione;
+            \item verificare l'avvenuta conferma dell'igienizzazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS20&
+        Il sistema deve marcare come sporca una postazione che \`{e} stata occupata.\newline
+        Quando viene occupata una postazione il sistema deve:
+        \begin{itemize}
+            \item marcare la postazione come "sporca";
+            \item rendere la postazione non prenotabile fin quando non risulter\`{a} "pulita".
+        \end{itemize}&
+        NI\\
+        TS21&
+        Il sistema deve essere in grado di marcare come "libera" una postazione igienizzata.\newline
+        \begin{itemize}
+            \item La postazione \`{e} prenotabile.
+        \end{itemize}&
+        NI\\
         
     \end{longtable}
 }
