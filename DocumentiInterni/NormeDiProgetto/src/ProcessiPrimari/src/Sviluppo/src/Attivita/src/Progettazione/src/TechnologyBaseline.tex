@@ -1,9 +1,22 @@
 La technology baseline descrive ed eventualmente motiva le decisioni prese dal gruppo \Gruppo{} in merito ai seguenti temi:
 
 \begin{itemize}
-    \item \textbf{Tecnologie utilizzate}: descrizione dettagliata delle tecnologie utilizzate, indicando linguaggi,  framework e librerie utilizzati;
+    \item \textbf{Tecnologie utilizzate}: descrizione dettagliata delle tecnologie utilizzate, indicando linguaggi,  \glo{framework} e \glo{librerie} utilizzati;
+    \item \textbf{diagrammi dei casi d'uso }: per individuare i requisiti funzionali che descrivono le interazioni tra l'utente e il sistema.
     \item \textbf{Tracciamento delle componenti}: associazione tra requisiti e componenti che li soddisfano;
     \item \textbf{Test di integrazione}: descrizione dei test eseguiti per verificare che i componenti interagiscano in maniera corretta tra di loro per soddisfare i requisiti.
 \end{itemize}
 
-La technology baseline deve concretizzarsi nella realizzazione di un \emph{PoC} che ha la funzione di mostrare l'integrazione delle tecnologie scelte.
+La technology baseline deve concretizzarsi nella realizzazione di un \emph{\glo{PoC}} che ha la funzione di mostrare l'integrazione delle tecnologie scelte:
+
+\rowcolors{2}{\evenRowColor}{\oddRowColor}
+\begin{longtable}{ C{2.5cm} C{3cm} C{7cm} C{3.5cm} }
+    \caption{Tabella riassuntiva integrazione PoC}                                                                                 \\
+    \rowcolor{\primaryColor}
+    \textcolor{\secondaryColor}{\textbf{Nome tecnologia}} & \textcolor{\secondaryColor}{\textbf{Contesto di Utilizzo}} & \textcolor{\secondaryColor}{\textbf{Requisito soddisfatto}}\\ \endhead
+    {Flatter} & {Per lo sviluppo delle app mobile(login e lettura tag)} & { R-numero-D-I } \\
+    {MongoDB} & {Per il database ai fini del login} & { R-numero-P-O} \\
+    {Docker} & {} & {}\\
+    {Kubernets} & {} & {}\\
+    {Solidity} & {} & {} \\
+\end{longtable}
