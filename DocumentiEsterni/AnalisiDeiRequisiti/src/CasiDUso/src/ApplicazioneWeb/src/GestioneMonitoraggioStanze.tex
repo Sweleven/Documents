@@ -1,4 +1,3 @@
-
 %diagramma
 \paragraph{UC-11 Visualizzazione delle stanze registrate nel sistema}
 \begin{itemize}
@@ -39,6 +38,7 @@
     \end{itemize}
 \end{itemize}
 
+
 \paragraph{UC-11.3 Ricerca ricerca stanze disabilitate}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -68,6 +68,7 @@
     \end{itemize}
 \end{itemize}
 
+
 \paragraph{UC-12.1 Inserimento codice nuova stanza}
    \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
@@ -77,13 +78,14 @@
 	\item \textbf{Scenario principale:}
 	      \begin{enumerate}
 		      \item l'amministratore seleziona l'apposito box per l'inserimento del codice della nuova stanza;
-		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC- Errore: inserimento di un codice stanza non valido).
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC12.1.1- Errore: inserimento di un codice stanza non valido).
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
 		      \item UC-12.1.1 Errore: inserimento di un codice di una stanza non valido.
 	      \end{enumerate}
 \end{itemize}
+
 
 \subsubsection{UC12.1.1- Errore: inserimento di un codice di una stanza non valido}
 \begin{itemize}
@@ -131,7 +133,35 @@
 \end{itemize}
 
 
-\paragraph{UC-12.2 Inserimento codice tag RFID} %opzionale
+\paragraph{UC-12.2 Inserimento codice tag RFID}
+   \begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore vuole inserire il codice tag RFID di una nuova stanza;
+	\item \textbf{Precondizioni:} l'amministratore ha selezionato la funzionalità di inserimento di un codice tag RFID per una nuova stanza;
+	\item \textbf{Postcondizioni:} l'amministratore ha inserito con successo il codice tag RFID di una nuova stanza;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item l'amministratore seleziona l'apposito box per l'inserimento del codice tag RFID della nuova stanza;
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC12.2.1- Errore: inserimento di un codice tag RFID di una stanza non valido).
+	      \end{enumerate}
+	\item \textbf{Estensioni:}
+		\begin{enumerate}
+		      \item UC-12.2.1 Errore: inserimento di un codice di una stanza non valido.
+	      \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC12.2.1- Errore: inserimento di un codice tag RFID di una stanza non validoi}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice tag RFID di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito è già censito nel sistema, quindi già associato ad una stanza esistente;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice tag RFID di una stanza che è già censito nel sistema;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento della nuova stanza;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item il sistema rileva che il codice tag RFID inserito è già censito; 
+		      \item il sistema restituisce un messaggio d'errore esplicativo e non permette di completare l'inserimento della nuova stanza.
+	      \end{enumerate}
+\end{itemize}
 
 %diagramma
 \paragraph{UC-13 Visualizzazione informazioni stanza}
