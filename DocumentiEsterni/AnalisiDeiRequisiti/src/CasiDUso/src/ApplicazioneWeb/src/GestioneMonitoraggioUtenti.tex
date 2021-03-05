@@ -1,11 +1,5 @@
 
 \paragraph{UC-4 Visualizzazione degli utenti registrati presso il sistema}
-\begin{figure}[H]
-    \centering
-      \includegraphics[scale=0.50]{src/CasiDUso/immagini/VisualizzazioneUtenti.png}
-    \caption{Diagramma relativo la visualizzazione degli utenti registrati nel sistema}
-\end{figure}
-
 
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore; 
@@ -21,9 +15,14 @@
 		      \item l'amministratore accede alla funzionalità di visualizzazione e ricerca utenti;
 		      \item l'amministratore visualizza una lista di tutti gli utenti;
 		      \item l'amministratore può ricercare un determinato utente per nome/cognome/email (UC-4.1, UC-4.2, UC-4.3);
-		      \item l'amministratore può filtrare la lista per i diversi ruoli riconosciuti nel sistema (UC-4,4).
+		      \item l'amministratore può filtrare la lista per i diversi ruoli riconosciuti nel sistema (UC-4.4).
 	      \end{enumerate}
 \end{itemize}
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.50]{src/CasiDUso/immagini/VisualizzazioneUtenti.png}
+    \caption{Diagramma relativo la visualizzazione degli utenti registrati nel sistema}
+\end{figure}
 
     \paragraph{UC-4.1 Ricerca utente per nome}
     \begin{itemize}
@@ -97,7 +96,6 @@
               \end{enumerate}
     \end{itemize}
 
-%diagramma
 \paragraph{UC-5 Aggiunta di un nuovo utente nel sistema}
 \begin{itemize}
     \item \textbf{Attore primario:} amministratore; 
@@ -117,6 +115,11 @@
               \item il sistema elabora la richiesta: se l'indirizzo email è valido verrà inviata una mail contenente il link, altrimenti verrà visualizzato un messaggio di errore (UC-9 Errore: email non valida).
           \end{enumerate}
 \end{itemize}
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.35]{src/CasiDUso/immagini/NuovoUtenteAdmin.png}
+    \caption{Diagramma relativo l'aggiunta di un nuovo utente nel sistema da parte dell'amministratore}
+\end{figure}
 
     \paragraph{UC-5.1 Selezione ruolo del nuovo utente}
     \begin{itemize}
@@ -134,7 +137,7 @@
               \end{enumerate}
     \end{itemize}
 
-    \paragraph{UC-5.2 Inserimento email del nuovo utente}
+    \paragraph{UC-5.2 Inserimento indirizzo email del nuovo utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore; 
     
@@ -150,12 +153,11 @@
               \end{enumerate}
         \item \textbf{Estensioni:}
               \begin{itemize}
-                    \item UC-9 Errore: email non valida.
+                    \item UC-8 Errore: email non valida.
             \end{itemize}
     \end{itemize}
 
-%diagramma
-\paragraph{UC-6 Visualizzazione dati utente}
+\paragraph{UC-6 Visualizzazione dei dati del singolo utente}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore.
 
@@ -168,11 +170,17 @@
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
     	\item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
-    	\item  l'amministrtore visualizza i dati dell'utente.
+    	\item  l'amministratore visualizza i dati dell'utente.
 	\end{enumerate}
 \end{itemize}
 
-    \paragraph{UC-6.1 Visualizzazione nome utente}
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.45]{src/CasiDUso/immagini/DatiUtente.png}
+    \caption{Diagramma relativo la visualizzazione dei dati dell'utente selezionato}
+\end{figure}
+
+    \paragraph{UC-6.1 Visualizzazione del nome dell'utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
         
@@ -184,12 +192,11 @@
     
         \item \textbf{Scenario principale:}
         \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
             \item  l'amministratore visualizza il nome dell'utente.
         \end{enumerate}
     \end{itemize}
 
-    \paragraph{UC-6.2 Visualizzazione cognome utente}
+    \paragraph{UC-6.2 Visualizzazione del cognome dell'utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
         
@@ -201,12 +208,11 @@
     
         \item \textbf{Scenario principale:}
         \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
             \item  l'amministratore visualizza il cognome dell'utente.
         \end{enumerate}
     \end{itemize}
 
-    \paragraph{UC-6.3 Visualizzazione ruolo utente}
+    \paragraph{UC-6.3 Visualizzazione del ruolo dell'utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
         
@@ -218,12 +224,11 @@
     
         \item \textbf{Scenario principale:}
         \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
             \item  l'amministratore visualizza il ruolo dell'utente.
         \end{enumerate}
     \end{itemize}
 
-    \paragraph{UC-6.4 Visualizzazione email utente}
+    \paragraph{UC-6.4 Visualizzazione dell'indirizzo email dell'utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
         
@@ -235,30 +240,11 @@
     
         \item \textbf{Scenario principale:}
         \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
             \item  l'amministratore visualizza l'indirizzo email dell'utente.
         \end{enumerate}
     \end{itemize}
-
-    \paragraph{UC-6.5 Visualizzazione password utente}
-    \begin{itemize}
-        \item \textbf{Attore primario:} amministratore.
-        
-        \item \textbf{Descrizione:} l'amministratore può visualizzare la password dell'utente registrato, all'interno del relativo profilo.
-        
-        \item \textbf{Precondizioni:} l'amministratore ha selezionato l'utente di cui vuole visualizzare il profilo.
     
-        \item \textbf{Postcondizioni:} la password dell'utente è visibile all'interno del relativo profilo.
-    
-        \item \textbf{Scenario principale:}
-        \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
-            \item  l'amministratore visualizza la password dell'utente.
-        \end{enumerate}
-    \end{itemize}
-    
-
-    \paragraph{UC-6.6 Visualizzazione storico accessi utente}
+    \paragraph{UC-6.5 Visualizzazione dello storico accessi utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
         
@@ -270,13 +256,12 @@
     
         \item \textbf{Scenario principale:}
         \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
             \item  l'amministratore seleziona la funzionalità di visualizzazione dello storico degli accessi;
             \item l'amministratore visualizza un elenco con data e ora di tutti gli accessi effettuati dall'utente.
         \end{enumerate}
     \end{itemize}
 
-    \paragraph{UC-6.7 Visualizzazione storico dell'utilizzo postazioni}
+    \paragraph{UC-6.6 Visualizzazione storico dell'utilizzo postazioni}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
         
@@ -288,14 +273,12 @@
     
         \item \textbf{Scenario principale:}
         \begin{enumerate}
-            \item  l'amministratore seleziona l'utente di cui vuole visualizzare i dati;
             \item  l'amministratore seleziona la funzionalità di visualizzazione dello storico relativo all'utilizzo postazioni;
             \item l'amministratore visualizza un elenco con data, ora e codice postazione di ogni utilizzo effettuato dall'utente.
         \end{enumerate}
     \end{itemize}
 
-%diagramma
-\paragraph{UC-7 Modifica dati utente}
+\paragraph{UC-7 Modifica dati dell'utente}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore.
 
@@ -313,8 +296,14 @@
     	\item l'amministratore conferma la modifica effettuata.
 	\end{enumerate}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.35]{src/CasiDUso/immagini/ModificaUtente.png}
+    \caption{Diagramma relativo la modifica di dati dell'utente da parte dell'amministratore}
+\end{figure}
     
-    \paragraph{UC-7.1 Modifica ruolo utente}
+    \paragraph{UC-7.1 Modifica del ruolo dell'utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
     
@@ -332,7 +321,7 @@
         \end{enumerate}
     \end{itemize}
     
-    \paragraph{UC-7.2 Modifica email utente}
+    \paragraph{UC-7.2 Modifica email dell'utente}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore.
     
@@ -347,20 +336,20 @@
             \item  l'amministratore seleziona la funzionalità di modifica del campo relativo all'indirizzo email dell'utente;
             \item l'amministratore digita il nuovo indirizzo email nell'apposito campo;
             \item l'amministratore conferma la modifica;
-            \item il sistema elabora la richiesta ed attua la modifica. In caso contrario restituisce un messaggio di errore (UC-9 Errore: email non valida) e non completa la modifica.
+            \item il sistema elabora la richiesta ed attua la modifica. In caso contrario restituisce un messaggio di errore (UC-8 Errore: indirizzo email non valido) e non completa la modifica.
         \end{enumerate}
         \item \textbf{Estensioni:}
               \begin{itemize}
-                    \item UC-9 Errore: email non valida.
+                    \item UC-8 Errore: indirizzo email non valido.
             \end{itemize}
     \end{itemize}
 
 
-\paragraph{UC-9 Errore: email non valida}
+\paragraph{UC-8 Errore: indirizzo email non valido}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 
-	\item \textbf{Descrizione:} l'amministratore ha provato a registrare un nuovo utente ma la registrazione non è andata a buon fine poiché l'indirizzo e-mail risultava già censito (UC-9.1 Errore: email già presente nel sistema) o inadeguato ai criteri stabiliti per la creazione di un indirizzo e-mail (UC-9.2 Errore: caratteri email non validi);
+	\item \textbf{Descrizione:} l'amministratore ha provato a registrare un nuovo utente ma la registrazione non è andata a buon fine poiché l'indirizzo e-mail risultava già censito (UC-8.1 Errore: email già presente nel sistema) o inadeguato ai criteri stabiliti per la creazione di un indirizzo e-mail (UC-8.2 Errore: caratteri email non validi);
 
 	\item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo e-mail non valido durante la registrazione ed ha inviato i dati al sistema;
 
@@ -373,13 +362,13 @@
 	      \end{enumerate}
 \end{itemize}
 
-    \paragraph{UC-9.1 Errore: email già presente nel sistema}
+    \paragraph{UC-8.1 Errore: email già presente nel sistema}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore;
     
         \item \textbf{Descrizione:} l'amministratore ha provato a registrare un nuovo utente ma la registrazione non è andata a buon fine poiché l'indirizzo e-mail inserito è già associato ad un altro utente all'interno del sistema;
     
-        \item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo e-mail già utilizzato da un altro utente durante la registrazione e ha inviato i dati al sistema;
+        \item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo email già utilizzato da un altro utente durante la registrazione e ha inviato i dati al sistema;
     
         \item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la registrazione del nuovo utente;
     
@@ -390,13 +379,13 @@
               \end{enumerate}
     \end{itemize}
 
-    \paragraph{UC-9.2 Errore: caratteri email non validi}
+    \paragraph{UC-8.2 Errore: caratteri email non validi}
     \begin{itemize}
         \item \textbf{Attore primario:} amministratore;
     
         \item \textbf{Descrizione:} l'amministratore ha provato a registrare un nuovo utente ma la registrazione non è andata a buon fine poiché l'indirizzo e-mail inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento di un nuovo indirizzo e-mail;
     
-        \item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo e-mail che contiene dei caratteri non validi durante la registrazione ed ha inviato i dati al sistema;
+        \item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo email che contiene dei caratteri non validi durante la registrazione ed ha inviato i dati al sistema;
     
         \item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la registrazione del nuovo utente;
     
@@ -407,7 +396,7 @@
               \end{enumerate}
     \end{itemize}
 
-\paragraph{UC-10 Rimozione di un utente dal sistema}
+\paragraph{UC-9 Rimozione di un utente dal sistema}
 \begin{itemize}
     \item \textbf{Attore primario:} amministratore;
 
