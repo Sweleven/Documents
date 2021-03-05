@@ -7,22 +7,29 @@
     \begin{itemize}
         \item utente registrato ed autenticato presso l'applicazione web; 
         \item pu\`{o} gestire e monitorare gli utenti, le postazioni e le stanze;
-        \item può accedere all'applicazione mobile.
+        \item può accedere all'applicazione mobile, dove però figurerà come dipendente.
+    \end{itemize}
+
+    \item \textbf{dipendente:}
+    \begin{itemize}
+        \item utente registrato ed autenticato presso l'applicazione mobile; 
+        \item non può accedere all'applicazione web;
+        \item può controllare, prenotare ed utilizzare le postazioni di lavoro;
+        \item può marcare la singola postazione (ma non l'intera stanza) come pulita una volta eseguita l'igienizzazione.
     \end{itemize}
 
     \item \textbf{igienizzatore:}
     \begin{itemize}
         \item utente registrato ed autenticato presso l'applicazione mobile;
         \item addetto esclusivamente all'igienizzazione delle postazioni/stanze; 
-        \item non può accedere all'applicazione web; 
+        \item non può accedere all'applicazione web;
+        \item non può effettuare prenotazioni;
         \item può visualizzare le stanze da pulire e marcarle come igienizzate.
     \end{itemize} 
-
-    \item \textbf{dipendente:}
+   
+    \item \textbf{utente autenticato:}
     \begin{itemize}
-        \item utente registrato ed autenticato presso l'applicazione mobile; 
-        \item non può accedere all'applicazione web; 
-        \item può controllare, prenotare ed utilizzare le postazioni di lavoro;
-        \item può marcare la singola postazione come pulita una volta eseguita l'igienizzazione.
-    \end{itemize} 
+        \item identifica un utente che ha eseguito il login presso l'applicazione mobile indistintamente dal ruolo;
+        \item usato per indicare le funzionalità comuni sia per dipendenti che per igienizzatori.
+    \end{itemize}
 \end{itemize}
