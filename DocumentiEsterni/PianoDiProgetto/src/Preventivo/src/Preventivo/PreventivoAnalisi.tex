@@ -31,37 +31,38 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \end{longtable}
 }
 % Responsabile color=blue, Amministratore color=yellow, Analista color=red, Progettista color=green, Programmatore color=grigetto, Verificatore color=orange  [ybar, fill=] blue, yellow, red, green, grigetto, orange
-Il preventivo delle ore da investire per ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
-\begin{center}
-	\pgfplotsset{width=15.4cm, height=8.5cm}
-	\begin{tikzpicture}
-		\begin{axis}[
-			ybar stacked,
-			bar width=20pt,
-			legend style={
-				at={(0.5,-0.15)},
-				anchor=north,
-				legend columns=-1
-			},
-			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
-			xtick=data
-		]
-			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
+Il preventivo delle ore da investire per ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:\\
+\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoAnalisi.png}
+%\begin{center}
+%	\pgfplotsset{width=15.4cm, height=8.5cm}
+%	\begin{tikzpicture}
+%		\begin{axis}[
+%			ybar stacked,
+%			bar width=20pt,
+%			legend style={
+%				at={(0.5,-0.15)},
+%				anchor=north,
+%				legend columns=-1
+%			},
+%			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
+%			xtick=data
+%		]
+%			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{17}{0}{18}};
+%			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{17}{0}{18}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{10}{0}{10}{0}{15}{0}};
+%			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{10}{0}{10}{0}{15}{0}};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{14}{10}{14}{10}{7}{10}{7}};
+%			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{14}{10}{14}{10}{7}{10}{7}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
+%			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
+%			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{14}{8}{15}{8}{8}{9}{8}};
-		\end{axis}
-	\end{tikzpicture}
-\end{center}
+%			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{14}{8}{15}{8}{8}{9}{8}};
+%		\end{axis}
+%	\end{tikzpicture}
+%\end{center}
 \clearpage
 
 \subsubsection{Costo risultante}
@@ -90,16 +91,17 @@ Verificatore    &  70 & 1050 \\
 }
 
 \vskip 30pt %spazio verticale
-La quantità di ore totali investite per ciascun ruolo viene rappresentata nel seguente areogramma:
-\begin{center}
-	\pgfplotsset{width=17cm, height=8.5cm}
-	\begin{tikzpicture}
-		\pie[rotate = 180, color={blue, yellow, red, orange}] {
-			17/Responsabile,
-			17/Amministratore,
-			33/Analista,
-			33/Verificatore
-		}
-	\end{tikzpicture}
-\end{center}
-\input{./src/Preventivo/src/ConsuntivoAnalisi.tex}
+\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaAnalisi.png}
+%La quantità di ore totali investite per ciascun ruolo viene rappresentata nel seguente areogramma:
+%\begin{center}
+%	\pgfplotsset{width=17cm, height=8.5cm}
+%	\begin{tikzpicture}
+%		\pie[rotate = 180, color={blue, yellow, red, orange}] {
+%			17/Responsabile,
+%			17/Amministratore,
+%			33/Analista,
+%			33/Verificatore
+%		}
+%	\end{tikzpicture}
+%\end{center}
+\input{./src/Preventivo/src/Consuntivo/ConsuntivoAnalisi.tex}

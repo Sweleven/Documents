@@ -33,37 +33,40 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 }
 
 
-La suddivisione delle preventivate per ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:
-\begin{center}
-	\pgfplotsset{width=15.4cm, height=8.5cm}
-	\begin{tikzpicture}
-		\begin{axis}[
-			ybar stacked,
-			bar width=20pt,
-			legend style={
-				at={(0.5,-0.15)},
-				anchor=north,
-				legend columns=-1
-			},
-			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
-			xtick=data
-		]
-			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
+La suddivisione delle preventivate per ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:\\
+\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoValidazione.png}
+
+%\begin{center}
+%	\pgfplotsset{width=15.4cm, height=8.5cm}
+%	\begin{tikzpicture}
+%		\begin{axis}[
+%			ybar stacked,
+%			bar width=20pt,
+%			legend style={
+%				at={(0.5,-0.15)},
+%				anchor=north,
+%				legend columns=-1
+%			},
+%			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
+%			xtick=data
+%		]
+%			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
 			% Responsabile
-			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{10}{0}};
+%			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{10}{0}};
 			% Amministratore
-			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{5}{0}{0}{10}{0}{0}{0}};
+%			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{5}{0}{0}{10}{0}{0}{0}};
 			% Analista
-			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{5}{0}{0}{0}{0}{0}};
+%			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{5}{0}{0}{0}{0}{0}};
 			% Progettista
-			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{10}{5}{0}{0}{0}{0}{5}};
+%			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{10}{5}{0}{0}{0}{0}{5}};
 			% Programmatore
-			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{7}{7}{5}{10}{7}{7}};
+%			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{7}{7}{5}{10}{7}{7}};
 			% Verificatore
-			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{10}{8}{11}{7}{12}{5}{10}};
-		\end{axis}
-	\end{tikzpicture}
-\end{center}
+%			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{10}{8}{11}{7}{12}{5}{10}};
+%		\end{axis}
+%	\end{tikzpicture}
+%\end{center}
+
 \clearpage
 % \subsubsection{Ore e costi degli incrementi}
 % La seguente tabella rappresenta la distribuzione delle ore investite durante il periodo in cui vengono svolti gli incrementi e il corrispondente costo in euro.
@@ -119,16 +122,17 @@ Verificatore    &  63 & 945 \\
 }
 
 \vskip 30pt %spazio verticale
-La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:
-\begin{center}
-	\begin{tikzpicture}
-		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
-			6/Responsabile,
-			10/Amministratore,
-			3/Analista,
-			13/Progettista,
-			27/Programmatore,
-			41/Verificatore
-		}
-	\end{tikzpicture}
-\end{center}
+La quantità di ore totali per ciascun ruolo viene rappresentata nel seguente areogramma:\\
+\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaValidazione.png}
+%\begin{center}
+%	\begin{tikzpicture}
+%		\pie[rotate = 180, color={blue, yellow, red, green, pink, orange}] {
+%			6/Responsabile,
+%			10/Amministratore,
+%			3/Analista,
+%			13/Progettista,
+%			27/Programmatore,
+%			41/Verificatore
+%		}
+%	\end{tikzpicture}
+%\end{center}
