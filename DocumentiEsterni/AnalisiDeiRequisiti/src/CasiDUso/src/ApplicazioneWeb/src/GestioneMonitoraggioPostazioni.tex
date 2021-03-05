@@ -1,6 +1,18 @@
 
 %diagramma
-\paragraph{UC-20 Visualizzazione delle postazioni di una stanza}
+%TODO da implementare. Da questa schermata, l'amministratore può ricercare le postazioni per ....
+\paragraph{UC-20 Visualizzazione di tutte le postazioni presenti nel sistema}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video l'insieme delle postazioni registrate in una stanza;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle stanze registrate nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza tutte le postazioni all'interno della stanza selezionata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore, dall'elenco delle stanze registrate nel sistema, seleziona una stanza desiderata ed accede alla schermata di visualizzazione delle postazioni registrate al suo interno o, in alternativa, filtra le postazioni per la stanza di appartenenza;
+        \item l'amministratore visualizza tutte le postazioni presenti nella stanza precedentemente selezionata.
+    \end{itemize}
+\end{itemize}
 
     \paragraph{UC-20.1 Ricerca postazione per codice identificativo}
 
@@ -20,42 +32,234 @@
 
     
 %diagramma
-\paragraph{UC-21 Visualizzazine informazioni sulla postazione}
+\paragraph{UC-21 Visualizzazione informazioni sulla postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video tutte le informazioni disponibili di una determinata postazione registrata nel sistema;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle postazioni di una stanza registrate nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore visualizza tutti i dettagli della postazione selezionata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona una postazione desiderata ed accede alla schermata di visualizzazione delle informazioni quali codice postazione (UC-21.1 Visualizzazione codice postazione), stato postazione (UC-21.2 Visualizzazione stato della postazione) e stato pulizia della postazione per la postazione scelta (UC-21.3 Visualizzazione stato pulizia della postazione);
+        \item l'amministratore visualizza tutte informazioni per la postazione precedentemente selezionata.
+    \end{itemize}
+\end{itemize}
 
-    \paragraph{UC-21.1 Visualizzazine codice postazione}
+\paragraph{UC-21.1 Visualizzazione codice postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video il codice identificativo univoco di una postazione precedentemente selezionata;
+    \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una postazione selezionata;
+    \item \textbf{Postcondizione:} l'amministratore visualizza il codice identificativo della postazione desiderata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza a video il codice identificativo univoco della postazione precedentemente selezionata.
+    \end{itemize}
+\end{itemize}
 
-    \paragraph{UC-21.2 Visualizzazine stato della postazione} %prenotata/libera/occupata
+\paragraph{UC-21.2 Visualizzazione stato della postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video lo stato di una postazione all'interno di una stanza precedentemente selezionata;
+    \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una postazione selezionata;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo stato della postazione (prenotata, libera o occupata) interna alla stanza selezionata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza a video lo stato di una postazione interna alla stanza selezionata.
+    \end{itemize}
+\end{itemize}
+    
 
-    \paragraph{UC-21.3 Visualizzazine stato pulizia della postazione} %sporca/igienizzata
+\paragraph{UC-21.3 Visualizzazione stato pulizia della postazione} %sporca/igienizzata
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video lo stato di pulizia di una postazione all'interno della stanza precedentemente selezionata;
+    \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una postazione selezionata;
+    \item \textbf{Postcondizione:} l'amministratore visualizza lo stato di pulizia della postazione (sporca o igienizzata) interna alla stanza selezionata;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore visualizza a video lo stato di pulizia una postazione interna alla stanza selezionata.
+    \end{itemize}
+\end{itemize}
 
 
 %diagramma
 \paragraph{UC-22 Aggiunta di una nuova postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una postazione alla lista di postazioni disponibili all'interno di una stanza. Per inserire una nuova postazione, l'amministrazione prima seleziona la stanza dove inserire la nuova postazione (UC-21.1 Selezione stanza), successivamente, è richiesto l'inserimento del codice identificativo della postazione (UC-21.2 Inserimento codice postazione) ed infine, inserire il codice del tag RFID per associarlo alla postazione appena creata (UC-21.3 Inserimento codice del tag RFID);
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} una nuova postazione \`{e} stata aggiunta alla lista di postazioni disponibili;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore inserisce le informazioni riguardanti la postazione da aggiungere, quali stanza (UC-21.1 Selezione stanza), codice postazione (UC-21.2 Inserimento codice postazione) e codice del tag RFID (UC-21.3 Inserimento codice del tag RFID);
+        \item l'amministratore conferma le informazioni inserite e, se corrette, sono salvate nel sistema.
+    \end{itemize}
+\end{itemize}
 
-    \paragraph{UC-21.1 Selezione stanza}
 
-    \paragraph{UC-21.2 Inserimento codice postazione}
+\paragraph{UC-21.1 Selezione stanza}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} selezionare una stanza già censita nel sistema dove inserire una nuova postazione dall'elenco delle stanze nel form di inserimento di una nuova postazione;
+    \item \textbf{Precondizione:} l'amministratore sta visualizzando a video il form di inserimento di una nuova postazione;
+    \item \textbf{Postcondizione:} l'amministratore ha selezionato correttamente una stanza censita all'interno del sistema;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore seleziona la stanza dall'elenco delle stanze censite dove inserire la nuova postazione.
+    \end{itemize}
+\end{itemize}
+
+
+\paragraph{UC-21.2 Inserimento codice postazione}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore inserisce un codice identificativo univoco per contrassegnare la nuova postazione all'interno della stanza selezionata nel form di inserimento di una nuova postazione;
+	\item \textbf{Precondizioni:} l'amministratore sta visualizzando a video il form di inserimento di una nuova postazione;
+	\item \textbf{Postcondizioni:} l'amministratore inserisce il codice identificativo della postazione con successo;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item l'amministratore inserisce il codice identificativo della nuova postazione che si vuole aggiungere;
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-24 Errore: codice postazione non valido)
+	      \end{enumerate}
+\end{itemize}
+    
 
     \paragraph{UC-21.3 Inserimento codice del tag RFID}
 
-\paragraph{UC-23 Errore: codice RFID già associato ad un'altra postazone}
+\paragraph{UC-23 Errore: codice RFID già associato ad un'altra postazione}
+
 
 \paragraph{UC-24 Errore: codice postazione non valido}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore inserisce un codice identificativo errato di nuova postazione all'interno della stanza selezionata nel form di inserimento o modifica di una postazione;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice identificativo errato relativo ad una postazione;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento del codice della postazione;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item il sistema elabora la richiesta ricevuta;
+		      \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa l'inserimento del codice identificativo della postazione.
+	      \end{enumerate}
+	 \item \textbf{Estensioni:}
+	 	\begin{enumerate}
+		       \item UC-24.1 Errore: codice postazione non univoco;
+		       \item UC-24.2 Errore: il codice postazione contiene caratteri non validi.
+	        \end{enumerate}
 
-    \paragraph{UC-24.1 Errore: codice postazione non univoco}
+\paragraph{UC-24.1 Errore: codice postazione non univoco}
+    \begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} il sistema non permette l'assegnazione di quel nome se il codice identificativo della nuova postazione è già stato utilizzato. In tal caso viene mostrato un errore a video auto esplicativo;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice postazione già censito nel sistema;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento del nuovo codice postazione;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+	      	      \item l'amministratore invia i dati al sistema;
+		      \item il sistema rileva una postazione già censita con lo stesso codice;
+		      \item il sistema restituisce un messaggio d'errore esplicativo e non permette di completare l'inserimento del codice identificativo relativo alla nuova postazione.
+	      \end{enumerate}
+\end{itemize}
     
-    \paragraph{UC-24.2 Errore: caratteri non validi}
+\paragraph{UC-24.2 Errore: il codice postazione contiene caratteri non validi}
+\begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire un nuovo codice identificativo ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice postazione che contiene dei caratteri non validi durante l'assegnazione del codice alla nuova postazione;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento del nuovo codice postazione;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item il sistema rileva dei caratteri non validi all'interno del codice della postazione;
+		      \item il sistema restituisce un messaggio d'errore esplicativo e non permette di completare l'inserimento del codice identificativo relativo alla nuova postazione.
+	      \end{enumerate}
+\end{itemize}
 
 %diagramma
 \paragraph{UC-25 Modifica dati di una postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} modificare i dati di una postazione già esistente modificando, nello specifico, il codice della postazione (UC-25.1 Modifica codice postazione) e/o il codice RFID (UC-25.2 Modifica codice tag RFID);
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} l'amministratore ha modificato con successo i dati relativi ad una postazione esistente;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore seleziona, dalla lista delle postazioni, la postazione da modificare;
+        \item l'amministratore modifica il codice postazione (UC-25.1 Modifica codice postazione) e/o il codice RFID (UC-25.2 Modifica codice tag RFID);
+        \item l'amministratore conferma le informazioni inserite e, se corrette, sono salvate nel sistema.
+    \end{itemize}
+\end{itemize}
 
-    \paragraph{UC-25.1 Modifica codice postazione}
+
+\paragraph{UC-25.1 Modifica codice postazione}
+  \begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore vuole modificare il codice di una postazione già censita nel sistema;
+	\item \textbf{Precondizioni:} l'amministratore ha selezionato la funzionalità di modifica del codice identificativo per una postazione già censita nel sistema;
+	\item \textbf{Postcondizioni:} l'amministratore ha modificato con successo il codice di una postazione;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item l'amministratore seleziona l'apposita funzionalità di modifica del codice identificativo della postazione precedentemente selezionata;
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-24 Errore: codice postazione non valido).
+	      \end{enumerate}
+	\item \textbf{Estensioni:}
+		\begin{enumerate}
+		      \item UC-24 Errore: codice postazione non valido.
+	      \end{enumerate}
+\end{itemize}
+
     
-    \paragraph{UC-25.2 Modifica codice tag RFID}
+\paragraph{UC-25.2 Modifica codice tag RFID}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} modificare il tag RFID di una postazione già censita nel sistema;
+    \item \textbf{Precondizione:} l'amministratore ha selezionato la funzionalità di modifica del codice tag RFID per una postazione già censita nel sistema;
+    \item \textbf{Postcondizione:} l'amministratore ha modificato con successo il codice tag RFID di una postazione;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore seleziona l'apposita funzionalità di modifica del codice tag RFID della postazione precedentemente selezionata;
+        \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-23 Errore: codice RFID già associato ad un'altra postazione).
+    \end{itemize}
+\end{itemize}
 
  
 \paragraph{UC-26 Rimozione di una postazione dal sistema}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una postazione dalla lista di postazioni disponibili all'interno di una stanza. Per rimuovere una postazione, l'amministratore accede alla schermata di dettaglio della postazione che si desidera rimuovere e, successivamente, l'amministratore selezionerà la funzione di rimozione della postazione selezionata. Una volta rimossa la postazione, tutte le prenotazioni vengono annullate;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} una postazione \`{e} stata rimossa dalla lista di postazioni disponibili, e le prenotazioni attive per la prenotazione rimossa vengono annullate;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona la postazione desiderata ed accede alla schermata di visualizzazione delle informazioni proprie della postazione selezionata;
+        \item l'amministratore seleziona la funzionalità di rimozione della postazione selezionata;
+        \item l'amministratore conferma la volontà di rimozione della postazione e questa viene rimossa dal sistema. Tutte le prenotazioni relativa alla postazione in oggetto vengono cancellate.
+    \end{itemize}
+\end{itemize}
 
 \paragraph{UC-27 Disabilitazione di una postazione}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una postazione dalla lista di postazioni disponibili all'interno di una stanza. Per disabilitare una postazione, l'amministratore accede alla schermata di dettaglio della postazione che si desidera disabilitare e, successivamente, l'amministratore selezionerà la funzione di disabilitazione della postazione selezionata. Una volta disabilitata la postazione, tutte le prenotazioni vengono annullate;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} una postazione \`{e} stata disabilitata con successo, e le prenotazioni attive per la prenotazione rimossa vengono annullate;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona la postazione desiderata ed accede alla schermata di visualizzazione delle informazioni proprie della postazione selezionata;
+        \item l'amministratore seleziona la funzionalità di disabilitazione della postazione selezionata;
+        \item l'amministratore conferma la volontà di disabilitare la postazione e questa viene disabilitata dal sistema. Tutte le prenotazioni relativa alla postazione in oggetto vengono cancellate.
+    \end{itemize}
+\end{itemize}
 
 \paragraph{UC-28 Riabilitazione di una postazione precedentemente disabilitata}
+\begin{itemize}
+    \item \textbf{Attori:} amministratore;
+    \item \textbf{Descrizione:} un amministratore pu\`{o} ri-abilitare una postazione precedentemente segnata come disabilitata all'interno di una stanza. Per ri-abilitare una postazione, l'amministratore accede alla schermata di dettaglio della postazione che si desidera ri-abilitare e, successivamente, l'amministratore selezionerà la funzione di ri-abilitazione della postazione selezionata. Una volta ri-abilitata la postazione, questa torna ad essere fruibile e prenotabile dagli utenti;
+    \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
+    \item \textbf{Postcondizione:} una postazione \`{e} stata ri-abilitata con successo, quindi prenotabile e servibile nuovamente;
+    \item \textbf{Scenario principale:}
+    \begin{itemize}
+        \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona la postazione desiderata ed accede alla schermata di visualizzazione delle informazioni proprie della postazione selezionata;
+        \item l'amministratore seleziona la funzionalità di ri-abilitazione della postazione selezionata;
+        \item l'amministratore conferma la volontà di ri-abilitare la postazione e questa viene abilitata dal sistema. Una postazione abilitata è di nuovo fruibile dagli utenti e prenotabile.
+    \end{itemize}
+\end{itemize}
