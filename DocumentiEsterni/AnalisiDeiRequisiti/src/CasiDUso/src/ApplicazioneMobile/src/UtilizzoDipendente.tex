@@ -1,5 +1,4 @@
 
-%diagramma
 \paragraph{UC-46 Creazione di una nuova prenotazione}
     \begin{itemize}
 	    \item \textbf{Attore primario:} dipendente;
@@ -19,6 +18,12 @@
 		        \item il dipendente seleziona la durata della propria prenotazione (UC-46.5 Selezione della durata);
 	        \end{enumerate}
     \end{itemize}
+
+    \begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/CreazionePrenotazione.png}
+		\caption{Diagramma relativo alla creazione di una nuova prenotazione da applicazione mobile}
+	\end{figure}
 
 \paragraph{UC-46.1 Selezione stanza}
 
@@ -106,7 +111,6 @@
             \end{enumerate}
     \end{itemize}
   
-%diagramma
 \paragraph{UC-47 Visualizzazione delle prenotazioni effettuate}
 
     \begin{itemize}
@@ -123,6 +127,12 @@
                  \item il sistema restituisce un elenco contenente tutte le prenotazioni effettuate da un dipendente. Il dipendente può visualizzare l'ID (UC-47.1 Visualizzazione id prenotazione), la data (UC-47.2 Visualizzazione data), l'ora di inizio (UC-47.3 Visualizzazione orario d'inizio), la stanza (UC-47.4 Visualizzazione stanza), il codice della postazione prenotata (UC-47.5 Visualizzazione codice postazione) e la durata (UC-47.6 Visualizzazione della durata della prenotazione) a partire da una singola prenotazione;
             \end{enumerate}
     \end{itemize}
+
+    \begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.40]{src/CasiDUso/immagini/VisualizzazionePrenotazioni.png}
+		\caption{Diagramma relativo alla visualizzazione delle prenotazioni effettuate da mobile}
+	\end{figure}
 
 
 \paragraph{UC-47.1 Visualizzazione id prenotazione}
@@ -245,7 +255,7 @@
                 \item il sistema aggiorna l'elenco delle prenotazioni rimuovendo quella selezionata;
             \end{enumerate}
     \end{itemize} 
-%TODO:finire
+
 \paragraph{UC-49 Marcatura postazione come igienizzata}
     \begin{itemize}
         \item \textbf{Attore primario:} dipendente;
@@ -263,6 +273,12 @@
                 \item il sistema aggiorna lo stato della postazione da sporca a pulita.
             \end{enumerate}
     \end{itemize} 
+
+    \begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/IgienizzazioneDipendente.png}
+		\caption{Diagramma relativo all'igienizzazione di una postazione da parte di un dipendente}
+	\end{figure}
 
 \paragraph{UC-49.1 Scansione del tag RFID per segnalare avvenuta igienizzazione}
     
@@ -302,6 +318,12 @@
                 \item il sistema aggiorna lo stato della postazione da libera a occupata.
             \end{enumerate}
     \end{itemize} 
+
+    \begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/ScansionePresenza.png}
+		\caption{Diagramma relativo alla segnalazione della propria presenza su una postazione}
+	\end{figure}
 
 
 \paragraph{UC-50.1 Scansione del tag RFID per segnalare la propria presenza nella postazione}

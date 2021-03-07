@@ -1,5 +1,4 @@
 
-%diagramma
 \paragraph{UC-30 Completamento della registrazione da parte del nuovo utente}
 
 	\begin{itemize}
@@ -21,6 +20,13 @@
 	      \end{enumerate}
 	\end{itemize}
 
+	\begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.45]{src/CasiDUso/immagini/CompletamentoRegistrazione.png}
+		\caption{Diagramma relativo alal completamento della registrazione da parte dell'utente}
+	\end{figure}
+	
+
 
 \paragraph{UC-30.1 Inserimento nome}
 
@@ -38,9 +44,9 @@
 		  	\item l'utente digita il proprio nome all'interno dell'apposito form;
 	      \end{enumerate}
 		\item \textbf{Estensioni:}
-	      \begin{enumerate}
+	      \begin{itemize}
 		      \item UC-31 Errore: nome mancante o contenente caratteri non validi.
-	      \end{enumerate}
+	      \end{itemize}
 	\end{itemize}
 
 \paragraph{UC-30.2 Inserimento cognome}
@@ -59,9 +65,9 @@
 		  		\item l'utente digita il proprio cognome all'interno dell'apposito form;
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-32 Errore: cognome mancante o contenente caratteri non validi.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 \paragraph{UC-30.3 Inserimento password}
@@ -80,9 +86,9 @@
 		  		\item l'utente digita la nuova password all'interno dell'apposito form;
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-33 Errore: password mancante o non valida.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 \paragraph{UC-30.4 Conferma password}
@@ -101,12 +107,11 @@
 		  		\item l'utente conferma la propria password inserendola nell'apposito form;
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-34 Errore: password mancante o non corrispondente a quella precedentemente inserita.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
-%TODO:fare casi errore e mettere gli indici sulle estensioni
 \paragraph{UC-31 Errore: nome mancante o contenente caratteri non validi}
 
 	\begin{itemize}
@@ -142,7 +147,6 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-%TODO:controllare
 \paragraph{UC-33 Errore: password mancante o non valida}
 
 	\begin{itemize}
@@ -178,8 +182,6 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-    
-%diagramma
 \paragraph{UC-35 Login mobile}
 
 	\begin{itemize}
@@ -200,6 +202,12 @@
 	  		\end{enumerate}
 	\end{itemize}
 
+	\begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/LoginMobile.png}
+		\caption{Diagramma relativo all'autenticazione presso l'applicazione mobile}
+	\end{figure}
+
 \paragraph{UC-35.1 Inserimento delle credenziali per il login}
 
 	\begin{itemize}
@@ -217,10 +225,16 @@
 		  		\item l'utente inserisce la propria password nell'apposito form nella schermata di login (UC-35.1.2 Inserimento della password per il login).
 	  		\end{enumerate}
 	    \item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-36 Errore: coppia di credenziali non riconosciuta dal sistema.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
+
+	\begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/InserimentocredenzialiMobile.png}
+		\caption{Diagramma relativo all'inserimento delle credenziai per il login da applicazione mobile}
+	\end{figure}
 
 
 \paragraph{UC-35.1.1 Inserimento dell'indirizzo email per il login}
@@ -274,7 +288,6 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-%diagramma
 \paragraph{UC-37 Recupero password da applicazione mobile}
 
 	\begin{itemize}
@@ -297,6 +310,12 @@
 	  		\end{enumerate}
 	\end{itemize}
 
+	\begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/RecuperoPasswordMobile.png}
+		\caption{Diagramma relativo al recupero password da applicazione mobile}
+	\end{figure}
+
 \paragraph{UC-37.1 Inserimento mail di registrazione}
 
 	\begin{itemize}
@@ -313,9 +332,9 @@
 		  		\item l'utente inserisce la mail con la quale è registrato presso ; 
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-38 Errore: indirizzo email mancante o non presente nel sistema.
-	  		\end{enumerate}
+	  		\end{itemize}
 		\end{itemize}
 
 \paragraph{UC-37.2 Inserimento nuova password}
@@ -335,9 +354,9 @@
 		  		\item l'utente inserisce la nuova password.
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-39 Errore: password mancante o non valida.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 \paragraph{UC-37.3 Conferma nuova password}
@@ -358,9 +377,9 @@
 		  		\item il sistema confronta le due password. Se esse coincidono viene completata correttamente la procedura di recupero password.
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-40 Errore: password non corrispondente a quella precedentemente inserita.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 \paragraph{UC-38 Errore: mail mancante o non presente nel sistema}
@@ -414,7 +433,6 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-%diagramma
 \paragraph{UC-41 Modifica password da applicazione mobile}
 
 	\begin{itemize}
@@ -436,6 +454,12 @@
 	  		\end{enumerate}
 	\end{itemize}
 
+	\begin{figure}[H]
+		\centering
+		  \includegraphics[scale=0.50]{src/CasiDUso/immagini/ModificaPasswordMobile.png}
+		\caption{Diagramma relativo alla modifica della password da applicazione mobile}
+	\end{figure}
+
 \paragraph{UC-41.1 Inserimento password corrente}
 
 	\begin{itemize}
@@ -452,9 +476,9 @@
 		  		\item l'utente digita la password corrente nel form selezionato.
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
-			\begin{enumerate}
+			\begin{itemize}
 		  		\item UC-42 Errore: password errata.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 \paragraph{UC-41.2 Inserimento nuova password}

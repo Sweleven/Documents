@@ -12,6 +12,12 @@
     \end{itemize}
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.50]{src/CasiDUso/immagini/VisualizzazionePostazioni.png}
+    \caption{Diagramma relativo alla visualizzazione di tutte le stanze nel sistema}
+\end{figure}
+
 \paragraph{UC-21.1 Visualizzazione postazione per codice identificativo}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -19,10 +25,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza la postazione cui codice identificativo è uguale a quello cercato. Se non esiste alcuna postazione avente il codice identificativo inserito dall'amministratore, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarrà a video solamente la postazione registrata nel sistema avente codice identificativo simile a quello cercato dall'amministratore. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -33,10 +39,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è prenotato. Se non esiste alcuna postazione prenotata, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni prenotate. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-21.3 Visualizzazione postazioni occupate}
@@ -46,10 +52,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è occupato. Se non esiste alcuna postazione occupata, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni occupate. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-21.4 Visualizzazione postazioni libere}
@@ -59,10 +65,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è libero. Se non esiste alcuna postazione libera, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni libere. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-21.5 Visualizzazione postazioni igienizzate}
@@ -72,10 +78,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è igienizzato. Se non esiste alcuna postazione igienizzata, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni igienizzate. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-21.6 Visualizzazione postazioni sporche}
@@ -85,10 +91,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è sporco. Se non esiste alcuna postazione sporca, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni sporche. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-21.7 Visualizzazione postazioni abilitate}
@@ -98,10 +104,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è abilitato. Se non esiste alcuna postazione abilitata, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni abilitate. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-21.8 Visualizzazione postazioni disabilitate}
@@ -111,13 +117,12 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le postazioni registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di postazioni tramite filtro attivo e visualizza una elenco di postazioni cui stato è disabilitato. Se non esiste alcuna postazione disabilitata, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di postazioni mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le postazioni disabilitate. Nel caso in cui non esista alcuna postazione con criterio corrispondente al filtro, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
     
-%diagramma
 \paragraph{UC-22 Visualizzazione informazioni sulla postazione}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -125,11 +130,17 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle postazioni di una stanza registrate nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutti i dettagli della postazione selezionata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona una postazione desiderata ed accede alla schermata di visualizzazione delle informazioni quali codice postazione (UC-22.1 Visualizzazione codice postazione), stato postazione (UC-22.2 Visualizzazione stato della postazione) e stato pulizia della postazione per la postazione scelta (UC-22.3 Visualizzazione stato pulizia della postazione);
         \item l'amministratore visualizza tutte informazioni per la postazione precedentemente selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.50]{src/CasiDUso/immagini/InformazioniPostazione.png}
+    \caption{Diagramma relativo alla visualizzazione delle informazioni di una specifica postazione nel sistema}
+\end{figure}
 
 \paragraph{UC-22.1 Visualizzazione codice postazione}
 \begin{itemize}
@@ -138,9 +149,9 @@
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una postazione selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza il codice identificativo della postazione desiderata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza a video il codice identificativo univoco della postazione precedentemente selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-22.2 Visualizzazione stato della postazione}
@@ -150,26 +161,24 @@
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una postazione selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza lo stato della postazione (prenotata, libera o occupata) interna alla stanza selezionata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza a video lo stato di una postazione interna alla stanza selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
     
 
-\paragraph{UC-22.3 Visualizzazione stato pulizia della postazione} %sporca/igienizzata
+\paragraph{UC-22.3 Visualizzazione stato pulizia della postazione} 
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video lo stato di pulizia di una postazione all'interno della stanza precedentemente selezionata;
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una postazione selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza lo stato di pulizia della postazione (sporca o igienizzata) interna alla stanza selezionata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza a video lo stato di pulizia una postazione interna alla stanza selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
-
-%diagramma
 \paragraph{UC-23 Aggiunta di una nuova postazione}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -177,12 +186,17 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
     \item \textbf{Postcondizione:} una nuova postazione \`{e} stata aggiunta alla lista di postazioni disponibili;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore inserisce le informazioni riguardanti la postazione da aggiungere, quali stanza (UC-23.1 Selezione stanza), codice postazione (UC-23.2 Inserimento codice postazione) e codice del tag RFID (UC-23.3 Inserimento codice del tag RFID);
         \item l'amministratore conferma le informazioni inserite e, se corrette, sono salvate nel sistema.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.30]{src/CasiDUso/immagini/AggiuntaPostazione.png}
+    \caption{Diagramma relativo all'aggiunta di una nuova postazione nel sistema}
+\end{figure}
 
 \paragraph{UC-23.1 Selezione stanza}
 \begin{itemize}
@@ -191,9 +205,9 @@
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video il form di inserimento di una nuova postazione;
     \item \textbf{Postcondizione:} l'amministratore ha selezionato correttamente una stanza censita all'interno del sistema;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la stanza dall'elenco delle stanze censite dove inserire la nuova postazione.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -208,6 +222,9 @@
 		      \item l'amministratore inserisce il codice identificativo della nuova postazione che si vuole aggiungere;
 		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-25 Errore: codice postazione non valido)
 	      \end{enumerate}
+          \begin{itemize}
+            \item UC-25 Errore: codice postazione non valido.
+        \end{itemize}
 \end{itemize}
     
 
@@ -223,9 +240,9 @@
 		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-24 Errore: codice RFID già associato ad un'altra postazione)
 	      \end{enumerate}
 	      \item \textbf{Estensioni:}
-		\begin{enumerate}
+		\begin{itemize}
 		      \item UC-24 Errore: codice RFID già associato ad un'altra postazione.
-	      \end{enumerate}
+	      \end{itemize}
 \end{itemize}
 
 \paragraph{UC-24 Errore: codice RFID già associato ad un'altra postazione}
@@ -254,11 +271,6 @@
 		      \item il sistema elabora la richiesta ricevuta;
 		      \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa l'inserimento del codice identificativo della postazione.
 	      \end{enumerate}
-	 \item \textbf{Estensioni:}
-	 	\begin{enumerate}
-		       \item UC-25.1 Errore: codice postazione non univoco;
-		       \item UC-25.2 Errore: il codice postazione contiene caratteri non validi.
-	        \end{enumerate}
 \end {itemize}
 
 \paragraph{UC-25.1 Errore: codice postazione non univoco}
@@ -288,7 +300,7 @@
 	      \end{enumerate}
 \end{itemize}
 
-%diagramma
+
 \paragraph{UC-26 Modifica dati di una postazione}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -303,6 +315,12 @@
     \end{itemize}
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.35]{src/CasiDUso/immagini/ModificaPostazione.png}
+    \caption{Diagramma relativo alla modifica dei dati di una postazione nel sistema}
+\end{figure}
+
 
 \paragraph{UC-26.1 Modifica codice postazione}
   \begin{itemize}
@@ -316,9 +334,9 @@
 		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-25 Errore: codice postazione non valido).
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
-		\begin{enumerate}
+		\begin{itemize}
 		      \item UC-25 Errore: codice postazione non valido.
-	      \end{enumerate}
+	      \end{itemize}
 \end{itemize}
 
     
@@ -333,6 +351,10 @@
         \item l'amministratore seleziona l'apposita funzionalità di modifica del codice tag RFID della postazione precedentemente selezionata;
         \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-24 Errore: codice RFID già associato ad un'altra postazione).
     \end{itemize}
+    \item \textbf{Estensioni:}
+		\begin{itemize}
+		      \item UC-24 Errore: codice RFID già associato ad un'altra postazione.
+	      \end{itemize}
 \end{itemize}
 
  

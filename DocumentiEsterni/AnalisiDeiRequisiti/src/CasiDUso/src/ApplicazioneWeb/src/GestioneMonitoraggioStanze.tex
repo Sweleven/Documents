@@ -1,4 +1,4 @@
-%diagramma
+
 \paragraph{UC-10 Visualizzazione delle stanze registrate nel sistema}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -10,6 +10,12 @@
         \item l'amministratore visualizza un elenco delle stanze precedentemente inserite nel sistema.
     \end{itemize}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.50]{src/CasiDUso/immagini/VisualizzazioneStanzeRegistrate.png}
+    \caption{Diagramma relativo alla visualizzazione delle stanze registrate nel sistema}
+\end{figure}
 
 
 \paragraph{UC-10.1 Visualizzazione stanza per codice identificativo}
@@ -53,7 +59,6 @@
 \end{itemize}
 
 
-%diagramma
 \paragraph{UC-11 Aggiunta nuova stanza nel sistema}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -68,6 +73,12 @@
         \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
     \end{itemize}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.35]{src/CasiDUso/immagini/AggiuntaNuovaStanza.png}
+    \caption{Diagramma relativo all'aggiunta di una nuova stanza nel sistema}
+\end{figure}
 
 
 \paragraph{UC-11.1 Inserimento codice nuova stanza}
@@ -166,7 +177,6 @@
 	      \end{enumerate}
 \end{itemize}
 
-%diagramma
 \paragraph{UC-14 Visualizzazione informazioni stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
@@ -180,6 +190,12 @@
         \item l'amministratore visualizza a video tutte le informazioni disponibili per la stanza selezionata, quali codice identificativo stanza (UC-14.1 Visualizzazione codice stanza), stato postazioni (UC-14.2 Visualizzazione panoramica postazioni interne ad una stanza) ed eventuali utenti presenti al suo interno (UC-14.3 Visualizzazione utenti presenti nella singola stanza).
     \end{itemize}
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+      \includegraphics[scale=0.50]{src/CasiDUso/immagini/InformazioniStanza.png}
+    \caption{Diagramma relativo alla visualizzazione delle informazioni di una stanza nel sistema}
+\end{figure}
 
 \paragraph{UC-14.1 Visualizzazione codice stanza}
 \begin{itemize}
@@ -306,12 +322,12 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore ha rimosso con successo una stanza dall'insieme delle stanze censite dal sistema;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la funzionalità di rimozione stanze;
         \item l'amministratore seleziona dalla lista la stanza che desidera rimuovere;
         \item l'amministratore conferma la volontà di eliminare la stanza selezionata;
         \item l'amministratore ha eliminato con successo la stanza precedentemente selezionata dalla lista delle stanze censite all'interno del sistema.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-19 Disabilitazione di una stanza}
@@ -321,11 +337,11 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
     \item \textbf{Postcondizione:} la stanza \`{e} disabilitata, tutte le postazioni presenti all'interno della stessa non sono pi\`{u} prenotabili e le prenotazioni già effettuate vengono cancellate;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la funzionalità di disabilitazione della stanza;
         \item le postazioni della stanza non sono pi\`{u} prenotabili;
         \item le prenotazioni delle postazioni della stanza sono cancellate.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-20 Riabilitazione di una stanza precedentemente disabilitata}
@@ -335,9 +351,9 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
     \item \textbf{Postcondizione:} la stanza \`{e} stata abilitata e ritorna quindi fruibile agli utenti;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la funzionalità di abilitazione della stanza precedentemente disabilitata;
         \item l'amministratore abilita nuovamente la stanza;
-        \item le postazioni della stanza sono nuovamente prenotabili;
-    \end{itemize}
+        \item le postazioni della stanza sono nuovamente prenotabili.
+    \end{enumerate}
 \end{itemize}
