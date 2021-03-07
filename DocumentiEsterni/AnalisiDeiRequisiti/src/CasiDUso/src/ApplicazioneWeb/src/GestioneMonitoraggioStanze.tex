@@ -1,5 +1,5 @@
 %diagramma
-\paragraph{UC-11 Visualizzazione delle stanze registrate nel sistema}
+\paragraph{UC-10 Visualizzazione delle stanze registrate nel sistema}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video l'insieme delle stanze registrate nel sistema;
@@ -12,7 +12,7 @@
 \end{itemize}
 
 
-\paragraph{UC-11.1 Visualizzazione stanza per codice identificativo}
+\paragraph{UC-10.1 Visualizzazione stanza per codice identificativo}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video una stanza corrispondente al codice identificativo cercato;
@@ -25,7 +25,7 @@
     \end{itemize}
 \end{itemize}
 
-\paragraph{UC-11.2 Visualizzazione stanze abilitate}
+\paragraph{UC-10.2 Visualizzazione stanze abilitate}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video le stanze filtrate per uno stato attuale, ovvero abilitate al momento;
@@ -39,7 +39,7 @@
 \end{itemize}
 
 
-\paragraph{UC-11.3 Visualizzazione stanze disabilitate}
+\paragraph{UC-10.3 Visualizzazione stanze disabilitate}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video le stanze filtrate per uno stato attuale, ovvero disabilitate al momento;
@@ -54,7 +54,7 @@
 
 
 %diagramma
-\paragraph{UC-12 Aggiunta nuova stanza nel sistema}
+\paragraph{UC-11 Aggiunta nuova stanza nel sistema}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una stanza alla lista di stanze censite;
@@ -63,13 +63,14 @@
     \item \textbf{Scenario principale:}
     \begin{itemize}
         \item l'amministratore seleziona la funzionalità di aggiunta stanze;
-        \item l'amministratore inserisce il codice identificativo della stanza (UC-12.1 Inserimento del codice di una nuova stanza);
+        \item l'amministratore inserisce il codice identificativo della stanza (UC-11.1 Inserimento del codice di una nuova stanza);
+        \item l'amministratore inserisce il codice contenuto nel tag RFID associato alla stanza (UC-11.2 Inserimento codice tag RFID);
         \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
     \end{itemize}
 \end{itemize}
 
 
-\paragraph{UC-12.1 Inserimento codice nuova stanza}
+\paragraph{UC-11.1 Inserimento codice nuova stanza}
    \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore vuole inserire il codice di una nuova stanza;
@@ -78,16 +79,34 @@
 	\item \textbf{Scenario principale:}
 	      \begin{enumerate}
 		      \item l'amministratore seleziona l'apposito box per l'inserimento del codice della nuova stanza;
-		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC12.1.1- Errore: inserimento di un codice stanza non valido).
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-12 Errore: inserimento di un codice stanza non valido).
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-		      \item UC-12.1.1 Errore: inserimento di un codice di una stanza non valido.
+		      \item UC-12 Errore: inserimento di un codice di una stanza non valido.
 	      \end{enumerate}
 \end{itemize}
 
 
-\subsubsection{UC12.1.1- Errore: inserimento di un codice di una stanza non valido}
+\paragraph{UC-11.2 Inserimento codice tag RFID}
+   \begin{itemize}
+	\item \textbf{Attore primario:} amministratore;
+	\item \textbf{Descrizione:} l'amministratore vuole inserire il codice tag RFID di una nuova stanza;
+	\item \textbf{Precondizioni:} l'amministratore ha selezionato la funzionalità di inserimento di un codice tag RFID per una nuova stanza;
+	\item \textbf{Postcondizioni:} l'amministratore ha inserito con successo il codice tag RFID di una nuova stanza;
+	\item \textbf{Scenario principale:}
+	      \begin{enumerate}
+		      \item l'amministratore seleziona l'apposito box per l'inserimento del codice tag RFID della nuova stanza;
+		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-13 Errore: inserimento di un codice tag RFID di una stanza non valido).
+	      \end{enumerate}
+	\item \textbf{Estensioni:}
+		\begin{enumerate}
+		      \item UC-13 Errore: inserimento di un codice tag RFID di una stanza non valido.
+	      \end{enumerate}
+\end{itemize}
+
+
+\paragraph{UC-12 Errore: inserimento di un codice di una stanza non valido}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
@@ -100,12 +119,12 @@
 	      \end{enumerate}
 	 \item \textbf{Estensioni:}
 	 	\begin{enumerate}
-		       \item UC-12.1.1.1 Errore: inserimento di un codice stanza non univoco;
-		       \item UC-12.1.1.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
+		       \item UC-12.1 Errore: inserimento di un codice stanza non univoco;
+		       \item UC-12.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
 	        \end{enumerate}
 \end{itemize}
 
-\subsection{UC-12.1.1.1 Errore: inserimento di un codice stanza non univoco}
+\paragraph{UC-12.1 Errore: inserimento di un codice stanza non univoco}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} il sistema non permette l'assegnazione di quel nome se il codice identificativo della nuova stanza è già stato utilizzato. In tal caso viene mostrato un errore a video auto esplicativo;
@@ -119,7 +138,7 @@
 	      \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC-12.1.1.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi}
+\subsubsection{UC-12.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
@@ -133,24 +152,8 @@
 \end{itemize}
 
 
-\paragraph{UC-12.2 Inserimento codice tag RFID}
-   \begin{itemize}
-	\item \textbf{Attore primario:} amministratore;
-	\item \textbf{Descrizione:} l'amministratore vuole inserire il codice tag RFID di una nuova stanza;
-	\item \textbf{Precondizioni:} l'amministratore ha selezionato la funzionalità di inserimento di un codice tag RFID per una nuova stanza;
-	\item \textbf{Postcondizioni:} l'amministratore ha inserito con successo il codice tag RFID di una nuova stanza;
-	\item \textbf{Scenario principale:}
-	      \begin{enumerate}
-		      \item l'amministratore seleziona l'apposito box per l'inserimento del codice tag RFID della nuova stanza;
-		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC12.2.1- Errore: inserimento di un codice tag RFID di una stanza non valido).
-	      \end{enumerate}
-	\item \textbf{Estensioni:}
-		\begin{enumerate}
-		      \item UC-12.2.1 Errore: inserimento di un codice di una stanza non valido.
-	      \end{enumerate}
-\end{itemize}
 
-\subsubsection{UC-12.2.1 Errore: inserimento di un codice tag RFID di una stanza non valido}
+\subsubsection{UC-13 Errore: inserimento di un codice tag RFID di una stanza non valido}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice tag RFID di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito è già censito nel sistema, quindi già associato ad una stanza esistente;
@@ -164,7 +167,7 @@
 \end{itemize}
 
 %diagramma
-\paragraph{UC-13 Visualizzazione informazioni stanza}
+\paragraph{UC-14 Visualizzazione informazioni stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video tutte le informazioni disponibili per una determinata stanza selezionata;
@@ -174,11 +177,11 @@
     \begin{itemize}
         \item l'amministratore visualizza un elenco delle stanze precedentemente inserite nel sistema;
         \item l'amministratore seleziona una stanza registrata nel sistema per visualizzarne le funzionalità;
-        \item l'amministratore visualizza a video tutte le informazioni disponibili per la stanza selezionata, quali codice identificativo stanza (UC-13.1 Visualizzazione codice stanza), stato postazioni (UC-13.2 Visualizzazione panoramica postazioni interne ad una stanza) ed eventuali utenti presenti al suo interno (UC-13.3 Visualizzazione utenti presenti nella singola stanza).
+        \item l'amministratore visualizza a video tutte le informazioni disponibili per la stanza selezionata, quali codice identificativo stanza (UC-14.1 Visualizzazione codice stanza), stato postazioni (UC-14.2 Visualizzazione panoramica postazioni interne ad una stanza) ed eventuali utenti presenti al suo interno (UC-14.3 Visualizzazione utenti presenti nella singola stanza).
     \end{itemize}
 \end{itemize}
 
-\paragraph{UC-13.1 Visualizzazione codice stanza}
+\paragraph{UC-14.1 Visualizzazione codice stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video il codice identificativo univoco di una stanza precedentemente selezionata;
@@ -191,7 +194,7 @@
 \end{itemize}
 
 
-\paragraph{UC-13.2 Visualizzazione panoramica postazioni interne ad una stanza}
+\paragraph{UC-14.2 Visualizzazione panoramica postazioni interne ad una stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video lo stato delle postazioni all'interno di una stanza precedentemente selezionata;
@@ -204,7 +207,7 @@
 \end{itemize}
 
 
-\paragraph{UC-13.3 Visualizzazione numero utenti presenti nella singola stanza}
+\paragraph{UC-14.3 Visualizzazione numero utenti presenti nella singola stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video il totale degli utenti presenti all'interno di una stanza precedentemente selezionata;
@@ -218,7 +221,7 @@
 \end{itemize}
 
 
-\paragraph{UC-14 Visualizzazione totalità degli utenti presenti in tutte le stanze}
+\paragraph{UC-15 Visualizzazione totalità degli utenti presenti in tutte le stanze}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video una lista di utenti presenti in tutte le stanze registrate all'interno del sistema;
@@ -231,7 +234,7 @@
     \end{itemize}
 \end{itemize}
 
-\paragraph{UC-15 Modifica codice della stanza}
+\paragraph{UC-16 Modifica codice della stanza}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item\textbf{Descrizione:} l'amministratore vuole modificare il codice univoco di una stanza;
@@ -246,11 +249,11 @@
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-		      \item UC-16 Errore: codice stanza non valido.
+		      \item UC-17 Errore: codice stanza non valido.
 	      \end{enumerate}
 \end{itemize}
 
-\paragraph{UC-16 Errore: codice stanza non valido}
+\paragraph{UC-17 Errore: codice stanza non valido}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore ha provato a modificare il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito non è univoco o contiene dei caratteri speciali che non rispettano i criteri di inserimento;
@@ -263,12 +266,12 @@
 	      \end{enumerate}
 	 \item \textbf{Estensioni:}
 	 	\begin{enumerate}
-		       \item UC-16.1 Errore: inserimento di un codice stanza non univoco;
-		       \item UC-16.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
+		       \item UC-17.1 Errore: inserimento di un codice stanza non univoco;
+		       \item UC-17.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
 	        \end{enumerate}
 \end{itemize}
 
-\paragraph{UC-16.1 Errore: codice stanza non univoco}
+\paragraph{UC-17.1 Errore: codice stanza non univoco}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} il sistema non permette l'assegnazione di quel nome se il codice identificativo della nuova stanza è già stato utilizzato. In tal caso viene mostrato un errore a video auto esplicativo;
@@ -283,7 +286,7 @@
 \end{itemize}
     
     
-\paragraph{UC-16.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi}
+\paragraph{UC-17.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi}
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
@@ -296,7 +299,7 @@
 	      \end{enumerate}
 \end{itemize}
  
-\paragraph{UC-17 Rimozione di una stanza dal sistema}
+\paragraph{UC-18 Rimozione di una stanza dal sistema}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una stanza dalla lista di stanze censite;
@@ -311,7 +314,7 @@
     \end{itemize}
 \end{itemize}
 
-\paragraph{UC-18 Disabilitazione di una stanza}
+\paragraph{UC-19 Disabilitazione di una stanza}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una stanza, impedendo la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni attive per tutte le postazioni di quella stanza vengono cancellate;
@@ -325,7 +328,7 @@
     \end{itemize}
 \end{itemize}
 
-\paragraph{UC-19 Riabilitazione di una stanza precedentemente disabilitata}
+\paragraph{UC-20 Riabilitazione di una stanza precedentemente disabilitata}
 \begin{itemize}
     \item \textbf{Attori:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} abilitare una stanza precedentemente segnata come disabilitata;

@@ -1,6 +1,6 @@
 
 %diagramma
-\paragraph{UC-29 Completamento della registrazione da parte del nuovo utente}
+\paragraph{UC-30 Completamento della registrazione da parte del nuovo utente}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -13,16 +13,16 @@
 
 		\item \textbf{Scenario principale:}
 	      \begin{enumerate}
-		      \item l'utente inserisce il proprio nome nell'apposito form (UC-29.1 Inserimento nome);
-		      \item l'utente inserisce il proprio cognome nell'apposito form (UC-29.2 Inserimento cognome);
-		      \item l'utente inserisce la propria password personale nell'apposito form (UC-29.3 Inserimento password);
-		      \item l'utente inserisce nuovamente la password per confermarla (UC-29.4 Conferma password);
+		      \item l'utente inserisce il proprio nome nell'apposito form (UC-30.1 Inserimento nome);
+		      \item l'utente inserisce il proprio cognome nell'apposito form (UC-30.2 Inserimento cognome);
+		      \item l'utente inserisce la propria password personale nell'apposito form (UC-30.3 Inserimento password);
+		      \item l'utente inserisce nuovamente la password per confermarla (UC-30.4 Conferma password);
 		      \item l'utente invia i dati al sistema il quale elabora la richiesta e completa la registrazione del nuovo utente;
 	      \end{enumerate}
 	\end{itemize}
 
 
-\paragraph{UC-29.1 Inserimento nome}
+\paragraph{UC-30.1 Inserimento nome}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -39,11 +39,11 @@
 	      \end{enumerate}
 		\item \textbf{Estensioni:}
 	      \begin{enumerate}
-		      \item UC- Errore: nome mancante o contenente caratteri non validi.
+		      \item UC-31 Errore: nome mancante o contenente caratteri non validi.
 	      \end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-29.2 Inserimento cognome}
+\paragraph{UC-30.2 Inserimento cognome}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -60,11 +60,11 @@
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: cognome mancante o contenente caratteri non validi.
+		  		\item UC-32 Errore: cognome mancante o contenente caratteri non validi.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-29.3 Inserimento password}
+\paragraph{UC-30.3 Inserimento password}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -81,11 +81,11 @@
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: password mancante o non valida.
+		  		\item UC-33 Errore: password mancante o non valida.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-29.4 Conferma password}
+\paragraph{UC-30.4 Conferma password}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -102,12 +102,12 @@
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: password mancante o non corrispondente a quella precedentemente inserita.
+		  		\item UC-34 Errore: password mancante o non corrispondente a quella precedentemente inserita.
 	  		\end{enumerate}
 	\end{itemize}
 
 %TODO:fare casi errore e mettere gli indici sulle estensioni
-\paragraph{UC- Errore: nome mancante o contenente caratteri non validi}
+\paragraph{UC-31 Errore: nome mancante o contenente caratteri non validi}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -125,7 +125,7 @@
 	\end{itemize}
  
 
-\paragraph{UC- Errore: cognome mancante o contenente caratteri non validi}
+\paragraph{UC-32 Errore: cognome mancante o contenente caratteri non validi}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -143,7 +143,7 @@
 	\end{itemize}
 
 %TODO:controllare
-\paragraph{UC- Errore: password mancante o non valida}
+\paragraph{UC-33 Errore: password mancante o non valida}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -161,7 +161,7 @@
 	\end{itemize}
 
 
-\paragraph{UC- Errore: password mancante o non corrispondente a quella precedentemente inserita}
+\paragraph{UC-34 Errore: password mancante o non corrispondente a quella precedentemente inserita}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
@@ -180,7 +180,7 @@
 
     
 %diagramma
-\paragraph{UC-30 Login mobile}
+\paragraph{UC-35 Login mobile}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -194,19 +194,19 @@
 		\item \textbf{Scenario principale:}
 	  		\begin{enumerate}
 		  		\item l'utente seleziona la funzionalità di login;
-		  		\item l'utente inserisce il proprio indirizzo email nell'apposito form (UC- .1 Inserimento dell'indirizzo email per il login);
-		  		\item l'utente inserisce la password nell'apposito form (UC- .2 Inserimento della pasasword per il login);
+		  		\item l'utente inserisce il proprio indirizzo email nell'apposito form (UC-35.1 Inserimento dell'indirizzo email per il login);
+		  		\item l'utente inserisce la password nell'apposito form (UC-35.2  Inserimento della pasasword per il login);
 		  		\item l'utente invia i dati al sistema;
 		  		\item il sistema completa la richiesta di autenticazione qualora le credenziali vengano riconosciute e aggiorna la schermata del dispositivo con la dashboard personale dell'utente. In caso contrario l'autenticazione non viene completata e si rimane nella pagina di login ;
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: coppia di credenziali inserita non riconosciuta dal sistema.
+		  		\item UC-36 Errore: coppia di credenziali non riconosciuta dal sistema.
 	  		\end{enumerate}
 	\end{itemize}
 
 
-\paragraph{UC-30.1 Inserimento dell'indirizzo email per il login}
+\paragraph{UC-35.1 Inserimento dell'indirizzo email per il login}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -223,7 +223,7 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-30.2 Inserimento della password per il login}
+\paragraph{UC-35.2 Inserimento della password per il login}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -240,7 +240,7 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-31 Errore: coppia di credenziali non riconosciuta}
+\paragraph{UC-36 Errore: coppia di credenziali non riconosciuta dal sistema}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -258,7 +258,7 @@
 	\end{itemize}
 
 %diagramma
-\paragraph{UC-32 Recupero password da applicazione mobile}
+\paragraph{UC-37 Recupero password da applicazione mobile}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -272,15 +272,15 @@
 		\item \textbf{Scenario principale:}
 	  		\begin{enumerate}
 		  		\item l'utente clicca il link per il recupero password; 
-		  		\item l'utente inserisce l'indirizzo email al quale inviare il link per il reset della password (UC- .1 Inserimento mail di registrazione);
-		  		\item l'utente inserisce la nuova password (UC- .2 inserimento nuova password);
-		  		\item l'utente conferma la nuova password (UC- .3 conferma nuova password);
+		  		\item l'utente inserisce l'indirizzo email al quale inviare il link per il reset della password (UC-37.1 Inserimento mail di registrazione);
+		  		\item l'utente inserisce la nuova password (UC-37.2 inserimento nuova password);
+		  		\item l'utente conferma la nuova password (UC-37.3 conferma nuova password);
 		  		\item l'utente invia i dati al sistema.
 		  		\item il sistema modifica la password dell'utente qualora la procedura sia stata eseguita in modo corretto.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-32.1 Inserimento mail di registrazione}
+\paragraph{UC-37.1 Inserimento mail di registrazione}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -297,11 +297,11 @@
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: indirizzo email mancante o non presente nel sistema.
+		  		\item UC-38 Errore: indirizzo email mancante o non presente nel sistema.
 	  		\end{enumerate}
 		\end{itemize}
 
-\paragraph{UC-32.2 Inserimento nuova password}
+\paragraph{UC-37.2 Inserimento nuova password}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -319,11 +319,11 @@
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: password mancante o non valida.
+		  		\item UC-39 Errore: password mancante o non valida.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-32.3 Conferma nuova password}
+\paragraph{UC-37.3 Conferma nuova password}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -342,11 +342,11 @@
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: password non corrispondente a quella precedentemente inserita.
+		  		\item UC-40 Errore: password non corrispondente a quella precedentemente inserita.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-33 Errore: mail mancante o non presente nel sistema}
+\paragraph{UC-38 Errore: mail mancante o non presente nel sistema}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -363,7 +363,7 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-34 Errore: password mancante o non valida}
+\paragraph{UC-39 Errore: password mancante o non valida}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -380,7 +380,7 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-35 Errore: password non corrispondente a quella precedentemente inserita}
+\paragraph{UC-40 Errore: password non corrispondente a quella precedentemente inserita}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
@@ -398,7 +398,7 @@
 	\end{itemize}
 
 %diagramma
-\paragraph{UC-36 Modifica password da applicazione mobile}
+\paragraph{UC-41 Modifica password da applicazione mobile}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
@@ -411,15 +411,15 @@
 
 		\item \textbf{Scenario principale:}
 	  		\begin{enumerate}
-		  		\item l'utente inserisce la password corrente (UC- .1 Inserimento password corrente);
-		  		\item l'utente inserisce la nuova password (UC-.2 Inserimento nuova password);
-		  		\item l'utente conferma la nuova password (UC-.3 Conferma nuova password);
+		  		\item l'utente inserisce la password corrente (UC-41.1 Inserimento password corrente);
+		  		\item l'utente inserisce la nuova password (UC-41.2 Inserimento nuova password);
+		  		\item l'utente conferma la nuova password (UC-41.3 Conferma nuova password);
 		  		\item l'utente invia i dati al sistema;
 		  		\item il sistema modifica la password dell'utente qualora la procedura sia stata eseguita in modo corretto.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-36.1 Inserimento password corrente}
+\paragraph{UC-41.1 Inserimento password corrente}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
@@ -436,11 +436,11 @@
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
 			\begin{enumerate}
-		  		\item UC- Errore: password errata.
+		  		\item UC-42 Errore: password errata.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-36.2 Inserimento nuova password}
+\paragraph{UC-41.2 Inserimento nuova password}
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
 
@@ -456,12 +456,12 @@
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: password mancante o non valida.
+		  		\item UC-43 Errore: password mancante o non valida.
 	  		\end{enumerate}
 	\end{itemize}
 
 
-\paragraph{UC-36.3 Conferma nuova password}
+\paragraph{UC-41.3 Conferma nuova password}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
@@ -480,11 +480,11 @@
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
 	  		\begin{enumerate}
-		  		\item UC- Errore: password non corrispondente a quella precedentemente inserita.
+		  		\item UC-44 Errore: password non corrispondente a quella precedentemente inserita.
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-37 Errore: password errata}
+\paragraph{UC-42 Errore: password errata}
 
 
 	\begin{itemize}
@@ -502,7 +502,7 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC- Errore: password mancante o non valida}
+\paragraph{UC-43 Errore: password mancante o non valida}
 
 
 	\begin{itemize}
@@ -521,7 +521,7 @@
 	\end{itemize}
 
 
-\paragraph{UC- Errore: password non corrispondente a quella precedentemente inserita}
+\paragraph{UC-44 Errore: password non corrispondente a quella precedentemente inserita}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
@@ -538,7 +538,7 @@
 	  		\end{enumerate}
 	\end{itemize}
 
-\paragraph{UC-38 Logout mobile}
+\paragraph{UC-45 Logout mobile}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
