@@ -6,10 +6,10 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle stanze registrate nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutte le postazioni all'interno della stanza selezionata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore, dall'elenco delle stanze registrate nel sistema, seleziona una stanza desiderata ed accede alla schermata di visualizzazione delle postazioni registrate al suo interno. Da questa schermata, l'amministratore può visualizzare le postazioni per codice identificativo (UC-21.1 Visualizzazione postazione per codice identificativo), visualizzare tutte le postazioni prenotate (UC-21.2 Visualizzazione postazioni prenotate), visualizzare le postazioni occupate (UC-21.3 Visualizzazione postazioni occupate), visualizzare le postazioni libere (UC-21.4 Visualizzazione postazioni libere), visualizzare le postazioni igienizzate (UC-21.5 Visualizzazione postazioni igienizzate), visualizzare le postazioni sporche (UC-21.6 Visualizzazione postazioni sporche), visualizzare le postazioni abilitate(UC-21.7 Visualizzazione postazioni abilitate) ed, infine, visualizzare le postazioni disabilitate (UC-21.8 Visualizzazione postazioni disabilitate). In alternativa, l'amministratore può filtrare le postazioni anche per stanza di appartenenza.
         \item l'amministratore visualizza tutte le postazioni presenti nella stanza precedentemente selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \begin{figure}[H]
@@ -308,11 +308,11 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore ha modificato con successo i dati relativi ad una postazione esistente;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona, dalla lista delle postazioni, la postazione da modificare;
         \item l'amministratore modifica il codice postazione (UC-26.1 Modifica codice postazione) e/o il codice RFID (UC-26.2 Modifica codice tag RFID);
         \item l'amministratore conferma le informazioni inserite e, se corrette, sono salvate nel sistema.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \begin{figure}[H]
@@ -347,10 +347,10 @@
     \item \textbf{Precondizione:} l'amministratore ha selezionato la funzionalità di modifica del codice tag RFID per una postazione già censita nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ha modificato con successo il codice tag RFID di una postazione;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona l'apposita funzionalità di modifica del codice tag RFID della postazione precedentemente selezionata;
         \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-24 Errore: codice RFID già associato ad un'altra postazione).
-    \end{itemize}
+    \end{enumerate}
     \item \textbf{Estensioni:}
 		\begin{itemize}
 		      \item UC-24 Errore: codice RFID già associato ad un'altra postazione.
@@ -365,11 +365,11 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
     \item \textbf{Postcondizione:} una postazione \`{e} stata rimossa dalla lista di postazioni disponibili, e le prenotazioni attive per la prenotazione rimossa vengono annullate;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona la postazione desiderata ed accede alla schermata di visualizzazione delle informazioni proprie della postazione selezionata;
         \item l'amministratore seleziona la funzionalità di rimozione della postazione selezionata;
         \item l'amministratore conferma la volontà di rimozione della postazione e questa viene rimossa dal sistema. Tutte le prenotazioni relativa alla postazione in oggetto vengono cancellate.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-28 Disabilitazione di una postazione}
@@ -379,11 +379,11 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
     \item \textbf{Postcondizione:} una postazione \`{e} stata disabilitata con successo, e le prenotazioni attive per la prenotazione rimossa vengono annullate;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona la postazione desiderata ed accede alla schermata di visualizzazione delle informazioni proprie della postazione selezionata;
         \item l'amministratore seleziona la funzionalità di disabilitazione della postazione selezionata;
         \item l'amministratore conferma la volontà di disabilitare la postazione e questa viene disabilitata dal sistema. Tutte le prenotazioni relativa alla postazione in oggetto vengono cancellate.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-29 Riabilitazione di una postazione precedentemente disabilitata}
@@ -393,9 +393,9 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle postazioni nell'applicazione web;
     \item \textbf{Postcondizione:} una postazione \`{e} stata ri-abilitata con successo, quindi prenotabile e servibile nuovamente;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore, dall'elenco delle postazioni registrate nel sistema, seleziona la postazione desiderata ed accede alla schermata di visualizzazione delle informazioni proprie della postazione selezionata;
         \item l'amministratore seleziona la funzionalità di ri-abilitazione della postazione selezionata;
         \item l'amministratore conferma la volontà di ri-abilitare la postazione e questa viene abilitata dal sistema. Una postazione abilitata è di nuovo fruibile dagli utenti e prenotabile.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}

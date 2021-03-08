@@ -6,9 +6,9 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle stanze registrate nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutte le stanze registrate all'interno del sistema;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza un elenco delle stanze precedentemente inserite nel sistema.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \begin{figure}[H]
@@ -25,10 +25,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le stanze registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca la stanza tramite codice univoco identificativo. Se non esiste alcuna stanza avente codice identificativo cercato non verrà visualizzata a video alcuna stanza;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore digita il codice identificativo di una stanza da cercare nell'apposita barra di ricerca;
         \item durante la digitazione del codice identificativo vengono scremati i risultati non corrispondenti al codice cercato dall'utente ed, al termine dell'inserimento, rimarr\'{a} a video la stanza o l'insieme di stanze desiderate. Nel caso in cui non esista alcuna stanza con il codice identificativo cercato, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-10.2 Visualizzazione stanze abilitate}
@@ -38,10 +38,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le stanze registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di stanze tramite filtro attivo. Se non esiste alcuna stanza abilitata al momento della ricerca, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di stanze mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le stanze registrate nel sistema ed abilitate. Nel caso in cui non esista alcuna stanza con criterio corrispondente al filtro abilitato, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -52,10 +52,10 @@
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le stanze registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di stanze tramite filtro attivo. Se non esiste alcuna stanza disabilitata al momento della ricerca, non verrà visualizzato alcun risultato a video;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore applica il filtro nella lista di stanze mostrate a video;
         \item una volta applicato il filtro, vengono scremati i risultati non corrispondenti al filtro stesso, e rimarranno a video solamente le stanze registrate nel sistema e disabilitate. Nel caso in cui non esista alcuna stanza con criterio corrispondente al filtro abilitato, non verrà mostrato a video alcun risultato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -66,12 +66,12 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
     \item \textbf{Postcondizione:} una nuova stanza \`{e} stata aggiunta alla lista di stanze disponibili;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la funzionalità di aggiunta stanze;
         \item l'amministratore inserisce il codice identificativo della stanza (UC-11.1 Inserimento del codice di una nuova stanza);
         \item l'amministratore inserisce il codice contenuto nel tag RFID associato alla stanza (UC-11.2 Inserimento codice tag RFID);
         \item l'amministratore conferma le informazioni inserite e le salva nel sistema.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \begin{figure}[H]
@@ -184,11 +184,11 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutti i dettagli della stanza selezionata, quali codice identificativo, stato postazioni ed utenti attualmente presenti al suo interno;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza un elenco delle stanze precedentemente inserite nel sistema;
         \item l'amministratore seleziona una stanza registrata nel sistema per visualizzarne le funzionalità;
         \item l'amministratore visualizza a video tutte le informazioni disponibili per la stanza selezionata, quali codice identificativo stanza (UC-14.1 Visualizzazione codice stanza), stato postazioni (UC-14.2 Visualizzazione panoramica postazioni interne ad una stanza) ed eventuali utenti presenti al suo interno (UC-14.3 Visualizzazione utenti presenti nella singola stanza).
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \begin{figure}[H]
@@ -204,9 +204,9 @@
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una stanza selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza il codice identificativo della stanza desiderata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza a video il codice identificativo univoco della stanza precedentemente selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -217,9 +217,9 @@
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una stanza selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza lo stato delle postazioni (disabilitata, occupata, sporca o libera) interne alla stanza selezionata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore visualizza a video la lista delle postazioni interne alla stanza selezionata con, in sovrimpressione, il loro stato.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -230,10 +230,10 @@
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una stanza selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza a video il numero di utenti presenti all'interno della stanza selezionata;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la funzionalità di visualizzazione di tutti gli utenti presenti al momento nella singola stanza selezionata;
         \item l'amministratore visualizza a video il numero di utenti presenti all'interno della stanza selezionata.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 
@@ -244,10 +244,10 @@
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle stanze registrate nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza il numero di utenti presenti all'interno di tutte le stanze registrate nel sistema;
     \item \textbf{Scenario principale:}
-    \begin{itemize}
+    \begin{enumerate}
         \item l'amministratore seleziona la funzionalità di visualizzazione di tutti gli utenti presenti all'interno di tutte le stanze registrate nel sistema;
         \item l'amministratore visualizza a video il numero di utenti all'interno di tutte le stanze censite nel sistema.
-    \end{itemize}
+    \end{enumerate}
 \end{itemize}
 
 \paragraph{UC-16 Modifica codice della stanza}
