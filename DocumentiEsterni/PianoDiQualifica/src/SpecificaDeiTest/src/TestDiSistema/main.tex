@@ -69,7 +69,8 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
         \begin{itemize}
             \item accedere alla pagina di login;
             \item inserire l'indirizzo e-mail;
-            \item inserire la password.
+            \item inserire la password;
+            \item visualizzare la propria dashboard se l'autenticazione è andata a buon fine oppure visualizzare un messaggio d'errore in caso contrario.
         \end{itemize}&
         NI\\
 
@@ -203,7 +204,8 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
         \begin{itemize}
             \item accedere alla pagina di login;
             \item inserire l'indirizzo e-mail;
-            \item inserire la password.
+            \item inserire la password;
+            \item visualizzare la propria dashboard se l'autenticazione è andata a buon fine oppure visualizzare un messaggio d'errore in caso contrario.
         \end{itemize}&
         NI\\
 
@@ -443,6 +445,106 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
         \begin{itemize}
             \item marcare la postazione come "sporca";
             \item rendere la postazione prenotabile ma da igienizzare.
+        \end{itemize}&
+        NI\\
+
+        TS18&
+        \begin{flushleft}
+            L'utente appena aggiunto dall'amministratore deve poter completare la registrazione.
+            L'utente deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere al link ricevuto via email;
+            \item inserire il proprio nome oppure visualizzare un messaggio d'errore se mancante o non valido;
+            \item inserire il proprio cognome oppure visualizzare un messaggio d'errore se mancante o non valido;
+            \item inserire una nuova password oppure visualizzare un messaggio d'errore se mancante o non valida;
+            \item confermare la propria password reinserendo quella indicata precedentemtente o visualizzare un messaggio d'errore qualora il matching non sia rispettato.
+        \end{itemize}&
+        NI\\
+
+        TS19&
+        \begin{flushleft}
+            L'utente autenticato deve poter effettuare il logout dall'applicazione mobile.
+            L'utente deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item cliccare il pulsante per effettuare il logout;
+            \item verificare che tale azione sia andata a buon fine.
+        \end{itemize}&
+        NI\\
+
+        TS20&
+        \begin{flushleft}
+            L'amministratore deve poter effettuare il logout dall'applicazione web.
+            L'amministratore deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item cliccare il pulsante per effettuare il logout;
+            \item verificare che tale azione sia andata a buon fine.
+        \end{itemize}&
+        NI\\
+
+  
+        TS21&
+        \begin{flushleft}
+            L'amministratore deve poter modificare l'indirizzo email e il ruolo.
+            L'amministratore deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item selezionare la funzionalità di modifica dei dati di un utente;
+            \item modificare i campi dati di interesse;
+            \item verificare che tale azione sia andata a buon fine o in alternativa visualizzare un messaggio d'errore.
+        \end{itemize}&
+        NI\\
+
+        TS22&
+        \begin{flushleft}
+            L'amministratore deve poter rimuovere un utente.
+            L'amministratore deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item selezionare un utente
+            \item selezionare la funzionalità rimozione dell'utente selezionato;
+            \item verificare che l'utente non sia più presente all'interno del sistema.
+        \end{itemize}&
+        NI\\
+        
+        TS23&
+        \begin{flushleft}
+            L'utente deve essere in grado di recuperare la propria password.
+            All'utente viene richiesto dipendente:
+        \end{flushleft}
+        \begin{itemize}
+            \item selezionare il link di recupero password dalla schermata di login;
+            \item inserire il proprio indirizzo email o visualizzare un messaggio d'errore in caso l'indirizzo non sia valido;
+            \item ricevere un link per il recupero password all'indirizzo email inserito;
+            \item impostare una nuova password o visualizzare un messaggio d'errore in caso la password non sia valida;
+            \item confermare la propria password reinserendo quella indicata precedentemtente o visualizzare un messaggio d'errore qualora il matching non sia rispettato.
+        \end{itemize}&
+        NI\\
+
+        TS24&
+        \begin{flushleft}
+            L'utente deve essere in grado di modificare la propria password dopo essersi autenticato.
+            All'utente viene richiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item inserire la propria password corrente o visualizzare un errore nel caso in cui questa non sia corretta;
+            \item impostare una nuova password o visualizzare un messaggio d'errore in caso la password non sia valida;
+            \item confermare la propria password reinserendo quella indicata precedentemtente o visualizzare un messaggio d'errore qualora il matching non sia rispettato.
+        \end{itemize}&
+        NI\\
+
+        
+        TS25&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di riabilitare una stanza precedentemente disabilitata.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di gestione delle stanze;
+            \item marcare la stanza precedentemente disabilitata come abilitata;
+            \item verificare che le postazioni all'interno della stanza siano di nuovo prenotabili.
         \end{itemize}&
         NI\\
 
