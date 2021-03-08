@@ -11,6 +11,95 @@
     % R-1.1-F-0                & Il sistema deve permettere ad un amministratore di inserire la propria mail con la quale si \`{e} registrato & ...                         \\
     % X.X.X                    & XXXX-XX-XX                                                                                                   & ...                         \\
 
+    R-1-F-O & Il sistema deve permettere ad un account con permessi di amministratore di autenticarsi come tale nell'applicazione web& UC-1 \\
+    R-1.1-F-O & Il sistema deve permettere l'inserimento delle credenziali da parte dell'amministratore per effettuare il login presso l'applicazione web& UC-1.1 \\
+    R-2-F-O & Il sistema deve permettere ad un account con permessi di amministratore di effettuare il logout dall'applicazione web& UC-3 \\
+    R-3-F-O & l'amministratore deve poter visualizzare e cercare tutti gli utenti registrati nel sistema& UC-4 \\
+    R-3.1-F-O & Il sistema deve permettere ad un account con permessi di amministratore di ricercare un utente per il proprio nome& UC-4.1 \\
+    R-3.2-F-O & Il sistema deve permettere ad un account con permessi di amministratore di ricercare un utente per il proprio cognome& UC-4.2 \\
+    R-3.3-F-O & Il sistema deve permettere ad un account con permessi di amministratore di ricercare un utente per il proprio indirizzo email& UC-4.3 \\
+    R-4-F-O & Il sistema deve permettere l'aggiunta di un nuovo utente da parte dell'amministratore& UC-5 \\
+    R-4.1-F-O & Il sistema deve poter selezionare il ruolo di un nuovo utente aggiunto& UC-5.1 \\
+    R-4.2-F-O & Il sistema deve permettere l'inserimento dell'indirizzo email di un nuovo account che si sta registrando& UC-5.2 \\
+    R-5-F-O & Il sistema deve permettere la visualizzazione dei dati di un singolo utente da parte dell'amministratore& UC-6 \\
+    R-5.1-F-O & Il sistema deve permettere di visualizzare il nome dell'utente da parte dell'amministratore& UC-6.1 \\
+    R-5.2-F-O & Il sistema deve permettere di visualizzare il cognome dell'utente da parte dell'amministratore& UC-6.2 \\
+    R-5.3-F-O & Il sistema deve permettere di visualizzare il ruolo dell'utente da parte dell'amministratore& UC-6.3 \\
+    R-5.4-F-O & Il sistema deve permettere di visualizzare l'indirizzo email dell'utente da parte dell'amministratore& UC-6.4 \\
+    R-5.5-F-O & Il sistema deve permettere la visualizzazione dello storico degli accessi effettuati di un singolo utente da parte dell'amministratore& UC-6.5 \\
+    R-5.6-F-O & Il sistema deve permettere la visualizzazione dello storico dell'utilizzo delle postazioni di un singolo utente da parte dell'amministratore& UC-6.6 \\
+    R-6-F-O & Il sistema deve permettere la modifica dei dati di un utente da parte dell'amministratore& UC-7 \\
+    R-6.1-F-O & Il sistema deve permettere la modifica del ruolo di un utente da parte dell'amministratore& UC-7.1 \\
+    R-6.2-F-O & Il sistema deve permettere la modifica dell'indirizzo email di un utente da parte dell'amministratore& UC-7.2 \\
+    R-7-F-O & Il sistema deve permettere la rimozione di un utente da parte dell'amministratore& UC-9 \\
+    R-8-F-O & L'amministratore deve poter visualizzare l'insieme delle stanze registrate nel sistema& UC- 10\\
+    R-8.1-F-O & L'amministratore deve poter ricercare una stanza registrata nel sistema per codice identificativo& UC- 10.1\\
+    R-8.2-F-O & L'amministratore deve poter visualizzare le stanze abilitate all'interno sistema& UC- 10.2\\
+    R-8.3-F-O & L'amministratore deve poter visualizzare le stanze disabilitate all'interno sistema& UC- 10.3\\
+    R-9-F-O &  L'amministratore deve poter aggiungere una nuova stanza all'interno del sistema& UC- 11\\
+    R-9.1-F-O & Il sistema deve poter permettere l'inserimento del codice identificativo di una nuova stanza aggiunta nel sistema& UC- 11.1\\
+    R-9.2-F-O & Il sistema deve poter permettere l'inserimento del codice del tag RFID da associare ad una nuova stanza aggiunta nel sistema& UC- 11.2\\
+    R-10-F-O &  Il sistema deve permettere la visualizzazione delle informazioni di una singola stanza& UC- 14\\
+    R-10.1-O &  L'amministratore deve poter visualizzare il codice identificativo di una nuova stanza all'interno del sistema& UC- 14.1\\
+    R-10.2-O &  L'amministratore deve poter visualizzare una panoramica delle postazione interne ad una singola stanza all'interno del sistema& UC- 14.2\\
+    R-10.3-O &  L'amministratore deve poter visualizzare il numero di utenti presenti all'interno di una singola stanza& UC- 14.3\\
+    R-11-F-O &  L'amministratore deve poter visualizzare il numero totale di utenti all'interno di tutte le stanze censite nel sistema& UC- 15\\
+    R-12-F-O &  Il sistema deve poter permettere la modifica del codice identificativo di una stanza& UC- 16\\
+    R-13-F-O &  Il sistema deve poter permettere la rimozione di una stanza da parte dell'amministratore& UC- 18\\
+    R-14-F-O &  Il sistema deve poter permettere la disabilitazione di una stanza da parte dell'amministratore& UC- 19\\
+    R-15-F-O &  Il sistema deve poter permettere la ri-abilitazione di una stanza da parte dell'amministratore& UC- 20\\
+    R-16-F-O & L'amministratore deve poter visualizzare l'insieme delle postazione registrate nel sistema& UC- 21\\
+    R-18.1-F-O & L'amministratore deve poter ricercare una postazione nel sistema per codice identificativo& UC- 21.1\\
+    R-18.2-F-O & L'amministratore deve poter ricercare le postazioni prenotate all'interno sistema& UC- 21.2\\
+    R-18.3-F-O & L'amministratore deve poter ricercare le postazioni occupate all'interno sistema& UC- 21.3\\
+    R-18.4-F-O & L'amministratore deve poter ricercare le postazioni libere all'interno sistema& UC- 21.4\\
+    R-18.5-F-O & L'amministratore deve poter ricercare le postazioni igienizzate all'interno sistema& UC- 21.5\\
+    R-18.6-F-O & L'amministratore deve poter ricercare le postazioni sporche all'interno sistema& UC- 21.6\\
+    R-18.7-F-O & L'amministratore deve poter ricercare le postazioni abilitate all'interno sistema& UC- 21.7\\
+    R-18.8-F-O & L'amministratore deve poter ricercare le postazioni disabilitate all'interno sistema& UC- 21.8\\
+    R-16-F-O & Il sistema deve permettere la visualizzazione delle informazioni di una singola postazione& UC- 22\\
+    R-16.1-F-O & Il sistema deve permettere la visualizzazione delle informazioni relative al codice identificativo di una postazione & UC- 22.1\\
+    R-16.2-F-O & Il sistema deve permettere la visualizzazione delle informazioni relative allo stato di una postazione in una singola postazione& UC- 22.2\\
+    R-16.3-F-O & Il sistema deve permettere la visualizzazione delle informazioni relative allo stato di pulizia di una postazione & UC- 22.3\\
+    R-17-F-O & Il sistema deve permettere l'aggiunta di una nuova postazione& UC- 23\\
+    R-17.1-F-O & Il sistema deve permettere la selezione della stanza in cui aggiungere la nuova postazione& UC- 23.1\\
+    R-17.2-F-O & Il sistema deve permettere l'inserimento del codice identificativo della nuova postazione& UC- 23.2\\
+    R-17.3-F-O & Il sistema deve permettere l'inserimento del codice tag RFID da associare alla nuova postazione& UC- 23.3\\
+    R-18-F-O & Il sistema deve permettere la modifica dei dati di una postazione& UC- 26\\
+    R-18.1-F-O & Il sistema deve permettere la modifica del codice identificativo della postazione& UC- 26.1\\
+    R-18.2-F-O & Il sistema deve permettere la modifica del codice tag RFID della postazione& UC- 26.2\\
+    R-19-F-O &  Il sistema deve poter permettere la rimozione di una postazione da parte dell'amministratore& UC- 27\\
+    R-20-F-O &  Il sistema deve poter permettere la disabilitazione di una postazione da parte dell'amministratore& UC- 28\\
+    R-21-F-O &  Il sistema deve poter permettere la ri-abilitazione di una postazione da parte dell'amministratore& UC- 29\\
+    %MOBILE
+    R-22-F-O & Il sistema deve permettere il completamento della registrazione da parte di un nuovo utente appena aggiunto dall'amministratore& UC- 30\\
+    R-22.1-F-O & Il sistema deve permettere l'inserimento del nome da parte di un nuovo utente per completare la registrazione& UC- 30.1\\
+    R-22.2-F-O & Il sistema deve permettere l'inserimento del cognome da parte di un nuovo utente per completare la registrazione& UC- 30.2\\
+    R-22.3-F-O & Il sistema deve permettere l'inserimento della password da parte di un nuovo utente per completare la registrazione& UC- 30.3\\
+    R-22.4-F-O & Il sistema deve permettere il re-inserimento della password da parte di un nuovo utente per completare la registrazione& UC- 30.4\\
+    R-23-F-O & Il sistema deve permettere il completamento della registrazione da parte di un nuovo utente appena aggiunto dall'amministratore& UC- 30\\
+    R-24-F-O & Il sistema deve permettere ad un utente di autenticarsi presso l'applicazione mobile& UC-35\\
+    R-24.1-F-O & Il sistema deve permettere l'inserimento delle credenziali da parte dell'utente per effettuare il login presso l'applicazione mobile& UC-35.1\\
+    R-25-F-O & Il sistema deve permettere il recupero della password presso l'applicazione mobile& UC-37\\
+    R-25.1-F-O & Il sistema deve permettere ad un utente di inserire la mail di registrazione alla quale verrà inviato il link per il ripristino della password presso l'applicazione mobile& UC-37.1\\
+    R-25.2-F-O & Il sistema deve permettere l'inserimento di una nuova password personale presso l'applicazione mobile& UC-37.2\\
+    R-25.3-F-O & Il sistema deve permettere ad un utente di re-inserire la nuova password di conferma presso l'applicazione mobile& UC-37.3\\
+    R-26-F-O & Il sistema deve permettere ad un utente di modificare la propria password personale presso l'applicazione mobile& UC-41\\
+    R-26.1-F-O & Il sistema deve permettere ad un utente di re-inserire la password corrente presso l'applicazione mobile& UC-41.1\\
+    R-26.2-F-O & Il sistema deve permettere l'inserimento di una nuova password personale presso l'applicazione mobile& UC-41.2\\
+    R-26.3-F-O & Il sistema deve permettere ad un utente di re-inserire la nuova password di conferma presso l'applicazione mobile& UC-41.3\\
+
+
+
+
+
+
+
+
+
+
+    
+    
     R-1-F-O & Il sistema deve permettere l'inserimento di un nuovo utente & UC-1 \\
     R-1.1-F-O & Il sistema deve permettere l'inserimento del nome del nuovo utente & UC-1.1 \\
     R-1.2-F-O & Il sistema deve permettere l'inserimento del cognome del nuovo utente & UC-1.2 \\
