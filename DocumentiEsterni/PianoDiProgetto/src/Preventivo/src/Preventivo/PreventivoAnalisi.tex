@@ -1,3 +1,4 @@
+\newpage
 \subsection{Investimento fase di Analisi}
 
 \subsubsection{Divisione oraria}
@@ -31,8 +32,10 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 \end{longtable}
 }
 % Responsabile color=blue, Amministratore color=yellow, Analista color=red, Progettista color=green, Programmatore color=grigetto, Verificatore color=orange  [ybar, fill=] blue, yellow, red, green, grigetto, orange
-Il preventivo delle ore da investire per ciascun componente del gruppo per ogni ruolo viene rappresentata nel seguente istogramma:\\
-\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoAnalisi.png}
+\begin{figure}[h!]
+	\caption{Istogramma relativo la suddivisione delle ore preventivate nella fase di analisi}
+	\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoAnalisi.png}
+\end{figure}
 %\begin{center}
 %	\pgfplotsset{width=15.4cm, height=8.5cm}
 %	\begin{tikzpicture}
@@ -90,8 +93,12 @@ Verificatore    &  70 & 1050 \\
 \end{longtable}
 }
 
-\vskip 30pt %spazio verticale
-\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaAnalisi.png}
+\begin{figure}[h!]
+	\caption{Areogramma relativo la suddivisione oraria per i diversi ruoli nella fase di analisi}
+    \includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaAnalisi.png}    
+\end{figure}
+
+
 %La quantità di ore totali investite per ciascun ruolo viene rappresentata nel seguente areogramma:
 %\begin{center}
 %	\pgfplotsset{width=17cm, height=8.5cm}
@@ -104,4 +111,3 @@ Verificatore    &  70 & 1050 \\
 %		}
 %	\end{tikzpicture}
 %\end{center}
-\input{./src/Preventivo/src/Consuntivo/ConsuntivoAnalisi.tex}

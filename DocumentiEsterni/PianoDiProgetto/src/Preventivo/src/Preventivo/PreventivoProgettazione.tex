@@ -1,3 +1,4 @@
+\newpage
 \subsection{Preventivo fase di Progettazione}
 
 \subsubsection{Divisione oraria}
@@ -29,38 +30,12 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 
 		
 \end{longtable}
-La suddivisione delle ore preventivate viene rappresentata anche sottoforma del seguente istogramma:\\
-\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoProj.png}
-%\begin{center}
-%	\pgfplotsset{width=15.4cm, height=8.5cm}
-%	\begin{tikzpicture}
-%		\begin{axis}[
-%			ybar stacked,
-%			bar width=20pt,
-%			legend style={
-%				at={(0.5,-0.15)},
-%				anchor=north,
-%				legend columns=-1
-%			},
-%			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
-%			xtick=data
-%		]
-%			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
-			% Responsabile
-%			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{10}{0}{0}{11}{0}{0}{0}};
-			% Amministratore
-%			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{10}{10}{0}{0}{0}{0}};
-			% Analista
-%			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{0}{0}{0}{6}{7}{6}{5}};
-			% Progettista
-%			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{8}{7}{7}{0}{7}{10}{10}};
-			% Programmatore
-%			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{8}{0}{9}{9}{11}{10}{11}};
-			% Verificatore
-%			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{5}{14}{9}{8}{9}{7}{7}};
-%		\end{axis}
-%	\end{tikzpicture}
-%\end{center}
+
+\begin{figure}[h!]
+	\caption{Istogramma relativo alle ore preventivate per ciascun componente nella fase di progettazione}
+    \includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoProj.png}  
+\end{figure}
+
 
 \clearpage
 \subsubsection{Costo risultante}
@@ -88,9 +63,10 @@ Verificatore    &  59 &  885 \\
 \end{longtable}
 }
 
-\vskip 30pt %spazio verticale
-La quantità di ore totali preventivate per ciascun ruolo viene rappresentata nel seguente areogramma:\\
-\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaProj.png}
+\begin{figure}[h!]
+	\caption{Areogramma relativo alla quantità di ore totali preventivate per ciascun ruolo nella fase di progettazione}
+    \includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaProj.png}  
+\end{figure}
 
 %\begin{center}
 %	\begin{tikzpicture}
