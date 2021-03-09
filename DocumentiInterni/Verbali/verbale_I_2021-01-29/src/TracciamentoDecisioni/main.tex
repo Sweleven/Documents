@@ -1,45 +1,51 @@
 \begin{enumerate}
-    \item è stata fissata una data entro cui la correzzione della documentazione deve essere completata ovvero il: 2021-02-16;
-    \item è stato contattato il committente per fissare un incontro
-    \item è stato deciso di spostare la documentazione della repo da Github a Gitlab perchè ???   ;
-    \item E' stata fatto notare che il gruppo in questa fase ha utilizzato Jira in modo troppo sporadico e che il livello di 
+    \item è stata fissata una data entro cui la correzione della documentazione deve essere completata ovvero il: 2021-02-16;
+    \item è stato contattato il committente per fissare un incontro;
+    \item è stato deciso di spostare la documentazione della repo da Github a Gitlab per usufruire di una migliore gestione delle pipelines;
+    \item è stata fatto notare che il gruppo in questa fase ha utilizzato Jira in modo troppo sporadico e che il livello di 
     comunicazione che deve essere maggiore.
-    \item La pianificazione sarà la seguente:
+\end{enumerate}
+
+    La pianificazione sarà la seguente:
     \begin{itemize}
-    \item correzzione della documentazione;
-    \item analisi eventuale criticità del utilizzo della tecnologia NFC ed eventualmente concordare con il proponente una soluzione alternativa;
-    \item raffinamento analisi;
-    \item inizializzazione infrastruttura;
+    \item correzione della documentazione;
+    \item analisi di eventuale criticità dell'utilizzo della tecnologia NFC ed eventualmente concordare con il proponente una soluzione alternativa;
+    \item raffinamento dell'analisi;
+    \item inizializzazione dell'iinfrastruttura;
     \item progettazione architetturale dell'applicazione;
-    \item implementazione delle componenti più critiche ed essenziali ai fini del \glo{PoC} ovvero:
-        tracciamento utente(NFC?)via smartphone,comunicazione dati tra smartphone e database e la relativa chiave di cryptaggio(hash),salvataggio del hash generato in blockchain e della relativa transazione.
+    \item implementazione delle componenti più critiche ed essenziali ai fini del \glo{PoC}, ovvero:
+        \begin{itemize}
+            \item tracciamento dell'utente via smartphone;
+            \item comunicazione dati tra smartphone e database;
+            \item salvataggio dell'hash generato in blockchain e della relativa transazione.
+        \end{itemize}
     \end{itemize}
-    \item Lo stack tecnologico proposto è il seguente:\\
+    Lo stack tecnologico proposto è il seguente:
     \rowcolors{2}{\evenRowColor}{\oddRowColor}
 	\renewcommand{\arraystretch}{2}
     \begin{longtable}{ C{5cm} C{4cm} C{5cm} }
         \caption{Tabella stack infrastrutturale}                                                                                 \\
         \rowcolor{\primaryColor}
         \textcolor{\secondaryColor}{\textbf{Nome}} & \textcolor{\secondaryColor}{\textbf{Contesto di utilizzo}} & \textcolor{\secondaryColor}{\textbf{Motivazione}}\\ \endhead
-        {Kubernets} & {Per la gestione del container}   & {E' stato consigliato sia dal committente che da un membro del team con esperienza}\\
+        {Kubernets} & {Per la gestione del container}   & {È stato consigliato sia dal committente che da un membro del team con esperienza}\\
     \end{longtable}
 
     \begin{longtable}{ C{5cm} C{4cm} C{5cm} }
         \caption{Tabella stack tecnologico di Sviluppo}                                                                                 \\
         \rowcolor{\primaryColor}
         \textcolor{\secondaryColor}{\textbf{Nome}} & \textcolor{\secondaryColor}{\textbf{Contesto di Utilizzo}} & \textcolor{\secondaryColor}{\textbf{Motivazione}}\\ \endhead
-        {Android} & {Per lo sviluppo del app mobile}   & {la maggior parte dei componenti ha un dispositivo con OS Android e la relativa libreria è molto ben documentata}\\
-        {Kotlin} & {Per lo sviluppo Nativo dell app mobile(utente)} & {facile leggibilità ed è consigliato da Google} \\
-        {Typescript} & {Per lo sviluppo relativo all'applicazione Web(Admin)} & { Facilità la scrittura di codice JavaScript } \\
-        {MongoDB} & {Per il database} & { rende l'integrazione di dati di applicazioni(con mole di dati alta) più facile e veloce} \\
+        {Android} & {Per lo sviluppo del app mobile}   & {La maggior parte dei componenti ha un dispositivo con OS Android e la relativa libreria è molto ben documentata}\\
+        {Kotlin} & {Per lo sviluppo Nativo dell app mobile (utente)} & {Facile leggibilità ed è consigliato da Google} \\
+        {Typescript} & {Per lo sviluppo relativo all'applicazione Web (Admin)} & { Facilita la scrittura di codice JavaScript } \\
+        {MongoDB} & {Per il database} & { Rende l'integrazione di dati di applicazioni (con mole di dati alta) più facile e veloce} \\
         {RabbitMQ} & {Per garantire la continuità del servizio} & {Per rendere l'applicazione quasi sempre disponibile e con grande affidabilità} \\
-        {Kong} & {Per la comunicazione via API tra componenti} & {facilità lo sviluppo di API e microservizi} \\
-        {Angular} & {Grafica applicazione web} & {framework che facilità lo sviluppo di UI scitte in Javascript} \\
-        {Auth0} & {Logica di Login} & {facilità l'implementazione di logiche relative al accesso autorizzato} \\
-        {Traffol framework} & {testing comunicazione blockchain} & {facilità lo sviluppo è il testing di applicazioni dove è richiesto l'utilizzo di blockchain basate su Ethereum} \\
-        {Solidity} & {comunicazione blockchain per salvare l'hash} & {consente di creare contratti facili da sviluppare e sicuri(curva di apprendimento esponenziale)} \\
-        {NestJS} & {Beckend logica applicazione} & {Facilità l'implementazione di codice JavaScript lato backend} \\
-        {NodeJS} & {Per lo sviluppo della parte beckend e frontend} & {facilità la scrittura di codice Javascript includendo diversi moduli} \\
+        {Kong} & {Per la comunicazione via API tra componenti} & {Facilita lo sviluppo di API e microservizi} \\
+        {Angular} & {Grafica applicazione web} & {Framework che facilita lo sviluppo di UI scitte in Javascript} \\
+        {Auth0} & {Logica di Login} & {Facilita l'implementazione di logiche relative all'accesso autorizzato} \\
+        {Traffol framework} & {Testing comunicazione blockchain} & {Facilita lo sviluppo e il testing di applicazioni dove è richiesto l'utilizzo di blockchain basate su Ethereum} \\
+        {Solidity} & {Comunicazione blockchain per salvare l'hash} & {Consente di creare contratti facili da sviluppare e sicuri (curva di apprendimento esponenziale)} \\
+        {NestJS} & {Beckend logica applicazione} & {Facilita l'implementazione di codice JavaScript lato backend} \\
+        {NodeJS} & {Per lo sviluppo della parte beckend e frontend} & {Facilita la scrittura di codice Javascript includendo diversi moduli} \\
     \end{longtable}
     
     \begin{longtable}{ C{5cm} C{4cm} C{5cm} }
@@ -48,7 +54,6 @@
         \textcolor{\secondaryColor}{\textbf{Chi}} & \textcolor{\secondaryColor}{\textbf{Cosa}} \\ \endhead
         {\EM , \AD} & {Analisi NFC e sviluppo applicazione Android} \\
         {\FP} & {Sviluppo backend} \\
-        {\GG ,\AW} & {Progettazione Interfaccia Web} \\
-        {\AT ,\EC} & {Arricchimento AdR} \\
+        {\GG , \AW} & {Progettazione Interfaccia Web} \\
+        {\AT , \EC} & {Arricchimento AdR} \\
     \end{longtable}
-\end{enumerate}
