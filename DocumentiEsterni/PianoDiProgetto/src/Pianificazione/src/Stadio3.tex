@@ -12,9 +12,10 @@
                 \end{itemize}
                 \item \textbf{Obiettivi}
                 \begin{itemize}
-                    \item valutazione critica di eventuali rischi riscontrati o con alta probabilità che si riscontrino;
+                    \item valutazione critica lavoro svolto
+                    %riscontrati o con alta probabilità che si riscontrino;
                     \item correzione della documentazione;
-                    \item ristrutturazione e correzione dell'\AdR;
+                    \item eventuale ripianificazione oraria causa rischi;
                     \item valutazione delle componenti e tecnologie richieste:
                     \begin{itemize}
                         \item valutazione della fattibilità effettiva dell'utilizzo della tecnologia \glo{RFID};
@@ -46,13 +47,13 @@
                             \begin{itemize}
                                 \item scelta effettiva delle tecnologie richieste per implementare i requisiti obbligatori e critici;
                                 \item studio delle tecnologie scelte coinvolte nel \glo{PoC};
-                                \item definizione primi incrementi di sviluppo secondo i criteri di necessità, tipologia e quindi priorità dei requisiti.
+                                \item progettazione concettuale dell' architettura a \glo{microservizi}
                             \end{itemize}
                 \end{itemize}          
             
                 \subsubsection{Periodo 3 - Fase di progettazione}
         
-                Da qui in poi si entra nella parte più specifica di costruzione del sistema. Viene quindi prodotta una prima stesura del codice con lo scopo di costruire un \glo{Proof of Concept} che utilizzi le tecnologie scelte.
+                 Viene prodotta una prima stesura del codice con lo scopo di costruire un \glo{Proof of Concept} che utilizzi le tecnologie scelte.
         
                 \begin{itemize}
                     \item \textbf{intervallo: }24 febbraio 2021 - 10 marzo 2021;
@@ -69,19 +70,21 @@
                     \item \textbf{Obiettivi}
 
                                 \begin{itemize}
-                                    \item implementazione degli incrementi definiti nel periodo 2 si veda la\hypersetup{
+                                    \item definizione primi incrementi di sviluppo secondo i criteri di necessità, tipologia e quindi priorità dei requisiti;
+                                    \item implementazione parziale dell'infrastruttura di base del sistema:
+                                            \begin{itemize}
+                                                \item setup \glo{Kubernetes};
+                                                \item \glo{backend} gestione postazioni;
+                                                \item autenticazione delle \glo{API esposte};
+                                            \end{itemize}                            
+                                    \item implementazione degli incrementi definiti in questo periodo, si veda la\hypersetup{
                                         linkcolor=blue
                                     }
                                     \hyperlink{TabellaIncrementi}{tabella degli incrementi} in appendice;
                                     \hypersetup{
                                         linkcolor=black
                                     }
-                                    \item implementazione parziale componenti a supporto dell'architettura del sistema e di futuri incrementi:
-                                            \begin{itemize}
-                                                \item setup \glo{Kubernetes};
-                                                \item \glo{backend} gestione postazioni;
-                                                \item autenticazione delle \glo{API esposte};
-                                            \end{itemize}
+                                    
                                     \item aggiornamento, verifica e correzione generale dell'intera documentazione redatta fino a questo momento;
                                     \item consegna del \glo{deliverable} necessario, in vista dell'incontro con il committente per la \RP{}.
                                 \end{itemize}
