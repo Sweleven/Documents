@@ -6,7 +6,7 @@
 
 		\item \textbf{Descrizione:} l'utente vuole completare la registrazione presso il sistema inserendo i propri dati anagrafici e la propria password personale. Tutti i campi dati richiesti sono obbligatori;
 
-		\item \textbf{Precondizioni:} l'utente ha cliccato il link per completare la registrazione ricevuto via mail;
+		\item \textbf{Precondizioni:} l'utente ha cliccato il link per completare la registrazione ricevuto via e-mail;
 
 		\item \textbf{Postcondizioni:} l'utente è registrato presso il sistema;
 
@@ -16,7 +16,7 @@
 		      \item l'utente inserisce il proprio cognome nell'apposito form (UC-30.2 Inserimento cognome);
 		      \item l'utente inserisce la propria password personale nell'apposito form (UC-30.3 Inserimento password);
 		      \item l'utente inserisce nuovamente la password per confermarla (UC-30.4 Conferma password);
-		      \item l'utente invia i dati al sistema il quale elabora la richiesta e completa la registrazione del nuovo utente;
+		      \item l'utente invia i dati al sistema il quale elabora la richiesta e completa la registrazione del nuovo utente.
 	      \end{enumerate}
 	\end{itemize}
 
@@ -75,7 +75,7 @@
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
 
-		\item \textbf{Descrizione:} l'utente inserire vuole inserire la propria password personale per registrarsi presso il sistema. Il cognome non può contenere caratteri speciali (es.spazi);
+		\item \textbf{Descrizione:} l'utente vuole inserire la propria password personale per registrarsi presso il sistema. La password non può contenere caratteri speciali (es.spazi);
 
 		\item \textbf{Precondizioni:} l'utente ha selezionato il form preposto all'inserimento della nuova password;
 
@@ -96,7 +96,7 @@
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
 	
-		\item \textbf{Descrizione:} l'utente inserire confermare la propria password per registrarsi presso il sistema. \`{E} richiesto pertanto di inserire nuovamente la password in un apposito form;
+		\item \textbf{Descrizione:} l'utente deve confermare la propria password per registrarsi presso il sistema. \`{E} richiesto pertanto di inserire nuovamente la password in un apposito form;
 
 		\item \textbf{Precondizioni:} l'utente ha selezionato il form preposto alla conferma della nuova password;
 
@@ -117,9 +117,9 @@
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
 
-		\item \textbf{Descrizione:} l'utente non ha inserito il proprio cognome o ha digitato caratteri non validi (numeri,spazi, segni di punteggiatura) nel form dedicato all'inserimento del proprio nome. Viene visualizzato un messaggio d'errore esplicativo e la registrazione non viene completata;
+		\item \textbf{Descrizione:} l'utente non ha inserito il proprio nome o ha digitato caratteri non validi (numeri, segni di punteggiatura) nel form dedicato all'inserimento del proprio nome. Viene visualizzato un messaggio d'errore esplicativo e la registrazione non viene completata;
 
-		\item \textbf{Precondizioni:} l'utente non ha inserito il proprio cognome o ha inserito dei caratteri non validi e ha inviato i dati al sistema;
+		\item \textbf{Precondizioni:} l'utente non ha inserito il proprio nome o ha inserito dei caratteri non validi e ha inviato i dati al sistema;
 
 		\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la fase di registrazione dell'utente;
 
@@ -130,14 +130,14 @@
 	\end{itemize}
  
 
-\paragraph{UC-32 Errore: cognome mancante o contenente caratteri non validi}
+	\paragraph{UC-32 Errore: cognome mancante o contenente caratteri non validi}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non registrato;
 
-		\item \textbf{Descrizione:} l'utente ha inserito una coppia di credenziali non riconosciuta dal sistema e ha inviato i propri dati;
+		\item \textbf{Descrizione:} l'utente non ha inserito il proprio cognome o ha digitato caratteri non validi (numeri, segni di punteggiatura) nel form dedicato all'inserimento del proprio cognome. Viene visualizzato un messaggio d'errore esplicativo e la registrazione non viene completata;
 
-		\item \textbf{Precondizioni:} l'utente ha inserito il proprio indirizzo e-mail e la propria password;
+		\item \textbf{Precondizioni:} l'utente non ha inserito il proprio cognome o ha inserito dei caratteri non validi e ha inviato i dati al sistema;
 
 		\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la fase di registrazione dell'utente;
 
@@ -215,7 +215,7 @@
 
 		\item \textbf{Descrizione:} l'utente vuole inserire le proprie credenziali nell'apposito form nella schermata di login;
 
-		\item \textbf{Precondizioni:} l'utente ha selezionato selezionato la funzionalità di login;
+		\item \textbf{Precondizioni:} l'utente ha selezionato la funzionalità di login;
 
 		\item \textbf{Postcondizioni:} l'utente ha inserito con successo le proprie credenziali;
 
@@ -293,7 +293,7 @@
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
 
-		\item \textbf{Descrizione:} l'utente vuole poter modificare la propria password dalla schermata di login tramite un link per il recupero della password ;
+		\item \textbf{Descrizione:} l'utente vuole poter modificare la propria password dalla schermata di login tramite un link per il recupero della password;
 
 		\item \textbf{Precondizioni:} l'utente ha avviato l'applicazione mobile e non si ricorda la propria password;
 
@@ -302,7 +302,7 @@
 		\item \textbf{Scenario principale:}
 	  		\begin{enumerate}
 		  		\item l'utente clicca il link per il recupero password; 
-		  		\item l'utente inserisce l'indirizzo e-mail al quale inviare il link per il reset della password (UC-37.1 Inserimento mail di registrazione);
+		  		\item l'utente inserisce l'indirizzo e-mail al quale inviare il link per il reset della password (UC-37.1 Inserimento e-mail di registrazione);
 		  		\item l'utente inserisce la nuova password (UC-37.2 inserimento nuova password);
 		  		\item l'utente conferma la nuova password (UC-37.3 conferma nuova password);
 		  		\item l'utente invia i dati al sistema.
@@ -316,12 +316,12 @@
 		\caption{Diagramma relativo al recupero password da applicazione mobile}
 	\end{figure}
 
-\paragraph{UC-37.1 Inserimento mail di registrazione}
+\paragraph{UC-37.1 Inserimento e-mail di registrazione}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
 
-		\item \textbf{Descrizione:} l'utente vuole inserire la propria mail di registrazione per ricevere il link di modifica della password;
+		\item \textbf{Descrizione:} l'utente vuole inserire la propria e-mail di registrazione per ricevere il link di modifica della password;
 
 		\item \textbf{Precondizioni:} l'utente ha selezionato il form di inserimento dell'indirizzo e-mail nella procedura di recupero password;
 
@@ -329,7 +329,7 @@
 
 		\item \textbf{Scenario principale:}
 	  		\begin{enumerate}
-		  		\item l'utente inserisce la mail con la quale è registrato presso ; 
+		  		\item l'utente inserisce l'indirizzo e-mail con il quale è registrato presso il sistema; 
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
 	  		\begin{itemize}
@@ -344,7 +344,7 @@
 
 		\item \textbf{Descrizione:} l'utente vuole inserire la nuova password con la quale autenticarsi;
 
-		\item \textbf{Precondizioni:} l'utente ha cliccato il link per il reset della password ricevuto via mail;
+		\item \textbf{Precondizioni:} l'utente ha cliccato il link per il reset della password ricevuto via e-mail;
 
 		\item \textbf{Postcondizioni:} l'utente ha inserito con successo la nuova password;
 
@@ -382,14 +382,14 @@
 	  		\end{itemize}
 	\end{itemize}
 
-\paragraph{UC-38 Errore: mail mancante o non presente nel sistema}
+\paragraph{UC-38 Errore: e-mail mancante o non presente nel sistema}
 
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente non autenticato;
 
-		\item \textbf{Descrizione:} l'utente non ha inserito;
+		\item \textbf{Descrizione:} viene visualizzato un messaggio d'errore esplicativo poiché l'utente non ha inserito l'e-mail corretta;
 
-		\item \textbf{Precondizioni:} l'utente non ha inserito il proprio cognome o ha inserito dei caratteri non validi e ha inviato i dati al sistema;
+		\item \textbf{Precondizioni:} l'utente non ha inserito la propria e-mail o non ha inserito l'e-mail corretta e ha inviato i dati al sistema;
 
 		\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la fase di recupero password;
 
@@ -496,9 +496,9 @@
 		  		\item l'utente digita la nuova password nel form selezionato.
 	  		\end{enumerate}
 	  	\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-43 Errore: password mancante o non valida.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 
@@ -507,7 +507,7 @@
 	\begin{itemize}
 		\item \textbf{Attore primario:} utente autenticato;
 
-		\item \textbf{Descrizione:} all'utente è richiesto di confermare la password inserita  \`{E} necessario il reinserimento della password in un apposito form;
+		\item \textbf{Descrizione:} all'utente è richiesto di confermare la password inserita.  \`{E} necessario il reinserimento della password in un apposito form;
 
 		\item \textbf{Precondizioni:} l'utente ha inserito la nuova password;
 
@@ -520,9 +520,9 @@
 		  		\item il sistema confronta le due password. Se esse coincidono viene completata correttamente la procedura di recupero password.
 	  		\end{enumerate}
 		\item \textbf{Estensioni:}
-	  		\begin{enumerate}
+	  		\begin{itemize}
 		  		\item UC-44 Errore: password non corrispondente a quella precedentemente inserita.
-	  		\end{enumerate}
+	  		\end{itemize}
 	\end{itemize}
 
 \paragraph{UC-42 Errore: password errata}

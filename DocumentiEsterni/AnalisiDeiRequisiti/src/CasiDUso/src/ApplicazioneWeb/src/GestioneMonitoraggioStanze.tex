@@ -1,7 +1,7 @@
 
 \paragraph{UC-10 Visualizzazione delle stanze registrate nel sistema}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video l'insieme delle stanze registrate nel sistema;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle stanze registrate nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutte le stanze registrate all'interno del sistema;
@@ -20,7 +20,7 @@
 
 \paragraph{UC-10.1 Visualizzazione stanza per codice identificativo}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video una stanza corrispondente al codice identificativo cercato;
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le stanze registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca la stanza tramite codice univoco identificativo. Se non esiste alcuna stanza avente codice identificativo cercato non verrà visualizzata a video alcuna stanza;
@@ -33,7 +33,7 @@
 
 \paragraph{UC-10.2 Visualizzazione stanze abilitate}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video le stanze filtrate per uno stato attuale, ovvero abilitate al momento;
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le stanze registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di stanze tramite filtro attivo. Se non esiste alcuna stanza abilitata al momento della ricerca, non verrà visualizzato alcun risultato a video;
@@ -47,7 +47,7 @@
 
 \paragraph{UC-10.3 Visualizzazione stanze disabilitate}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video le stanze filtrate per uno stato attuale, ovvero disabilitate al momento;
     \item \textbf{Precondizione:} l'amministratore visualizza l'elenco di tutte le stanze registrate nel sistema;
     \item \textbf{Postcondizione:} l'amministratore ricerca un insieme di stanze tramite filtro attivo. Se non esiste alcuna stanza disabilitata al momento della ricerca, non verrà visualizzato alcun risultato a video;
@@ -61,7 +61,7 @@
 
 \paragraph{UC-11 Aggiunta nuova stanza nel sistema}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} aggiungere una stanza alla lista di stanze censite;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
     \item \textbf{Postcondizione:} una nuova stanza \`{e} stata aggiunta alla lista di stanze disponibili;
@@ -93,9 +93,9 @@
 		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-12 Errore: inserimento di un codice stanza non valido).
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
-		\begin{enumerate}
+		\begin{itemize}
 		      \item UC-12 Errore: inserimento di un codice di una stanza non valido.
-	      \end{enumerate}
+	      \end{itemize}
 \end{itemize}
 
 
@@ -111,9 +111,9 @@
 		      \item il sistema controlla l'univocità del codice inserito. Qualora questa sia rispettata, elaborerà correttamente la richiesta, altrimenti mostrerà a video un messaggio di errore esplicativo (UC-13 Errore: inserimento di un codice tag RFID di una stanza non valido).
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
-		\begin{enumerate}
+		\begin{itemize}
 		      \item UC-13 Errore: inserimento di un codice tag RFID di una stanza non valido.
-	      \end{enumerate}
+	      \end{itemize}
 \end{itemize}
 
 
@@ -121,18 +121,18 @@
 \begin{itemize}
 	\item \textbf{Attore primario:} amministratore;
 	\item \textbf{Descrizione:} l'amministratore ha provato ad inserire il codice identificativo di nuova stanza ma l'assegnazione non è andata a buon fine poiché il codice inserito contiene dei caratteri speciali che non rispettano i criteri di inserimento;
-	\item \textbf{Precondizioni:} l'amministratore ha inserito un indirizzo e-mail che contiene dei caratteri non validi durante la registrazione e ha inviato i dati al sistema;
-	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa la registrazione del nuovo utente;
+	\item \textbf{Precondizioni:} l'amministratore ha inserito un codice identificativo errato relativo ad una stanza;
+	\item \textbf{Postcondizioni:} il sistema restituisce un messaggio d'errore esplicativo e non completa l'inserimento del codice della stanza;
 	\item \textbf{Scenario principale:}
 	      \begin{enumerate}
 		      \item il sistema elabora la richiesta ricevuta;
-		      \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa la registrazione del nuovo utente.
+		      \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa la registrazione della nuova stanza.
 	      \end{enumerate}
 	 \item \textbf{Estensioni:}
-	 	\begin{enumerate}
+	 	\begin{itemize}
 		       \item UC-12.1 Errore: inserimento di un codice stanza non univoco;
 		       \item UC-12.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
-	        \end{enumerate}
+	        \end{itemize}
 \end{itemize}
 
 \paragraph{UC-12.1 Errore: inserimento di un codice stanza non univoco}
@@ -179,7 +179,7 @@
 
 \paragraph{UC-14 Visualizzazione informazioni stanza}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video tutte le informazioni disponibili per una determinata stanza selezionata;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza tutti i dettagli della stanza selezionata, quali codice identificativo, stato postazioni ed utenti attualmente presenti al suo interno;
@@ -199,7 +199,7 @@
 
 \paragraph{UC-14.1 Visualizzazione codice stanza}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video il codice identificativo univoco di una stanza precedentemente selezionata;
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una stanza selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza il codice identificativo della stanza desiderata;
@@ -212,7 +212,7 @@
 
 \paragraph{UC-14.2 Visualizzazione panoramica postazioni interne ad una stanza}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video lo stato delle postazioni all'interno di una stanza precedentemente selezionata;
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una stanza selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza lo stato delle postazioni (disabilitata, occupata, sporca o libera) interne alla stanza selezionata;
@@ -225,7 +225,7 @@
 
 \paragraph{UC-14.3 Visualizzazione numero utenti presenti nella singola stanza}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare a video il totale degli utenti presenti all'interno di una stanza precedentemente selezionata;
     \item \textbf{Precondizione:} l'amministratore sta visualizzando a video i dettagli di una stanza selezionata;
     \item \textbf{Postcondizione:} l'amministratore visualizza a video il numero di utenti presenti all'interno della stanza selezionata;
@@ -239,7 +239,7 @@
 
 \paragraph{UC-15 Visualizzazione totalità degli utenti presenti in tutte le stanze}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} visualizzare il numero di utenti presenti in tutte le stanze registrate all'interno del sistema;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di visualizzazione delle stanze registrate nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore visualizza il numero di utenti presenti all'interno di tutte le stanze registrate nel sistema;
@@ -264,9 +264,9 @@
 		      \item l'amministratore ha modificato con successo il codice identificativo della stanza.
 	      \end{enumerate}
 	\item \textbf{Estensioni:}
-		\begin{enumerate}
+		\begin{itemize}
 		      \item UC-17 Errore: codice stanza non valido.
-	      \end{enumerate}
+	      \end{itemize}
 \end{itemize}
 
 \paragraph{UC-17 Errore: codice stanza non valido}
@@ -281,10 +281,10 @@
 		      \item il sistema restituisce un messaggio d'errore esplicativo che viene visualizzato sullo schermo del dispositivo dell'amministratore e non completa la modifica del codice identificativo della stanza.
 	      \end{enumerate}
 	 \item \textbf{Estensioni:}
-	 	\begin{enumerate}
+	 	\begin{itemize}
 		       \item UC-17.1 Errore: inserimento di un codice stanza non univoco;
 		       \item UC-17.2 Errore: inserimento di un codice di una stanza contenente caratteri non validi.
-	        \end{enumerate}
+	        \end{itemize}
 \end{itemize}
 
 \paragraph{UC-17.1 Errore: codice stanza non univoco}
@@ -317,7 +317,7 @@
  
 \paragraph{UC-18 Rimozione di una stanza dal sistema}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} rimuovere una stanza dalla lista di stanze censite;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di gestione delle stanze nell'applicazione web;
     \item \textbf{Postcondizione:} l'amministratore ha rimosso con successo una stanza dall'insieme delle stanze censite dal sistema;
@@ -332,7 +332,7 @@
 
 \paragraph{UC-19 Disabilitazione di una stanza}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} disabilitare una stanza, impedendo la prenotazione delle postazioni presenti all'interno della stanza. Tutte le prenotazioni attive per tutte le postazioni di quella stanza vengono cancellate;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
     \item \textbf{Postcondizione:} la stanza \`{e} disabilitata, tutte le postazioni presenti all'interno della stessa non sono pi\`{u} prenotabili e le prenotazioni già effettuate vengono cancellate;
@@ -346,7 +346,7 @@
 
 \paragraph{UC-20 Riabilitazione di una stanza precedentemente disabilitata}
 \begin{itemize}
-    \item \textbf{Attori:} amministratore;
+    \item \textbf{Attore primario:} amministratore;
     \item \textbf{Descrizione:} un amministratore pu\`{o} abilitare una stanza precedentemente segnata come disabilitata;
     \item \textbf{Precondizione:} l'amministratore si trova nella pagina di dettaglio della stanza nell'applicazione web;
     \item \textbf{Postcondizione:} la stanza \`{e} stata abilitata e ritorna quindi fruibile agli utenti;
