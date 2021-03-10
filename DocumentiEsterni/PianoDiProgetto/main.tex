@@ -7,13 +7,14 @@
 \usepackage{graphics}
 \usepackage{pdfpages}
 \usepackage{multirow}
-\usepackage[official]{eurosym}
+\usepackage{eurosym}
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{pdflscape}
 \usepackage{blindtext}
 \usepackage{pgf-pie}
 \usepackage{pgfplots}
+\usepackage{lmodern}
 \input{./src/Comandi.tex}
 
 \begin{document}
@@ -40,17 +41,23 @@
 
     \section{Modello di sviluppo}\label{sec:Modello-sviluppo}
     \input{src/ModelloSviluppo/main.tex}
-
+    \newpage
     \section{Pianificazione}\label{sec:Pianificazione}
     \input{src/Pianificazione/main.tex}
 
     \section{Preventivo}\label{sec:Preventivo}
     \input{src/Preventivo/main.tex}
 
-    %\newpage
-    %\section{Consuntivo Periodo}\label{sec:Consuntivo-periodo}
-    %\input{src/ConsuntivoPeriodo/main.tex}
-
+    \newpage
+    \section{Consuntivo di periodo}\label{sec:Consuntivo di periodo}
+    \input{src/Consuntivo/main.tex}
+    
+    \newpage
     \section{Organigramma}\label{sec:Organigramma}
     \input{src/Organigramma/main.tex}
+    \newpage
+    \setcounter{secnumdepth}{0}
+    \section{Appendice}\label{sec:Appendice}
+    \appendix
+    \input{src/Appendice/main.tex}
 \end{document}

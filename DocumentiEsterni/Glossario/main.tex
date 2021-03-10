@@ -3,6 +3,7 @@
 \usepackage{../../Shared/Sweleven}
 \usepackage{csquotes}
 \usepackage{graphicx}
+\usepackage{lmodern}
 \input{./src/Comandi.tex}
 \DeclareUnicodeCharacter{2212}{-}
 
@@ -12,16 +13,16 @@
 
 \section*{Registro delle modifiche}\label{sec:Registro-modifiche}
 \input{./src/RegistroModifiche.tex}
-
+\setcounter{secnumdepth}{0}%ignora i numeri prima delle subsections section...
 \newpage
 \tableofcontents
 
 \newpage
-
+\input{./src/Riferimenti.tex}
 
 
 \input{./src/OrdineAlfabetico.tex}
 
-\input{./src/Riferimenti.tex}
+
 
 \end{document}

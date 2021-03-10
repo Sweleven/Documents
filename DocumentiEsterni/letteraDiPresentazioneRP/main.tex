@@ -1,0 +1,87 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table,11pt]{letter}
+\usepackage{eurosym}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tocloft}
+\usepackage{lmodern}
+\usepackage{../../Shared/Sweleven}
+
+
+\signature{}
+\address{ Prof. Vardanega Tullio \\ Prof. Cardin Riccardo  \\ Università degli Studi di Padova \\ Dipartimento di Matematica \\ Via Trieste, 63\\ 35121 Padova }
+
+
+\begin{document}
+\pagestyle{empty}
+
+    \begin{letter}
+        { Egregio Prof. Vardanega Tullio,\\Egregio Prof. Cardin Riccardo,}
+        \begin{minipage}{.5\textwidth}
+            \begin{flushleft}
+                \includegraphics[width=.6\linewidth]{../../Shared/logo.png}
+            \end{flushleft}
+        \end{minipage}
+        \begin{minipage}{.4\textwidth}
+            \begin{flushright}
+                \includegraphics[width=.7\linewidth]{../../Shared/logo unipd.png}
+            \end{flushright}
+        \end{minipage}
+        {    
+        \begin{flushleft}
+            Corso di Ingegneria del Software\\ Gruppo \Gruppo{}\\ 
+        \end{flushleft}
+        }
+        \opening{ Con la presente, il gruppo \Gruppo{} intende comunicarvi la scelta e l'impegno alla realizzazione del progetto da voi commissionato, denominato:}
+        \begin{center}
+           \textbf{\NomeProgetto{}} 
+        \end{center}
+        proposto dall'azienda \textbf{\proponente{}}.\\
+        Tutti i dettagli relativi alla nostra proposta sono contenuti nei documenti allegati, distinti in:
+        \begin{itemize}
+            \item Esterni:
+            \begin{itemize}
+                \item \AdRv{};
+                \item \Gv{};
+                \item \PdPv{};
+                \item \PdQv{}.
+            \end{itemize}
+            \item Interni:
+            \begin{itemize}
+                \item \NdPv{};
+                \item \SdFv{}.
+            \end{itemize}
+        \end{itemize}
+        Inoltre sono presenti i verbali esterni ed interni:
+        \begin{itemize}
+            
+            \item Verbale\_E\_2021\_01\_22;
+            \item Verbale\_I\_2021\_01\_29;
+            \item Verbale\_I\_2021\_02\_10;
+            \item Verbale\_E\_2021\_02\_18;
+            \item Verbale\_I\_2021\_02\_25;
+           \item Verbale\_I\_2021\_03\_06.
+        \end{itemize}
+        Il gruppo stima di consegnare il prodotto entro il 2021-05-10 con un preventivo di \euro{} 13.264,00, come specificato nel documento \PdPv{}.\\
+        Per completezza, inseriamo di seguito la lista dei membri del gruppo con nome, cognome, matricola e ruolo principale avuto dalla data 2021-01-25 fino ad ora.
+        {
+            \rowcolors{2}{\evenRowColor}{\oddRowColor}
+            \renewcommand{\arraystretch}{2}
+            \begin{longtable}{ C{4cm} C{3cm} C{6cm} }
+                \rowcolor{\primaryColor}
+                \textcolor{\secondaryColor}{\textbf{Nome}} & \textcolor{\secondaryColor}{\textbf{Matricola}} & \textcolor{\secondaryColor}{\textbf{Ruolo di progetto}}\\
+                \endhead 
+                {Elvis Murtezan} & 1096758 & \responsabile{}  \\
+                {Edoardo Caregnato} & 1096077 & \responsabile{}  \\
+                {Alessio Trevisan} & 1187399 & \analista{}  \\     
+                {Giovanni Grigoletto} & 1175087 & \analista{} \\    
+                {Andrea De Tomasi} & 1187099 & \programmatore{}   \\     
+                {Filippo Pinton} & 1187361 &   \progettista{}  \\    
+                {Abdelwahad Kandoul} & 1120176 & \verificatore{}  \\   
+            \end{longtable}
+        }
+        Cordiali saluti,
+        \closing{\textit{\responsabile{}}\\ \includegraphics[width=.5\linewidth]{./immagini/firme/edoardo.png}}
+    \end{letter}
+\end{document}

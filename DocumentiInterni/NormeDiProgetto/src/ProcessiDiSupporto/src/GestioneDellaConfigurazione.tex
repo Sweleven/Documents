@@ -7,12 +7,8 @@ Ogni documento scritto dal gruppo {\Gruppo}, prima del suo effettivo completamen
 	\item y indica una versione la cui stesura è terminata ma è in attesa di verifica. Questo contatore parte sempre dal numero “0” e viene man mano incrementato dal verificatore al termine della verifica. Ogni volta che X viene incrementato, Y dovrà necessariamente ripartire da 0;
 	\item z indica una versione del documento ancora in fase di stesura. Anche questo indice parte da 0 e viene man mano incrementato dal redattore dello stesso ad ogni modifica. All’incremento di Y, il contatore Z ripartirà obbligatoriamente da 0.
 	\end{itemize}
-
-\subsubsection{Repository e strumenti}
-Per la realizzazione del progetto, è stato deciso dal gruppo di utilizzare il sistema di versioning distribuito GitHub. Ogni componente del gruppo, inoltre, potrà utilizzare il software GitKraken in alternativa alla CLI di Git. Lo strumento di issue-tracking scelto dal gruppo è invece la piattaforma Jira.
-
 \subsubsection{Struttura del repository}
-Ogni membro del gruppo {\Gruppo} ha in locale una copia completa del progetto, clonata direttamente dal repository presente su GitHub. La notazione del nome delle cartelle, fa riferimento a quanto dichiarato nella sezione x.y.z. L’organizzazione gerarchica delle cartelle è la seguente:
+Ogni membro del gruppo {\Gruppo} ha in locale una copia completa del progetto, clonata direttamente dal repository presente su GitLab. La notazione del nome delle cartelle, fa riferimento a quanto dichiarato nella sezione x.y.z. L’organizzazione gerarchica delle cartelle è la seguente:
 \begin{itemize}
 	\item DocumentiEsterni: cartella principale che, al suo interno, organizzato in sottocartelle, contiene tutti i documenti ad uso esterno, come dichiarato nella sezione x.y.z di questo documento;
 	\item DocumentiInterni: cartella principale che al suo interno, organizzato in sottocartelle, contiene tutti i documenti ad uso interno al gruppo, come dichiarato nella sezione x.y.z di questo documento;
@@ -21,9 +17,9 @@ Ogni membro del gruppo {\Gruppo} ha in locale una copia completa del progetto, c
 \end{itemize}
 
 \subsubsection{Utilizzo del software GitKraken}
-Come già precedentemente scritto, il gruppo {\Gruppo} ha deciso di utilizzare il software per versioning GitKraken nella versione gratuita, configurandolo tramite repository pubblico presente su GitHub. Quando un membro del gruppo deve effettuare il push di una modifica dovrà eseguire, in ordine, le seguenti azioni:
+Come già precedentemente scritto, il gruppo {\Gruppo} ha deciso di utilizzare il software per versioning GitKraken nella versione gratuita, configurandolo tramite repository pubblico presente su GitLab. Quando un membro del gruppo deve effettuare il push di una modifica dovrà eseguire, in ordine, le seguenti azioni:
 \begin{itemize}
-	\item eseguire il comando di pull per aggiornare la copia in locale con le ultime modifiche presenti nel repository su GitHub, eventualmente scegliendo l’apposito branch a seconda del documento da elaborare;
+	\item eseguire il comando di pull per aggiornare la copia in locale con le ultime modifiche presenti nel repository su GitLab, eventualmente scegliendo l’apposito branch a seconda del documento da elaborare;
 	\item una volta effettuate tutte le opportune modifiche, si confermano le stesse, premendo l’apposito pulsante, nell’ area di staging;
 	\item scrivere, nell’apposito campo del nuovo commit, una breve descrizione delle modifiche effettuate, ed eseguire il comando di commit;
 	\item eseguire il comando di push, per aggiornare il repository remoto con le nuove modifiche effettuate.
