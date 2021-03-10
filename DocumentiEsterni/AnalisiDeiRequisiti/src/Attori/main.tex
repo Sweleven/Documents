@@ -1,13 +1,35 @@
-\subsection{Attori primari}
+
 \begin{itemize}
-    \item \textbf{amministratore non autenticato:} utente dell'applicazione web, persona munita di un account da amministratore, che deve ancora eseguire l'accesso;
-    \item \textbf{amministratore autenticato:} utente dell'applicazione web, amministratore che pu\`{o} gestire gli utenti, le postazioni e le stanze;
     \item \textbf{utente non registrato:} utente che non possiede un account nel sistema;
-    \item \textbf{utente registrato:} utente che possiede un account nel sistema;
-    \item \textbf{utente non autenticato:} utente registrato che deve ancora eseguire l'accesso dall'applicazione mobile;
-    \item \textbf{utente autenticato:} utente registrato, che ha eseguito l'accesso dall'applicazione mobile;
-    \item \textbf{utente:} utente registrato che interagisce con l'applicazione;
-    \item \textbf{impiegato:} utente registrato non amministratore;
-    \item \textbf{igienizzatore:} utente registrato addetto esclusivamente all'igienizzazione delle postazioni/stanze;
-    \item \textbf{dipendente:} utente registrato che fa parte dell'azienda.
+    \item \textbf{utente non autenticato:} utente registrato che deve ancora eseguire l'accesso. A seconda delle credenziali possedute può autenticarsi come uno dei ruoli d seguito elencati.
+
+    \item \textbf{amministratore:}
+    \begin{itemize}
+        \item utente registrato ed autenticato presso l'applicazione web; 
+        \item pu\`{o} gestire e monitorare gli utenti, le postazioni e le stanze;
+        \item può accedere all'applicazione mobile, dove però figurerà come dipendente.
+    \end{itemize}
+
+    \item \textbf{dipendente:}
+    \begin{itemize}
+        \item utente registrato ed autenticato presso l'applicazione mobile; 
+        \item non può accedere all'applicazione web;
+        \item può controllare, prenotare ed utilizzare le postazioni di lavoro;
+        \item può marcare la singola postazione (ma non l'intera stanza) come pulita una volta eseguita l'igienizzazione.
+    \end{itemize}
+
+    \item \textbf{igienizzatore:}
+    \begin{itemize}
+        \item utente registrato ed autenticato presso l'applicazione mobile;
+        \item addetto esclusivamente all'igienizzazione delle postazioni/stanze; 
+        \item non può accedere all'applicazione web;
+        \item non può effettuare prenotazioni;
+        \item può visualizzare le stanze da pulire e marcarle come igienizzate.
+    \end{itemize} 
+   
+    \item \textbf{utente autenticato:}
+    \begin{itemize}
+        \item identifica un utente che ha eseguito il login presso l'applicazione mobile indistintamente dal ruolo;
+        \item usato per indicare le funzionalità comuni sia per dipendenti che per igienizzatori.
+    \end{itemize}
 \end{itemize}

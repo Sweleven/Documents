@@ -110,7 +110,19 @@ successivamente sono stati semplificati o adattati secondo le esigenze.
             \end{itemize}
         \paragraph{Metriche}
             \begin{enumerate}
-                \item \textbf{BAC} (Budget at Completion)
+                \item \textbf{BAC} (Budget at Completion).
+                \item \textbf{EAC} (Estimate At Completion):
+                \begin{itemize}
+                    \item  misurazione: numero intero;
+				    \item  valore preferibile: $ EAC \leq preventivo$;
+				    \item  valore accettabile: $ preventivo -5\% \leq EAC \leq preventivo + 5\%$.
+                \end{itemize}
+                \item \textbf{VAC} (Variance At Completion):
+                \begin{itemize}
+                    \item  misurazione: percentuale: $\frac{preventivo - EAC}{100}$;
+                    \item  valore preferibile: $\geq 0$;
+                    \item  valore accettabile: $\geq 0$.
+                \end{itemize}
                 \item \textbf{AC} (Actual Cost):
                 \begin{itemize}
                     \item valore preferibile: $0 \leq AC < PV$;
@@ -162,6 +174,11 @@ successivamente sono stati semplificati o adattati secondo le esigenze.
                     \item valore accettabile: $\geq 80\%$.
                 \end{itemize}
                 \item \textbf{MCDC} (Modified Condition/Decision Coverage):
+                \begin{itemize}
+                    \item valore preferibile: $100\%$;
+                    \item valore accettabile: $\geq 80\%$.
+                \end{itemize}
+                \item \textbf{DSCC} (Documentation service code coverage):
                 \begin{itemize}
                     \item valore preferibile: $100\%$;
                     \item valore accettabile: $\geq 80\%$.

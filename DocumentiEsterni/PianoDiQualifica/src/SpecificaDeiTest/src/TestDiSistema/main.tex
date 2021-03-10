@@ -1,4 +1,5 @@
 I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua interezza, portando alla luce eventuali problematiche sulle parti del codice sviluppate da altri sviluppatori.
+\newpage
 {
     \rowcolors{2}{\evenRowColor}{\oddRowColor}
     \renewcommand{\arraystretch}{1.5}
@@ -10,139 +11,544 @@ I testi di sistema hanno lo scopo di testare l’applicativo prodotto nella sua 
         \textbf{Codice}}     & \textcolor{\secondaryColor}
         {\textbf{Descrizione}} & \textcolor{\secondaryColor}{\textbf{Esito}} \\
 
-        TS1.1&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di creare una prenotazione.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+        TS1&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di registrare nuovi utenti.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        
         \begin{itemize}
-            \item navigare all'apposita sezione di creazione di una prenotazione;
+            \item poter accedere alla pagina di registrazione;
+            \item selezionare il tipo di utente scelto;
+            \item inserire i dati rispetto al tipo di utente scelto.
+            
+        \end{itemize}&
+        NI\\
+
+      TS1.1&
+      \begin{flushleft}
+            L'amministratore deve poter essere in grado di registrare altri amministratori.
+            All'amministratore viene chiesto di:
+      \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina di registrazione e specificare il tipo di utente come amministratore;
+            \item inserire l'indirizzo e-mail del nuovo utente.
+            
+        \end{itemize}&
+        NI\\
+
+        TS1.2&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di registrare utenti come dipendenti.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina di registrazione e specificare il tipo di utente come dipendente;
+            \item inserire l'indirizzo e-mail del nuovo utente.
+            
+        \end{itemize}&
+        NI\\
+
+        TS1.3&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di registrare utenti come igienizzatori.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina di registrazione e specificare il tipo di utente come igienizzatore;
+            \item inserire l'indirizzo e-mail del nuovo utente.
+            
+        \end{itemize}&
+        NI\\
+
+        TS2&
+        \begin{flushleft}
+             Il dipendente deve essere in grado di accedere all'applicazione mobile e autenticarsi con le proprie credenziali.
+             Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina di login;
+            \item inserire l'indirizzo e-mail;
+            \item inserire la password;
+            \item visualizzare la propria dashboard se l'autenticazione è andata a buon fine oppure visualizzare un messaggio d'errore in caso contrario.
+        \end{itemize}&
+        NI\\
+
+        TS3&
+        \begin{flushleft}
+            Il dipendente deve essere in grado di scannarizzare il tag RFID.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item [] oppure
+            \item visualizzazione dell'errore della scannerizzazione non avvenuta correttamente.
+        \end{itemize}&
+        NI\\
+
+        TS3.1&
+        \begin{flushleft}
+            Il dipendente deve verificare lo stato di una postazione tramite la scannarizzazione del tag RFID.\newline
+            Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item [] oppure
+            \item visualizzazione dell'errore relativo alla scannerizzazione non avvenuta correttamente.
+            \item verificare lo stato della postazione.
+        \end{itemize}&
+        NI\\
+
+
+        TS4&
+        \begin{flushleft}
+            Il dipendente deve poter essere in grado di creare una prenotazione.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di creazione di una prenotazione;
             \item verificare che sia possibile creare una prenotazione specificando data e ora;
             \item verificare che la prenotazione passi ad uno stato di "pending";
-            \item verificare che la prenotazione venga conferamta.
-            \item [] OPPURE
+            \item verificare che la prenotazione venga confermata.
+            \item [] oppure
             \item verificare che la prenotazione venga eliminata per un motivo specificato.
         \end{itemize}&
         NI\\
-        TS1.2&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di modificare una prenotazione.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+
+        TS4.1&
+        \begin{flushleft}
+            Il dipendente deve essere in grado di modificare una prenotazione.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di modifica di una prenotazione;
+            \item navigare nell'apposita sezione di modifica di una prenotazione;
             \item verificare che sia possibile modificare una prenotazione specificando una nuova data e ora;
             \item verificare che la prenotazione passi ad uno stato di "pending";
             \item verificare che la prenotazione venga conferamta.
-            \item [] OPPURE
+            \item [] oppure
             \item verificare che la prenotazione venga rifiutata per un errore specificato.
         \end{itemize}&
         NI\\
-        TS1.3&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di eliminare una prenotazione.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+
+        TS4.2&
+        \begin{flushleft}
+            Il dipendente deve essere in grado di eliminare una prenotazione.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di cancellazione di una prenotazione;
+            \item navigare nell'apposita sezione di cancellazione di una prenotazione;
             \item verificare che sia possibile eliminare una prenotazione effettuata in precedenza per una specifica data e ora;
             \item verificare che la prenotazione venga eliminata.
         \end{itemize}&
         NI\\
-        TS1.4&
-        Il dipendente registrato e l'amministratore devono poter essere in grado di visualizzare le prenotazioni attive nel sistema.\newline
-        Al dipendente registrato e all'amministratore viene chiesto di:
+
+        TS4.3&
+        \begin{flushleft}
+            Il dipendente deve poter in grado di visualizzare le prenotazioni da lui effettuate.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di visualizzazione delle prenotazioni;
+            \item navigare nell'apposita sezione di visualizzazione delle prenotazioni;
+            \item verificare che siano elencate correttamente tutte le sue prenotazioni.
+        \end{itemize}&
+        NI\\
+
+        TS4.4&
+        \begin{flushleft}
+            Il dipendente deve poter in grado di visualizzare le prenotazioni attive nel sistema.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di visualizzazione delle prenotazioni;
             \item verificare che siano elencate correttamente tutte le sue prenotazioni attive.
-            \item [] OPPURE
+            \item [] oppure
             \item verificare che sia visualizzato un messaggio di errore indicando che non esistono prenotazioni attive.
         \end{itemize}&
         NI\\
-        TS1.5&
-        L'amministratore deve poter essere in grado di impedire prenotazioni su una postazione.\newline
-        All'amministratore viene chiesto di:
+
+        TS4.5&
+        \begin{flushleft}
+            Il dipendente non deve essere in grado di prenotare una postazione già prenotata.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di blocco delle prenotazioni per una postazione;
-            \item bloccare la possibilità di prenotare una postazione;
-            \item verificare che la postazione non permetta la prenotazione.
-        \end{itemize}&
-        NI\\
-        TS1.6&
-        L'amministratore, il dipendente registrato e l'igienizzatore devono poter essere in grado di vedere e gestire lo stato di tutte le postazioni a cui ha accesso.\newline
-        All'amministratore, al dipendente registrato e all'igienizzatore viene chiesto di:
-        \begin{itemize}
-            \item navigare all'apposita sezione di gestione delle postazioni;
-            \item verificare che possa gestire le postazioni a cui ha accesso.
-        \end{itemize}&
-        NI\\
-        TS1.7&
-        L'amministratore e il dipendente registrato devono non essere in grado di prenotare una postazione già prenotata.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
-        \begin{itemize}
-            \item navigare all'apposita sezione di creazione di una prenotazione;
+            \item navigare nell'apposita sezione di creazione di una prenotazione;
             \item verificare che sia possibile creare una prenotazione specificando data e ora;
             \item verificare che la prenotazione passi ad uno stato di "pending";
             \item verificare che la prenotazione non venga effettuata.
         \end{itemize}&
         NI\\
-        TS2.1&
-        L'amministratore, il dipendente registrato e l'igienizzatore devono poter essere in grado di marcare come igienizzata una postazione.\newline
-        All'amministratore, al dipendente registrato e all'igienizzatore viene chiesto di:
+
+        TS4.6&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di vedere e gestire lo stato di tutte le postazioni.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione della postazione;
-            \item verificare che possa marcare come igienizzata la postazione;
-            \item verificare il corretto esito della marcatura.
-            \item [] OPPURE
-            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+            \item navigare nell'apposita sezione di gestione delle postazioni;
+            \item verificare che possa gestire le postazioni a cui ha accesso e verificarne lo stato.
         \end{itemize}&
         NI\\
-        TS2.2&
-        Il sistema deve marcare come sporca una postazione che \`{e} stata occupata.\newline
-        Quando viene occupata una postazione il sistema deve:
+
+        TS5&
+        \begin{flushleft}
+            L'amministratore deve essere in grado di accedere all'applicazione web.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item marcare la postazione come "sporca";
-            \item rendere la postazione non prenotabile fin quando non risulter\`{a} "pulita".
+            \item accedere alla pagina di login;
+            \item inserire l'indirizzo e-mail;
+            \item inserire la password;
+            \item visualizzare la propria dashboard se l'autenticazione è andata a buon fine oppure visualizzare un messaggio d'errore in caso contrario.
         \end{itemize}&
         NI\\
-        TS3.1&
-        Il sistema deve essere in grado di marcare come "libera" una postazione igienizzata.\newline
+
+        TS6&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di creare nuove postazioni.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item La postazione \`{e} prenotabile.
+            \item navigare nell'apposita sezione e selezionare il tipo di postazione;
+            \item inserire i dati richiesti;
+            \item confermare l'avvenuta creazione della postazione.
         \end{itemize}&
         NI\\
-        TS3.2&
-        L'amministratore e il dipendente registrato devono poter essere in grado di marcare come occupata una postazione.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+
+        TS6.1&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di creare nuove stanze.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione della postazione;
-            \item verificare che possa marcare come occupata la postazione utilizzata;
-            \item verificare il corretto esito della marcatura.
-            \item [] OPPURE
-            \item verificare l'esito negativo della marcatura dovuto ad un errore specificato.
+            \item navigare nell'apposita sezione e selezionare la funzionalità di creazione di una nuova stanza;
+            \item inserire il codice della stanza;
+            \item verificare che non ci siano messaggi di errore;
+            \item confermare la creazione della stanza.
+            \item verificare l'avvenuta creazione della stanza.
         \end{itemize}&
         NI\\
-        TS3.3&
-        L'amministratore e il dipendente registrato devono poter essere in grado di confermare l'occupazione di una postazione prenotata.\newline
-        All'amministratore e al dipendente registrato viene chiesto di:
+
+        TS7&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di modificare le postazioni.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item aprire la schermata pop-up di conferma della prenotazione;
-            \item verificare l'esito della conferma della prenotazione.
+            \item navigare nell'apposita sezione e selezionare il tipo di postazione;
+            \item inserire i dati richiesti;
+            \item confermare l'avvenuta modifica della postazione.
         \end{itemize}&
         NI\\
-        TS4.1&
-        L'amministratore deve poter essere in grado di disabilitare una postazione.\newline
-        All'amministratore viene chiesto di:
+
+        TS7.1&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di modificare le stanze.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione delle postazioni;
-            \item marcare la postazione desiderata come disabilitata;
-            \item verificare che la postazione non sia né prenotabile né servibile.
+            \item navigare nell'apposita sezione e selezionare la stanza da modificare;
+            \item premere il pulsante modifica;
+            \item inserire i nuovi dati;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare la modifica della stanza;
+            \item verificare l'avvenuta modifica della stanza.
         \end{itemize}&
         NI\\
-        TS4.2&
-        L'amministratore deve poter essere in grado di riabilitare una postazione precedentemente disabilitata.\newline
-        All'amministratore viene chiesto di:
+
+        TS8&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di eliminare le postazioni.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
         \begin{itemize}
-            \item navigare all'apposita sezione di gestione delle postazioni;
-            \item marcare la postazione disabilitata desiderata come abilitata;
+            \item navigare nell'apposita sezione e selezionare il tipo di postazione;
+            \item eliminare la postazione;
+            \item confermare l'eliminazione della postazione;
+            \item verificare l'avvenuta eliminazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS8.1&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di eliminare le stanze.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione e selezionare la stanza da eliminare;
+            \item premere il pulsante elimina;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare l'eliminazione della stanza;
+            \item verificare l'avvenuta eliminazione della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS9&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di disabilitare le postazioni.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione e selezionare il tipo di postazione;
+            \item disabilitare la postazione;
+            \item confermare la disabilitazione della postazione;
+            \item verificare l'avvenuta disabilitazione della postazione;
+            \item verificare che la postazione non sia prenotabile.
+        \end{itemize}&
+        NI\\
+
+        TS9.1&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di disabilitare le stanze.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione e selezionare la stanza da disabilitare;
+            \item premere il relativo pulsante di disabilitazione della stanza;
+            \item verificare che non ci siano messaggi di errore per la modifica;
+            \item confermare la disabilitazione della stanza;
+            \item verificare l'avvenuta disabilitazione della stanza;
+            \item verificare che le postazioni interne alla stanza non siano prenotabili.
+        \end{itemize}&
+        NI\\
+
+
+        TS10&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di riabilitare una postazione precedentemente disabilitata.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di gestione delle postazioni;
+            \item marcare la postazione precedentemente disabilitata come abilitata;
             \item verificare che la postazione sia ora prenotabile e servibile.
         \end{itemize}&
         NI\\
-       
+
+        TS11&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di monitorare in ogni momento il numero di dipendenti presenti in tutte le postazioni e nella stanza nel suo complesso.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di gestione delle postazioni;
+            \item selezionare il monitoraggio in tempo reale;
+            \item visualizzare la presenza delle persone all'interno della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS12&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di effettuare ricerche sugli accessi e sulle postazioni occupate da uno specifico dipendente.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di gestione degli utenti;
+            \item aprire la barra di ricerca;
+            \item inserire i dati dell'utente;
+            \item visualizzare lo storico dell'utente.
+        \end{itemize}&
+        NI\\
+
+        TS13&
+        \begin{flushleft}
+            L'igienizzatore deve essere in grado di accedere all'applicazione mobile.
+            All'igienizzatore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina di login;
+            \item inserire l'indirizzo e-mail;
+            \item inserire la password.
+        \end{itemize}&
+        NI\\
+
+        TS14&
+        \begin{flushleft}
+            L'igienizzatore deve essere in grado di visualizzare le stanze da pulire.
+            All'igienizzatore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione;
+            \item visualizzare lo stato delle stanze;
+        \end{itemize}&
+        NI\\
+
+        TS15&
+        \begin{flushleft}
+            L'igienizzatore deve essere in grado di marcare le stanze dove ha effettuato l'igienizzazione.
+            All'igienizzatore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione;
+            \item selezionare la stanza igienizzata;
+            \item confermare l'igienizzazione della stanza;
+            \item verificare l'avvenuta marcatura della stanza come igienizzata;
+            \item verificare che tutte le postazioni interne alla stanza risultino igienizzate.
+        \end{itemize}&
+        NI\\
+
+        TS15.1&
+        \begin{flushleft}
+            L'igienizzatore deve essere in grado marcare la stanza come igienizzata tramite la scannerizzazione del tag RFID.
+            All'igienizzatore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la funzionalità di scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item confermare l'igienizzazione della stanza;
+            \item verificare l'avvenuta conferma dell'igienizzazione della stanza.
+        \end{itemize}&
+        NI\\
+
+        TS16&
+        \begin{flushleft}
+            Il dipendente deve essere in grado di marcare la postazione come igienizzata in seguito all'utilizzo dell'apposito kit di pulizia.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione;
+            \item selezionare la stanza;
+            \item selezionare la postazione;
+            \item confermare l'igienizzazione della postazione;
+            \item verificare l'avvenuta marcatura della postazione come igienizzata.
+        \end{itemize}&
+        NI\\
+
+        TS16.1&
+        \begin{flushleft}
+            Il dipendente deve essere in grado di marcare la postazione dove ha utilizzato il kit pulizia come igienizzata tramite tag RFID.
+            Al dipendente viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere alla pagina dedicata;
+            \item selezionare la funzionalità di scannerizzazione;
+            \item appoggiare il telefono al tag RFID;
+            \item verificare la corretta scannerizzazione del tag RFID;
+            \item confermare l'igienizzazione della postazione;
+            \item verificare l'avvenuta conferma dell'igienizzazione della postazione.
+        \end{itemize}&
+        NI\\
+
+        TS17&
+        \begin{flushleft}
+            Il sistema deve marcare come sporca una postazione che \`{e} stata occupata.
+            Quando viene occupata una postazione il sistema deve:
+        \end{flushleft}
+        \begin{itemize}
+            \item marcare la postazione come "sporca";
+            \item rendere la postazione prenotabile ma da igienizzare.
+        \end{itemize}&
+        NI\\
+
+        TS18&
+        \begin{flushleft}
+            L'utente appena aggiunto dall'amministratore deve poter completare la registrazione.
+            L'utente deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item accedere al link ricevuto via email;
+            \item inserire il proprio nome oppure visualizzare un messaggio d'errore se mancante o non valido;
+            \item inserire il proprio cognome oppure visualizzare un messaggio d'errore se mancante o non valido;
+            \item inserire una nuova password oppure visualizzare un messaggio d'errore se mancante o non valida;
+            \item confermare la propria password reinserendo quella indicata precedentemtente o visualizzare un messaggio d'errore qualora il matching non sia rispettato.
+        \end{itemize}&
+        NI\\
+
+        TS19&
+        \begin{flushleft}
+            L'utente autenticato deve poter effettuare il logout dall'applicazione mobile.
+            L'utente deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item cliccare il pulsante per effettuare il logout;
+            \item verificare che tale azione sia andata a buon fine.
+        \end{itemize}&
+        NI\\
+
+        TS20&
+        \begin{flushleft}
+            L'amministratore deve poter effettuare il logout dall'applicazione web.
+            L'amministratore deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item cliccare il pulsante per effettuare il logout;
+            \item verificare che tale azione sia andata a buon fine.
+        \end{itemize}&
+        NI\\
+
+  
+        TS21&
+        \begin{flushleft}
+            L'amministratore deve poter modificare l'indirizzo email e il ruolo.
+            L'amministratore deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item selezionare la funzionalità di modifica dei dati di un utente;
+            \item modificare i campi dati di interesse;
+            \item verificare che tale azione sia andata a buon fine o in alternativa visualizzare un messaggio d'errore.
+        \end{itemize}&
+        NI\\
+
+        TS22&
+        \begin{flushleft}
+            L'amministratore deve poter rimuovere un utente.
+            L'amministratore deve essere in grado di:
+        \end{flushleft}
+        \begin{itemize}
+            \item selezionare un utente
+            \item selezionare la funzionalità rimozione dell'utente selezionato;
+            \item verificare che l'utente non sia più presente all'interno del sistema.
+        \end{itemize}&
+        NI\\
+        
+        TS23&
+        \begin{flushleft}
+            L'utente deve essere in grado di recuperare la propria password.
+            All'utente viene richiesto dipendente:
+        \end{flushleft}
+        \begin{itemize}
+            \item selezionare il link di recupero password dalla schermata di login;
+            \item inserire il proprio indirizzo email o visualizzare un messaggio d'errore in caso l'indirizzo non sia valido;
+            \item ricevere un link per il recupero password all'indirizzo email inserito;
+            \item impostare una nuova password o visualizzare un messaggio d'errore in caso la password non sia valida;
+            \item confermare la propria password reinserendo quella indicata precedentemtente o visualizzare un messaggio d'errore qualora il matching non sia rispettato.
+        \end{itemize}&
+        NI\\
+
+        TS24&
+        \begin{flushleft}
+            L'utente deve essere in grado di modificare la propria password dopo essersi autenticato.
+            All'utente viene richiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item inserire la propria password corrente o visualizzare un errore nel caso in cui questa non sia corretta;
+            \item impostare una nuova password o visualizzare un messaggio d'errore in caso la password non sia valida;
+            \item confermare la propria password reinserendo quella indicata precedentemtente o visualizzare un messaggio d'errore qualora il matching non sia rispettato.
+        \end{itemize}&
+        NI\\
+
+        
+        TS25&
+        \begin{flushleft}
+            L'amministratore deve poter essere in grado di riabilitare una stanza precedentemente disabilitata.
+            All'amministratore viene chiesto di:
+        \end{flushleft}
+        \begin{itemize}
+            \item navigare nell'apposita sezione di gestione delle stanze;
+            \item marcare la stanza precedentemente disabilitata come abilitata;
+            \item verificare che le postazioni all'interno della stanza siano di nuovo prenotabili.
+        \end{itemize}&
+        NI\\
+
+     
         
     \end{longtable}
 }
