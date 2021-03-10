@@ -30,41 +30,13 @@ La seguente tabella rappresenta la distribuzione oraria dei ruoli per ogni compo
 
 \end{longtable}
 }
-% Responsabile color=blue, Amministratore color=yellow, Analista color=red, Progettista color=green, Programmatore color=grigetto, Verificatore color=orange  [ybar, fill=] blue, yellow, red, green, grigetto, orange
+
 \begin{figure}[h!]
+	\centering
 	\caption{Istogramma relativo la suddivisione delle ore preventivate nella fase di analisi}
-	\includegraphics[width=1\textwidth]{./src/Preventivo/src/img/IstoAnalisi.png}
+	\includegraphics[scale=0.60]{./src/Preventivo/src/img/IstoAnalisi.png}
 \end{figure}
-%\begin{center}
-%	\pgfplotsset{width=15.4cm, height=8.5cm}
-%	\begin{tikzpicture}
-%		\begin{axis}[
-%			ybar stacked,
-%			bar width=20pt,
-%			legend style={
-%				at={(0.5,-0.15)},
-%				anchor=north,
-%				legend columns=-1
-%			},
-%			symbolic x coords={Abdelwahad, Alessio, Andrea, Edoardo, Elvis, Filippo, Giovanni},
-%			xtick=data
-%		]
-%			\legend{Responsabile, Amministratore, Analista, Progettista, Programmatore, Verificatore}
-			% Responsabile
-%			\addplot [ybar, fill=blue] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{17}{0}{18}};
-			% Amministratore
-%			\addplot [ybar, fill=yellow] coordinates {\ColonnaIstogramma{0}{10}{0}{10}{0}{15}{0}};
-			% Analista
-%			\addplot [ybar, fill=red] coordinates {\ColonnaIstogramma{14}{10}{14}{10}{7}{10}{7}};
-			% Progettista
-%			\addplot [ybar, fill=green] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
-			% Programmatore
-%			\addplot [ybar, fill=pink] coordinates {\ColonnaIstogramma{0}{0}{0}{0}{0}{0}{0}};
-			% Verificatore
-%			\addplot [ybar, fill=orange] coordinates {\ColonnaIstogramma{14}{8}{15}{8}{8}{9}{8}};
-%		\end{axis}
-%	\end{tikzpicture}
-%\end{center}
+
 \clearpage
 
 \subsubsection{Costo risultante}
@@ -93,20 +65,8 @@ Verificatore    &  70 & 1050 \\
 }
 
 \begin{figure}[h!]
+	\centering
 	\caption{Areogramma relativo la suddivisione oraria per i diversi ruoli nella fase di analisi}
-    \includegraphics[width=1\textwidth]{./src/Preventivo/src/img/TortaAnalisi.png}    
+    \includegraphics[scale=0.60]{./src/Preventivo/src/img/TortaAnalisi.png}    
 \end{figure}
 
-
-%La quantità di ore totali investite per ciascun ruolo viene rappresentata nel seguente areogramma:
-%\begin{center}
-%	\pgfplotsset{width=17cm, height=8.5cm}
-%	\begin{tikzpicture}
-%		\pie[rotate = 180, color={blue, yellow, red, orange}] {
-%			17/Responsabile,
-%			17/Amministratore,
-%			33/Analista,
-%			33/Verificatore
-%		}
-%	\end{tikzpicture}
-%\end{center}
